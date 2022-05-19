@@ -1,0 +1,65 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* DeoAccordions */
+.DeoAccordions .panel {
+  margin-bottom: 15px;
+  border: 1px solid #eaeaea;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none; }
+  .DeoAccordions .panel .panel-title {
+    text-transform: none;
+    font-weight: normal;
+    margin-bottom: 0px;
+    padding: 10px 15px; }
+    .DeoAccordions .panel .panel-title a {
+      display: block;
+      position: relative;
+      padding-right: 20px; }
+      .rtl .DeoAccordions .panel .panel-title a {
+        padding-left: 20px;
+        padding-right: inherit; }
+      .DeoAccordions .panel .panel-title a:before {
+        content: "\E15B";
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        top: 3px;
+        position: absolute;
+        font-family: "Material Icons";
+        right: 0px; }
+        .rtl .DeoAccordions .panel .panel-title a:before {
+          left: 0px;
+          right: auto; }
+      .DeoAccordions .panel .panel-title a.collapsed:before {
+        content: "\E145"; }
+  .DeoAccordions .panel .panel-collapse {
+    padding: 15px;
+    border-top: 1px solid #eaeaea; }
+
+/*# sourceMappingURL=DeoAccordions.css.map */

@@ -1,0 +1,52 @@
+@import "theme_variables";
+
+/* header-contact */
+.header-contact{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	ul{
+		margin: 0px;
+	}
+	li{
+		font-size: 12px;
+		display: inline-block;
+		vertical-align: middle;
+		&:not(:last-child){
+			@include rtl-margin-right(15px);
+		}
+		i{
+			font-size: 15px;
+			font-style: normal;
+			display: inline-block;
+			vertical-align: middle;
+			@include rtl-margin-right(5px);
+		}
+		span,a{
+			color: inherit;
+			font-weight: normal;
+			font-style: italic;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		a{
+			&:hover{
+				color: $theme-color-default;
+			}
+		}
+		&.email{
+			i:before{
+				content: '\e92f';
+				font-family: $font-icon-4;
+			}
+		}
+		&.phone{
+			i:before{
+				content: '\e912';
+				font-family: $font-icon-4;
+			}
+		}
+	}
+	&.white-text{
+		color: $theme-color-white;
+	}
+}

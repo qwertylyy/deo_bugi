@@ -1,0 +1,72 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+.footer-container {
+  background-color: #333333;
+  color: #cccccc; }
+
+.box-top-footer {
+  padding-top: 50px; }
+  @media (min-width: 768px) {
+    .box-top-footer {
+      padding-top: 60px; } }
+
+.box-middle-footer {
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    .box-middle-footer {
+      padding-top: 50px;
+      padding-bottom: 60px; } }
+  .box-middle-footer .logo {
+    margin-bottom: 25px; }
+  @media (max-width: 991px) and (min-width: 576px) {
+    .box-middle-footer .block-social .box-title {
+      margin-top: 0px; } }
+  @media (min-width: 992px) {
+    .box-middle-footer .block-contact {
+      position: relative;
+      padding-right: 60px; }
+      .rtl .box-middle-footer .block-contact {
+        padding-left: 60px;
+        padding-right: inherit; }
+      .box-middle-footer .block-contact:after {
+        content: '';
+        top: 0px;
+        bottom: 0px;
+        width: 1px;
+        background: #eaeaea;
+        position: absolute;
+        right: 60px; }
+        .rtl .box-middle-footer .block-contact:after {
+          left: 60px;
+          right: auto; } }
+
+.box-bottom-footer {
+  padding-bottom: 30px; }
+  .box-bottom-footer .block-social {
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=footerposition1548510457.css.map */

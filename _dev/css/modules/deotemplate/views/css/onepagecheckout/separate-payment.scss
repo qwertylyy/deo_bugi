@@ -1,0 +1,73 @@
+@import "theme_variables";
+
+section#checkout-personal-information-step,
+section#checkout-addresses-step,
+section#checkout-delivery-step,
+#block-reassurance,
+#checkout #checkout-payment-step span.step-number {
+	display: none;
+}
+
+body#checkout section.checkout-step + section.checkout-step{
+	margin-top: 0px;
+}
+
+body#checkout section.checkout-step.-current .step-title {
+	text-align: center;
+	padding: 10px 0 20px;
+}
+
+div#payment-confirmation .ps-shown-by-js {
+	padding: 10px 0;
+}
+
+#separate-payment-order-review {
+	margin-bottom: 20px;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	.customer-block-container,
+	#edit-button-block{
+		text-align: center;
+		padding: 20px 0;
+		@include flex-basis(100%);
+	}
+	.address-block-container {
+		@include flex-basis(50%);
+	}
+	#customer-block {
+		font-size: 1.2em;
+	}
+}
+
+.address-block-container .address-block,
+.customer-block-container,
+.shipping-method-container{
+	padding: 15px;
+	margin: 5px;
+	border: 2px solid #78cfe138;
+}
+
+
+.address-block .address-block-header,
+#shipping-method .shipping-method-header,
+#delivery-message .delivery-message-header{
+	font-weight: bold;
+	padding: 5px 0;
+	display: block;
+}
+
+.shipping-method-container {
+	@include flex-basis(100%);
+}
+
+#shipping-method img {
+	max-height: 60px;
+}
+
+.payment-options #amazonPayCheckoutEmbedded {
+	display: none;
+}
+
+.payment-options.amazon_ongoing_session > div:not(.amazon-visible) {
+	display: none;
+}

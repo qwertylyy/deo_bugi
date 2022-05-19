@@ -1,0 +1,65 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* DeoAlert */
+.DeoAlert {
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 50px;
+  position: relative; }
+  .rtl .DeoAlert {
+    text-align: right; }
+  .rtl .DeoAlert {
+    padding-right: 50px;
+    padding-left: inherit; }
+  .DeoAlert:before {
+    font-family: "deo-custom-icons";
+    font-size: 20px;
+    vertical-align: -2px;
+    position: absolute;
+    top: 11px;
+    float: left;
+    left: 20px; }
+    .rtl .DeoAlert:before {
+      float: right; }
+    .rtl .DeoAlert:before {
+      right: 20px;
+      left: auto; }
+  .DeoAlert.alert-success:before {
+    content: "\ea63"; }
+  .DeoAlert.alert-warning {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
+    .DeoAlert.alert-warning:before {
+      content: "\ea62"; }
+  .DeoAlert.alert-info {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
+    .DeoAlert.alert-info:before {
+      content: "\ea5f"; }
+  .DeoAlert.alert-danger {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
+    .DeoAlert.alert-danger:before {
+      content: "\ea62"; }
+
+/*# sourceMappingURL=DeoAlert.css.map */

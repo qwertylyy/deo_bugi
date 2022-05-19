@@ -1,0 +1,77 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+.contact-rich {
+  padding: 0px;
+  margin-bottom: 30px; }
+  .contact-rich h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .contact-rich .block {
+    height: auto;
+    overflow: hidden;
+    padding: 20px 20px;
+    background: #FFFFFF; }
+    .contact-rich .block + .block {
+      border-top: 1px solid #eaeaea; }
+    .contact-rich .block .icon {
+      width: 35px;
+      float: left; }
+      .rtl .contact-rich .block .icon {
+        float: right; }
+      .contact-rich .block .icon i {
+        font-size: 20px; }
+    .contact-rich .block .data {
+      width: auto;
+      overflow: hidden;
+      line-height: 1.5; }
+    .contact-rich .block.map .icon i::before {
+      content: '\ea94'; }
+    .contact-rich .block.phone .icon i::before {
+      content: '\ea9a'; }
+    .contact-rich .block.fax .icon i::before {
+      content: '\ea91'; }
+    .contact-rich .block.email .icon i::before {
+      content: '\ea4c'; }
+  .contact-rich .block-content {
+    border: 1px solid #eaeaea; }
+
+.contact-form {
+  padding: 16px;
+  width: 100%; }
+  .contact-form h3 {
+    text-transform: uppercase; }
+  .contact-form .form-control-label {
+    font-weight: inherit;
+    text-align: left; }
+    .rtl .contact-form .form-control-label {
+      text-align: right; }
+
+#contact #content {
+  margin-bottom: 0px;
+  border: 1px solid #eaeaea;
+  border-radius: 0px; }
+
+/*# sourceMappingURL=contact.css.map */

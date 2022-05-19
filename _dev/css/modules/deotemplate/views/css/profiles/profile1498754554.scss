@@ -1,0 +1,44 @@
+@import "theme_variables";
+
+// ************* Home 2 ***************
+
+
+
+.box-start{
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+.box-about-us,.box-products-list,.box-testimonials,.box-manufacturers{
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+
+.box-categories,.box-banner,.box-product,.box-banners,.box-image-hotspot{
+	margin-bottom: $grid-gutter-width-base*3;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*2;
+	}
+}
+
+.box-service {
+    // background: 1px solid #eaeaea;
+}
+
+.box-space-before{
+	padding-top: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		padding-top: $grid-gutter-width-base*3;
+	}
+}
+
+.layout-boxed-md{
+	
+}
+
+.layout-boxed-lg{
+	
+}

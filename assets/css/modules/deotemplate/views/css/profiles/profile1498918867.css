@@ -1,0 +1,56 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+.box-start {
+  margin-bottom: 80px; }
+  @media (max-width: 991px) {
+    .box-start {
+      margin-bottom: 60px; } }
+
+.box-categories {
+  margin-bottom: 40px; }
+  @media (max-width: 991px) {
+    .box-categories {
+      margin-bottom: 20px; } }
+
+.box-about-us {
+  margin-bottom: 80px; }
+  @media (max-width: 991px) {
+    .box-about-us {
+      margin-bottom: 60px; } }
+
+.box-product-tabs, .box-products, .box-product, .box-products-featured, .box-banners, .box-banner, .box-products-list, .box-deal {
+  margin-bottom: 60px; }
+  @media (max-width: 991px) {
+    .box-product-tabs, .box-products, .box-product, .box-products-featured, .box-banners, .box-banner, .box-products-list, .box-deal {
+      margin-bottom: 40px; } }
+
+.box-space-before {
+  padding-top: 80px; }
+  @media (max-width: 991px) {
+    .box-space-before {
+      padding-top: 60px; } }
+
+/*# sourceMappingURL=profile1498918867.css.map */

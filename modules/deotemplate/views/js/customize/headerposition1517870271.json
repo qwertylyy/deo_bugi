@@ -1,0 +1,173 @@
+[
+    {
+        "id": "header_1",
+        "type": "color",
+        "label": "Color link Top Header",
+        "selector": ".topnav a,.topnav .popup-over .popup-title,.topnav .popup-over.popup-white .popup-title,.topnav .popup-over.popup-white.light .popup-title"
+    },
+    {
+        "id": "header_2",
+        "type": "color",
+        "label": "Color link hover Top Header",
+        "media": "@media (min-width: 992px)",
+        "selector": ".topnav a:hover,.topnav .popup-over .popup-title:hover,.topnav .popup-over.popup-white .popup-title:hover,.topnav .popup-over.popup-white.light .popup-title:hover"
+    },
+    {
+        "id": "header_3",
+        "type": "color",
+        "label": "Color Top Header",
+        "selector": ".topnav"
+    },
+    {
+        "id": "header_4",
+        "type": "border-color",
+        "label": "Border Color Top Header",
+        "selector": ".box-top-header:before"
+    },
+    {
+        "id": "header_5",
+        "type": "background-color",
+        "label": "Background Color Top Header",
+        "selector": ".topnav"
+    },
+    {
+        "id": "header_6",
+        "type": "color",
+        "label": "Color link Middle Header",
+        "selector": ".bottomnav a,.bottomnav .block-link-inline ul li a,.bottomnav .popup-over .popup-title,.bottomnav .popup-over.popup-white .popup-title,.bottomnav .popup-over.popup-white.light .popup-title"
+    },
+    {
+        "id": "header_7",
+        "type": "color",
+        "label": "Color link hover Middle Header",
+        "media": "@media (min-width: 992px)",
+        "selector": ".bottomnav a:hover,.bottomnav .block-link-inline ul li a:hover,.bottomnav .popup-over .popup-title:hover,.bottomnav .popup-over.popup-white .popup-title:hover,.bottomnav .popup-over.popup-white.light .popup-title:hover"
+    },
+    {
+        "id": "header_8",
+        "type": "color",
+        "label": "Color suggest link Middle Header",
+        "selector": ".bottomnav,.bottomnav .DeoBlockLink ul li a"
+    },
+    {
+        "id": "header_9",
+        "type": "color",
+        "label": "Color suggest link hover Middle Header",
+        "media": "@media (min-width: 992px)",
+        "selector": ".bottomnav .a:hover,.bottomnav .DeoBlockLink ul li a:hover"
+    },
+    {
+        "id": "header_10",
+        "type": "background-color",
+        "label": "Background color Middle Header",
+        "selector": ".bottomnav"
+    },
+    {
+        "id": "header_11",
+        "type": "background-color",
+        "label": "Background color Bottom Header",
+        "responsive": [
+            {
+                "media": "@media (min-width: 992px)",
+                "selector": ".sticky-menu-active .header-top"
+            }
+        ],
+        "selector": ".header-top"
+    },
+    {
+        "id": "header_12",
+        "type": "color",
+        "label": "Color Cart",
+        "selector": "#cart-block .cart-preview, #cart-block .cart-preview.active a,#cart-block.cart-white .cart-preview, #cart-block.cart-white .cart-preview.active a,#cart-block.cart-white.light .cart-preview, #cart-block.cart-white.light .cart-preview.active a"
+    },
+    {
+        "id": "header_13",
+        "type": "color",
+        "label": "Color hover Cart",
+        "media": "@media (min-width: 992px)",
+        "selector": "#cart-block .cart-preview.active a:hover,#cart-block.cart-white .cart-preview.active a:hover,#cart-block.cart-white.light .cart-preview.active a:hover"
+    },
+    {
+        "id": "header_14",
+        "type": "color",
+        "label": "Color link Menu",
+        "media": "@media (min-width: 992px)",
+        "selector": ".deo-horizontal-menu .megamenu > .nav-item > .nav-link,.menu-white .deo-horizontal-menu .megamenu > .nav-item > .nav-link,.menu-white.light .deo-horizontal-menu .megamenu > .nav-item > .nav-link"
+    },
+    {
+        "id": "header_15",
+        "type": "color",
+        "label": "Color link hover Menu",
+        "media": "@media (min-width: 992px)",
+        "selector": ".deo-horizontal-menu .megamenu > .nav-item:hover > .nav-link, .deo-horizontal-menu .megamenu > .nav-item:focus > .nav-link,.menu-white .deo-horizontal-menu .megamenu > .nav-item:hover > .nav-link,.menu-white .deo-horizontal-menu .megamenu > .nav-item:focus > .nav-link,.menu-white.light .deo-horizontal-menu .megamenu > .nav-item:hover > .nav-link,.menu-white.light .deo-horizontal-menu .megamenu > .nav-item:focus > .nav-link"
+    },
+    {
+        "id": "header_16",
+        "type": "background-color",
+        "label": "Background color Search",
+        "selector": "#header .deo-search-advanced.search-media-one .popup-content"
+    },
+    {
+        "id": "header_17",
+        "type": "color",
+        "label": "Color Search",
+        "selector": "#header .deo-search-advanced .block_content .deo-advanced-search-input .advanced_search_query,#header .deo-search-advanced .block_content .list-cate-wrapper .select-title:before,#header .deo-search-advanced .block_content .deo-advanced-search-input .advanced_search_query::-webkit-input-placeholder"
+    },
+    {
+        "id": "header_18",
+        "type": "color",
+        "label": "Color select category Search",
+        "selector": "#header .deo-search-advanced .block_content .list-cate-wrapper .select-title"
+    },
+    {
+        "id": "header_19",
+        "type": "color",
+        "label": "Color hover select category Search",
+        "media": "@media (min-width: 992px)",
+        "selector": "#header .deo-search-advanced .block_content .list-cate-wrapper .select-title:hover"
+    },
+    {
+        "id": "header_20",
+        "type": "border-color",
+        "label": "Border Color select category Search",
+        "selector": "#header .deo-search-advanced .block_content .list-cate-wrapper .select-title:before,#header .deo-search-advanced.search-media-one .popup-content"
+    },
+    {
+        "id": "header_21",
+        "type": "color",
+        "label": "Color button Search",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button"
+    },
+    {
+        "id": "header_22",
+        "type": "color",
+        "label": "Color hover button Search",
+        "media": "@media (min-width: 992px)",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button:hover"
+    },
+    {
+        "id": "header_23",
+        "type": "background-color",
+        "label": "Background color button Search",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button"
+    },
+    {
+        "id": "header_24",
+        "type": "background-color",
+        "label": "Background color hover button Search",
+        "media": "@media (min-width: 992px)",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button:hover"
+    },
+    {
+        "id": "header_25",
+        "type": "color",
+        "label": "Color Vertical Menu",
+        "selector": ".deo-vertical-menu .vertical-menu-button"
+    },
+    {
+        "id": "header_26",
+        "type": "background-color",
+        "label": "Background color Vertical Menu",
+        "selector": ".deo-vertical-menu .vertical-menu-button"
+    }
+]

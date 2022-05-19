@@ -1,0 +1,958 @@
+@import "theme_variables";
+@import "partials/_mixins";
+
+@keyframes icon-drop {
+	0% {
+		@include opacity(0);
+		@include transform(translateY(-50%));
+	}
+ 
+	50% {
+		@include opacity(0.5);
+		@include transform(translateY(50%));
+	}
+
+	70% {
+		@include opacity(0.7);
+		@include transform(translateY(70%));
+	}
+
+	71%,
+	100% {
+		@include opacity(1);
+	}
+}
+
+@-moz-keyframes icon-drop {
+	0% {
+		@include opacity(0);
+		@include transform(translateY(-50%));
+	}
+ 
+	50% {
+		@include opacity(0.5);
+		@include transform(translateY(50%));
+	}
+
+	70% {
+		@include opacity(0.7);
+		@include transform(translateY(70%));
+	}
+
+	71%,
+	100% {
+		@include opacity(1);
+	}
+}
+
+@-webkit-keyframes icon-drop {
+	0% {
+		@include opacity(0);
+		@include transform(translateY(-50%));
+	}
+ 
+	50% {
+		@include opacity(0.5);
+		@include transform(translateY(50%));
+	}
+
+	70% {
+		@include opacity(0.7);
+		@include transform(translateY(70%));
+	}
+
+	71%,
+	100% {
+		@include opacity(1);
+	}
+}
+
+@-ms-keyframes icon-drop {
+	0% {
+		@include opacity(0);
+		@include transform(translateY(-50%));
+	}
+ 
+	50% {
+		@include opacity(0.5);
+		@include transform(translateY(50%));
+	}
+
+	70% {
+		@include opacity(0.7);
+		@include transform(translateY(70%));
+	}
+
+	71%,
+	100% {
+		@include opacity(1);
+	}
+}
+
+// animationmenus
+@-webkit-keyframes animationmenus {
+	from {
+		@include opacity(0);
+		@include translate(0px, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(0px, 0px);
+	}
+}
+@-moz-keyframes animationmenus {
+	from {
+		@include opacity(0);
+		@include translate(0px, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(0px, 0px);
+	}
+}
+@-o-keyframes animationmenus {
+	from {
+		@include opacity(0);
+		@include translate(0px, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(0px, 0px);
+	}
+}
+@keyframes animationmenus {
+	from {
+		@include opacity(0);
+		@include translate(0px, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(0px, 0px);
+	}
+}
+
+// animationmenus-center
+@-webkit-keyframes animationmenus-center {
+	from {
+		@include opacity(0);
+		@include translate(-50%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(0px, 0px);
+	}
+}
+@-moz-keyframes animationmenus-center {
+	from {
+		@include opacity(0);
+		@include translate(-50%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(-50%, 0px);
+	}
+}
+@-o-keyframes animationmenus-center {
+	from {
+		@include opacity(0);
+		@include translate(-50%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(-50%, 0px);
+	}
+}
+@keyframes animationmenus-center {
+	from {
+		@include opacity(0);
+		@include translate(-50%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(-50%, 0px);
+	}
+}
+
+// animationmenus-left
+@-webkit-keyframes animationmenus-left {
+	from {
+		@include opacity(0);
+		@include translate(0%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(0px, 0px);
+	}
+}
+@-moz-keyframes animationmenus-left {
+	from {
+		@include opacity(0);
+		@include translate(0%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(-50%, 0px);
+	}
+}
+@-o-keyframes animationmenus-left {
+	from {
+		@include opacity(0);
+		@include translate(-50%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(-50%, 0px);
+	}
+}
+@keyframes animationmenus-left {
+	from {
+		@include opacity(0);
+		@include translate(-50%, 10px);
+	}
+	to {
+		@include opacity(1);
+		@include translate(-50%, 0px);
+	}
+}
+
+// animationpopup
+@-webkit-keyframes animationpopup {
+	from {
+		@include opacity(0);
+	}
+	to {
+		@include opacity(1);
+	}
+}
+@-moz-keyframes animationpopup {
+	from {
+		@include opacity(0);
+	}
+	to {
+		@include opacity(1);
+	}
+}
+@-o-keyframes animationpopup {
+	from {
+		@include opacity(0);
+	}
+	to {
+		@include opacity(1);
+	}
+}
+@keyframes animationpopup {
+	from {
+		@include opacity(0);
+	}
+	to {
+		@include opacity(1);
+	}
+}
+
+
+@-webkit-keyframes heartbeat {
+	0%{
+		@include transform(scale(.75));
+	}
+	20%{
+		@include transform(scale(1));
+	}
+	40%{
+		@include transform(scale(.75));
+	}
+	60%{
+		@include transform(scale(1));
+	}
+	80%{
+		@include transform(scale(.75));
+	}
+	100%{
+		@include transform(scale(.75));
+	}
+}
+@-moz-keyframes heartbeat {
+	0%{
+		@include transform(scale(.75));
+	}
+	20%{
+		@include transform(scale(1));
+	}
+	40%{
+		@include transform(scale(.75));
+	}
+	60%{
+		@include transform(scale(1));
+	}
+	80%{
+		@include transform(scale(.75));
+	}
+	100%{
+		@include transform(scale(.75));
+	}
+}
+@-o-keyframes heartbeat {
+	0%{
+		@include transform(scale(.75));
+	}
+	20%{
+		@include transform(scale(1));
+	}
+	40%{
+		@include transform(scale(.75));
+	}
+	60%{
+		@include transform(scale(1));
+	}
+	80%{
+		@include transform(scale(.75));
+	}
+	100%{
+		@include transform(scale(.75));
+	}
+}
+@keyframes heartbeat{
+	0%{
+		@include transform(scale(.75));
+	}
+	20%{
+		@include transform(scale(1));
+	}
+	40%{
+		@include transform(scale(.75));
+	}
+	60%{
+		@include transform(scale(1));
+	}
+	80%{
+		@include transform(scale(.75));
+	}
+	100%{
+		@include transform(scale(.75));
+	}
+}
+
+// dothotspot
+@-webkit-keyframes dothotspot {
+  0%{
+	@include opacity(1);
+	@include transform(scale(1));
+  }
+  25%{
+	@include opacity(0.75);
+	@include transform(scale(1.5));
+  }
+  50%{
+	@include opacity(0.5);
+	@include transform(scale(2));
+  }
+  75%{
+	@include opacity(0.25);
+	@include transform(scale(2.5));
+  }
+  100%{
+	@include opacity(0);
+	@include transform(scale(3));
+  }
+}
+@-moz-keyframes dothotspot {
+  0%{
+	@include opacity(1);
+	@include transform(scale(1));
+  }
+  25%{
+	@include opacity(0.75);
+	@include transform(scale(1.5));
+  }
+  50%{
+	@include opacity(0.5);
+	@include transform(scale(2));
+  }
+  75%{
+	@include opacity(0.25);
+	@include transform(scale(2.5));
+  }
+  100%{
+	@include opacity(0);
+	@include transform(scale(3));
+  }
+}
+@-o-keyframes dothotspot {
+  0%{
+	@include opacity(1);
+	@include transform(scale(1));
+  }
+  25%{
+	@include opacity(0.75);
+	@include transform(scale(1.5));
+  }
+  50%{
+	@include opacity(0.5);
+	@include transform(scale(2));
+  }
+  75%{
+	@include opacity(0.25);
+	@include transform(scale(2.5));
+  }
+  100%{
+	@include opacity(0);
+	@include transform(scale(3));
+  }
+}
+@keyframes dothotspot{
+  0%{
+	@include opacity(1);
+	@include transform(scale(1));
+  }
+  25%{
+	@include opacity(0.75);
+	@include transform(scale(1.5));
+  }
+  50%{
+	@include opacity(0.5);
+	@include transform(scale(2));
+  }
+  75%{
+	@include opacity(0.25);
+	@include transform(scale(2.5));
+  }
+  100%{
+	@include opacity(0);
+	@include transform(scale(3));
+  }
+}
+
+// loading spBar
+@keyframes spBarsBefore {
+  0% {
+	@include transform(scale(1,1));
+  }
+  25% {
+	@include transform(scale(1,1.25));
+  }
+  50% {
+	@include transform(scale(1,0.75));
+  }
+  75% {
+	@include transform(scale(1,1));
+  }
+  100% {
+	@include transform(scale(1,1));
+  }
+}
+@keyframes spBars {
+  0% {
+	@include transform(scale(1,1));
+  }
+  25% {
+	@include transform(scale(1,1));
+  }
+  50% {
+	@include transform(scale(1,1.25));
+  }
+  75% {
+	@include transform(scale(1,1));
+  }
+  100% {
+	@include transform(scale(1,1));
+  }
+}
+@keyframes spBarsAfter {
+  0% {
+	@include transform(scale(1,1));
+  }
+  25% {
+	@include transform(scale(1,1));
+  }
+  50% {
+	@include transform(scale(1,0.75));
+  }
+  75% {
+	@include transform(scale(1,1.25));
+  }
+  100% {
+	@include transform(scale(1,1));
+  }
+}
+
+@keyframes cssload-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@-o-keyframes cssload-spin {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+
+
+@-ms-keyframes cssload-spin {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+
+@-webkit-keyframes cssload-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+@-moz-keyframes cssload-spin {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+
+// toRightFromLeft
+@-webkit-keyframes toRightFromLeft {
+	49% {
+		@include transform(translate(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-moz-keyframes toRightFromLeft {
+	49% {
+		@include transform(translate(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-o-keyframes toRightFromLeft {
+	49% {
+		@include transform(translate(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@keyframes toRightFromLeft {
+	49% {
+		@include transform(translate(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+
+// toLeftFromRight
+@-webkit-keyframes toLeftFromRight {
+	49% {
+		@include transform(translate(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-moz-keyframes toLeftFromRight {
+	49% {
+		@include transform(translate(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-o-keyframes toLeftFromRight {
+	49% {
+		@include transform(translate(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@keyframes toLeftFromRight {
+	49% {
+		@include transform(translate(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translate(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+
+// toTopFromBottom
+@-webkit-keyframes toTopFromBottom {
+	49% {
+		@include transform(translateY(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-moz-keyframes toTopFromBottom {
+	49% {
+		@include transform(translateY(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-o-keyframes toTopFromBottom {
+	49% {
+		@include transform(translateY(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@keyframes toTopFromBottom {
+	49% {
+		@include transform(translateY(-100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+
+// toBottomFromTop
+@-webkit-keyframes toBottomFromTop {
+	49% {
+		@include transform(translateY(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-moz-keyframes toBottomFromTop {
+	49% {
+		@include transform(translateY(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@-o-keyframes toBottomFromTop {
+	49% {
+		@include transform(translateY(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+@keyframes toBottomFromTop {
+	49% {
+		@include transform(translateY(100%));
+	}
+	50% {
+		@include opacity(0);
+		@include transform(translateY(-100%));
+	}
+	51% {
+		@include opacity(1);
+	}
+}
+
+// effect-spin
+@-webkit-keyframes effect-spin {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(360deg));
+	}
+}
+@-moz-keyframes effect-spin {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(360deg));
+	}
+}
+@-o-keyframes effect-spin {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(360deg));
+	}
+}
+@keyframes effect-spin {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(360deg));
+	}
+}
+
+// effect-phone-ring
+@-webkit-keyframes effect-phone-ring {
+	0% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	10% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	20% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	30% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	40% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	50% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	100% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+}
+@-moz-keyframes effect-phone-ring {
+	0% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	10% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	20% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	30% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	40% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	50% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	100% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+}
+@-o-keyframes effect-phone-ring {
+	0% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	10% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	20% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	30% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	40% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	50% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	100% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+}
+@keyframes effect-phone-ring {
+	0% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	10% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	20% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	30% {
+		@include transform(rotate(-25deg) scale(1) skew(1deg));
+	}
+
+	40% {
+		@include transform(rotate(25deg) scale(1) skew(1deg));
+	}
+
+	50% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+
+	100% {
+		@include transform(rotate(0) scale(1) skew(1deg));
+	}
+}
+
+
+// effect placeHolderShimmer
+@-webkit-keyframes placeHolderShimmer {
+ 0%{
+	background-position: -100% 0;
+  }
+  100%{
+	background-position: 100% 0;
+  }
+}
+@-moz-keyframes placeHolderShimmer {
+ 0%{
+	background-position: -100% 0;
+  }
+  100%{
+	background-position: 100% 0;
+  }
+}
+@-o-keyframes placeHolderShimmer {
+   0%{
+	background-position: -100% 0;
+  }
+  100%{
+	background-position: 100% 0;
+  }
+}
+@keyframes placeHolderShimmer{
+  0%{
+	background-position: -100% 0;
+  }
+  100%{
+	background-position: 100% 0;
+  }
+}
+
+// toTopFromBottom
+@-webkit-keyframes blinker {
+	0% {
+		@include opacity(0);
+	}
+	50% {
+		@include opacity(0.5);
+	}
+	100% {
+		@include opacity(1);
+	}
+}
+@-moz-keyframes blinker {
+	0% {
+		@include opacity(0);
+	}
+	50% {
+		@include opacity(0.5);
+	}
+	100% {
+		@include opacity(1);
+	}
+}
+@-o-keyframes blinker {
+	0% {
+		@include opacity(0);
+	}
+	50% {
+		@include opacity(0.5);
+	}
+	100% {
+		@include opacity(1);
+	}
+}
+@keyframes blinker {
+	0% {
+		@include opacity(0);
+	}
+	50% {
+		@include opacity(0.5);
+	}
+	100% {
+		@include opacity(1);
+	}
+}

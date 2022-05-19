@@ -1,0 +1,128 @@
+@import "theme_variables";
+
+/* google gmap */
+.deo-google-map{
+	position: relative;
+	&.proccessed{
+		.google-map-cover{
+			background: $contact-map-bg-stores;
+		}
+	}
+	&.custom-gmap{
+		margin-top: $grid-gutter-width-base*2;
+		@media (max-width: 991px) {
+			margin-top: $grid-gutter-width-base;
+		}
+	}
+	.google-map-stores,.google-map-content{
+		padding: 0px;
+		@include rtl-float-left();
+	}
+	.google-map-stores{
+		display: none;
+		height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		@media (min-width: 576px){
+			width: 300px;
+			display: block;
+		}
+		// &::-webkit-scrollbar{
+		// 	width: 9px;
+		// 	background: rgba($black,0.3);
+		// }
+		// &::-webkit-scrollbar-thumb{
+		// 	background: rgba($black,0.5);
+		// 	@include border-radius(7px);
+		// }
+	}
+	.google-map-content{
+		width: 100%;
+		@media (min-width: 576px){
+			width: calc(100% - 300px);
+		}
+	}
+	.not-display-list-store .google-map-stores, .not-display-list-store .google-map-content {
+		width: 100%;
+	}
+	.google-map-cover {
+		background: $contact-map-bg-block;
+		@include clearfix();
+	}
+	.google-map-stores-list{
+		box-shadow: -3px 3px 4px rgba(0,0,0,.3);
+	}
+	.deo-item-store {
+		width: 100%;
+		display: table;
+		cursor:pointer;
+		padding: 15px 25px;
+		position: relative;
+		@include transition(all 0.3s ease);
+		& + .deo-item-store{
+			&:after{
+				content: '';
+				top: 0px;
+				left: 25px;
+				right: 25px;
+				position: absolute;
+				border-top: 1px dotted $border-color;
+			}
+		}
+		&:before {
+			content: '\ea94';
+			width: 30px;
+			display: table-cell;
+			vertical-align: top;
+			font-size: 25px;
+			font-family: $font-icon-4;
+			@include rtl-padding-right(10px);
+		}
+		&:hover {
+			background: #f2f2f2;
+		}
+		.name-store{
+			font-weight: 500;
+			.number-store{
+				&:after{
+					content: '.';
+				}
+			}
+		}
+		.icon-map{
+			&:before{
+				content: '\ea94';
+				font-family: $font-icon-4;
+				@include rtl-margin-right(6px);
+			}
+		}
+		.address-store{
+			margin-bottom: 0px;
+		}
+	}
+	.detail-store{
+		min-width: 200px;
+		.name-store{
+			font-weight: 500;
+		}
+		.address-store{
+			&:before{
+				content: '\ea94';
+				font-family: $font-icon-4;
+				@include rtl-margin-right(5px);
+			}
+		}
+		.view-more{
+			margin-top: 15px;
+			text-align: center;
+			a{
+				text-decoration: underline;
+				color: $theme-color-default;
+				@include transition(all 0.3s ease);
+				&:hover{
+					color: $theme-color-button-hover;
+				}
+			}
+		}
+	}
+}

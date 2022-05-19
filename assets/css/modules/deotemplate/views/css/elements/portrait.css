@@ -1,0 +1,193 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* portrait */
+.portrait {
+  margin-bottom: 20px; }
+  .portrait .social-link {
+    font-size: 0px;
+    margin: -3px 0px -3px; }
+    .portrait .social-link li {
+      margin: 3px 10px;
+      display: inline-block;
+      vertical-align: middle; }
+      .portrait .social-link li a {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .portrait .social-link li i {
+        vertical-align: middle; }
+        .portrait .social-link li i:before {
+          font-size: 18px;
+          font-family: "deo-custom-icons"; }
+        .portrait .social-link li i.icon-facebook:before {
+          content: "\e9e7"; }
+        .portrait .social-link li i.icon-twitter:before {
+          content: "\e9e9"; }
+        .portrait .social-link li i.icon-google:before {
+          content: "\ea9b"; }
+        .portrait .social-link li i.icon-pinterest:before {
+          content: "\e9eb"; }
+  .portrait.portrait-style-one {
+    text-align: center;
+    position: relative; }
+    @media (max-width: 991px) {
+      .portrait.portrait-style-one .image_description {
+        position: relative; } }
+    .portrait.portrait-style-one .block-title {
+      z-index: 1;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      padding: 10px 15px;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7); }
+      @media (min-width: 1200px) {
+        .portrait.portrait-style-one .block-title {
+          left: 30px;
+          right: 30px;
+          bottom: 30px; } }
+      @media (max-width: 991px) {
+        .portrait.portrait-style-one .block-title {
+          bottom: 100%;
+          margin-bottom: 15px; } }
+      .portrait.portrait-style-one .block-title .title {
+        letter-spacing: 2px;
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: #ffffff; }
+      .portrait.portrait-style-one .block-title .sub-title {
+        font-size: 13px;
+        font-family: inherit;
+        font-weight: normal;
+        margin-bottom: 0px;
+        color: #cccccc; }
+    .portrait.portrait-style-one .social-link {
+      margin: 15px 0px -3px; }
+    .portrait.portrait-style-one .description {
+      padding: 15px 15px 0px;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media (min-width: 992px) {
+        .portrait.portrait-style-one .description {
+          top: 50%;
+          left: 0px;
+          right: 0px;
+          z-index: 4;
+          padding: 15px;
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+      .portrait.portrait-style-one .description h4 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .portrait.portrait-style-one .description p {
+        line-height: 1.6;
+        font-size: 13px; }
+        .portrait.portrait-style-one .description p:last-child {
+          margin-bottom: 0px; }
+    @media (min-width: 992px) {
+      .portrait.portrait-style-one .image:before {
+        content: '';
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 3;
+        position: absolute;
+        border: 15px solid rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.9);
+        visibility: hidden;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; } }
+    @media (min-width: 992px) {
+      .portrait.portrait-style-one:hover .image:before {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100); }
+      .portrait.portrait-style-one:hover .description {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100); } }
+  .portrait.portrait-style-two {
+    text-align: center; }
+    .portrait.portrait-style-two .right-block {
+      padding: 15px 15px 0px; }
+    .portrait.portrait-style-two h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px; }
+    .portrait.portrait-style-two h4 {
+      color: #8b8b8b;
+      font-size: 13px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      font-family: inherit; }
+      .portrait.portrait-style-two h4:before {
+        content: '('; }
+      .portrait.portrait-style-two h4:after {
+        content: ')'; }
+    .portrait.portrait-style-two p {
+      font-size: 13px;
+      line-height: 1.6; }
+      .portrait.portrait-style-two p:last-child {
+        margin-bottom: 0px; }
+    .portrait.portrait-style-two .social-link {
+      margin: 20px 0px 0px; }
+      .portrait.portrait-style-two .social-link li {
+        margin: 3px 5px; }
+        .portrait.portrait-style-two .social-link li a {
+          width: 35px;
+          height: 35px;
+          display: block;
+          line-height: 35px;
+          text-align: center;
+          background: #FFFFFF;
+          border-radius: 50%;
+          -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+          -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+          -o-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+          -ms-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2); }
+        .portrait.portrait-style-two .social-link li i:before {
+          font-size: 14px; }
+
+/*# sourceMappingURL=portrait.css.map */

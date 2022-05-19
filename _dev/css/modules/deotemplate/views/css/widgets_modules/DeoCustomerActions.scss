@@ -1,0 +1,118 @@
+@import "theme_variables";
+
+.popup-over{
+	&.deo_customer_actions{
+		@media (max-width: 575px) {
+			@include mobile-group-top();
+		}
+		.popup-title{
+			.icon{
+				&:before {
+					display: block;
+					content: "\e9ce";
+					font-family: $font-icon-4;
+				}
+			}
+			.relationship{
+				display: none;
+				text-transform: uppercase;
+				& > span + span{
+					&:before {
+						content: '-';
+					}
+				}
+			}
+		} 
+		.popup-content{
+			padding: 15px;
+			p{
+				font-weight: 600;
+				font-size: 11px;
+				margin-bottom: 7px;
+				text-transform: uppercase;
+			}
+			.link{
+				padding: 5px;
+				margin: 0px 0px 15px;
+				border: 1px solid #eaeaea;
+			}
+			.language-currency-block {
+				& > div{
+					&:last-child{
+						.link{
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
+			.language-selector{
+				font-size: 0px;
+				li{
+					margin: 0px;
+					padding: 0px 8.5px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+					text-align: center;
+					display: inline-block;
+					border-bottom: none; 
+					&.current img{
+						border: 1px solid $theme-color-default;
+						padding: 1px;
+						width: 16px;
+						height: 13px;
+
+					}
+				}
+			} 
+			.currency-selector {
+				li{
+					padding: 0px 5px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+					font-size: 13px;
+					font-weight: normal;
+					display: inline-block;
+					border-bottom: none; 
+					&.current a{
+						color: $theme-color-default;
+					}
+				}
+			}
+		}
+		&.show-all{
+			.popup-content{
+				@media (min-width: 576px){
+					min-width: 300px;
+					@include clearfix();
+					.language-currency-block{
+						width: 42%;
+						@include rtl-float-left();
+					}
+					.customer-block{
+						width: 58%;
+						@include rtl-float-left();
+						@include rtl-padding-right(20px);
+					}
+				}
+				.customer-block{
+					margin-bottom: 0px;
+					@media (max-width: 575px) {
+						margin-bottom: 15px;
+					}
+				}
+			} 
+		}
+		&.show-relationship{
+			.popup-title{
+				@media (min-width: 576px) {
+					.icon{
+						display: none;
+					}
+					.relationship{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

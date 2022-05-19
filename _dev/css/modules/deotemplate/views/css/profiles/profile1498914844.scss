@@ -1,0 +1,82 @@
+@import "theme_variables";
+
+// ************* Home 4 ***************
+
+
+.box-start{
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+.box-space-before{
+	padding-top: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		padding-top: $grid-gutter-width-base*3;
+	}
+}
+
+.box-about-us,.box-fake-number-static,.box-text-shop-now,.box-banner-text,.box-blog,.box-service,.box-newsletter,.box-product,.box-manufacturers{
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+.box-service{
+	border: 1px solid #eaeaea;
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+.box-banner,.box-categories,.box-products{
+	margin-bottom: $grid-gutter-width-base*3;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*2;
+	}
+}
+
+.box-newsletter{
+	.newsletter-box{
+		padding-top: 70px;
+		padding-bottom: 45px;
+	}
+	.center-newsletter{
+		z-index: 2;
+		@media (max-width: 991px) {
+			@include order(1);
+		}
+	}
+	.left-img{
+		z-index: 1;
+		@media (min-width: 992px){
+			@include rtl-margin-right(-5%);
+		}
+		@media (max-width: 991px) {
+			margin-top: -5%;
+			@include order(2);
+
+		}
+	}
+	.right-img{
+		z-index: 1;
+		@media (min-width: 992px){
+			@include rtl-margin-left(-5%);
+		}
+		@media (max-width: 991px) {
+			margin-top: -5%;
+			@include order(3);
+		}
+	}
+}
+
+.layout-boxed-md{
+
+}
+
+.layout-boxed-lg{
+	
+}

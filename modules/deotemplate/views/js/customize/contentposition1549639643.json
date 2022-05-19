@@ -1,0 +1,20 @@
+[
+    {
+        "id": "content_1",
+        "type": "color",
+        "label": "Color page",
+        "selector": "body"
+    },
+    {
+        "id": "content_2",
+        "type": "background-color",
+        "label": "Background color page",
+        "selector": "body"
+    },
+    {
+        "id": "content_3",
+        "type": "color",
+        "label": "Heading color",
+        "selector": "h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6"
+    }
+]

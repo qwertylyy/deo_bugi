@@ -1,0 +1,19 @@
+@import "theme_variables";
+
+// ************* Home Other Widgets ***************
+
+#index{
+	#wrapper{
+		padding-top: $grid-gutter-width-base*2;
+		padding-bottom: $grid-gutter-width-base*2;
+		.DeoRow{
+			margin-bottom: $grid-gutter-width-base*1.8;
+			.deo-show-popup{
+				margin-bottom: 10px;
+				@include rtl-margin-right(10px);
+			}
+		}
+	}
+} 
+
+

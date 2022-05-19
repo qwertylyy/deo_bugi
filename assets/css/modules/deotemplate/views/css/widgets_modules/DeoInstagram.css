@@ -1,0 +1,229 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* DeoInstagram */
+.DeoInstagram.small-spacing .slick-row {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .DeoInstagram.small-spacing .slick-row .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px; }
+.DeoInstagram.small-spacing .slick-arrows {
+  right: 10px; }
+  .rtl .DeoInstagram.small-spacing .slick-arrows {
+    left: 10px;
+    right: auto; }
+.DeoInstagram.extra-small-spacing .slick-row {
+  margin-left: -5px;
+  margin-right: -5px; }
+  .DeoInstagram.extra-small-spacing .slick-row .slick-slide {
+    padding-left: 5px;
+    padding-right: 5px; }
+.DeoInstagram.extra-small-spacing .slick-arrows {
+  right: 5px; }
+  .rtl .DeoInstagram.extra-small-spacing .slick-arrows {
+    left: 5px;
+    right: auto; }
+.DeoInstagram.no-padding-carousel .block-container {
+  margin-bottom: 0px; }
+.DeoInstagram.no-padding-carousel .slick-row {
+  margin-left: 0;
+  margin-right: 0; }
+  .DeoInstagram.no-padding-carousel .slick-row .slick-slide {
+    padding-left: 0;
+    padding-right: 0; }
+.DeoInstagram.no-padding-carousel .slick-arrows {
+  right: 0; }
+  .rtl .DeoInstagram.no-padding-carousel .slick-arrows {
+    left: 0;
+    right: auto; }
+.DeoInstagram.padding-col .slick-row {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .DeoInstagram.padding-col .slick-row .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px; }
+.DeoInstagram .image a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle; }
+  .DeoInstagram .image a:hover:before, .DeoInstagram .image a:hover .content-instagram {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .DeoInstagram .image a:before {
+    content: '';
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 8;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .DeoInstagram .image a .content-instagram {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    z-index: 9;
+    color: #FFFFFF;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    .DeoInstagram .image a .content-instagram i {
+      font-size: 20px; }
+      .DeoInstagram .image a .content-instagram i:before {
+        content: "\ea14";
+        font-family: "deo-custom-icons"; }
+    .DeoInstagram .image a .content-instagram .icon {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    .DeoInstagram .image a .content-instagram .text-instagram {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    .DeoInstagram .image a .content-instagram .like {
+      margin: 5px 8px;
+      display: inline-block; }
+      .DeoInstagram .image a .content-instagram .like:before {
+        content: "\ea74";
+        font-family: "deo-custom-icons";
+        margin-right: 5px; }
+        .rtl .DeoInstagram .image a .content-instagram .like:before {
+          margin-left: 5px;
+          margin-right: inherit; }
+    .DeoInstagram .image a .content-instagram .comment {
+      margin: 5px 8px;
+      display: inline-block; }
+      .DeoInstagram .image a .content-instagram .comment:before {
+        content: "\e9f7";
+        font-family: "deo-custom-icons";
+        margin-right: 5px; }
+        .rtl .DeoInstagram .image a .content-instagram .comment:before {
+          margin-left: 5px;
+          margin-right: inherit; }
+  .DeoInstagram .image a img {
+    max-width: 100%; }
+  @media (min-width: 992px) {
+    .DeoInstagram .image a:hover:before, .DeoInstagram .image a:hover:after {
+      opacity: 1;
+      filter: alpha(opacity=100); } }
+.DeoInstagram .link-instagram {
+  margin: 10px 0 0; }
+  .DeoInstagram .link-instagram a {
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle; }
+    .DeoInstagram .link-instagram a i {
+      margin-right: 5px; }
+      .rtl .DeoInstagram .link-instagram a i {
+        margin-left: 5px;
+        margin-right: inherit; }
+      .DeoInstagram .link-instagram a i:before {
+        content: '\e9c4';
+        font-family: "deo-custom-icons"; }
+    .DeoInstagram .link-instagram a:hover {
+      color: #1bbc9b; }
+.DeoInstagram .block-container {
+  margin-bottom: 10px; }
+  .DeoInstagram .block-container:last-child {
+    margin-bottom: 0px; }
+.DeoInstagram .block_title {
+  text-align: center;
+  margin-bottom: 30px; }
+  @media (min-width: 480px) {
+    .DeoInstagram .block_title {
+      top: 50%;
+      left: 50%;
+      z-index: 9;
+      padding: 25px;
+      max-width: 300px;
+      position: absolute;
+      background: #FFFFFF;
+      margin-bottom: 0px;
+      outline: 5px solid rgba(255, 255, 255, 0.5);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
+  .DeoInstagram .block_title .title_block {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase; }
+    .DeoInstagram .block_title .title_block:after {
+      content: '';
+      width: 35px;
+      height: 2px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      background: #000000;
+      position: absolute; }
+  .DeoInstagram .block_title .sub-title-widget {
+    font-size: 13px;
+    line-height: 1.6; }
+  .DeoInstagram .block_title .link-instagram {
+    margin-top: 20px; }
+    .DeoInstagram .block_title .link-instagram a {
+      color: #FFFFFF;
+      font-size: 10px;
+      padding: 5px 15px;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      background: #1bbc9b;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .DeoInstagram .block_title .link-instagram a:hover {
+        background: #169a7f; }
+
+/*# sourceMappingURL=DeoInstagram.css.map */

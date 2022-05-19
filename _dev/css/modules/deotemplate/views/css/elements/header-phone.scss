@@ -1,0 +1,91 @@
+@import "theme_variables";
+
+
+/* header-phone */
+.header-phone{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
+	.media{
+		display: table;
+	}
+	.left-block{
+		display: table-cell;
+		vertical-align: middle;
+		width: 35px;
+		@media (max-width: 1199px) {
+			width: 30px;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+	.right-block{
+		display: table-cell;
+		vertical-align: middle;
+		@include rtl-padding-left(10px);
+		@media (max-width: 1199px) {
+			@include rtl-padding-left(8px);
+		}
+	}
+	h4{
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: bold;
+		color: $theme-color-default;
+		@media (max-width: 1199px) {
+			font-size: 13px;
+		}
+	}
+	p{
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		@media (max-width: 1199px){
+			font-size: 9px;
+		}
+	}
+	&.small{
+		.left-block{
+			width: 35px;
+		}
+		.right-block{
+			@include rtl-padding-left(8px);
+		}
+		h4{
+			font-size: 15px;
+		}
+		p{
+			font-size: 10px;
+		}
+	}
+	&.header-phone-white{
+		color: $theme-color-white;
+		a:hover{
+			color: $theme-color-white-hover;
+		}
+		&.light{
+			color: $theme-color-white-hover;
+			a:hover{
+				color: $theme-color-white;
+			}
+		}
+	}
+	&.header-phone-one{
+		.phone{
+
+		}
+		a{
+			color: inherit;
+		}
+		.icon-phone{
+			font-style: normal;
+			@include rtl-margin-right(5px);
+			&:before{
+				content: '\ea99';
+				font-family: $font-icon-4;
+			}
+		}
+	}
+}

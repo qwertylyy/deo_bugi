@@ -1,0 +1,128 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+.footer-center {
+  color: #ffffff;
+  background: #141414; }
+
+.box-footer {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  @media (min-width: 992px) {
+    .box-footer > [class*="col-"] {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-lines: multiple;
+      -moz-box-lines: multiple;
+      box-lines: multiple;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; } }
+  .box-footer .left-footer {
+    text-align: center; }
+    @media (min-width: 992px) {
+      .box-footer .left-footer {
+        text-align: left;
+        -webkit-box-pack: start;
+        -moz-box-pack: start;
+        box-pack: start;
+        -webkit-justify-content: flex-start;
+        -moz-justify-content: flex-start;
+        -ms-justify-content: flex-start;
+        -o-justify-content: flex-start;
+        justify-content: flex-start;
+        -ms-flex-pack: start; }
+        .rtl .box-footer .left-footer {
+          text-align: right; } }
+  .box-footer .center-footer {
+    text-align: center; }
+    @media (min-width: 992px) {
+      .box-footer .center-footer {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center; } }
+    @media (max-width: 991px) {
+      .box-footer .center-footer .block-link-inline {
+        padding-top: 10px;
+        padding-bottom: 10px; } }
+  .box-footer .right-footer {
+    text-align: center; }
+    @media (min-width: 992px) {
+      .box-footer .right-footer {
+        text-align: right;
+        -webkit-box-pack: end;
+        -moz-box-pack: end;
+        box-pack: end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        -o-justify-content: flex-end;
+        justify-content: flex-end;
+        -ms-flex-pack: end; }
+        .rtl .box-footer .right-footer {
+          text-align: left; } }
+  .box-footer .copyright {
+    padding-top: 15px;
+    padding-bottom: 0px; }
+    @media (min-width: 992px) {
+      .box-footer .copyright {
+        padding-top: 10px; } }
+  .box-footer .block-social {
+    padding: 15px 0px; }
+  .box-footer .logo {
+    padding: 15px 0px; }
+
+/*# sourceMappingURL=footerposition1491402918.css.map */

@@ -1,0 +1,42 @@
+@import "theme_variables";
+
+
+/* DeoAlert */
+.DeoAlert{
+	@include rtl-text-align-left();
+	margin-top: 15px;
+	@include rtl-padding-left(50px);
+	position: relative;
+	&:before{
+		font-family: $font-icon-4;
+		font-size: 20px;
+		vertical-align: -2px;
+		position: absolute;
+		top: 11px;
+		@include rtl-float-left();
+		@include rtl-left(20px);
+	}
+	&.alert-success{
+		&:before{
+			content: "\ea63";    
+		}
+	}
+	&.alert-warning{
+		text-shadow: 1px 1px rgba($black, 0.1);
+		&:before {
+			content: "\ea62";
+		}
+	}
+	&.alert-info {
+		text-shadow: 1px 1px rgba($black, 0.1);
+		&:before {
+			content: "\ea5f";
+		}
+	}
+	&.alert-danger {
+		text-shadow: 1px 1px rgba($black, 0.1);
+		&:before{
+			content: "\ea62";
+		}
+	}
+}

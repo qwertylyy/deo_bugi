@@ -1,0 +1,143 @@
+@import "theme_variables";
+
+
+/* process */
+.process{
+	&.process-style-one{
+		.block_content{
+			margin: -10px -15px;
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@media (min-width: 576px) {
+				margin: -15px;
+			}
+			@media (min-width: 1200px) {
+				margin: -25px -15px;
+			}
+			@media (min-width: 1500px) {
+				margin: -30px -15px;
+			}
+		}
+		.item{
+			padding: 10px 15px;
+			@media (min-width: 576px) {
+				width: 50%;
+				padding: 15px;
+			}
+			@media (min-width: 1200px) {
+				padding: 25px 15px;
+			}
+			@media (min-width: 1500px) {
+				padding: 30px 15px;
+			}
+			h3{
+				font-size: 18px;
+				font-weight: 500;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				b{
+					color: $theme-color-default;
+				}
+			}
+			p{
+				font-size: 13px;
+				line-height: 1.8;
+				margin-bottom: 0px;
+				font-weight: normal;
+			}
+		}
+	}
+	&.process-style-two{
+		.item{
+			overflow: hidden;
+			position: relative;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			@include rtl-padding-left(60px);
+			@media (min-width: 1200px) {
+				padding-top: 20px;
+				padding-bottom: 20px; 
+			}
+			@media (min-width: 1500px) {
+				padding-top: 25px;
+				padding-bottom: 25px; 
+			}
+			@media (max-width: 1199px) and (min-width: 768px){
+				padding-top: 10px;
+				padding-bottom: 10px
+			}
+			h3{
+				font-weight: 500;
+				margin-bottom: 5px;
+				b{
+					z-index: 1;
+					top: 15px;
+					width: 45px;
+					height: 45px;
+					font-size: 16px;
+					line-height: 41px;
+					position: absolute;
+					text-align: center;
+					font-weight: 500;
+					display: inline-block;
+					border: 2px solid #dddddd;
+					@include rtl-left(0px);
+					@include border-radius(50%);
+					@media (min-width: 1200px) {
+						top: 20px;
+					}
+					@media (min-width: 1500px) {
+						top: 25px;
+					}
+					@media (max-width: 1199px) and (min-width: 768px){
+						top: 10px;
+					}
+					&:before,&:after{
+						content: '';
+						left: 50%;
+						width: 1px;
+						z-index: -2;
+						height: 9999px;
+						position: absolute;
+						background: #dddddd;
+						@include transform(translateX(-50%));
+					}
+					&:before{
+						bottom: calc(100% + 8px);
+					}
+					&:after {
+						top: calc(100% + 8px);
+					}
+				}
+			}
+			p{
+				font-size: 13px;
+				line-height: 1.6;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+			&:first-of-type{
+				padding-top: 0px;
+				h3{
+					b{
+						top: 0px;
+						&:before{
+							display: none;
+						}
+					}
+				}
+			}
+			&:last-of-type{
+				padding-bottom: 0px;
+				h3{
+					b{
+						&:after{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

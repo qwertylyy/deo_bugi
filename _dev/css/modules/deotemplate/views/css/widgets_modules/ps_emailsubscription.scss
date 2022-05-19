@@ -1,0 +1,649 @@
+@import "theme_variables";
+
+
+// block_newsletter 
+$top-envelope: #fafafa; 
+$bottom-envelope: #ffffff;
+$content-envelope: #ffffff;
+$blue-envelope: #1e90ff;
+$red-envelope: #e74c3c;
+// block_newsletter
+.block_newsletter {
+	// width: 100%;
+	.popup-title,.close-popup{
+		display: none;
+	}
+	.box-title{
+		.description{
+			display: none;
+		}
+	}
+	.description{
+		line-height: 1.6;
+		margin-bottom: 15px;
+		.large-size &{
+			@media (min-width: 992px){
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.block_content{
+		[class*="col-"]{
+			min-height: inherit;
+		}
+	}
+	form {
+		.form-group{
+			width: 100%;
+			display: table;
+			margin-bottom: 0px;
+			position: relative;
+		}
+		.input-wrapper {
+			overflow: hidden;
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		input[type=email] {
+			width: 100%;
+			border: none;
+			height: 40px;
+			background: $white;
+			padding: 6px 12px;
+			border: 1px solid $black;
+			@include rtl-border-width(1px,0px,1px,1px);
+			@include placeholder {
+				color: inherit;
+				text-indent: 0px;
+				@include opacity(0.8);
+			}
+			.large-size &{
+				@media (min-width: 992px){
+					height: 50px;
+				}
+			}
+			&:focus {
+				outline: 0;
+			}
+		}
+		.btn{
+			height: 40px;
+			color: $white;
+			border: none;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			background: $black;
+			text-transform: uppercase;
+			@include border-radius(0);
+			@include transition(all 0.5s ease);
+			.large-size &{
+				@media (min-width: 992px){
+					height: 50px;
+				}
+			}
+			span{
+				display: none;
+			}
+			i{
+				display: block;
+				font-style: normal;
+				&:before{
+					content: "\ea4c";
+					font-family: $font-icon-4;
+					display: block;
+				}
+			}
+			&:hover,&:active,&:focus{
+				outline: 0;
+				background: $theme-color-default;
+			}
+		}
+	}
+	#wrapper &{
+		@include homepage-newsletter();
+	}
+	&.large-size{
+		@media (min-width: 992px){
+			form {
+				input[type=email] {
+					height: 50px;
+				}
+				.btn{
+					width: 50px;
+					height: 50px;
+					padding: 0px;
+					font-size: 16px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+	&.newsletter-inline{
+	 @include newsletter-inline();
+	}
+	&.newsletter-hidden-description{
+	 @include newsletter-hidden-description();
+	}
+	&.newsletter-inline-hidden-subtitle{
+	 @include newsletter-inline-hidden-subtitle();
+	}
+	&.newsletter-hidden-title{
+		@include newsletter-hidden-title();
+	}
+	&.homepage-newsletter{
+		@include homepage-newsletter();
+	}
+	&.center-newsletter{
+		@include center-newsletter();
+	}
+	&.newsletter-hidden-title-desktop{
+		@media(min-width: 768px){
+			@include newsletter-hidden-title();
+		}
+	}
+	&.newsletter-inline-desktop{
+		@media(min-width: 768px){
+			@include newsletter-inline();
+			.popup-content-newsletter{
+				@include justify-content(space-between);
+				.block_content{
+					width: 50%;
+				}
+				.box-title{
+					max-width: 480px;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+	&.newsletter-center{
+		text-align: center;
+		max-width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		.description{
+			max-width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&.newsletter-fullwidth{
+			max-width: inherit;
+		}
+	}
+	&.newsletter-fixed-width{
+		.form-group{
+			max-width: 350px;
+		}
+	}
+	&.newsletter-box{
+		padding: 95px 40px;
+		background: $content-envelope;
+		position: relative;
+		@include box-shadow(0px 0px 1px rgba($black, 0.3));
+		@media (max-width: 575px) {
+		 padding-left: 30px;
+		 padding-right: 30px; 
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			z-index: 4;
+			height: 20%;
+			background: repeating-linear-gradient(-45deg, $top-envelope, $top-envelope 10px, $red-envelope 10px, $red-envelope 20px, $top-envelope 20px, $top-envelope 30px, $blue-envelope 30px, $blue-envelope 40px) 0 0/100% 5px no-repeat, $top-envelope;
+			@include backface-visibility(hidden);
+			@include clip-path(polygon(5% 55%, 50% 100%, 95% 55%, 100% 0, 0 0));
+		}
+		.popup-title-newsletter {
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: 3;
+			position: absolute;
+			background: repeating-linear-gradient(-45deg, $content-envelope, $content-envelope 10px, $red-envelope 10px, $red-envelope 20px, $content-envelope 20px, $content-envelope 30px, $blue-envelope 30px, $blue-envelope 40px) 0 100%/100% 5px no-repeat, 
+									repeating-linear-gradient(-45deg, $content-envelope, $content-envelope 10px, $red-envelope 10px, $red-envelope 20px, $content-envelope 20px, $content-envelope 30px, $blue-envelope 30px, $blue-envelope 40px) 0 100%/5px 100% no-repeat, 
+									repeating-linear-gradient(-45deg, $content-envelope, $content-envelope 10px, $red-envelope 10px, $red-envelope 20px, $content-envelope 20px, $bottom-envelope 30px, $blue-envelope 30px, $blue-envelope 40px) 100% 100%/5px 100% no-repeat, $content-envelope;
+			@include clip-path(polygon(80% 40%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 40%));
+			&:after {
+				content: '';
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				position: absolute;
+				background: repeating-linear-gradient(-45deg, $bottom-envelope, $bottom-envelope 10px, $red-envelope 10px, $red-envelope 20px, $bottom-envelope 20px, $bottom-envelope 30px, $blue-envelope 30px, $blue-envelope 40px) 0 100%/100% 5px no-repeat, $bottom-envelope;
+				@include clip-path(polygon(70% 10%, 100% 100%, 0 100%, 30% 10%));
+			}
+		}
+		.popup-content-newsletter{
+			position: relative;
+			z-index: 5;
+		}
+	}
+}
+
+.block_newsletter{
+	// newsletter-style-one
+	&.newsletter-style-one{
+		form {
+			input[type=email] {
+				height: 40px;
+				background: transparent;
+				border: 1px solid #e1e1e1;
+				@include rtl-padding(6px,40px,6px,12px);
+			}
+			.btn{
+				width: 40px;
+				height: 38px;
+				top: 1px;
+				bottom: 1px;
+				border: none;
+				padding: 0px;
+				color: $body-color;
+				line-height: 38px;
+				position: absolute;
+				background: transparent;
+				@include rtl-right(0);
+				&:hover,&:active,&:focus{
+					color: $theme-color-default;
+					background: transparent;
+				}
+			}
+		}
+		&.large-size{
+			@media (min-width: 992px){
+				form {
+					input[type=email] {
+						height: 50px;
+						@include rtl-padding(6px,50px,6px,15px);
+					}
+					.btn{
+						width: 50px;
+						height: 48px;
+						line-height: 48px;
+					}
+				}
+			}
+		}
+		&.newsletter-white{
+			form {
+				input[type=email] {
+					color: $theme-color-background-black;
+					border-color: $theme-color-background-black;
+				}
+				.btn{
+					color: $theme-color-background-black;
+					&:hover{
+						color: $theme-color-background-black-hover;
+					}
+				}
+			}
+		}
+	}
+	// newsletter-style-two
+	&.newsletter-style-two{
+		form {
+			input[type=email] {
+				height: 40px;
+				background: transparent;
+				border: 1px solid #e1e1e1;
+				@include rtl-padding(6px,12px,6px,18px);
+				@include rtl-border-width(1px,0px,1px,1px);
+				@include rtl-border-radius(9999px,0px,0px,9999px);
+			}
+			.btn{
+				width: auto;
+				height: 40px;
+				border: none;
+				font-size: 13px;
+				padding: 6px 15px;
+				line-height: normal;
+				@include rtl-border-radius(0px,9999px,9999px,0px);
+				i{
+					display: none;
+				}
+				span{
+					display: block;
+				}
+			}
+		}
+		&.large-size{
+			@media (min-width: 992px){
+				form {
+					input[type=email] {
+						height: 50px;
+						@include rtl-padding(6px,12px,6px,20px);
+					}
+					.btn{
+						height: 50px;
+						padding: 10px 20px;
+					}
+				}
+			}
+		}
+		&.newsletter-white{
+			form {
+				input[type=email] {
+					color: $theme-color-background-black;
+					border-color: $theme-color-background-black;
+				}
+				.btn{
+					color: $theme-color-background-black-hover;
+					background: $theme-color-background-black;
+					&:hover{
+						color: $white;
+						background: $theme-color-default;
+					}
+				}
+			}
+		}
+	}
+	// newsletter-style-three
+	&.newsletter-style-three{
+		.form-group{
+			padding: 3px;
+			background: $white;
+			border: 1px solid #e1e1e1;
+			@include border-radius(3px);
+			.input-wrapper{
+				position: relative;
+				&:before{
+					content: "\ea1f";
+					position: absolute;
+					top: 3px;
+					bottom: 3px;
+					width: 35px;
+					height: 35px;
+					margin: auto;
+					font-size: 20px;
+					line-height: 35px;
+					text-align: center;
+					font-family: $font-icon-4;
+					@include rtl-left(0px);
+				}
+			}
+		}
+		form {
+			input[type=email] {
+				height: 35px;
+				border: none;
+				background: transparent;
+				@include rtl-padding(6px,12px,6px,35px);
+			}
+			.btn{
+				width: auto;
+				height: 35px;
+				border: none;
+				font-size: 13px;
+				padding: 6px 15px;
+				line-height: normal;
+				i{
+					display: none;
+				}
+				span{
+					display: block;
+				}
+			}
+		}
+		&.large-size{
+			@media (min-width: 992px){
+				.form-group{
+					.input-wrapper{
+						&:before{
+							width: 45px;
+							height: 45px;
+							line-height: 45px;
+						}
+					}
+				}
+				form {
+					input[type=email] {
+						height: 45px;
+						@include rtl-padding(6px,12px,6px,45px);
+					}
+					.btn{
+						height: 45px;
+						padding: 10px 20px;
+					}
+				}
+			}
+		}
+		&.newsletter-white{
+			.form-group{
+				background: $theme-color-background-black-hover;
+			}
+			form {
+				input[type=email] {
+					color: $theme-color-background-black;
+				}
+				.btn{
+					color: $theme-color-background-black-hover;
+					background: $theme-color-background-black;
+					&:hover{
+						color: $white;
+						background: $theme-color-default;
+					}
+				}
+			}
+		}
+	}
+	// newsletter-style-four
+	&.newsletter-style-four{
+		form {
+			input[type=email] {
+				height: 40px;
+				border: 2px solid #e1e1e1;
+				@include border-radius(9999px);
+				@include rtl-padding(6px,50px,6px,18px);
+			}
+			.btn{
+				width: 50px;
+				height: 36px;
+				top: 2px;
+				bottom: 2px;
+				border: none;
+				padding: 0px;
+				color: $body-color;
+				line-height: 36px;
+				position: absolute;
+				background: transparent;
+				@include rtl-right(2px);
+				@include rtl-border-radius(0px,9999px,9999px,0px);
+				i{
+					&:before{
+						content: "\ea4d";
+					}
+				}
+				&:hover,&:active,&:focus{
+					background: transparent;
+					color: $theme-color-default;
+				}
+			}
+		}
+		&.large-size{
+			@media (min-width: 992px){
+				form {
+					input[type=email] {
+						height: 50px;
+						@include rtl-padding(6px,60px,6px,20px);
+					}
+					.btn{
+						width: 60px;
+						height: 46px;
+						line-height: 46px;
+					}
+				}
+			}
+		}
+		&.newsletter-white{
+			form {
+				input[type=email] {
+					background: $theme-color-background-black-hover;
+					color: $theme-color-background-black;
+				}
+				.btn{
+					color: $theme-color-background-black;
+					&:hover{
+						color: $theme-color-default;
+					}
+				}
+			}
+		}
+	}
+	// newsletter-style-five
+	&.newsletter-style-five{
+		form {
+			input[type=email] {
+				height: 40px;
+				background: transparent;
+				border: 1px solid $black;
+				@include rtl-border-width(1px,0px,1px,1px);
+				@include rtl-padding(6px,12px,6px,12px);
+			}
+			.btn{
+				width: auto;
+				height: 40px;
+				border: none;
+				color: $black;
+				font-size: 13px;
+				font-weight: 600;
+				padding: 6px 15px;
+				line-height: normal;
+				background: transparent;
+				border: 1px solid $black;
+				i{
+					display: none;
+				}
+				span{
+					display: block;
+				}
+				&:hover,&:active,&:focus{
+					background: transparent;
+					color: $theme-color-default;
+				}
+			}
+		}
+		&.large-size{
+			@media (min-width: 992px){
+				form {
+					input[type=email] {
+						height: 50px;
+						@include rtl-padding(6px,15px,6px,15px);
+					}
+					.btn{
+						height: 50px;
+						padding: 10px 20px;
+					}
+				}
+			}
+		}
+		&.newsletter-white{
+			form {
+				input[type=email] {
+					background: transparent;
+					color: $theme-color-background-black;
+					border-color: $theme-color-background-black;
+				}
+				.btn{
+					color: $theme-color-background-black;
+					border-color: $theme-color-background-black;
+					&:hover{
+						color: $theme-color-background-black-hover;
+					}
+				}
+			}
+		}
+	}
+	// newsletter-style-six
+	&.newsletter-style-six{
+		.form-group{
+			border-bottom: 2px solid #e1e1e1;
+			.input-wrapper{
+				position: relative;
+				&:before{
+					content: "\ea1f";
+					position: absolute;
+					top: 3px;
+					bottom: 3px;
+					width: 30px;
+					height: 35px;
+					margin: auto;
+					font-size: 20px;
+					line-height: 35px;
+					font-family: $font-icon-4;
+					@include rtl-left(0px);
+				}
+			}
+		}
+		form {
+			input[type=email] {
+				height: 35px;
+				border: none;
+				background: transparent;
+				@include rtl-padding(6px,12px,6px,30px);
+			}
+			.btn{
+				width: auto;
+				height: 35px;
+				border: none;
+				line-height: normal;
+				color: $body-color;
+				padding: 6px 0px;
+				font-size: 13px;
+				background: transparent;
+				i{
+					display: none;
+				}
+				span{
+					display: block;
+				}
+				&:hover,&:active,&:focus{
+					background: transparent;
+					color: $theme-color-default;
+				}
+			}
+		}
+		&.large-size{
+			@media (min-width: 992px){
+				.form-group{
+					.input-wrapper{
+						&:before{
+							height: 40px;
+							line-height: 40px;
+						}
+					}
+				}
+				form {
+					input[type=email] {
+						height: 40px;
+						@include rtl-padding(6px,12px,6px,30px);
+					}
+					.btn{
+						height: 40px;
+					}
+				}
+			}
+		}
+		&.newsletter-white{
+			.form-group{
+				border-bottom-color: $theme-color-background-black;
+			}
+			form {
+				input[type=email] {
+					color: $theme-color-background-black;
+				}
+				.btn{
+					color: $theme-color-background-black;
+					&:hover{
+						color: $theme-color-background-black-hover;
+					}
+				}
+			}
+		}
+	}
+}

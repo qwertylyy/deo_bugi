@@ -1,0 +1,38 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+#index #wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #index #wrapper .DeoRow {
+    margin-bottom: 36px; }
+    #index #wrapper .DeoRow .deo-show-popup {
+      margin-bottom: 10px;
+      margin-right: 10px; }
+      .rtl #index #wrapper .DeoRow .deo-show-popup {
+        margin-left: 10px;
+        margin-right: inherit; }
+
+/*# sourceMappingURL=profile1581116125.css.map */

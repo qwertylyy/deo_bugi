@@ -1,0 +1,55 @@
+@import "theme_variables";
+
+.popup-over{
+	&.language-selector-wrapper{
+		@media (max-width: 575px) {
+			@include mobile-language();
+		}
+		.popup-title{
+			.flag{
+				font-size: 0px;
+				@include rtl-margin-right(5px);
+				img{
+					width: auto;
+					height: 13px;
+				}
+			}
+			.icon{
+				&:before{
+					display: block;
+					content: "\e9b2";
+					font-family: $font-icon-4;
+				}
+			}
+			.iso-code{
+				display: none;
+				text-transform: uppercase;
+			}
+		}
+		.language-selector{
+			img{
+				@include rtl-margin(0,8px,0px,0);
+			}
+			li{
+				.iso-code{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.language-selector-wrapper{
+	&.mini-language{
+		@include mini-language();
+	}
+	&.language-hidden-flag{
+		@include language-hidden-flag();
+	}
+	&.language-show-flag{
+		@include language-show-flag();
+	}
+	&.language-iso-code{
+		@include language-iso-code();
+	}
+}

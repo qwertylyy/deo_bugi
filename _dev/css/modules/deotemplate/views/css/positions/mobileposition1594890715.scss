@@ -1,0 +1,62 @@
+@import "theme_variables";
+
+// ************* Mobile 4 ***************
+
+.deo-header-mobile{
+    background: $white;
+}
+
+.box-header-mobile{
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include align-items(center);
+	@media (max-width: 767px){
+		@include col-row(10px);
+	}
+	@media (max-width: 575px){
+		@include col-row(5px);
+	}
+	&:after {
+		display: none;
+	}
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+	}
+	.left-header-mobile {
+		@include justify-content(flex-start);
+	}
+	.center-header-mobile {
+		@include justify-content(center);
+	}
+	.right-header-mobile {
+		@include justify-content(flex-end);
+	}
+	.logo{
+		
+	}
+}
+
+.box-nav-mobile{
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include align-items(center);
+	@media (max-width: 767px){
+		@include col-row(10px);
+	}
+	@media (max-width: 575px){
+		@include col-row(5px);
+	}
+	&:after {
+		display: none;
+	}
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(space-around);
+	}
+}
+
+

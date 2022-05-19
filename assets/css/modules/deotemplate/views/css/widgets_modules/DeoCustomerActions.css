@@ -1,0 +1,111 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+@media (max-width: 575px) {
+  .popup-over.deo_customer_actions .popup-title .icon {
+    display: inline-block;
+    vertical-align: middle; }
+  .popup-over.deo_customer_actions .popup-title .name-simple {
+    display: none; } }
+.popup-over.deo_customer_actions .popup-title .icon:before {
+  display: block;
+  content: "\e9ce";
+  font-family: "deo-custom-icons"; }
+.popup-over.deo_customer_actions .popup-title .relationship {
+  display: none;
+  text-transform: uppercase; }
+  .popup-over.deo_customer_actions .popup-title .relationship > span + span:before {
+    content: '-'; }
+.popup-over.deo_customer_actions .popup-content {
+  padding: 15px; }
+  .popup-over.deo_customer_actions .popup-content p {
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 7px;
+    text-transform: uppercase; }
+  .popup-over.deo_customer_actions .popup-content .link {
+    padding: 5px;
+    margin: 0px 0px 15px;
+    border: 1px solid #eaeaea; }
+  .popup-over.deo_customer_actions .popup-content .language-currency-block > div:last-child .link {
+    margin-bottom: 0px; }
+  .popup-over.deo_customer_actions .popup-content .language-selector {
+    font-size: 0px; }
+    .popup-over.deo_customer_actions .popup-content .language-selector li {
+      margin: 0px;
+      padding: 0px 8.5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+      display: inline-block;
+      border-bottom: none; }
+      .popup-over.deo_customer_actions .popup-content .language-selector li.current img {
+        border: 1px solid #1bbc9b;
+        padding: 1px;
+        width: 16px;
+        height: 13px; }
+  .popup-over.deo_customer_actions .popup-content .currency-selector li {
+    padding: 0px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: none; }
+    .popup-over.deo_customer_actions .popup-content .currency-selector li.current a {
+      color: #1bbc9b; }
+@media (min-width: 576px) {
+  .popup-over.deo_customer_actions.show-all .popup-content {
+    min-width: 300px; }
+    .popup-over.deo_customer_actions.show-all .popup-content::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .popup-over.deo_customer_actions.show-all .popup-content .language-currency-block {
+      width: 42%;
+      float: left; }
+      .rtl .popup-over.deo_customer_actions.show-all .popup-content .language-currency-block {
+        float: right; }
+    .popup-over.deo_customer_actions.show-all .popup-content .customer-block {
+      width: 58%;
+      float: left;
+      padding-right: 20px; }
+      .rtl .popup-over.deo_customer_actions.show-all .popup-content .customer-block {
+        float: right; }
+      .rtl .popup-over.deo_customer_actions.show-all .popup-content .customer-block {
+        padding-left: 20px;
+        padding-right: inherit; } }
+.popup-over.deo_customer_actions.show-all .popup-content .customer-block {
+  margin-bottom: 0px; }
+  @media (max-width: 575px) {
+    .popup-over.deo_customer_actions.show-all .popup-content .customer-block {
+      margin-bottom: 15px; } }
+@media (min-width: 576px) {
+  .popup-over.deo_customer_actions.show-relationship .popup-title .icon {
+    display: none; }
+  .popup-over.deo_customer_actions.show-relationship .popup-title .relationship {
+    display: block; } }
+
+/*# sourceMappingURL=DeoCustomerActions.css.map */

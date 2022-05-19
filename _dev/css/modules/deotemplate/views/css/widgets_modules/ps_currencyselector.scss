@@ -1,0 +1,30 @@
+@import "theme_variables";
+
+.popup-over{
+	&.currency-selector{
+		@media (max-width: 575px) {
+			@include mobile-currency();
+		}
+		.popup-title{
+			img{
+				margin-top: -2px;
+			}
+			.icon{
+				&:before{
+					display: block;
+					content: "\e9e1";
+					font-family: $font-icon-4;
+				}
+			}
+		} 
+	}
+}
+
+.currency-selector{
+	&.mini-currency{
+		@include mini-currency();
+	}
+	&.normally-currency{
+		@include normally-currency();
+	}
+}

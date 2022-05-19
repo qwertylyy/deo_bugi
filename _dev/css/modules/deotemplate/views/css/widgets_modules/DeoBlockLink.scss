@@ -1,0 +1,231 @@
+@import "theme_variables";
+
+
+/* DeoBlockLink */
+.DeoBlockLink{
+	ul{
+		li{
+			a{
+				@include transition(all 0.3s ease);
+				.footer-black &{
+					color: $theme-color-background-black;
+				}
+				.footer-black.light &{
+					color: $theme-color-background-black-hover;
+				}
+				&:hover{
+					.footer-black &{
+						color: $theme-color-background-black-hover;
+					}
+				}
+				&:hover{
+					.footer-black.light &{
+						color: $theme-color-background-black;
+					}
+				}
+			}
+		}
+	}
+	&.link-white{
+		ul{
+			li{
+				a{
+					color: $theme-color-background-black;
+					&:hover{
+						color: $theme-color-background-black-hover;
+					}
+				}
+			}
+		}
+		&.light{
+			ul{
+				li{
+					a{
+						color: $theme-color-background-black-hover;
+						&:hover{
+							color: $theme-color-background-black;
+						}
+					}
+				}
+			}
+		}
+	}
+	&:hover{
+		.footer-black &{
+			color: $theme-color-background-black-hover;
+		}
+	}
+	&:hover{
+		.footer-black.light &{
+			color: $theme-color-background-black;
+		}
+	}
+	&:not(.block-link-inline){
+		ul{
+			li{
+				@media (min-width: 768px) {
+					overflow: hidden;
+					a{
+						position: relative;
+						&:before{
+							content: "\ea70";
+							display: inline-block;
+							font-family: $font-icon-4;
+							visibility: hidden;
+							top: 50%;
+							position: absolute;
+							@include rtl-left(0px);
+							@include opacity(0);
+							@include transform(translate(-100%,-50%));
+							@include transition(transform 0.3s ease, opacity 0.3s ease);
+							.rtl &{
+								content: "\ea6c";
+								@include transform(translate(100%,-50%));
+							}
+						}
+						&:hover{
+							@include rtl-padding-left(20px);
+							&:before{
+								visibility: visible;
+								@include opacity(1);
+								@include transform(translate(0%,-50%));
+								.rtl &{
+									@include transform(translate(0%,-50%));
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.block-link-inline{
+	margin-top: -5px;
+	margin-bottom: -5px;
+	.box-title{
+		display: none;
+	}
+	ul{
+		margin: 0 -10px;
+		li{
+			padding: 0 10px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			a{
+				font-style: italic;
+			}
+		}
+	}
+	&.link-large-spacing{
+		ul{
+			margin: 0 -15px;
+			li{
+				padding: 0 15px;
+			}
+		}
+	}
+	&.border-spacing-style{
+		ul{
+			li{
+				position: relative;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					width: 1px;
+					height: 10px;
+					background: #d6d6d6;
+					@include rtl-right(-1px);
+					@include transform(translateY(-50%));
+					.footer-black &{
+						background: $theme-color-background-black;
+					}
+				}
+				&:last-child{
+					&:after {
+						content: '';
+						display: none;
+					}
+				}
+				a{
+					font-style: normal;
+					font-weight: normal;
+					font-family: $font-family-heading;
+				}
+			}
+		} 
+	}
+	&.bold-style{
+		ul{
+			li{
+				a{
+					font-weight: 600;
+					font-family: $font-family-heading;
+				}
+				&:after{
+					background: #222222;
+				}
+			}
+		} 
+	}
+	&.normal-style{
+		ul{
+			li{
+				a{
+					font-style: inherit;
+					font-family: inherit;
+					font-weight: inherit;
+				}
+			}
+		} 
+	}
+	&.font-style-normal{
+		ul{
+			li{
+				a{
+					font-style: normal;
+				}
+			}
+		} 
+	}
+	&.big-size{
+		ul{
+			li{
+				a{
+					font-size: 16px;
+				}
+			}
+		} 
+	}
+	&.block-toggler{
+		ul{
+			li{
+				& + li{
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}
+.block-link-two-column{
+	@media (min-width: 480px){
+		&.DeoBlockLink ul{
+			@include clearfix();
+			li{
+				width: 50%;
+				@include rtl-float-left();
+				&:nth-child(2){
+					margin-top: 0px;
+				}
+				&:nth-child(2n + 1){
+					clear: both;
+				}
+			}
+		}
+	} 
+}

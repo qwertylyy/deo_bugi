@@ -1,0 +1,105 @@
+@import "theme_variables";
+
+// Footer Global
+.footer-container {
+	overflow: hidden;
+	.links {
+		.collapse {
+			display: inherit;
+		}
+	}
+}
+.text-footer{
+	margin-bottom: 20px;
+	.block_content{
+		line-height: 1.6;
+	}
+	p:last-child{
+		margin-bottom: 0px;
+	}
+}
+.hidden-title-footer{
+	.box-title{
+		@media (min-width: 768px){
+			display: none;
+		}
+		@media (max-width: 767px) and (min-width: 576px){
+			.accordion_mobile_screen &{
+				display: none;
+			}
+		}
+	}
+	&.accordion_mobile_screen{
+		@media (max-width: 767px) and (min-width: 576px){
+			.box-title{
+				display: none;
+			}
+		}
+	}
+	&:not(.accordion_mobile_screen):not(.accordion_small_screen){
+		.box-title{
+			display: none;
+		}
+	}
+}
+
+.footer-padding{
+	.block-toggler, .footer-container .links {
+		&.accordion_small_screen{
+			.collapse,.collapsing{
+				@media (min-width: 768px){
+					@include rtl-padding-left(20px);
+				}
+			}
+		}
+		&.accordion_mobile_screen{
+			.collapse,.collapsing{
+				@media (min-width: 576px){
+					@include rtl-padding-left(20px);
+				}
+			}
+		}
+	}
+}
+
+.copyright{
+	padding: 10px 0;
+	span{
+		color: $theme-color-default;
+	}
+	b,strong{
+		font-weight: 600;
+	}
+}
+// Module Footer
+
+
+
+
+
+
+// Block Contact Info
+.block-contact{
+	ul{
+		li{
+			line-height: 1.625rem;
+			position: relative;
+			@include rtl-padding-left(30px);
+			i{
+				font-size: 16px;
+				width: 35px;
+				position: absolute;
+				top: 3px;
+				@include rtl-left(0);
+			}
+		}
+	}
+}
+
+
+
+
+// Block My Account Infos
+#block_myaccount_infos{
+	
+}

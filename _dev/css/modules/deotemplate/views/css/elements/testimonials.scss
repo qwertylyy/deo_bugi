@@ -1,0 +1,451 @@
+@import "theme_variables";
+
+
+/* testimonials */
+.testimonials{
+	.block-carousel-container{
+		position: relative;
+		// font-family: $font-family-senary;
+	}
+	.left-testimonials{
+
+	}
+	.right-testimonials{
+
+	}
+	.image{
+		img{
+			// display: block;
+		}
+	}
+	.descript{
+		font-size: 13px;
+		line-height: 1.8;
+		position: relative;
+		font-style: italic;
+	}
+	.title{
+		color: $black;
+		font-size: 13px;
+		font-weight: 400;
+		margin-bottom: 0px;
+		font-family: inherit;
+		text-transform: uppercase;
+		a{
+			color: inherit;
+			&:hover{
+				color: $theme-color-default;
+			}
+		}
+	}
+	.sub-title{
+		display: block;
+		font-weight: 300;
+		margin-top: 5px;
+		margin-bottom: 0px;
+		text-transform: none;
+		font-size: $base-font-size - 1;
+	}
+	&.center-mode{
+		.slick-loaded{
+			.slick-slide{
+				@include transform(scale(0.8,0.8));
+				@include transition(all 0.4s ease);
+				&.slick-center{
+					@include transform(scale(1,1));
+				}
+			}
+		}
+	}
+	&.testimonials-quote{
+		.descript{
+			&:before{
+				color: #929292;
+				content: "\ea7c";
+				display: inline-block;
+				font-family: $font-icon-4;
+				@include rtl-margin-right(7px);
+			}
+			&:after{
+				color: #929292;
+				content: "\ea7b";
+				display: inline-block;
+				font-family: $font-icon-4;
+				@include rtl-margin-left(7px);
+			}
+			& > p{
+				display: inline;
+			}
+		}
+	}
+	&.testimonials-title-inline{
+		.title{
+			margin-bottom: 0px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.sub-title{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			display: inline-block;
+			vertical-align: middle;
+			&:before{
+				content: '-';
+				margin: 0 5px;
+			}
+		}
+	}
+	&.testimonials-center{
+		.block-carousel-container{
+			text-align: center;
+			padding-left: 15px;
+			padding-right: 15px;
+			@media (min-width: 992px) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@media (min-width: 1200px) {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+		}
+	}
+	&.testimonials-column{
+		// .owl-item,.slick-slide {
+		.slick-slide {
+			.block-carousel-container{
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px dotted #dddddd;
+				&:last-child{
+					margin-bottom: 0px;
+					padding-bottom: 0px;
+					border-bottom: none;
+				}
+			}
+		}
+	}
+	&.testimonials-white{
+		.title{
+			color: $white;
+			a{
+				&:hover{
+					color: $white;
+					text-decoration: underline;
+				}
+			}
+		}
+		.sub-title{
+			color: $white;
+		}
+		.descript{
+			color: $white;
+		}
+		&.testimonials-quote{
+			.descript{
+				&:before{
+					color: $white;
+				}
+				&:after{
+					color: $white;
+				}
+			}
+		}
+	}
+	&.testimonials-one{
+		.block-carousel-container{
+			
+		}
+		.left-carousel{
+			
+		}
+		.right-carousel{
+			
+		}
+		.group-title{
+			margin-top: 20px;
+		}
+		.descript{
+			margin-top: 20px;
+		}
+	}
+	&.testimonials-two{
+		.block-carousel-container{
+			
+		}
+		.left-carousel{
+			
+		}
+		.right-carousel{
+			margin-top: 20px;
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+			
+		}
+		.image{
+			img{
+				@include rtl-margin-right(20px);
+			}
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-three{
+		.block-carousel-container{
+			
+		}
+		.left-carousel{
+			padding: 20px 25px;
+			background: #fafafa;
+			position: relative;
+			border: 1px solid $border-color;
+			@include border-radius(5px);
+			&:before{
+				content: '';
+				top: 100%;
+				z-index: 2;
+				position: absolute;
+				border-style: solid;
+				border-width: 10px;
+				border-color: #fafafa transparent transparent #fafafa;
+				@include rtl-left(42px);
+				@include transform(skewX(-20deg));
+			}
+			&:after{
+				content: '';
+				top: 100%;
+				z-index: 1;
+				position: absolute;
+				border-style: solid;
+				border-width: 11.5px;
+				border-color: $border-color transparent transparent $border-color;
+				@include rtl-left(40px);
+				@include transform(skewX(-20deg));
+			}
+		}
+		.right-carousel{
+			margin-top: 40px;
+			@include display(flex);
+			@include flex-direction(row);
+			@include align-items(center);
+		}
+		.image{
+			max-width: 80px;
+			@include rtl-margin-right(15px);
+			a{
+				display: block;
+			}
+			img{
+				display: block;
+			}
+		}
+		.title{
+			margin-bottom: 0px;
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-four{
+		.block-carousel-container{
+
+		}
+		.left-carousel{
+			
+		}
+		.right-carousel{
+			background: #fafafa;
+			padding: 10px 30px 30px;
+			@include rtl-border-radius(0px,0px,5px,5px);
+		}
+		.image{
+			position: relative;
+			@include clearfix();
+			&:before{
+				content: '';
+				bottom: 0px;
+				left: 0;
+				right: 0;
+				z-index: 1;
+				height: 50%;
+				position: absolute;
+				background: #fafafa;
+				@include rtl-border-radius(5px,5px,0px,0px);
+			}
+			img{
+				z-index: 2;
+				position: relative;
+				border: 2px solid $white;
+				@include border-radius(50%);
+				@include rtl-float-right();
+				@include rtl-margin(1px,50px,1px,1px);
+				@include box-shadow(0px 0px 1px 1px rgba(0, 0, 0, 0.2));
+			}
+		}
+		.group-title{
+			margin-top: 20px;
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-five{
+		.block-carousel-container{
+			text-align: center;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.left-carousel{
+			background: #fafafa;
+			padding: 30px 25px 20px;
+			@include rtl-border-radius(5px,5px,0px,0px);
+		}
+		.right-carousel{
+			
+		}
+		.title{
+			margin-top: 15px;
+			margin-bottom: 0px;
+		}
+		.image{
+			position: relative;
+			&:before{
+				content: '';
+				top: 0px;
+				left: 0;
+				right: 0;
+				z-index: 1;
+				height: 50%;
+				position: absolute;
+				background: #fafafa;
+				@include rtl-border-radius(0px,0px,5px,5px);
+			}
+			img{
+				z-index: 2;
+				position: relative;
+				border: 2px solid $white;
+				@include border-radius(50%);
+				@include box-shadow(0px 0px 1px 1px rgba(0, 0, 0, 0.2));
+			}
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-six{
+		.block-carousel-container{
+			
+		}
+		.meta-carousel{
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include flex-direction(column-reverse);
+		}
+		.left-carousel{
+			margin-top: 15px;
+			@include rtl-padding-left(40px);
+		}
+		.right-carousel{
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+		}
+		.image{
+			img{
+				@include rtl-margin-right(20px);
+			}
+		}
+		.title{
+			margin-bottom: 0px;
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-seven{
+		.block-carousel-container{
+			
+		}
+		.meta-carousel{
+			@include display(flex);
+			@include flex-wrap(wrap);
+		}
+		.left-carousel{
+			width: 90px;
+			@include rtl-padding-right(15px);
+		}
+		.right-carousel{
+			width: calc(100% - 90px);
+		}
+		
+		.group-title{
+			margin-top: 15px;
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-eight{
+		.block-carousel-container{
+			text-align: center;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.left-carousel{
+			position: relative;
+			background: #fafafa;
+			margin-bottom: 25px;
+			padding: 30px 25px 20px;
+			@include border-radius(5px);
+			&:before{
+				content: '';
+				top: 100%;
+				left: 0px;
+				right: 0px;
+				height: 20px;
+				width: 20px;
+				margin: auto;
+				position: absolute;
+				border-width: 10px;
+				border-style: solid;
+				border-color: #fafafa transparent transparent transparent;
+			}
+		}
+		.right-carousel{
+			
+		}
+		.group-title{
+			margin-top: 15px;
+		}
+		.image{
+			position: relative;
+
+		}
+		.descript{
+			
+		}
+	}
+	&.testimonials-nine{
+		.block-carousel-container{
+			margin: 1px;
+			padding: 30px 20px;
+			background: $white;
+			@include border-radius(3px);
+			@include box-shadow(0px 0px 0px 1px #eaeaea);
+		}
+		.left-carousel{
+			
+		}
+		.right-carousel{
+			
+		}
+		.group-title{
+			margin-top: 20px;
+		}
+		.descript{
+			margin-top: 20px;
+		}
+	}
+}

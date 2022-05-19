@@ -1,0 +1,107 @@
+[
+    {
+        "id": "footer_1",
+        "type": "color",
+        "label": "Color Title Footer",
+        "selector": ".footer-container .block .title_block, .footer-container .footer-black .block .title_block"
+    },
+    {
+        "id": "footer_2",
+        "type": "color",
+        "label": "Color text Top Footer",
+        "selector": ".footer-top"
+    },
+    {
+        "id": "footer_3",
+        "type": "color",
+        "label": "Color link Middle Footer",
+        "selector": ".footer-center a,.footer-center .DeoBlockLink ul li a,.footer-center .footer-black .DeoBlockLink ul li a"
+    },
+    {
+        "id": "footer_4",
+        "type": "color",
+        "label": "Color hover link Middle Footer",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-center a:hover,.footer-center .DeoBlockLink ul li a:hover,.footer-center .footer-black .DeoBlockLink ul li a:hover"
+    },
+    {
+        "id": "footer_5",
+        "type": "color",
+        "label": "Color text Middle Footer",
+        "selector": ".footer-center"
+    },
+    {
+        "id": "footer_6",
+        "type": "border-color",
+        "label": "Border Color Middle Footer",
+        "selector": ".box-middle-footer:before,.box-middle-footer > [class*='col-'] + [class*='col-']"
+    },
+    {
+        "id": "footer_7",
+        "type": "color",
+        "label": "Color text Bottom Footer",
+        "selector": ".footer-bottom"
+    },
+    {
+        "id": "footer_8",
+        "type": "border-color",
+        "label": "Border Color Bottom Footer",
+        "selector": ".box-bottom-footer:before"
+    },
+    {
+        "id": "footer_9",
+        "type": "background-color",
+        "label": "Background color Bottom Footer",
+        "selector": ".footer-bottom"
+    },
+    {
+        "id": "footer_10",
+        "type": "color",
+        "label": "Color title Newsletter",
+        "selector": ".footer-container .block_newsletter.block .title_block"
+    },
+    {
+        "id": "footer_11",
+        "type": "border-color",
+        "label": "Border color Newsletter",
+        "selector": ".footer-container .block_newsletter.newsletter-style-three .form-group"
+    },
+    {
+        "id": "footer_12",
+        "type": "background-color",
+        "label": "Background color Newsletter",
+        "selector": ".footer-container .block_newsletter.newsletter-style-three .form-group"
+    },
+    {
+        "id": "footer_13",
+        "type": "color",
+        "label": "Color Newsletter",
+        "selector": ".footer-container .block_newsletter form input[type=email],.footer-container .block_newsletter form input[type=email]::-webkit-input-placeholder,.footer-container .block_newsletter.newsletter-style-three .form-group .input-wrapper:before"
+    },
+    {
+        "id": "footer_14",
+        "type": "color",
+        "label": "Color button Newsletter",
+        "selector": ".footer-container .block_newsletter form .btn"
+    },
+    {
+        "id": "footer_15",
+        "type": "color",
+        "label": "Color hover button Newsletter",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-container .block_newsletter form .btn:hover"
+    },
+    {
+        "id": "footer_16",
+        "type": "background-color",
+        "label": "Background color button Newsletter",
+        "selector": ".footer-container .block_newsletter form .btn"
+    },
+    {
+        "id": "footer_17",
+        "type": "background-color",
+        "label": "Background color hover button Newsletter",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-container .block_newsletter form .btn:hover"
+    }
+]

@@ -1,0 +1,213 @@
+[
+    {
+        "id": "header_1",
+        "type": "color",
+        "label": "Color link Top Header",
+        "responsive": [
+            {
+                "media": "@media (min-width: 1200px)",
+                "selector": ".popup-over.userinfo-selector .popup-content .dropdown-item"
+            }
+        ],
+        "selector": ".topnav a,.topnav .popup-over .popup-title,.topnav .popup-over .popup-title,.topnav .popup-over.popup-white .popup-title,.topnav .popup-over.popup-white.light .popup-title"
+    },
+    {
+        "id": "header_2",
+        "type": "color",
+        "label": "Color link hover Top Header",
+        "responsive": [
+            {
+                "media": "@media (min-width: 1200px)",
+                "selector": ".popup-over.userinfo-selector .popup-content .dropdown-item:hover"
+            }
+        ],
+        "media": "@media (min-width: 992px)",
+        "selector": ".topnav a:hover,.topnav .popup-over .popup-title:hover,.topnav .popup-over .popup-title:hover,.topnav .popup-over.popup-white .popup-title:hover,.topnav .popup-over.popup-white.light .popup-title:hover"
+    },
+    {
+        "id": "header_3",
+        "type": "background-color",
+        "label": "Border Color spacing link Top Header",
+        "responsive": [
+            {
+                "media": "@media (min-width: 1200px)",
+                "selector": ".popup-over.userinfo-selector .popup-content .dropdown-item:after"
+            }
+        ],
+        "selector": ".topnav .popup-over:not(.search-widget) .popup-title:before"
+    },
+    {
+        "id": "header_4",
+        "type": "color",
+        "label": "Color Top Header",
+        "selector": ".topnav"
+    },
+    {
+        "id": "header_4",
+        "type": "background-color",
+        "label": "Background color Top Header",
+        "selector": ".topnav"
+    },
+
+    {
+        "id": "header_6",
+        "type": "color",
+        "label": "Color link Middle Header",
+        "selector": ".bottomnav a"
+    },
+    {
+        "id": "header_7",
+        "type": "color",
+        "label": "Color link hover Middle Header",
+        "media": "@media (min-width: 992px)",
+        "selector": ".bottomnav a:hover"
+    },
+    {
+        "id": "header_9",
+        "type": "background-color",
+        "label": "Background color Icon Count",
+        "selector": ".bottomnav .deo-count-feature.count-absolute .deo-total"
+    },
+    {
+        "id": "header_10",
+        "type": "color",
+        "label": "Color Icon Count",
+        "selector": ".bottomnav .deo-count-feature.count-absolute .deo-total"
+    },
+    {
+        "id": "header_7",
+        "type": "background-color",
+        "label": "Background color Middle Header",
+        "selector": ".bottomnav"
+    },
+
+    {
+        "id": "header_7",
+        "type": "border-color",
+        "label": "Border color Bottom Header",
+        "selector": ".header-top"
+    },
+    {
+        "id": "header_8",
+        "type": "background-color",
+        "label": "Background color Bottom Header",
+        "responsive": [
+            {
+                "media": "@media (min-width: 992px)",
+                "selector": ".sticky-menu-active .header-top"
+            }
+        ],
+        "selector": ".header-top"
+    },
+    
+    {
+        "id": "header_13",
+        "type": "color",
+        "label": "Color Cart",
+        "selector": "#cart-block .cart-preview, #cart-block .cart-preview.active a,#cart-block.cart-white .cart-preview,#cart-block.cart-white .cart-preview.active a"
+    },
+    {
+        "id": "header_14",
+        "type": "color",
+        "label": "Color hover Cart",
+        "media": "@media (min-width: 992px)",
+        "selector": "#cart-block .cart-preview.active a:hover,#cart-block.cart-white .cart-preview.active a:hover"
+    },
+    {
+        "id": "header_15",
+        "type": "color",
+        "label": "Color Quantity Cart",
+        "selector": "#cart-block .cart-products-count,#cart-block.cart-white .cart-products-count"
+    },
+    {
+        "id": "header_16",
+        "type": "color",
+        "label": "Color hover Quantity Cart",
+        "media": "@media (min-width: 992px)",
+        "selector": "#cart-block .cart-preview.active a:hover .cart-products-count,#cart-block.cart-white .cart-preview.active a:hover .cart-products-count"
+    },
+    {
+        "id": "header_17",
+        "type": "background-color",
+        "label": "Background color Quantity Cart",
+        "selector": "#cart-block .cart-products-count,#cart-block.cart-white .cart-products-count"
+    },
+    {
+        "id": "header_18",
+        "type": "background-color",
+        "label": "Background color hover Quantity Cart",
+        "media": "@media (min-width: 992px)",
+        "selector": "#cart-block .cart-preview.active a:hover .cart-products-count,#cart-block.cart-white .cart-preview.active a:hover .cart-products-count"
+    },
+    {
+        "id": "header_19",
+        "type": "color",
+        "label": "Color link Menu",
+        "media": "@media (min-width: 992px)",
+        "selector": ".deo-horizontal-menu .megamenu > .nav-item > .nav-link,.menu-white .deo-horizontal-menu .megamenu > .nav-item > .nav-link,.menu-white.light .deo-horizontal-menu .megamenu > .nav-item > .nav-link"
+    },
+    {
+        "id": "header_20",
+        "type": "color",
+        "label": "Color link hover Menu",
+        "media": "@media (min-width: 992px)",
+        "selector": ".deo-horizontal-menu .megamenu > .nav-item:hover > .nav-link, .deo-horizontal-menu .megamenu > .nav-item:focus > .nav-link,.menu-white .deo-horizontal-menu .megamenu > .nav-item:hover > .nav-link,.menu-white .deo-horizontal-menu .megamenu > .nav-item:focus > .nav-link,.menu-white.light .deo-horizontal-menu .megamenu > .nav-item:hover > .nav-link,.menu-white.light .deo-horizontal-menu .megamenu > .nav-item:focus > .nav-link"
+    },
+    {
+        "id": "header_21",
+        "type": "background-color",
+        "label": "Background color Search",
+        "selector": "#header .deo-search-advanced.search-media-one .popup-content"
+    },
+    {
+        "id": "header_22",
+        "type": "color",
+        "label": "Color Search",
+        "selector": "#header .deo-search-advanced .block_content .deo-advanced-search-input .advanced_search_query,#header .deo-search-advanced .block_content .list-cate-wrapper .select-title:before,#header .deo-search-advanced .block_content .deo-advanced-search-input .advanced_search_query::-webkit-input-placeholder"
+    },
+    {
+        "id": "header_23",
+        "type": "color",
+        "label": "Color select category Search",
+        "selector": "#header .deo-search-advanced .block_content .list-cate-wrapper .select-title"
+    },
+    {
+        "id": "header_24",
+        "type": "color",
+        "label": "Color hover select category Search",
+        "media": "@media (min-width: 992px)",
+        "selector": "#header .deo-search-advanced .block_content .list-cate-wrapper .select-title:hover"
+    },
+    {
+        "id": "header_25",
+        "type": "border-color",
+        "label": "Border Color select category Search",
+        "selector": "#header .deo-search-advanced .block_content .list-cate-wrapper .select-title:before,#header .deo-search-advanced.search-media-one .popup-content"
+    },
+    {
+        "id": "header_26",
+        "type": "color",
+        "label": "Color button Search",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button"
+    },
+    {
+        "id": "header_27",
+        "type": "color",
+        "label": "Color hover button Search",
+        "media": "@media (min-width: 992px)",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button:hover"
+    },
+    {
+        "id": "header_28",
+        "type": "background-color",
+        "label": "Background color button Search",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button"
+    },
+    {
+        "id": "header_29",
+        "type": "background-color",
+        "label": "Background color hover button Search",
+        "media": "@media (min-width: 992px)",
+        "selector": "#header .deo-search-advanced.search-media-one .block_content .deo-advanced-search-top-button:hover"
+    }
+]

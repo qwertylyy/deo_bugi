@@ -1,0 +1,130 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* google gmap */
+.deo-google-map {
+  position: relative; }
+  .deo-google-map.proccessed .google-map-cover {
+    background: #f8f8f8; }
+  .deo-google-map.custom-gmap {
+    margin-top: 40px; }
+    @media (max-width: 991px) {
+      .deo-google-map.custom-gmap {
+        margin-top: 20px; } }
+  .deo-google-map .google-map-stores, .deo-google-map .google-map-content {
+    padding: 0px;
+    float: left; }
+    .rtl .deo-google-map .google-map-stores, .rtl .deo-google-map .google-map-content {
+      float: right; }
+  .deo-google-map .google-map-stores {
+    display: none;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    @media (min-width: 576px) {
+      .deo-google-map .google-map-stores {
+        width: 300px;
+        display: block; } }
+  .deo-google-map .google-map-content {
+    width: 100%; }
+    @media (min-width: 576px) {
+      .deo-google-map .google-map-content {
+        width: calc(100% - 300px); } }
+  .deo-google-map .not-display-list-store .google-map-stores, .deo-google-map .not-display-list-store .google-map-content {
+    width: 100%; }
+  .deo-google-map .google-map-cover {
+    background: #FFFFFF; }
+    .deo-google-map .google-map-cover::after {
+      content: "";
+      display: table;
+      clear: both; }
+  .deo-google-map .google-map-stores-list {
+    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.3); }
+  .deo-google-map .deo-item-store {
+    width: 100%;
+    display: table;
+    cursor: pointer;
+    padding: 15px 25px;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .deo-google-map .deo-item-store + .deo-item-store:after {
+      content: '';
+      top: 0px;
+      left: 25px;
+      right: 25px;
+      position: absolute;
+      border-top: 1px dotted #eaeaea; }
+    .deo-google-map .deo-item-store:before {
+      content: '\ea94';
+      width: 30px;
+      display: table-cell;
+      vertical-align: top;
+      font-size: 25px;
+      font-family: "deo-custom-icons";
+      padding-right: 10px; }
+      .rtl .deo-google-map .deo-item-store:before {
+        padding-left: 10px;
+        padding-right: inherit; }
+    .deo-google-map .deo-item-store:hover {
+      background: #f2f2f2; }
+    .deo-google-map .deo-item-store .name-store {
+      font-weight: 500; }
+      .deo-google-map .deo-item-store .name-store .number-store:after {
+        content: '.'; }
+    .deo-google-map .deo-item-store .icon-map:before {
+      content: '\ea94';
+      font-family: "deo-custom-icons";
+      margin-right: 6px; }
+      .rtl .deo-google-map .deo-item-store .icon-map:before {
+        margin-left: 6px;
+        margin-right: inherit; }
+    .deo-google-map .deo-item-store .address-store {
+      margin-bottom: 0px; }
+  .deo-google-map .detail-store {
+    min-width: 200px; }
+    .deo-google-map .detail-store .name-store {
+      font-weight: 500; }
+    .deo-google-map .detail-store .address-store:before {
+      content: '\ea94';
+      font-family: "deo-custom-icons";
+      margin-right: 5px; }
+      .rtl .deo-google-map .detail-store .address-store:before {
+        margin-left: 5px;
+        margin-right: inherit; }
+    .deo-google-map .detail-store .view-more {
+      margin-top: 15px;
+      text-align: center; }
+      .deo-google-map .detail-store .view-more a {
+        text-decoration: underline;
+        color: #1bbc9b;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .deo-google-map .detail-store .view-more a:hover {
+          color: #169a7f; }
+
+/*# sourceMappingURL=DeoGoogleMap.css.map */

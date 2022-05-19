@@ -1,0 +1,179 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* Widget Manufacturers */
+.DeoManufacturersCarousel .manufacturer-container {
+  text-align: center; }
+  .DeoManufacturersCarousel .manufacturer-container img {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  .DeoManufacturersCarousel .manufacturer-container a {
+    display: block; }
+  .DeoManufacturersCarousel .manufacturer-container .manufacturer-name {
+    display: none; }
+@media (min-width: 992px) {
+  .DeoManufacturersCarousel.rotate-hover .manufacturer-container img {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+@media (min-width: 992px) {
+  .DeoManufacturersCarousel.rotate-hover .manufacturer-container:hover img {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg); } }
+@media (min-width: 992px) {
+  .DeoManufacturersCarousel.opacity-hover .manufacturer-container img {
+    opacity: 0.6;
+    filter: alpha(opacity=60); } }
+@media (min-width: 992px) {
+  .DeoManufacturersCarousel.opacity-hover .manufacturer-container:hover img {
+    opacity: 1;
+    filter: alpha(opacity=100); } }
+.DeoManufacturersCarousel.manufacturers-style-one .manufacturer-container {
+  border: 1px solid #dddddd;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  @media (min-width: 992px) {
+    .DeoManufacturersCarousel.manufacturers-style-one .manufacturer-container:hover {
+      border-color: #000000; } }
+.DeoManufacturersCarousel.manufacturers-style-two {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd; }
+.DeoManufacturersCarousel.manufacturers-style-three .manufacturer-container {
+  padding: 15px;
+  position: relative; }
+.DeoManufacturersCarousel.manufacturers-style-three .slick-slide {
+  padding: 0; }
+  .DeoManufacturersCarousel.manufacturers-style-three .slick-slide .manufacturer-block:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 1px;
+    border-left: 1px solid #dddddd; }
+    .rtl .DeoManufacturersCarousel.manufacturers-style-three .slick-slide .manufacturer-block:before {
+      right: 1px;
+      left: auto; }
+  .DeoManufacturersCarousel.manufacturers-style-three .slick-slide .manufacturer-block:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: -1px;
+    right: 15px;
+    border-bottom: 1px solid #dddddd; }
+  .DeoManufacturersCarousel.manufacturers-style-three .slick-slide .item .manufacturer-block:last-child:after {
+    display: none; }
+  .DeoManufacturersCarousel.manufacturers-style-three .slick-slide:first-child .manufacturer-block:before {
+    display: none; }
+.DeoManufacturersCarousel.manufacturers-style-three .slick-slide.slick-active .manufacturer-block:before {
+  left: -1px; }
+  .rtl .DeoManufacturersCarousel.manufacturers-style-three .slick-slide.slick-active .manufacturer-block:before {
+    right: -1px;
+    left: auto; }
+.DeoManufacturersCarousel.manufacturers-style-three .slick-slide.slick-active ~ .slick-active .manufacturer-block:before {
+  left: 1px; }
+  .rtl .DeoManufacturersCarousel.manufacturers-style-three .slick-slide.slick-active ~ .slick-active .manufacturer-block:before {
+    right: 1px;
+    left: auto; }
+.DeoManufacturersCarousel.manufacturers-style-four {
+  border: 1px solid #eaeaea; }
+  .DeoManufacturersCarousel.manufacturers-style-four .manufacturer-container {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center; }
+    .DeoManufacturersCarousel.manufacturers-style-four .manufacturer-container:after {
+      content: '';
+      bottom: -2px;
+      left: 0px;
+      right: 0px;
+      height: 1px;
+      position: absolute;
+      border-bottom: 1px dotted #eaeaea; }
+    .DeoManufacturersCarousel.manufacturers-style-four .manufacturer-container .manufacturer-name {
+      width: 50%;
+      display: block;
+      padding-left: 15px;
+      padding-right: 15px; }
+    .DeoManufacturersCarousel.manufacturers-style-four .manufacturer-container .manufacturer-image-container {
+      width: 50%; }
+  .DeoManufacturersCarousel.manufacturers-style-four .slick-arrows {
+    border-top: 1px solid #eaeaea; }
+    .DeoManufacturersCarousel.manufacturers-style-four .slick-arrows:before {
+      content: '';
+      left: 50%;
+      top: 0px;
+      bottom: 0px;
+      width: 1px;
+      z-index: 99;
+      position: absolute;
+      background: #eaeaea; }
+    .DeoManufacturersCarousel.manufacturers-style-four .slick-arrows .slick-arrow {
+      border: none;
+      border-radius: 0px; }
+      .DeoManufacturersCarousel.manufacturers-style-four .slick-arrows .slick-arrow:before {
+        font-size: 12px;
+        font-family: "deo-custom-icons"; }
+      .DeoManufacturersCarousel.manufacturers-style-four .slick-arrows .slick-arrow.slick-prev:before {
+        content: "\ea21"; }
+      .DeoManufacturersCarousel.manufacturers-style-four .slick-arrows .slick-arrow.slick-next:before {
+        content: "\ea22"; }
+  .DeoManufacturersCarousel.manufacturers-style-four .slick-slider .slick-slide:last-child .manufacturer-container:after {
+    display: none; }
+  .DeoManufacturersCarousel.manufacturers-style-four .name {
+    font-size: 13px;
+    font-weight: inherit;
+    font-family: inherit; }
+
+/*# sourceMappingURL=DeoManufacturersCarousel.css.map */

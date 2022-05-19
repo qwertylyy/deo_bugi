@@ -1,0 +1,266 @@
+// modules.scss
+
+// top bar module dropdown
+.popup-over{
+	position: relative; 
+	@include rtl-float-left();
+	// @include rtl-padding(17px,20px,17px,0px);
+	& + .popup-over{
+		// @include rtl-padding(17px,20px,17px,20px);
+	}
+	.popup-title {
+		display: block;
+		position: relative;
+		color: $body-color;
+		font-size: 0px;
+		font-weight: inherit;
+		white-space: nowrap;
+		@include display(flex);
+		@include align-items(center);
+		@include rtl-padding(17px,20px,17px,20px);
+		&:hover{
+			@media (min-width: 992px){
+				color: $theme-color-default;
+			}
+		}
+		& > * {
+			font-size: 13px;
+			vertical-align: middle;
+		}
+		.icon{
+			display: none;
+			font-size: 18px;
+			// font-weight: bold;
+			font-style: normal;
+		}
+		.title-name{
+			display: none;
+			@include rtl-margin-right(3px);
+		}
+		.icon-arrow-down{
+			@include rtl-margin-left(1px);
+			&:before{
+				content: "\ea3c";
+				display: block;
+				font-family: $font-icon-4;
+			}
+		}
+	}
+	.popup-content{
+		// top: 100%;
+		position: absolute;
+		background: $white;
+		border: none;
+		min-width: 150px;
+		z-index: 1001;
+		margin: 0;
+		padding: 0;
+		padding: 10px 15px;
+		font-size: inherit;
+		@include backface-visibility(hidden);
+		@include border-radius(3px);
+		@include rtl-left-right(auto,0px);
+		@include transition(opacity 0.3s linear 0s);
+		@include box-shadow(0px 2px 5px 1px rgba(102, 102, 102, 0.35));
+		&:before{
+			content: '';
+			position: absolute;
+			top: -4px;
+			z-index: 9;
+			width: 15px;
+			height: 15px;
+			background: $white;
+			@include rtl-left-right(auto,12px);
+			@include transform(rotate(45deg));
+			@include box-shadow(-3px -3px 3px -3px rgba(102, 102, 102, 0.35));
+		}
+		li{
+			&.current{
+				.dropdown-item{
+					font-weight: 600;
+					text-decoration: underline;
+				}
+			}
+		}
+		.dropdown-item{
+			padding: 5px 0px;
+			font-size: 13px;
+			color: $body-color;
+			text-align: inherit;
+			white-space: normal;
+			@include display(flex);
+			@include align-items(center);
+			&:focus,&:hover,&.active,&.active:focus,&.active:hover{
+				background: transparent;
+				color: $theme-color-default;
+			}
+		}
+	   .deo-total{
+			display: inline-block;
+			&:before{
+				content: '(';
+				display: inline-block;
+			}
+			&:after{
+				content: ')';
+				display: inline-block;
+			}
+		}
+	} 
+	.user-info{
+		.dropdown-item{
+			// display: table;
+			&:before{
+				font-size: 14px;
+				// font-weight: bold;
+				font-family: $font-icon-4;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.icon{
+				// width: 100%;
+				white-space: normal;
+				// display: table-cell;
+				// vertical-align: middle;
+				@include rtl-padding(0,8px,0,0);
+			}
+			&.account{
+				.icon{
+					&:before{
+						content: "\e9d5";
+					}
+				}
+			}
+			&.logout{
+				.icon{
+					&:before{
+						content: "\e9e6";
+					}
+				}
+			}
+			&.signin{
+				.icon{
+					&:before{
+						content: "\e9e5";
+					}
+				}
+			}
+			&.myacount{
+				.icon{
+					&:before{
+						content: "\e9d5";
+					}
+				}
+			}
+			&.signup{
+				.icon{
+					&:before{
+						content: "\ea0c";
+					}
+				}
+			}
+			&.deo-btn-wishlist{
+				.icon{
+					&:before{
+						content: "\e9d1";
+					}
+				}
+			}
+			&.deo-btn-compare{
+				.icon{
+					&:before{
+						content: "\e9aa";
+					}
+				}
+			}
+			&.checkout{
+				.icon{
+					&:before{
+						content: "\e9a3";
+					}
+				}
+			}
+			
+		}
+	}
+	&.popup-reverse{
+		.popup-content{
+			@include rtl-left-right(0px,auto);
+			&:before{
+				@include rtl-left-right(12px,auto);
+			}
+		}
+	}
+	&.popup-center{
+		.popup-content{
+			left: 50% !important;
+			right: auto !important;
+			@include animation(animationmenus-center ease 0.5s);
+			@include animation-iteration-count(1);
+			@include transform-origin(50% 50%);
+			@include animation-fill-mode(forwards);
+			&:before{
+				margin: auto;
+				@include rtl-left-right(0px,0px);
+			}
+		}
+	}
+}
+
+.popup-over{
+	&.popup-hover:not(.search-widget){
+		@media (min-width: 992px) {
+			.popup-content{
+				display: none;
+				@include animation(animationmenus ease 0.5s);
+				@include animation-iteration-count(1);
+				@include transform-origin(50% 50%);
+				@include animation-fill-mode(forwards);
+			}
+			&:hover{
+				.popup-content{
+					display: block !important;
+				}
+			}
+		}
+	}
+	&.hidden-icon-arrow-down{
+		@include hidden-icon-arrow-down();
+	}
+	&.popup-white{
+		.popup-title {
+			color: $theme-color-white;
+			&:hover{
+				color: $theme-color-white-hover;
+			}
+			&:before {
+			    background: #615f60;
+			}
+		}
+		& + .popup-over{
+			&:before{
+				background: #777777;
+			}
+		}
+		&.light{
+			.popup-title {
+				color: $theme-color-white-hover;
+				&:hover{
+					color: $theme-color-white;
+				}
+			}
+		}
+	}
+	&.show-title-name{
+		@include show-title-name();
+	}
+	&.hidden-title-popup{
+		@include hidden-title-popup();
+	}
+	&.popup-show-icon{
+		@include popup-show-icon();
+	}
+}
+
+
+/*** Responsive part ***/

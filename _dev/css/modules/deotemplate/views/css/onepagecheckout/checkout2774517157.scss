@@ -1,0 +1,161 @@
+@import "theme_variables";
+
+// checkout two
+
+#deo-onepagecheckout-container{
+	padding: 5px;
+	background: $checkout-bg-block;
+	@media (min-width: 768px){
+		padding: 15px 5px;
+	}
+}
+.opc-checkout-element{
+	margin-bottom: 0px;
+	.box-top-checkout &{
+		& + .opc-checkout-element{
+			@media (min-width: 768px){
+				margin-top: 30px;
+			}
+		}
+	}
+	.block-inner{
+		padding: 10px 0px;
+		@media(min-width: 992px){
+			padding: 5px;
+		}
+	}
+	.title-heading{
+		font-weight: bold;
+		position: relative;
+		text-transform: uppercase;
+	}
+	&.no-1{
+		.title-heading .title{
+			&:before{
+				content: '1. ';
+			}
+		}
+	}
+	&.no-2{
+		.title-heading .title{
+			&:before{
+				content: '2. ';
+			}
+		}
+	}
+	&.no-3{
+		.title-heading .title{
+			&:before{
+				content: '3. ';
+			}
+		}
+	}
+	&.no-4{
+		.title-heading .title{
+			&:before{
+				content: '4. ';
+			}
+		}
+	}
+	&.no-5{
+		.title-heading .title{
+			&:before{
+				content: '5. ';
+			}
+		}
+	}
+}
+#deoonepagecheckout-account{
+	background: transparent;
+	.account-inner{
+		.tab-content{
+			padding: 15px;
+		}
+		.nav-tabs{
+			.nav-item{
+				.nav-link{
+					@include rtl-border-radius(10px,10px,0px,0px);
+					&.active {
+						color: $white;
+						&:hover{
+							color: $white;
+						}
+					}
+					&:hover{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#deoonepagecheckout-cart-summary{
+	#deo-cart-summary-product-list{
+		// padding: 15px 15px;
+		@media (min-width: 768px){
+			display: block !important;
+		}
+	}
+	.title-products-list{
+		font-weight: 600;
+		font-size: 14px;
+		margin-bottom: 0px;
+		padding: 15px 15px 0px;
+		text-transform: uppercase;
+	}
+	.cart-summary-line{
+		.label{
+			font-weight: 600;
+		}
+		.value{
+			font-weight: 500;
+		}
+	} 
+	.cart-detailed-subtotals{
+		padding: 15px 0px;
+		border-top: 1px solid $border-color;
+	}
+	.show-details-wrapper{
+		@media (min-width: 768px){
+			display: none;
+		}
+	}
+	.cart-summary-totals{
+		padding: 15px 0px;
+		.value{
+			font-weight: 600;
+		}
+	}
+	.block-promo{
+		.display-promo,.promo-code{
+			padding: 15px 0px;
+		}
+		.promo-code{
+			background: transparent;
+		}
+	}
+	.cart-item{
+		&:last-child{
+			padding-bottom: 15px;
+		}
+		& + .cart-item{
+			margin-top: 0px;
+			padding-top: 15px;
+		}
+	}
+}
+
+#deoonepagecheckout-reassurance{
+	.blockreassurance_product{
+		margin-top: 0px;
+	}
+}
+
+
+.box-top-checkout{
+	@media (min-width: 768px){
+		margin-bottom: 20px;
+	}
+}

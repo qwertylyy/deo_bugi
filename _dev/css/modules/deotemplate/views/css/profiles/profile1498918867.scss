@@ -1,0 +1,48 @@
+@import "theme_variables";
+
+// ************* Home 5 ***************
+
+
+.box-start{
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+
+.box-categories{
+	margin-bottom: $grid-gutter-width-base*2;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base;
+	}
+}
+
+.box-about-us{
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+.box-product-tabs,.box-products,.box-product,.box-products-featured,.box-banners,.box-banner,.box-products-list,.box-deal{
+	margin-bottom: $grid-gutter-width-base*3;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*2;
+	}
+}
+
+.box-space-before{
+	padding-top: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		padding-top: $grid-gutter-width-base*3;
+	}
+}
+
+.layout-boxed-md{
+	
+}
+
+.layout-boxed-lg{
+	
+}

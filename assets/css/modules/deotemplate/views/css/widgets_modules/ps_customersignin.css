@@ -1,0 +1,119 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+@media (max-width: 575px) {
+  .popup-over.userinfo-selector .popup-title .icon {
+    display: inline-block; }
+  .popup-over.userinfo-selector .popup-title .name-simple {
+    display: none; } }
+.popup-over.userinfo-selector .popup-title .icon:before {
+  display: block;
+  content: "\e9d7";
+  font-family: "deo-custom-icons"; }
+
+.userinfo-selector.userinfor-popup-center .popup-content li.sign-in-popup, .userinfo-selector.userinfor-popup-center .popup-content li.sign-out-popup {
+  margin: 10px -15px -10px;
+  border-top: 1px solid #eaeaea; }
+  .userinfo-selector.userinfor-popup-center .popup-content li.sign-in-popup .dropdown-item, .userinfo-selector.userinfor-popup-center .popup-content li.sign-out-popup .dropdown-item {
+    padding: 6px 15px;
+    text-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    .userinfo-selector.userinfor-popup-center .popup-content li.sign-in-popup .dropdown-item .icon, .userinfo-selector.userinfor-popup-center .popup-content li.sign-out-popup .dropdown-item .icon {
+      display: none; }
+    .userinfo-selector.userinfor-popup-center .popup-content li.sign-in-popup .dropdown-item span:not(.deo-total), .userinfo-selector.userinfor-popup-center .popup-content li.sign-out-popup .dropdown-item span:not(.deo-total) {
+      padding: 0px 0px 0px 0px; }
+      .rtl .userinfo-selector.userinfor-popup-center .popup-content li.sign-in-popup .dropdown-item span:not(.deo-total), .rtl .userinfo-selector.userinfor-popup-center .popup-content li.sign-out-popup .dropdown-item span:not(.deo-total) {
+        padding: 0px 0px 0px 0px; }
+.userinfo-selector.userinfor-hidden-title .popup-title .name-simple {
+  display: none; }
+.userinfo-selector.userinfor-hidden-title .popup-title .icon {
+  display: inline-block; }
+@media (min-width: 1200px) {
+  .userinfo-selector.userinfor-inline {
+    padding: 0 0 0 0; }
+    .rtl .userinfo-selector.userinfor-inline {
+      padding: 0 0 0 0; }
+    .userinfo-selector.userinfor-inline .popup-title {
+      display: none; }
+    .userinfo-selector.userinfor-inline .popup-content {
+      border: none !important;
+      padding: 0px;
+      font-size: 0px;
+      position: static;
+      background: transparent;
+      display: block !important;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      -o-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none;
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      animation: none !important;
+      border-radius: 0px; }
+      .userinfo-selector.userinfor-inline .popup-content:before {
+        display: none; }
+      .userinfo-selector.userinfor-inline .popup-content li {
+        position: relative;
+        border-bottom: none;
+        display: inline-block;
+        vertical-align: middle;
+        border-color: #e9e9e9;
+        border-style: solid;
+        border-width: 0px 0px 0px 1px; }
+        .rtl .userinfo-selector.userinfor-inline .popup-content li {
+          border-width: 0px 1px 0px 0px; }
+        .userinfo-selector.userinfor-inline .popup-content li.check-out, .userinfo-selector.userinfor-inline .popup-content li.my-account {
+          display: none; }
+      .userinfo-selector.userinfor-inline .popup-content .dropdown-item {
+        padding: 11px 15px;
+        font-weight: inherit;
+        text-transform: uppercase; }
+        .userinfo-selector.userinfor-inline .popup-content .dropdown-item:hover, .userinfo-selector.userinfor-inline .popup-content .dropdown-item:active, .userinfo-selector.userinfor-inline .popup-content .dropdown-item:focus {
+          background: transparent; }
+        .userinfo-selector.userinfor-inline .popup-content .dropdown-item span {
+          white-space: nowrap; } }
+@media (min-width: 1200px) {
+  .userinfo-selector.userinfor-inline-white .popup-content .dropdown-item {
+    border-color: #777777;
+    color: #cccccc; }
+    .userinfo-selector.userinfor-inline-white .popup-content .dropdown-item:hover {
+      color: #ffffff; } }
+@media (min-width: 1200px) {
+  .userinfo-selector.userinfor-inline-white-light .popup-content .dropdown-item {
+    border-color: #777777;
+    color: #ffffff; }
+    .userinfo-selector.userinfor-inline-white-light .popup-content .dropdown-item:hover {
+      color: #cccccc; } }
+
+/*# sourceMappingURL=ps_customersignin.css.map */

@@ -1,0 +1,122 @@
+@import "theme_variables";
+
+
+/* image-category */
+.image-category{
+	&.image-category-seven{
+		margin-bottom: $grid-gutter-width-base;
+		.media{
+			padding: 3px;
+			border: 1px solid #eaeaea;
+			@include display(flex);
+			@include flex-wrap(wrap);
+		}
+		.left-block{
+			@media (min-width: 480px) {
+				width: 50%;
+			}
+			@media (max-width: 1199px) and (min-width: 576px){
+				width: 100%;
+			}
+		}
+		.right-block{
+			padding: 20px 25px;
+			@media (min-width: 480px) {
+				width: 50%;
+			}
+			@media (max-width: 1499px) and (min-width: 1200px){
+				padding: 15px 20px;
+			}
+			@media (max-width: 1199px) and (min-width: 576px){
+				width: 100%;
+			}
+
+		}
+		h3{
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+			@media (max-width: 1499px) and (min-width: 1200px){
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+		}
+		.view_all{
+			margin-top: 20px;
+			margin-bottom: 0px;
+			@media (max-width: 1499px) and (min-width: 1200px){
+				margin-top: 10px;
+			}
+			a{
+				font-weight: 500;
+				color: $theme-color-default;
+				font-family: $font-family-heading;
+				@include transition(all 0.5s ease);
+				&:hover{
+					text-decoration: underline;
+					color: $theme-color-button-hover;
+				}
+			}
+		}
+		ul{
+			li{
+				margin-bottom: 12px;
+				@media (max-width: 1499px) and (min-width: 1200px){
+					margin-bottom: 5px;
+				}
+				a{
+					font-size: 13px;
+					font-weight: 300;
+					margin-bottom: 0px;
+					display: inline-block;
+					vertical-align: middle;
+					position: relative;
+					font-family: $font-family-heading;
+					@include transition(padding-left 0.5s ease);
+					&:before{
+						content: "\ea31";
+						display: inline-block;
+						font-family: $font-icon-4;
+						@include rtl-margin-right(7px);
+						@include transition(all 0.4s ease);
+					}
+					&:hover{
+						@include rtl-padding-left(8px);
+					}
+				}
+			}
+		}
+	}
+	&.image-category-nine{
+		.block-carousel-container{
+			padding: 3px;
+			margin-bottom: $grid-gutter-width-base;
+			border: 1px solid #eaeaea;
+			&:hover{
+				.left-carousel{
+					img{
+						@include transform(scale(1.1));
+					}
+				}
+			}
+		}
+		.title{
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 0px;
+		}
+		.left-carousel{
+			overflow: hidden;
+			img{
+				@include transform(scale(1));
+				@include transition(all 5s ease);
+			}
+		}
+		.right-carousel{
+			background: $white;
+			text-align: center;
+			padding: 12px 15px;
+		}
+	}
+}

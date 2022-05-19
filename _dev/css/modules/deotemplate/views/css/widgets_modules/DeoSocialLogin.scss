@@ -1,0 +1,40 @@
+@import "theme_variables";
+
+.popup-over{
+	&.deo-social-login-builder{
+		@media (max-width: 575px) {
+			@include mobile-popup();
+		}
+		.popup-title{
+			.icon{
+				&:before{
+					display: block;
+					content: "\e9d5";
+					font-family: $font-icon-4;
+				}
+			}
+		}
+
+		&.both-title{
+			&.deo-login-popup{
+				.popup-title{
+					.icon{
+						&:before{
+							content: "\e9e5";
+						}
+					}
+				}	
+			}
+			&.deo-register-popup{
+				.popup-title{
+					.icon{
+						&:before{
+							content: "\ea0c";
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+

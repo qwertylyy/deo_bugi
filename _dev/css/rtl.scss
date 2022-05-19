@@ -1,0 +1,49 @@
+@import "theme_variables";
+@import "bootstrap/rtl/_bootstrap-rtl";
+
+ul, menu, dir {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px; 
+	-webkit-padding-start: 0px;
+	padding-right: 0;
+}
+.material-icons{
+	direction: rtl;
+}
+// PRODUCT ITEM
+.product_block{
+	&.last_item{
+		.thumbnail-container{
+			.deo-more-product-img{
+				left: auto;
+				right: 0px;
+			}
+			&:hover{
+				.deo-more-product-img{
+					left: auto;
+					right: -90px;
+				}
+			}
+		}       
+	}
+}
+.dropdown-menu{
+	text-align: right;
+}
+// Button Select 
+.form-control-select { 
+  background: $gray-light url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll left 8px center / 20px 20px;
+}
+
+.deo-vertical-menu .navbar-nav > li:hover.parent.dropdown > a:after{
+	@include transform(rotate(180deg));
+}
+.deo-vertical-menu ul.right > li.parent.dropdown > a:after{
+	@include transform(rotate(0deg));
+}
+
+.slide-custom-html .iview-controlNav div.iview-items.customHtmlBullet a.iview-control:after{
+	content: "\ea71";
+}

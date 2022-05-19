@@ -1,0 +1,160 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+.DeoCountdown.countdown-inline .deo-countdown {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  border-top: none; }
+.DeoCountdown.countdown-sidebar {
+  padding-right: 55px; }
+  .rtl .DeoCountdown.countdown-sidebar {
+    padding-left: 55px;
+    padding-right: inherit; }
+.DeoCountdown.countdown-black .deo-countdown {
+  color: #333333; }
+.DeoCountdown.countdown-white .deo-countdown {
+  color: #FFFFFF; }
+.DeoCountdown.countdown-red .deo-countdown {
+  color: #f8705a; }
+.DeoCountdown.countdown-style-one {
+  padding: 80px 15px;
+  text-align: center; }
+  .DeoCountdown.countdown-style-one .deo-countdown.pro {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: none; }
+  .DeoCountdown.countdown-style-one.white {
+    color: #FFFFFF; }
+    .DeoCountdown.countdown-style-one.white .title_block {
+      color: #FFFFFF; }
+  .DeoCountdown.countdown-style-one .title_block {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px; }
+  .DeoCountdown.countdown-style-one .sub-title-widget {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .DeoCountdown.countdown-style-one .description {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 25px; }
+    .DeoCountdown.countdown-style-one .description p {
+      margin-bottom: 0px; }
+  .DeoCountdown.countdown-style-one .deo-countdown-link {
+    margin-top: 30px;
+    margin-bottom: 0px; }
+    .DeoCountdown.countdown-style-one .deo-countdown-link a {
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 6px 12px;
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      background: #1bbc9b;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media (min-width: 992px) {
+        .DeoCountdown.countdown-style-one .deo-countdown-link a:hover {
+          background: #169a7f; } }
+.DeoCountdown.countdown-style-two {
+  text-align: center; }
+  .DeoCountdown.countdown-style-two .deo-countdown.pro {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: none; }
+  .DeoCountdown.countdown-style-two .title_block {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px; }
+  .DeoCountdown.countdown-style-two .sub-title-widget {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .DeoCountdown.countdown-style-two .description {
+    line-height: 1.5;
+    margin-bottom: 20px; }
+  .DeoCountdown.countdown-style-two .deo-countdown-link {
+    margin-top: 20px;
+    margin-bottom: 0px; }
+    .DeoCountdown.countdown-style-two .deo-countdown-link a {
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 5px 10px;
+      display: inline-block;
+      vertical-align: middle;
+      background: #1bbc9b;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media (min-width: 992px) {
+        .DeoCountdown.countdown-style-two .deo-countdown-link a:hover {
+          background: #169a7f; } }
+.DeoCountdown.countdown-style-three {
+  text-align: center; }
+  .DeoCountdown.countdown-style-three .deo-countdown.pro {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: none; }
+  .DeoCountdown.countdown-style-three .title_block {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px; }
+  .DeoCountdown.countdown-style-three .sub-title-widget {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .DeoCountdown.countdown-style-three .description {
+    line-height: 1.5;
+    margin-bottom: 20px; }
+  .DeoCountdown.countdown-style-three .deo-countdown-link {
+    margin-top: 20px;
+    margin-bottom: 0px; }
+    .DeoCountdown.countdown-style-three .deo-countdown-link a {
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 5px 10px;
+      display: inline-block;
+      vertical-align: middle;
+      background: #1bbc9b;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media (min-width: 992px) {
+        .DeoCountdown.countdown-style-three .deo-countdown-link a:hover {
+          background: #169a7f; } }
+
+/*# sourceMappingURL=DeoCountdown.css.map */

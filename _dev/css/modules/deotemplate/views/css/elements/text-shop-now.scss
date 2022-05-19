@@ -1,0 +1,129 @@
+@import "theme_variables";
+
+
+
+/* text-shop-now */
+.text-shop-now{
+	p{
+		margin-bottom: 0px;
+	}
+	.btn{
+		display: inline-block;
+		vertical-align: middle;
+		@include border-radius(0px);
+		@include transition(all 0.5s ease);
+	}
+	&.text-shop-now-one{
+		font-size: 16px;
+		font-weight: normal;
+		strong,b{
+			text-decoration: underline;
+		}
+		.btn{
+			color: $white;
+			border: none;
+			font-size: 15px;
+			font-weight: 600;
+			margin: 6px 15px;
+			padding: 10px 25px;
+			text-transform: uppercase;
+			background: $theme-color-default; 
+			@include transition(all 0.5s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					background: $theme-color-button-hover;
+				}
+			}
+		}
+	}
+	&.text-shop-now-two{
+		font-size: 20px;
+		font-weight: normal;
+		.block_content{
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+			@include justify-content(space-around);
+		}
+		strong,b{
+			text-decoration: underline;
+		}
+		.btn{
+			color: $theme-color-default;
+			border: none;
+			font-size: 15px;
+			font-weight: 600;
+			margin: 6px 15px;
+			padding: 10px 25px;
+			background: transparent; 
+			text-transform: uppercase;
+			border: 2px solid $theme-color-default;
+			@include transition(all 0.5s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					color: $white;
+					background: $theme-color-default; 
+				}
+			}
+		}
+	}
+	&.text-shop-now-three{
+		font-size: 20px;
+		font-weight: normal;
+		.block_content{
+			padding: 30px 50px;
+			border: 3px double #eaeaea;
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+			@include justify-content(space-between);
+			@media (max-width: 575px) {
+				padding: 30px;
+			}
+		}
+		strong,b{
+			text-decoration: underline;
+		}
+		h3{
+			font-size: 25px;
+			font-weight: 400;
+		}
+		p{
+			font-weight: 300;
+			font-size: 14px;
+			// font-family: $font-family-senary;
+		}
+		.btn{
+			color: #222222;
+			border: none;
+			font-size: 15px;
+			font-weight: 500;
+			margin: 10px 0px;
+			padding: 10px 25px;
+			background: transparent; 
+			text-transform: uppercase;
+			border: 2px solid #222222;
+			font-family: $font-family-base;
+			@include transition(all 0.5s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					color: $white;
+					border-color: $theme-color-default;
+					background: $theme-color-default; 
+				}
+			}
+		}
+	}
+	
+	&.color-white{
+		color: $white;
+	}
+	&.large-font-size{
+		@media (min-width: 992px) {
+			font-size: 25px;
+			.btn{
+				font-size: 18px;
+			}
+		}
+	}
+}

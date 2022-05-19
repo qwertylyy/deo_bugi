@@ -1,0 +1,48 @@
+body {
+  font-family: font-family-base; }
+
+.text-shop-now.text-shop-now-three .btn {
+  font-family: font-family-base; }
+
+.product-price {
+  font-family: font-family-base; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: font-family-heading; }
+
+.product-line-grid-body > .product-line-info > a.label {
+  font-family: font-family-heading; }
+
+body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-link {
+  font-family: font-family-heading; }
+
+.footer-contact.footer-contact-six .title_block {
+  font-family: font-family-heading; }
+
+.image-category.image-category-seven .view_all a {
+  font-family: font-family-heading; }
+.image-category.image-category-seven ul li a {
+  font-family: font-family-heading; }
+
+.deo-content-cart .cart-item .cart-item-info .product-name a {
+  font-family: font-family-heading; }
+
+.block-link-inline.border-spacing-style ul li a {
+  font-family: font-family-heading; }
+.block-link-inline.bold-style ul li a {
+  font-family: font-family-heading; }
+
+.DeoBlogs.blog-style-nine .created {
+  font-family: font-family-heading; }
+
+.DeoCategoryImage.image-category-three .level0 > li > .cate_content .deo-qty-category {
+  font-family: font-family-heading; }
+.DeoCategoryImage.image-category-eight .level0 > li > .cate_content .deo-qty-category {
+  font-family: font-family-heading; }
+
+.DeoSlideshow .second-text {
+  font-family: font-family-heading; }
+.DeoSlideshow .third-text {
+  font-family: font-family-heading; }
+
+/*# sourceMappingURL=skin-font.css.map */

@@ -1,0 +1,1082 @@
+@import "theme_variables";
+
+
+
+/* banner */
+.banner{
+	margin-bottom: $grid-gutter-width-base;
+	&.banner-no-margin{
+		margin-bottom: 0px;
+	}
+	&.banner-style-one{
+		margin-bottom: 0px;
+		.media{
+			position: relative;
+			text-align: center;
+			background: #242b2f;
+			@media (min-width: 480px) {
+				@include display(flex);
+				@include align-items(center);
+			}
+			&:before{
+				@media (min-width: 480px) {
+					content: '';
+					z-index: 1;
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					background: inherit;
+					@include transform(rotate(45deg));
+				}
+			}
+		}
+		.left-block,.right-block{
+			@media (min-width: 480px) {
+				width: 50%;
+			}
+		}
+		.right-block{
+			padding: 25px 15px;  
+		}
+		h3{
+			color: $white;
+			font-size: 22px;
+			font-weight: 500;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			// font-family: $font-family-senary;
+			@media (max-width: 1199px) and (min-width: 992px) {
+				font-size: 20px;
+			}
+		}
+		p{
+			color: $white;
+			font-size: 13px;
+			margin-bottom: 0px;
+			font-style: italic;
+		}
+		.btn{
+			color: $white;
+			font-size: 13px;
+			margin-top: 25px;
+			padding: 8px 20px;
+			font-style: normal;
+			border: 1px solid $white;
+			background: transparent;
+			text-transform: uppercase;
+			@include border-radius(9999px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				background: $white;
+				color: $black;
+			}
+		}
+		.image{
+			display: block;
+			overflow: hidden;
+			background: $white;
+		}
+		&.left-img{
+			.media{
+				@media (min-width: 480px) {
+					@include flex-direction(row-reverse);
+				}
+				&:before{
+					@media (min-width: 480px) {
+						top: 50%;
+						@include rtl-left(calc(50% - 20px));
+						@include transform(rotate(45deg) translateY(-50%));
+					}
+				}
+			}
+		}
+		&.right-img{
+			.media{
+				&:before{
+					@media (min-width: 480px) {
+						top: 50%;
+						@include rtl-right(calc(50% - 5px));
+						@include transform(rotate(45deg) translateY(-50%));
+					}
+				}
+			}
+		}
+	}
+	&.banner-style-two{
+		text-align: center;
+		.media{
+			position: relative;
+			// display: inline-block;
+			// vertical-align: middle;
+		}
+		.left-block{
+			overflow: hidden;
+			text-align: center;
+		}
+		.right-block{
+			z-index: 2;
+			top: 50%;
+			left: 20px;
+			right: 20px;
+			padding: 15px;
+			position: absolute;
+			background: rgba($white,0.7);
+			@include transition(all 0.5s ease);
+			@include transform(translateY(-50%));
+			@include box-shadow(0px 1px 1px 1px rgba($black,0.04));
+		}
+		.image{
+			display: block;
+			position: relative;
+			&:before{
+				// @media (min-width: 576px) {
+					content: '';
+					left: 0px;
+					right: 0px;
+					top: 0px;
+					bottom: 0px;
+					z-index: 1;
+					position: absolute;
+					background: rgba($black,0.3);
+					visibility: hidden;
+					@include opacity(0);
+					@include transition(all 0.4s ease); 
+				// }
+			}
+		}
+		h3{
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 8px;
+		}
+		p{
+			font-size: 13px;
+			margin-bottom: 0px;
+			font-style: italic;
+		}
+		.btn{
+			border: none;
+			padding: 0px;
+			font-size: 13px;
+			margin-top: 15px;
+			margin-bottom: 0px;
+			font-style: normal;
+			color: $theme-color-default;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				color: $theme-color-button-hover;
+			}
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				.right-block{
+					background: $white;
+				}
+				.image{
+					&:before{
+						visibility: visible;
+						@include opacity(1);
+					}
+				}
+			}
+		}
+		&.right-text{
+			.right-block{
+				// @media (min-width: 576px) {
+					@include rtl-text-align-right();
+				// }
+			}
+		}
+		&.left-text{
+			.right-block{
+				// @media (min-width: 576px) {
+					@include rtl-text-align-left();
+				// }
+			}
+		}
+		&.bottom-text{
+			.right-block{
+				// @media (min-width: 576px) {
+					top: auto;
+					bottom: 20px;
+					@include transform(none);
+				// }
+			}
+			&:hover{
+				@media (min-width: 992px) {
+					.right-block{
+						top: auto;
+						bottom: 30px;
+					}
+				}
+			}
+		}
+		&.top-text{
+			.right-block{
+				// @media (min-width: 576px) {
+					top: 20px;
+					bottom: auto;
+					@include transform(none);
+				// }
+			}
+			&:hover{
+				@media (min-width: 992px) {
+					.right-block{
+						top: 30px;
+						bottom: auto;
+					}
+				}
+			}
+		}
+		&.full-text{
+			.right-block{
+				top: 20px;
+				bottom: 20px;
+				@include display(flex);
+				@include transform(none);
+				@include align-items(center);
+				@include justify-content(center); 
+			}
+			h3{
+				@media (min-width: 480px) {
+					font-size: 30px;
+					margin-bottom: 15px;
+				}
+			}
+			.btn{
+				@media (min-width: 480px) {
+					margin-top: 20px;
+				}
+			}
+			&:hover{
+				@media (min-width: 992px) {
+					.right-block{
+						background: rgba($white,0.7);
+					}
+				}
+			}
+		}
+	}
+	&.banner-style-three{
+		.media{
+			padding: 20px 25px;
+			border: 3px double #eaeaea;
+			@include display(flex);
+			@include align-items(center);
+			@include flex-direction(row);
+			@media (max-width: 1199px) and (min-width: 992px) {
+				padding: 10px 15px;
+			}
+		}
+		.left-block{
+			width: 100px;
+			@media (max-width: 1199px) and (min-width: 992px) {
+				width: 80px;
+			}
+		}
+		.right-block{
+			width: calc(100% - 100px);
+			@include rtl-padding-left(25px);
+			@media (max-width: 1199px) and (min-width: 992px) {
+				width: calc(100% - 80px);
+				@include rtl-padding-left(15px);
+			}
+		}
+		h3{
+			font-size: 23px;
+			font-weight: 500;
+			margin-bottom: 10px;
+			@media (max-width: 1199px) and (min-width: 992px) {
+				font-size: 20px;
+			}
+		}
+		p{
+			font-size: 13px;
+			font-style: italic;
+			margin-bottom: 0px;
+			line-height: 1.6;
+		}
+		.btn{
+			padding: 0px;
+			font-size: 13px;
+			margin-top: 10px;
+			margin-bottom: 0px;
+			font-style: normal;
+			color: $theme-color-default;
+			text-decoration: underline;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				color: $theme-color-button-hover;
+			}
+		}
+	}
+	&.banner-style-four{
+		.media{
+			text-align: center;
+			position: relative;
+		}
+		.right-block{
+				top: 35%;
+				left: 0px;
+				right: 0px;
+				z-index: 3;
+				padding: 20px;
+				position: absolute;
+				@include transition(all 0.4s ease);
+				@include transform(translateY(-35%));
+				@media (min-width: 992px) {
+						padding: 25px;
+				}
+		}
+		.image{
+			display: block;
+			&:before{
+				content: '';
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 1;
+				position: absolute;
+				background: rgba($black, 0.3);
+				@include transition(all 0.4s ease);
+			}
+			&:after{
+				content: '';
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 2;
+				position: absolute;
+				border: 1px solid rgba($white, 0.4);
+				@include transition(all 0.4s ease);
+				@media (max-width: 991px) {
+					margin: 10px;
+				}
+			}
+		}
+		h4{
+			font-size: 13px;
+			font-weight: 400;
+			margin-bottom: 5px;
+			font-family: inherit;
+			text-transform: uppercase;
+		}
+		h3{
+			font-size: 25px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			font-family: inherit;
+			text-transform: uppercase;
+			@media (max-width: 991px) {
+				font-size: 20px;
+			}
+		}
+		p{
+			font-size: 13px;
+			font-style: italic;
+			margin-bottom: 0px;
+		}
+		.btn{
+			color: $black;
+			font-size: 13px;
+			margin-top: 25px;
+			font-style: normal;
+			border: 1px solid $black;
+			text-transform: uppercase;
+			background: transparent;
+			@include border-radius(9999px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					background: $black;
+					border-color: $black;
+					color: $white;
+				}
+			}
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				.right-block{
+					top: 40%;
+					@include transform(translateY(-40%));
+				}
+				.image{
+					&:after{
+						content: '';
+						margin: 15px;
+					}
+				}
+			}
+		}
+		&.overlay-white{
+			.image{
+				&:before{
+					background: rgba($white, 0.4);
+				}
+				&:after{
+					border-color:  rgba($white, 0.7);
+				}
+			}
+		}
+		&.overlay-theme{
+			.image{
+				&:before{
+					background: rgba($theme-color-default, 0.4);
+				}
+			}
+		}
+		&.text-white{
+			h3,h4{
+				color: $white;
+			}
+			p{
+				color: $white;
+			}
+			.btn{
+				color: $white;
+				border-color: $white;
+				&:hover{
+					@media (min-width: 992px) {
+						background: $white;
+						border-color: $white;
+						color: $theme-color-default;
+					}
+				}
+			}
+		}
+	}
+	&.banner-style-five{
+		.media{
+			text-align: center;
+			position: relative;
+		}
+		.left-block{
+			position: relative;
+		}
+		.right-block{
+			padding: 20px $grid-gutter-width-base/2 0px;
+		}
+		.image{
+			display: block;
+			&:before{
+				content: '';
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 2;
+				position: absolute;
+				border: 1px solid rgba($white, 0.5);
+				@include transition(all 0.4s ease);
+			}
+		}
+		h3{
+			font-size: 25px;
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+		p{
+			line-height: 1.8;
+			font-style: italic;
+			margin-bottom: 0px;
+			font-size: 13px;
+		}
+		.btn{
+			border: none;
+			color: $white;
+			font-size: 13px;
+			margin-top: 25px;
+			padding: 10px 25px;
+			font-style: normal;
+			background: $black;
+			text-transform: uppercase;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					background: $theme-color-default;
+				}
+			}
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				.image{
+					&:before{
+						border-width: 15px;
+					}
+				}
+			}
+		}
+	}
+	&.banner-style-six{
+		.media{
+			text-align: center;
+			position: relative;
+		}
+		.right-block{
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: 3;
+			padding: 25px;
+			margin: 20px;
+			position: absolute;
+			background: rgba($white,0.8);
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+			@media (max-width: 767px){
+				padding: 15px;
+			}
+		}
+		h5{
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin-bottom: 15px;
+			font-family: inherit;
+			text-transform: uppercase;
+			color: $theme-color-default;
+		}
+		h3{
+			font-size: 25px;
+			font-weight: 500;
+			margin-bottom: 15px;
+			font-family: inherit;
+			text-transform: uppercase;
+		}
+		p{
+			line-height: 1.5;
+			font-style: italic;
+			margin-bottom: 0px;
+			font-size: 13px;
+		}
+		img{
+			@media (max-width: 575px){
+				width: 100%;
+			}
+		}
+		.btn{
+			font-size: 13px;
+			line-height: normal;
+			padding: 8px 20px;
+			margin-top: 30px;
+			font-weight: 400;
+			font-style: normal;
+			text-transform: uppercase;
+			color: $theme-color-default;
+			border: 3px double $theme-color-default;
+			@include border-radius(9999px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					color: $white;
+					border-color: $theme-color-button-hover;
+					background: $theme-color-default;
+				}
+			}
+		}
+		&.small-text{
+			h5{
+				font-size: 14px;
+			}
+			h3{
+				font-size: 25px;
+			}
+			.btn{
+				padding: 8px 15px;
+				margin-top: 20px;
+			}
+		}
+	}
+	&.banner-style-seven{
+		.media{
+			text-align: center;
+			position: relative;
+		}
+		.right-block{
+			top: 50%;
+			left: 0px;
+			right: 0px;
+			z-index: 3;
+			padding: 30px;
+			position: absolute;
+			@include transform(translateY(-50%));
+		}
+		.image{
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				top: 0px;	
+				bottom: 0px;
+				z-index: 2;
+				background: rgba($white, 0.2);
+			}
+		}
+		h4{
+			font-size: 14px;
+			font-weight: normal;
+			margin-bottom: 15px;
+			letter-spacing: 2px;
+			font-family: inherit;
+			text-transform: uppercase;
+			@media (max-width: 1199px) {
+				font-size: 13px;
+			}
+		}
+		h3{
+			font-size: 25px;
+			font-weight: 500;
+			margin-bottom: 0px;
+			font-family: inherit;
+			text-transform: uppercase;
+			text-shadow: 1px 1px 2px $black;
+			@media (max-width: 1199px) {
+				font-size: 25px;
+			}
+		}
+		p{
+			font-style: italic;
+			margin-bottom: 0px;
+		}
+		.btn{
+			padding: 0px;
+			border: none;
+			font-size: 13px;
+			margin-top: 20px;
+			font-weight: 600;
+			font-style: normal;
+			padding-bottom: 2px;
+			text-transform: uppercase;
+			color: $theme-color-default;
+			border-bottom: 2px solid $theme-color-default;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				@media (min-width: 992px) {
+					color: $theme-color-button-hover;
+				}
+			}
+		}
+		&.right-text{
+			.media{
+				@media (min-width: 992px) {
+					@include rtl-text-align-right();
+				}
+			}
+		}
+		&.left-text{
+			.media{
+				@media (min-width: 992px) {
+					@include rtl-text-align-left();
+				}
+			}
+		}
+		&.text-white{
+			.image{
+				&:before {
+					background: rgba($black, 0.2);
+				}
+			}
+			h4{
+				color: $white;
+			}
+			h3{
+				color: $white;
+			}
+			p{
+				color: $white;
+			}
+			.btn{
+				color: $white;
+				border-bottom-color: $white;
+				&:hover{
+					color: $theme-color-default;
+					border-bottom-color: $theme-color-default;
+				}
+			}
+		}
+	}
+	&.banner-style-eight{
+		.media{
+			text-align: center;
+			position: relative;
+		}
+		.left-block{
+			overflow: hidden;
+		}
+		.right-block{
+			z-index: 2;
+			left: 30px;
+			right: 30px;
+			bottom: 30px;
+			margin: auto;
+			max-width: 80%;
+			padding: 15px 20px;
+			position: absolute;
+			background: rgba($white,0.7);
+		}
+		h3{
+			font-size: 23px;
+			font-weight: 500;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+			display: inline-block;
+			vertical-align: middle;
+			border-bottom: 1px solid $black;
+			@media (max-width: 1199px) {
+				font-size: 20px;
+			}
+		}
+		p{
+			font-size: 13px;
+			margin-bottom: 0px;
+			font-style: italic;
+		}
+		.btn{
+			padding: 0px;
+			font-size: 13px;
+			margin-top: 15px;
+			margin-bottom: 0px;
+			font-style: normal;
+			text-decoration: underline;
+			color: $theme-color-default;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				color: $theme-color-button-hover;
+			}
+		}
+		&.text-white{
+			.right-block{
+				background: rgba($black,0.6);
+			}
+			h3{
+				color: $white;
+				border-bottom-color: $white;
+			}
+			p{
+				color: $white;
+			}
+		}
+		&.right-text{
+			.media{
+				margin: 0px;
+				@include rtl-text-align-right();
+				@media (min-width: 992px) {
+						@include rtl-text-align-right();
+				}
+			}
+			.right-block{
+				max-width: inherit;
+				@include rtl-left-right(auto,30px);
+			}
+		}
+		&.left-text{
+			.media{
+				@include rtl-text-align-left();
+				@media (min-width: 992px) {
+						@include rtl-text-align-left();
+				}
+			}
+			.right-block{
+				margin: 0px;
+				max-width: inherit;
+				@include rtl-left-right(30px,auto);
+			}
+		}
+	}
+	&.banner-style-nine{
+		.media{
+			text-align: center;
+			position: relative;
+		}
+		.left-block{
+			overflow: hidden;
+		}
+		.right-block{
+			z-index: 2;
+			top: 50%;
+			left: 0px;
+			right: 0px;
+			padding: 15px 20px;
+			position: absolute;
+			@include transform(translateY(-50%));
+		}
+		h3{
+			font-size: 25px;
+			font-weight: 600;
+			margin-bottom: 5px;
+			letter-spacing: 2px;
+			font-family: inherit;
+			text-transform: uppercase;
+			@media (max-width: 1199px) {
+				font-size: 20px;
+			}
+		}
+		p{
+			font-size: 13px;
+			margin-bottom: 0px;
+			font-style: italic;
+		}
+		.btn{
+			color: $black;
+			font-size: 13px;
+			margin-top: 30px;
+			padding: 8px 20px;
+			margin-bottom: 0px;
+			font-style: normal;
+			position: relative;
+			font-weight: 600;
+			border: 2px solid $black;
+			text-transform: uppercase;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			@media (max-width: 479px) {
+				margin-top: 20px;
+			}
+			&:before{
+				content: '';
+				top: -20px;
+				width: 50px;
+				left: 0px;
+				right: 0px;
+				margin: auto;
+				height: 1px;
+				background: $white;
+				position: absolute;
+				@media (max-width: 479px) {
+					top: -15px;
+				}
+			}
+			&:hover{
+				color: $white;
+				border-color: $theme-color-default;
+				background: $theme-color-default
+			}
+		}
+		&.text-white{
+			h3{
+				color: $white;
+			}
+			p{
+				color: $white;
+			}
+			.btn{
+				color: $white;
+				border-color: $white;
+				&:hover{
+					color: $black;
+					background: $white;
+					border-color: $white;
+				}
+			}
+		}
+	}
+	&.banner-style-ten{
+		.media{
+			padding: 10px;
+			position: relative;
+			background: #f2f2f2;
+			@media (min-width: 992px) {
+				padding: 0px;
+				@include display(flex);
+			}
+			@media (max-width: 991px) {
+				text-align: center;
+			}
+		}
+		&.left-image{
+			.left-block{
+				@media (min-width: 992px) {
+					@include order(1);
+				}
+			}
+			.right-block{
+				@media (min-width: 992px) {
+					@include order(2);
+					@include rtl-padding(20px,20px,20px,0px);
+				}
+				@media (min-width: 1200px) {
+					@include rtl-padding(30px,30px,30px,0px);
+				}
+				.image_description{
+					@media (min-width: 992px) {
+						@include rtl-margin-left(-70px);
+					}
+				}
+			}
+		}
+		&.right-image{
+			.left-block{
+				@media (min-width: 992px) {
+						@include order(2);
+				}
+			}
+			.right-block{
+				@media (min-width: 992px) {
+					@include order(1);
+					@include rtl-padding(20px,0px,20px,20px);
+				}
+				@media (min-width: 1200px) {
+					@include rtl-padding(30px,0px,30px,30px);
+				}
+				.image_description{
+					@media (min-width: 992px) {
+						@include rtl-margin-right(-70px);
+					}
+				}
+			}
+		}
+		.left-block{
+			@media (min-width: 992px) {
+				width: 45%;
+			}
+			@media (min-width: 1200px) {
+				width: 40%;
+			}
+			@media (min-width: 1500px) {
+				width: 35%;
+			}
+		}
+		.right-block{
+			@media (min-width: 992px) {
+				width: 55%;
+			}
+			@media (min-width: 1200px) {
+				width: 60%;
+			}
+			@media (min-width: 1500px) {
+				width: 65%;
+			}
+			.image_description{
+				padding: 20px;
+				background: $white;
+				@include transition(all 0.4s ease);
+				@media (min-width: 1200px) {
+					padding: 30px;
+				}
+				@media (min-width: 992px) {
+					z-index: 2;
+					height: 100%;
+					position: relative;
+					@include display(flex);
+					// @include border-radius(5px);
+					@include justify-content(center);
+					@include flex-direction(column);
+				}
+			}
+		}
+		h3{
+			font-size: 23px;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+		p{
+			font-size: 13px;
+			line-height: 1.6;
+			margin-bottom: 0px;
+			font-style: italic;
+		}
+		.btn{
+			border: none;
+			font-size: 14px;
+			margin-top: 25px;
+			padding: 8px 25px;
+			margin-bottom: 0px;
+			font-style: normal;
+			position: relative;
+			font-weight: normal;
+			line-height: normal;
+			text-transform: uppercase;
+			color: $theme-color-default;
+			border: 1px double $theme-color-default;
+			@include border-radius(20px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				color: $white;
+				background: $theme-color-default;
+				border-color: $theme-color-button-hover;
+			}
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				.right-block{
+					.image_description{
+						@include box-shadow(0 0 15px 0 rgba($black, 0.2));
+					}
+				}
+			}
+		}
+	}
+	&.banner-style-eleven{
+		.media{
+			text-align: center;
+			position: relative;
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+		}
+		.left-block{
+			width: 100%;
+			@include display(flex);
+			@include justify-content(center);
+			@media (min-width: 768px) {
+				width: 40%;
+			}
+		}
+		.right-block{
+			width: 100%;
+			padding: 15px;
+			@media (min-width: 768px) {
+				width: 60%;
+				padding: 20px 30px;
+			}
+		}
+		h3{
+			font-size: 22px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			// font-family: $font-family-senary;
+		}
+		p{
+			font-size: 13px;
+			line-height: 1.8;
+			margin-bottom: 0px;
+		}
+		.btn{
+			color: $white;
+			font-size: 13px;
+			margin-top: 25px;
+			padding: 10px 20px;
+			margin-bottom: 0px;
+			font-style: normal;
+			position: relative;
+			font-weight: normal;
+			line-height: normal;
+			background: $black;
+			border: 1px solid $black;
+			text-transform: uppercase;
+			@include border-radius(0px);
+			@include transition(all 0.4s ease);
+			&:hover{
+				border-color: $theme-color-default;
+				background: $theme-color-default
+			}
+		}
+		&.reserve{
+			.media{
+				@media (min-width: 768px) {
+					@include flex-direction(row-reverse);
+				}
+			}
+		}
+	}
+}

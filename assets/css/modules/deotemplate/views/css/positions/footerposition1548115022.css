@@ -1,0 +1,86 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+.footer-container {
+  background-color: #333333;
+  color: #cccccc; }
+
+.footer-top {
+  background: #222222; }
+
+.box-top-footer {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  @media (min-width: 768px) {
+    .box-top-footer > [class*="col-"] {
+      border-right: 1px solid #eaeaea; }
+      .rtl .box-top-footer > [class*="col-"] {
+        border-left: 1px solid #eaeaea;
+        border-right: inherit; }
+      .box-top-footer > [class*="col-"]:last-child {
+        border: none; } }
+
+.box-middle-footer {
+  padding-top: 50px;
+  padding-bottom: 40px; }
+  @media (min-width: 768px) {
+    .box-middle-footer {
+      padding-top: 60px;
+      padding-bottom: 50px; } }
+  .box-middle-footer .logo {
+    margin-bottom: 25px; }
+  @media (max-width: 991px) and (min-width: 576px) {
+    .box-middle-footer .block-social .box-title {
+      margin-top: 0px; } }
+  @media (min-width: 992px) {
+    .box-middle-footer .block-contact {
+      position: relative;
+      padding-right: 60px; }
+      .rtl .box-middle-footer .block-contact {
+        padding-left: 60px;
+        padding-right: inherit; }
+      .box-middle-footer .block-contact:after {
+        content: '';
+        top: 0px;
+        bottom: 0px;
+        width: 1px;
+        background: #eaeaea;
+        position: absolute;
+        right: 60px; }
+        .rtl .box-middle-footer .block-contact:after {
+          left: 60px;
+          right: auto; } }
+
+.box-bottom-footer {
+  padding-bottom: 20px; }
+  .box-bottom-footer .group-text .block-link-inline {
+    padding-bottom: 20px; }
+    @media (min-width: 576px) {
+      .box-bottom-footer .group-text .block-link-inline {
+        padding-top: 20px; } }
+  .box-bottom-footer .group-text .text-footer {
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=footerposition1548115022.css.map */

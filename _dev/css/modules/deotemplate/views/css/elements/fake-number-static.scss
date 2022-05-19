@@ -1,0 +1,271 @@
+@import "theme_variables";
+
+
+/* fake-number-static */
+.fake-number-static{
+	padding-top: $grid-gutter-width-base/2;
+	padding-bottom: $grid-gutter-width-base/2;
+	i{
+		font-size: 35px;
+		&.icon-comment:before {
+			content: '\ea9d';
+		}
+		&.icon-gift:before {
+			content: '\eaa0';
+		}
+		&.icon-group:before {
+			content: '\ea9f';
+		}
+		&.icon-chart:before {
+			content: '\e962';
+		}
+	}
+	p{
+		font-size: 16px;
+		margin-top: 3px;
+		margin-bottom: 0px;
+	}
+	.numscroller{
+		font-size: 25px;
+		margin-bottom: 0px;
+	}
+	&.number-plus{
+		.numscroller{
+			&.increment-done{
+				&:after{
+					content: '+';
+					font-size: 25px;
+					display: inline-block;
+					vertical-align: top;
+					@include rtl-margin-left(5px);
+				}
+			}
+		}
+	}
+	&.number-percent{
+		.numscroller{
+			&.increment-start{
+				&:after{
+					content: '%';
+					display: inline-block;
+					@include rtl-margin-left(5px);
+				}
+			}
+		}
+	}
+	&.fake-number-static-one{
+		text-align: center;
+		.numscroller{
+			color: $black;
+			display: block;
+			line-height: 1;
+			font-weight: 500;
+		}
+		i{
+			font-size: 45px;
+			margin-bottom: 15px;
+			color: $theme-color-default;
+		}
+		p{
+			margin-top: 10px;
+			font-size: 14px;
+			font-weight: 400;
+			font-style: italic;
+			color: $theme-color-default;
+		}
+	}
+	&.fake-number-static-two{
+		text-align: center;
+		.numscroller{
+			display: block;
+			line-height: 1;
+			font-weight: 500;
+		}
+		p{
+			font-size: 13px;
+			margin-top: 10px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+	&.fake-number-static-three{
+		text-align: center;
+		.numscroller{
+			line-height: 1;
+			font-weight: 300;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		i{
+			font-size: 30px;
+			display: inline-block;
+			vertical-align: middle;
+			@include rtl-margin-right(10px);
+		}
+		p{
+			font-size: 13px;
+			margin-top: 5px;
+			text-transform: uppercase;
+		}
+	}
+	&.fake-number-static-four{
+		text-align: center;
+		.numscroller{
+			line-height: 1;
+			font-weight: 500;
+		}
+		p{
+			font-size: 13px;
+			margin-top: 5px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+		.left-block{
+			margin-bottom: 20px;
+		}
+	}
+	&.fake-number-static-five{
+		.numscroller{
+			line-height: 1;
+			font-weight: 500;
+		}
+		p{
+			font-size: 13px;
+			margin-top: 5px;
+			text-transform: uppercase;
+		}
+		.media{
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+		}
+		.left-block{
+			max-width: 50px;
+		}
+		.right-block{
+			max-width: calc(100% - 50px);
+			@include rtl-padding-left(20px);
+		}
+	}
+	&.fake-number-static-six{
+		margin: 15px auto;
+		padding: 25px;
+		color: $black;
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		background: rgba($black, 0.5);
+		@include border-radius(50%);
+		@include transition(all 0.5s ease);
+		&:before{
+			content: '';
+			position: absolute;
+			top: -7px;
+			left: -7px;
+			right: -7px;
+			bottom: -7px;
+			padding: 7px;
+			@include opacity(0);
+			@include border-radius(50%);
+			@include transform(scale(0.8));
+			@include box-shadow(0 0 0 3px $white);
+			@include transition(transform 0.2s ease);
+		}
+		.cricle-block{
+			min-width: 130px;
+			min-height: 130px;
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+			@include flex-direction(column);
+
+		}
+		.numscroller{
+			color: $white;
+			line-height: 1;
+			font-size: 26px;
+			font-weight: 500;
+		}
+		p{
+			color: $white;
+			font-size: 11px;
+			margin-top: 7px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		&:hover{
+			background: $white;
+			&:before{
+				@include opacity(1);
+				@include transform(scale(1));
+			}
+			p,.numscroller{
+				color: inherit;
+			}
+		}
+	}
+	&.fake-number-static-white{
+		color: $white;
+		i,p,.numscroller{
+			color: $white;
+		}
+	}
+}
+.box-background-fake-number-static{
+	padding: 50px 0px; 
+}
+.box-border-spacing-fake-number-static{
+	& > [class*="col-"]{
+		@media (min-width: 576px) {
+			& + [class*="col-"]{
+				&:before{
+					content: '';
+					position: absolute;
+					width: 1px;
+					top: 15px;
+					bottom: 15px;
+					margin: auto;
+					background: #eeeeee;
+					@include rtl-left(0px);
+				}
+			}
+		}
+	}
+	&.four-element {
+		& > [class*="col-"]{
+			@media (max-width: 575px) and (min-width: 480px) {
+				&:nth-of-type(2n){
+					&:before{
+						content: '';
+						position: absolute;
+						width: 1px;
+						top: 15px;
+						bottom: 15px;
+						margin: auto;
+						background: #eeeeee;
+						@include rtl-left(0px);
+					}
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					height: 1px;
+					left: 15px;
+					right: 15px;
+					bottom: 0px;
+					margin: auto;
+					background: #eeeeee;
+				}
+				&:last-child,&:nth-last-child(2){
+					&:after{
+						display: none;
+					}
+				}
+				&:nth-child(2n + 1){
+					clear: both;
+				}
+			}
+		}
+	}
+}

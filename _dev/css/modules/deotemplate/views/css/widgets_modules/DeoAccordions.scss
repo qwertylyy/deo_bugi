@@ -1,0 +1,41 @@
+@import "theme_variables";
+
+
+/* DeoAccordions */
+.DeoAccordions{
+	.panel{
+		margin-bottom: 15px;
+		border: $main-border;
+		@include box-shadow(none);
+		.panel-title{
+			text-transform: none;
+			font-weight: normal;
+			margin-bottom: 0px;
+			padding: 10px 15px;
+			a{
+				display: block;
+				position: relative;
+				@include rtl-padding-right(20px);
+				&:before{
+					content: "\E15B";
+					cursor: pointer;
+					display: block;
+					font-size: 18px;
+					top: 3px;
+					position: absolute;
+					font-family: $font-icon-2;
+					@include rtl-right(0px);
+				}
+				&.collapsed{
+					&:before{
+						content: "\E145";
+					}
+				}
+			}
+		}
+		.panel-collapse{
+			padding: 15px;
+			border-top: $main-border;
+		}
+	}
+}

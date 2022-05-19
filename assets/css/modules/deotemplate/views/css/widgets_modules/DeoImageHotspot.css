@@ -1,0 +1,449 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* DeoImageHotspot */
+.DeoImageHotspot {
+  margin-bottom: 30px; }
+  .DeoImageHotspot.no-margin {
+    margin-bottom: 0px; }
+  .DeoImageHotspot .imagehotspot-container {
+    z-index: 100;
+    position: relative; }
+  .DeoImageHotspot .hotspot {
+    top: 50%;
+    left: 50%;
+    position: absolute; }
+    .DeoImageHotspot .hotspot .alert {
+      margin: 0px; }
+    .DeoImageHotspot .hotspot .hotspot-title {
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      position: relative;
+      display: block;
+      border-radius: 50%;
+      -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+      -o-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+      -ms-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3); }
+      .DeoImageHotspot .hotspot .hotspot-title:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0px;
+        z-index: 1;
+        background: #1bbc9b;
+        border-radius: 50%;
+        -webkit-animation: dothotspot 0.8s infinite;
+        -moz-animation: dothotspot 0.8s infinite;
+        animation: dothotspot 0.8s infinite; }
+      .DeoImageHotspot .hotspot .hotspot-title:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0px;
+        z-index: 2;
+        display: block;
+        border: 3px solid #FFFFFF;
+        background: #1bbc9b;
+        border-radius: 50%; }
+    .DeoImageHotspot .hotspot .hotspot-content {
+      z-index: 101;
+      background: white;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .DeoImageHotspot .hotspot .hotspot-content .arrow {
+        width: 15px;
+        height: 15px;
+        margin: auto;
+        z-index: -100;
+        background: #FFFFFF;
+        position: absolute;
+        background: inherit;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .DeoImageHotspot .hotspot .hotspot-content .close {
+        position: absolute;
+        z-index: 101;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        background: #FFFFFF;
+        text-align: center;
+        top: -10px;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        border-radius: 50%;
+        right: -10px;
+        left: auto;
+        -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3); }
+        .rtl .DeoImageHotspot .hotspot .hotspot-content .close {
+          right: auto;
+          left: -10px; }
+        .DeoImageHotspot .hotspot .hotspot-content .close:before {
+          content: "\ea11";
+          font-size: 6px;
+          display: block;
+          font-family: "deo-custom-icons"; }
+      .DeoImageHotspot .hotspot .hotspot-content .template, .DeoImageHotspot .hotspot .hotspot-content .product-hotspot {
+        background: #FFFFFF; }
+      .DeoImageHotspot .hotspot .hotspot-content .template {
+        padding: 5px;
+        text-align: center; }
+      .DeoImageHotspot .hotspot .hotspot-content .thumbnail-container {
+        margin-bottom: 0px; }
+      .DeoImageHotspot .hotspot .hotspot-content .content {
+        padding: 5px 0px; }
+    .DeoImageHotspot .hotspot.top .hotspot-content {
+      left: 50%;
+      bottom: 100%;
+      margin-bottom: 15px;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .DeoImageHotspot .hotspot.top .hotspot-content .arrow {
+        bottom: -5px;
+        left: 0px;
+        right: 0px; }
+      .DeoImageHotspot .hotspot.top .hotspot-content .template, .DeoImageHotspot .hotspot.top .hotspot-content .product-hotspot {
+        -moz-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3); }
+    .DeoImageHotspot .hotspot.bottom .hotspot-content {
+      left: 50%;
+      top: 100%;
+      margin-top: 15px;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .DeoImageHotspot .hotspot.bottom .hotspot-content .arrow {
+        top: -5px;
+        left: 0px;
+        right: 0px; }
+      .DeoImageHotspot .hotspot.bottom .hotspot-content .template, .DeoImageHotspot .hotspot.bottom .hotspot-content .product-hotspot {
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3); }
+    .DeoImageHotspot .hotspot.right .hotspot-content {
+      top: 50%;
+      margin-left: 15px;
+      right: auto;
+      left: 100%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .rtl .DeoImageHotspot .hotspot.right .hotspot-content {
+        margin-right: 15px;
+        margin-left: inherit; }
+      .rtl .DeoImageHotspot .hotspot.right .hotspot-content {
+        right: 100%;
+        left: auto; }
+      .DeoImageHotspot .hotspot.right .hotspot-content .arrow {
+        top: 0px;
+        bottom: 0px;
+        right: auto;
+        left: -5px; }
+        .rtl .DeoImageHotspot .hotspot.right .hotspot-content .arrow {
+          right: -5px;
+          left: auto; }
+      .DeoImageHotspot .hotspot.right .hotspot-content .template, .DeoImageHotspot .hotspot.right .hotspot-content .product-hotspot {
+        -moz-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3); }
+        .rtl .DeoImageHotspot .hotspot.right .hotspot-content .template, .rtl .DeoImageHotspot .hotspot.right .hotspot-content .product-hotspot {
+          -moz-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          -o-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          -ms-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3); }
+    .DeoImageHotspot .hotspot.left .hotspot-content {
+      top: 50%;
+      margin-right: 15px;
+      right: 100%;
+      left: auto;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .rtl .DeoImageHotspot .hotspot.left .hotspot-content {
+        margin-left: 15px;
+        margin-right: inherit; }
+      .rtl .DeoImageHotspot .hotspot.left .hotspot-content {
+        right: auto;
+        left: 100%; }
+      .DeoImageHotspot .hotspot.left .hotspot-content .arrow {
+        top: 0px;
+        bottom: 0px;
+        right: -5px;
+        left: auto; }
+        .rtl .DeoImageHotspot .hotspot.left .hotspot-content .arrow {
+          right: auto;
+          left: -5px; }
+      .DeoImageHotspot .hotspot.left .hotspot-content .template, .DeoImageHotspot .hotspot.left .hotspot-content .product-hotspot {
+        -moz-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.3); }
+        .rtl .DeoImageHotspot .hotspot.left .hotspot-content .template, .rtl .DeoImageHotspot .hotspot.left .hotspot-content .product-hotspot {
+          -moz-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          -o-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          -ms-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.3); }
+    @media (max-width: 991px) {
+      .DeoImageHotspot .hotspot.mouseover .overlay-popup {
+        content: '';
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        right: 0px;
+        left: 0px; }
+        .rtl .DeoImageHotspot .hotspot.mouseover .overlay-popup {
+          right: 0px;
+          left: 0px; }
+      .DeoImageHotspot .hotspot.mouseover .hotspot-content {
+        z-index: 9999;
+        position: fixed;
+        top: 50%;
+        bottom: auto;
+        margin: auto;
+        max-height: 100%;
+        visibility: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        right: 0px;
+        left: 0px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .rtl .DeoImageHotspot .hotspot.mouseover .hotspot-content {
+          right: 0px;
+          left: 0px; }
+        .DeoImageHotspot .hotspot.mouseover .hotspot-content .arrow {
+          display: none; }
+        .DeoImageHotspot .hotspot.mouseover .hotspot-content .close {
+          visibility: visible;
+          opacity: 1;
+          filter: alpha(opacity=100); }
+      .DeoImageHotspot .hotspot.mouseover.open .overlay-popup {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100); }
+      .DeoImageHotspot .hotspot.mouseover.open .hotspot-content {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100); } }
+    .DeoImageHotspot .hotspot.mouseover:hover {
+      z-index: 100; }
+      @media (min-width: 992px) {
+        .DeoImageHotspot .hotspot.mouseover:hover .hotspot-content {
+          visibility: visible;
+          opacity: 1;
+          filter: alpha(opacity=100); } }
+    .DeoImageHotspot .hotspot.click {
+      z-index: 100; }
+      @media (max-width: 767px) {
+        .DeoImageHotspot .hotspot.click .overlay-popup {
+          content: '';
+          position: fixed;
+          top: 0px;
+          bottom: 0px;
+          z-index: 1000;
+          visibility: hidden;
+          background: rgba(0, 0, 0, 0.6);
+          opacity: 0;
+          filter: alpha(opacity=0);
+          -webkit-transform: none;
+          -moz-transform: none;
+          -ms-transform: none;
+          -o-transform: none;
+          transform: none;
+          right: 0px;
+          left: 0px; }
+          .rtl .DeoImageHotspot .hotspot.click .overlay-popup {
+            right: 0px;
+            left: 0px; }
+        .DeoImageHotspot .hotspot.click .hotspot-content {
+          z-index: 9999;
+          position: fixed;
+          top: 50%;
+          bottom: auto;
+          margin: auto;
+          max-height: 100%;
+          visibility: hidden;
+          overflow-y: auto;
+          overflow-x: hidden;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          right: 0px;
+          left: 0px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          .rtl .DeoImageHotspot .hotspot.click .hotspot-content {
+            right: 0px;
+            left: 0px; }
+          .DeoImageHotspot .hotspot.click .hotspot-content .arrow {
+            display: none; }
+          .DeoImageHotspot .hotspot.click .hotspot-content .close {
+            visibility: visible;
+            opacity: 1;
+            filter: alpha(opacity=100); }
+        .DeoImageHotspot .hotspot.click.open .overlay-popup {
+          visibility: visible;
+          opacity: 1;
+          filter: alpha(opacity=100); }
+        .DeoImageHotspot .hotspot.click.open .hotspot-content {
+          visibility: visible;
+          opacity: 1;
+          filter: alpha(opacity=100); } }
+      .DeoImageHotspot .hotspot.click .hotspot-title:after {
+        content: '\ea11';
+        font-size: 5px;
+        font-family: "deo-custom-icons";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 2;
+        display: none;
+        color: #FFFFFF;
+        text-align: center;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); }
+      .DeoImageHotspot .hotspot.click.open .hotspot-title:after {
+        display: block; }
+      .DeoImageHotspot .hotspot.click.open .hotspot-content {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100); }
+    .DeoImageHotspot .hotspot.popup .overlay-popup {
+      content: '';
+      position: fixed;
+      top: 0px;
+      bottom: 0px;
+      z-index: 1000;
+      visibility: hidden;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+      right: 0px;
+      left: 0px; }
+      .rtl .DeoImageHotspot .hotspot.popup .overlay-popup {
+        right: 0px;
+        left: 0px; }
+    .DeoImageHotspot .hotspot.popup .hotspot-content {
+      z-index: 9999;
+      position: fixed;
+      top: 50%;
+      bottom: auto;
+      margin: auto;
+      max-height: 100%;
+      visibility: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      right: 0px;
+      left: 0px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .rtl .DeoImageHotspot .hotspot.popup .hotspot-content {
+        right: 0px;
+        left: 0px; }
+      .DeoImageHotspot .hotspot.popup .hotspot-content .arrow {
+        display: none; }
+      .DeoImageHotspot .hotspot.popup .hotspot-content .close {
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100); }
+    .DeoImageHotspot .hotspot.popup.open .overlay-popup {
+      visibility: visible;
+      opacity: 1;
+      filter: alpha(opacity=100); }
+    .DeoImageHotspot .hotspot.popup.open .hotspot-content {
+      visibility: visible;
+      opacity: 1;
+      filter: alpha(opacity=100); }
+
+/*# sourceMappingURL=DeoImageHotspot.css.map */

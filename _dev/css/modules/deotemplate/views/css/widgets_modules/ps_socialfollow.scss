@@ -1,0 +1,721 @@
+@import "theme_variables";
+
+
+// Block Social
+.block-social{
+	.box-title{
+		display: none;
+	}
+	ul{
+		font-size: 0px;
+		margin: -5px -10px;
+	}
+	li {
+		vertical-align: middle;
+		display: inline-block;
+		cursor: pointer;
+		margin: 5px 10px;
+		text-align: center;
+		a {
+			display: block;
+			@include transition(all 0.4s ease);
+			i{
+				font-size: 18px;
+				font-style: normal;
+				vertical-align: middle;
+				&:before {
+					content: "";
+					display: block;
+					font-family: $font-icon-4;
+				}
+			}
+			span{
+				display: none;
+				font-size: $base-font-size;
+			}
+		}
+		&.facebook a{
+			i:before{
+				content: "\e9e7";
+			}
+		}
+		&.twitter a{
+			i:before{
+				content: "\e9e9";
+			}
+		}
+		&.rss a{
+			i:before{
+				content: "\e9db";
+			}
+		}
+		&.youtube a{
+			i:before{
+				content: "\e9c1";
+			}
+		}
+		&.googleplus a{
+			i:before{
+				content: "\e9bf";
+			}
+		}
+		&.pinterest a{
+			i:before{
+				content: "\e9eb";
+			}
+		}
+		&.vimeo a{
+			i:before {
+				content: "\e9f0";
+			}
+		}
+		&.instagram a{
+			i:before{
+				content: "\ea14";
+			}
+		}
+	}
+	&.social-title{
+		.box-title{
+			display: block;
+		}
+	}
+	&.social-block{
+		ul{
+			margin: 0px;
+			padding: 0px;
+			font-size: inherit;
+		}
+		li {
+			margin: 0px;
+			display: block;
+			@include rtl-text-align-left();
+			& + li{
+				margin-top: 15px;
+			}
+			a{
+				font-size: inherit;
+				display: inline-block;
+				vertical-align: middle;
+				span{
+					font-size: inherit;
+				}
+			}
+		}
+	}
+	// social-one
+	&.social-one{
+		li {
+			a {
+				&:hover {
+					color: $theme-color-default;
+				}
+			}
+			&.facebook a{
+				color: #4c86bc;
+			}
+			&.twitter a{
+				color: #55c2e1;
+			}
+			&.rss a{
+				color: #FF6600;
+			}
+			&.youtube a{
+				color: #ff0000;
+			}
+			&.googleplus a{
+				color: #de3737;
+			}
+			&.pinterest a{
+				color: #f45151;
+			}
+			&.vimeo a{
+				color: #089de3;
+			}
+			&.instagram a{
+				color: #c4a74d;
+			}
+		}
+		&.social-white{
+			li {
+				a {
+					color: $theme-color-background-black;
+					&:hover {
+						color: $theme-color-background-black-hover;
+					}
+				}
+			}
+			&.light{
+				li {
+					a {
+						color: $theme-color-background-black-hover;
+						&:hover {
+							color: $theme-color-background-black;
+						}
+					}
+				}
+			}
+		}
+	}
+	// social-two
+	&.social-two{
+		ul{
+			margin: -5px;
+		}
+		li{
+			margin: 5px;
+			a{
+				width: 35px;
+				height: 35px;
+				line-height: 33px;
+				font-size: 15px;
+				overflow: hidden;
+				border: 1px solid $black;
+				@include border-radius(50%);
+				i{
+					font-size: 15px;
+				}
+			}
+			&.facebook a{
+				&:hover{
+					color: #4c86bc;
+					border-color: #4c86bc;
+				}
+			}
+			&.twitter a{
+				&:hover{
+					color: #55c2e1;
+					border-color: #55c2e1;
+				}
+			}
+			&.rss a{
+				&:hover{
+					color: #FF6600;
+					border-color: #FF6600;
+				}
+			}
+			&.youtube a{
+				&:hover{
+					color: #ff0000;
+					border-color: #ff0000;
+				}
+			}
+			&.googleplus a{
+				&:hover{
+					color: #de3737;
+					border-color: #de3737;
+				}
+			}
+			&.pinterest a{
+				&:hover{
+					color: #f45151;
+					border-color: #f45151;
+				}
+			}
+			&.vimeo a{
+				&:hover{
+					color: #089de3;
+					border-color: #089de3;
+				}
+			}
+			&.instagram a{
+				&:hover{
+					color: #c4a74d;
+					border-color: #c4a74d;
+				}
+			}
+		}
+		&.has-color{
+			li {
+				&.facebook{
+					a{
+						color: #4c86bc;
+						border-color: #4c86bc;
+						&:hover{
+							background: #4c86bc;
+						}
+					}
+				} 
+				&.twitter{
+					a{
+						color: #55c2e1;
+						border-color: #55c2e1;
+						&:hover{
+							background: #55c2e1;
+						}
+					}
+				} 
+				&.rss{
+					a{
+						color: #FF6600;
+						border-color: #FF6600;
+						&:hover{
+							background: #FF6600;
+						}
+					}
+				} 
+				&.youtube{
+					a{
+						color: #ff0000;
+						border-color: #ff0000;
+						&:hover{
+							background: #ff0000;
+						}
+					}
+				} 
+				&.googleplus{
+					a{
+						color: #de3737;
+						border-color: #de3737;
+						&:hover{
+							background: #de3737;
+						}
+					}
+				} 
+				&.pinterest{
+					a{
+						color: #f45151;
+						border-color: #f45151;
+						&:hover{
+							background: #f45151;
+						}
+					}
+				} 
+				&.vimeo{
+					a{
+						color: #089de3;
+						border-color: #089de3;
+						&:hover{
+							background: #089de3;
+						}
+					}
+				} 
+				&.instagram{
+					a{
+						color: #c4a74d;
+						border-color: #c4a74d;
+						&:hover{
+							background: #c4a74d;
+						}
+					}
+				} 
+				&:hover{
+					a{
+						color: $white;
+					}
+				}
+			}
+		}
+		&.has-background{
+			li {
+				a{
+					overflow: hidden;
+					color: $white;
+					border-style: solid;
+					border-width: 1px;
+					@include border-radius(50%);
+					i{
+						font-size: 16px;
+					}
+				}
+				&.facebook{
+					a{
+						border-color: #4c86bc;
+						background: #4c86bc;
+					}
+					&:hover{
+						a{
+							color: #4c86bc;
+						}
+					}
+				} 
+				&.twitter{
+					a{
+						border-color: #55c2e1;
+						background: #55c2e1;
+					}
+					&:hover{
+						a{
+							color: #4c86bc;
+						}
+					}
+				}
+				&.rss{
+					a{
+						border-color: #FF6600;
+						background: #FF6600;
+					}
+					&:hover{
+						a{
+							color: #FF6600;
+						}
+					}
+				} 
+				&.youtube{
+					a{
+						border-color: #ff0000;
+						background: #ff0000;
+					}
+					&:hover{
+						a{
+							color: #ff0000;
+						}
+					}
+				} 
+				&.googleplus{
+					a{
+						border-color: #de3737;
+						background: #de3737;
+					}
+					&:hover{
+						a{
+							color: #de3737;
+						}
+					}
+				} 
+				&.pinterest{
+					a{
+						border-color: #f45151;
+						background: #f45151;
+					}
+					&:hover{
+						a{
+							color: #f45151;
+						}
+					}
+				} 
+				&.vimeo{
+					a{
+						border-color: #089de3;
+						background: #089de3;
+					}
+					&:hover{
+						a{
+							color: #089de3;
+						}
+					}
+				} 
+				&.instagram{
+					a{
+						border-color: #c4a74d;
+						background: #c4a74d;
+					}
+					&:hover{
+						a{
+							color: #c4a74d;
+						}
+					}
+				} 
+				&:hover{
+					a{
+						background: transparent;
+					}
+				}
+			}
+		}
+		&.social-small{
+			li{
+				a{
+					width: 32px;
+					height: 32px;
+					line-height: 30px;
+					i{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		&.social-white{
+			li{
+				a{
+					line-height: 36px;
+					border-width: 2px;
+					background: transparent;
+					color: $theme-color-background-black;
+					border-color: $theme-color-background-black;
+				}
+				&:hover{
+					a{
+						color: $theme-color-background-black-hover;
+						border-color: $theme-color-background-black-hover;
+					}
+				}
+			}
+		}
+	}
+	// social-three
+	&.social-three{
+		ul{
+			margin: 0px -5px;
+		}
+		li{
+			margin: 5px;
+			a{
+				width: 40px;
+				height: 40px;
+				line-height: 38px;
+				overflow: hidden;
+				color: #999999;
+				background: #4d4d4d;
+				border: 1px solid #4d4d4d;
+				i{
+					font-size: 16px;
+				}
+			}
+			&:hover{
+				a{
+					color: $white;
+					background: $theme-color-default;
+					border-color: $theme-color-default;
+				}
+			}
+		}
+		&.social-small{
+			li{
+				a{
+					width: 35px;
+					height: 35px;
+					line-height: 33px;
+				}
+			}
+		}
+		&.has-color{
+			li {
+				&.facebook a{
+					color: #4c86bc;
+				}
+				&.twitter a{
+					color: #55c2e1;
+				}
+				&.rss a{
+					color: #FF6600;
+				}
+				&.youtube a{
+					color: #ff0000;
+				}
+				&.googleplus a{
+					color: #de3737;
+				}
+				&.pinterest a{
+					color: #f45151;
+				}
+				&.vimeo a{
+					color: #089de3;
+				}
+				&.instagram a{
+					color: #c4a74d;
+				}
+				&:hover{
+					a{
+						color: $white;
+					}
+				}
+			}
+		}
+		&.has-background{
+			li {
+				a{
+					width: 40px;
+					height: 40px;
+					line-height: 38px;
+					overflow: hidden;
+					color: $white;
+					border-style: solid;
+					border-width: 1px;
+					i{
+						font-size: 16px;
+					}
+				}
+				&.facebook{
+					a{
+						border-color: #4c86bc;
+						background: #4c86bc;
+					}
+					&:hover{
+						a{
+							color: #4c86bc;
+						}
+					}
+				} 
+				&.twitter{
+					a{
+						border-color: #55c2e1;
+						background: #55c2e1;
+					}
+					&:hover{
+						a{
+							color: #4c86bc;
+						}
+					}
+				}
+				&.rss{
+					a{
+						border-color: #FF6600;
+						background: #FF6600;
+					}
+					&:hover{
+						a{
+							color: #FF6600;
+						}
+					}
+				} 
+				&.youtube{
+					a{
+						border-color: #ff0000;
+						background: #ff0000;
+					}
+					&:hover{
+						a{
+							color: #ff0000;
+						}
+					}
+				} 
+				&.googleplus{
+					a{
+						border-color: #de3737;
+						background: #de3737;
+					}
+					&:hover{
+						a{
+							color: #de3737;
+						}
+					}
+				} 
+				&.pinterest{
+					a{
+						border-color: #f45151;
+						background: #f45151;
+					}
+					&:hover{
+						a{
+							color: #f45151;
+						}
+					}
+				} 
+				&.vimeo{
+					a{
+						border-color: #089de3;
+						background: #089de3;
+					}
+					&:hover{
+						a{
+							color: #089de3;
+						}
+					}
+				} 
+				&.instagram{
+					a{
+						border-color: #c4a74d;
+						background: #c4a74d;
+					}
+					&:hover{
+						a{
+							color: #c4a74d;
+						}
+					}
+				} 
+				&:hover{
+					a{
+						background: transparent;
+					}
+				}
+			}
+		}
+		&.social-white{
+			li{
+				a{
+					background: $theme-color-background-black-hover;
+				}
+				&:hover{
+					a{
+						background: $theme-color-default;
+					}
+				}
+			}
+		}
+	}
+	// social-four
+	&.social-four{
+		li {
+			a{
+				i{
+					font-size: 14px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				span{
+					display: inline-block;
+					vertical-align: middle;
+					@include rtl-margin-left(8px);
+				}
+			}
+		}
+		&.has-color{
+			li {
+				&.facebook a{
+					color: #4c86bc;
+				}
+				&.twitter a{
+					color: #55c2e1;
+				}
+				&.rss a{
+					color: #FF6600;
+				}
+				&.youtube a{
+					color: #ff0000;
+				}
+				&.googleplus a{
+					color: #de3737;
+				}
+				&.pinterest a{
+					color: #f45151;
+				}
+				&.vimeo a{
+					color: #089de3;
+				}
+				&.instagram a{
+					color: #c4a74d;
+				}
+			}
+		}
+		&.social-white{
+			li {
+				a{
+					color: $theme-color-background-black;
+				}
+				&:hover{
+					a{
+						color: $theme-color-background-black-hover;
+					}
+				}
+			}
+		}
+		&.social-inline-footer{
+			ul{
+				margin-left: -25px;
+				margin-right: -25px;
+				@media (max-width: 767px) {
+					margin-left: -15px;
+					margin-right: -15px;
+				}
+			}
+			li {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 25px;
+				margin-right: 25px;
+				@media (max-width: 767px) {
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				a{
+					span{
+						@media (max-width: 575px) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

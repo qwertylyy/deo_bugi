@@ -1,0 +1,183 @@
+@import "theme_variables";
+
+/* Product list five */
+
+.product-list-five{
+	.thumbnail-container{
+		.product-meta{
+			padding-left: 0px;
+			padding-right: 0px;
+			@include rtl-text-align-left();
+			.box-button{
+				@include display(flex);
+				@include flex-direction(row);
+				@include align-items(center);
+				@include justify-content(space-between);
+				&:after{
+					display: none;
+				}
+				.product-price-and-shipping{
+					display: block;
+				}
+				.deo-product-list-reviews{
+					min-width: 70px;
+					display: block;
+				}
+			}
+		}
+		.product-image{
+			.box-button{
+				width: 100%;
+				display: table;
+				position: static;
+				background: #222222;
+				@include box-shadow(none);
+				@include transform(none);
+				@media (min-width: 992px) {
+					top: auto;            
+					bottom: 0px;
+					z-index: 13;
+					position: absolute;
+					@include rtl-left-right(0px,0px);
+					@include transform(translateY(100%));
+				}
+				.btn-product{
+					padding: 0px;
+					width: 100%;
+					color: $white;
+					// white-space: nowrap;
+					background: #222222;
+					.content-btn-product{
+						.icon-btn-product{
+							line-height: 40px;
+						}
+					}
+					&:hover{
+						@media(min-width: 992px){
+							color: $white;
+							border-color: $theme-color-default;
+							background: $theme-color-default;
+						}
+					}
+				}
+				.deo-list-wishlist{
+					@include deo-list-wishlist(auto,0px,auto,100%);
+				}
+				& > div{
+					display: table-cell;
+					vertical-align: middle;
+					@include transition(all 0.4s ease-out);
+					& + div{
+						@include rtl-border-left(1px solid rgba($white,0.3));
+					}
+					&:first-child{
+						@media(min-width: 768px){
+							width: 100%;
+							.btn-product{
+								width: 100%;
+								min-height: 40px;
+								padding: 9px 15px;
+								min-width: inherit;
+								.content-btn-product{
+									.icon-btn-product{
+										line-height: normal;
+										display: inline-block;
+										vertical-align: middle;
+										display: none;
+										@include rtl-margin-right(5px);
+									}
+									.name-btn-product{
+										display: block;
+										vertical-align: middle;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.btn-quickview-product-list{
+				top: 50%;
+				left: 50%;
+				z-index: 12;
+				position: absolute;
+				@include transition(all 0.5s ease);
+				@include transform(translate(-50%,-50%)); 
+				@media (min-width: 992px) {
+					visibility: hidden;
+					@include opacity(0); 
+					@include transform(translate(-50%,-50%) scale(0)); 
+				}
+				.btn-product{
+					padding: 0px;
+					color: $white;
+					display: block;
+					min-width: 40px;
+					min-height: 40px;
+					font-size: 14px;
+					background: #222222;
+					text-transform: uppercase;
+					@include box-shadow(1px 2px 3px rgba($black,0.5));
+					@include border-radius(50%);
+					@include transition(all 0.5s ease);
+					.content-btn-product{
+						.icon-btn-product{
+							display: block;
+							line-height: 40px;
+							&:before{
+								content: "\e9a2";
+								display: block;
+								font-style: normal;
+								font-family: $font-icon-4;
+							}
+						}
+						.name-btn-product{
+							display: none;
+						}
+					}
+					&:hover{
+						@media(min-width: 992px){
+							color: $white;
+							border-color: $theme-color-default;
+							background: $theme-color-default;
+						}
+					}
+				}
+			}
+			.deo-countdown{
+				border-top: none;
+				padding-top: 0px;
+				@media(min-width: 992px){
+					position: absolute;
+					bottom: 50px;
+					left: 50%;
+					z-index: 9;
+					width: 100%;
+					padding-left: 15px;
+					padding-right: 15px;
+					@include transition(all 0.3s ease);
+					@include transform(translateX(-50%));
+				}
+			}
+		}
+		
+		&:hover {
+			@media(min-width: 992px){
+				.product-image{
+					.box-button{
+						@include transform(translate(0%));
+					}  
+					.btn-quickview-product-list{  
+						visibility: visible;
+						@include opacity(1);
+						@include transform(translate(-50%,-50%) scale(1));  
+					}
+					.deo-countdown{
+						visibility: hidden;
+						@include opacity(0);
+					}
+				}
+			}
+		}
+	}
+}

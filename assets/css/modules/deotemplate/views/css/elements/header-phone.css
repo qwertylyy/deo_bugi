@@ -1,0 +1,102 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* header-phone */
+.header-phone {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative; }
+  .header-phone .media {
+    display: table; }
+  .header-phone .left-block {
+    display: table-cell;
+    vertical-align: middle;
+    width: 35px; }
+    @media (max-width: 1199px) {
+      .header-phone .left-block {
+        width: 30px; } }
+    .header-phone .left-block img {
+      max-width: 100%; }
+  .header-phone .right-block {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px; }
+    .rtl .header-phone .right-block {
+      padding-right: 10px;
+      padding-left: inherit; }
+    @media (max-width: 1199px) {
+      .header-phone .right-block {
+        padding-left: 8px; }
+        .rtl .header-phone .right-block {
+          padding-right: 8px;
+          padding-left: inherit; } }
+  .header-phone h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1bbc9b; }
+    @media (max-width: 1199px) {
+      .header-phone h4 {
+        font-size: 13px; } }
+  .header-phone p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase; }
+    @media (max-width: 1199px) {
+      .header-phone p {
+        font-size: 9px; } }
+  .header-phone.small .left-block {
+    width: 35px; }
+  .header-phone.small .right-block {
+    padding-left: 8px; }
+    .rtl .header-phone.small .right-block {
+      padding-right: 8px;
+      padding-left: inherit; }
+  .header-phone.small h4 {
+    font-size: 15px; }
+  .header-phone.small p {
+    font-size: 10px; }
+  .header-phone.header-phone-white {
+    color: #cccccc; }
+    .header-phone.header-phone-white a:hover {
+      color: #ffffff; }
+    .header-phone.header-phone-white.light {
+      color: #ffffff; }
+      .header-phone.header-phone-white.light a:hover {
+        color: #cccccc; }
+  .header-phone.header-phone-one a {
+    color: inherit; }
+  .header-phone.header-phone-one .icon-phone {
+    font-style: normal;
+    margin-right: 5px; }
+    .rtl .header-phone.header-phone-one .icon-phone {
+      margin-left: 5px;
+      margin-right: inherit; }
+    .header-phone.header-phone-one .icon-phone:before {
+      content: '\ea99';
+      font-family: "deo-custom-icons"; }
+
+/*# sourceMappingURL=header-phone.css.map */

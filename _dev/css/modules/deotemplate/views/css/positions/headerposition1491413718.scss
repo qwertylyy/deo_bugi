@@ -1,0 +1,199 @@
+@import "theme_variables";
+
+// ************* Header 1 ***************
+
+.header-top{
+	background: $black;
+}
+
+.sticky-menu-active{
+	.header-top{
+		background: $black;
+	}
+}
+
+.popup-over{
+	&:not(.search-widget){
+		@include rtl-margin-right(20px);
+		@media (max-width: 767px) {
+			@include rtl-margin-right(15px);
+		}
+		.popup-title {
+			// font-size: 12px;
+			text-transform: none;
+			@include rtl-padding(15px,0px,15px,0px);
+			@include rtl-border-width(0px,0px,0px,1px);
+			.icon{
+				display: none;
+				// font-size: 17px;
+			}
+		}
+		&:last-child{
+			@include rtl-margin-right(0px);
+		}
+	}
+	&.language-selector-wrapper{
+		@include language-iso-code();
+		@include language-hidden-flag();
+		.popup-title{
+			@media (max-width: 575px){
+				.iso-code{
+					display: inline-block;
+				}
+				.icon{
+					display: none;
+				}
+			}
+		} 
+	}
+	&.currency-selector{
+		.popup-title{
+			@media (max-width: 575px){
+				.icon{
+					display: none;
+				}
+				.name-simple{
+					display: inline-block;
+				}
+			}
+		} 
+	}
+	&.userinfo-selector{
+		@include userinfor-hidden-title();
+		@include userinfor-popup-center();
+		.popup-title{
+			.icon{
+				font-size: 30px;
+				&:before{
+					content: '\eaca';
+				}
+			}
+		}
+	}
+	&.deo_customer_actions{
+		@include hidden-title-popup();
+		.popup-title{
+			.icon{
+				font-size: 30px;
+				&:before{
+					content: '\ea56';
+				}
+			}
+		}
+	}
+}
+
+#cart-block{
+	@include hidden-title-cart();
+	@include rtl-margin-left(0px);
+	.cart-preview{
+		@include rtl-padding(15.5px,0px,15.5px,0px);
+		.shopping-cart{
+			font-size: 30px;
+			&:before{
+				content: '\eac9';
+			}
+		}
+	}
+} 
+
+.search-widget{
+	@include rtl-margin-right(20px);
+	@media (max-width: 767px) {
+		@include rtl-margin-right(15px);
+	}
+	@media (max-width: 479px) {
+		@include popup-search();
+		@include popup-search-bottom();
+		@include popup-search-mobile();
+	}
+	.popup-title{
+		@include rtl-padding(12px,0px,12px,0px);
+	}
+	.popup-content{
+		@media (min-width: 768px) {
+			min-width: 280px;
+		}
+		@media (min-width: 992px) {
+			min-width: 350px;
+		}
+		@media (min-width: 1200px) {
+			min-width: 370px;
+		}
+		&:before{
+			display: none;
+		}
+	}
+}
+
+.deo-search-advanced{
+	@include rtl-margin-right(20px);
+	@media (max-width: 767px){
+		@include rtl-margin-right(15px);
+		@include popup-search();
+		@include popup-search-bottom();
+		@include popup-search-mobile();
+		@include popup-search-advance()
+	}
+	.popup-title{
+		// @include rtl-padding(12px,0px,12px,0px);
+		&:before,&:after{
+			// background: $white;
+		}
+		.search{
+			// color: $white;
+			&:before{
+				content: '\e9cf';
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+
+.box-top-header{
+	position: relative;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include align-items(center);
+	&:after{
+		display: none;
+	}
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+	}
+	.left-top-header {
+		@include justify-content(flex-start);
+		@media (max-width: 767px) {
+			@include justify-content(center);
+		}
+	}
+	.right-top-header {
+		@include justify-content(flex-end);
+	}
+	.logo {
+		padding: 20px 0;
+	}
+}
+
+.box-bottom-header{
+	position: relative;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include align-items(center);
+	&:after{
+		display: none;
+	}
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+	}
+	.bottom-header {
+		position: static;
+		@include justify-content(center);
+		@media (max-width:991px) {
+			@include justify-content(flex-start);
+		}
+	}
+}

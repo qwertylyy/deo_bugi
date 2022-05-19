@@ -1,0 +1,791 @@
+@import "theme_variables";
+
+/*** SOME GENERIC STYLES ***/
+@mixin customer-area-base-box {
+	background: $theme-bg-block;
+	padding: 20px 20px;
+	@include box-shadow(2px 2px 11px 0px rgba(0, 0, 0, 0.1));
+	@media(min-width: 480px){
+		padding: 40px 40px;
+	}
+}
+.table-labeled {
+	th {
+		vertical-align: middle;
+	}
+	td {
+		vertical-align: middle;
+	}
+	.label {
+		font-weight: 400;
+		border-radius: 3px;
+		font-size: inherit;
+		padding: 4px 6px;
+		margin: 2px;
+		color: white;
+		white-space: nowrap;
+	}
+}
+.page-order {
+	.table {
+		margin-bottom: 0;
+	}
+	table {
+		th {
+			padding: 8px;
+		}
+		td {
+			padding: 8px;
+		}
+		thead {
+			th {
+				text-align: center;
+			}
+		}
+	}
+}
+#authentication {
+	.tooltip.tooltip-bottom {
+		padding: 0;
+		margin: 0;
+	}
+	[data-action="show-password"]{
+		
+	}
+	.register-form{
+		.has-account{
+			font-size: 13px;
+			margin-top: 15px;
+			font-weight: 400;
+			text-align: center;
+			a{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+#identity,
+#authentication {
+	.radio-inline {
+		padding: 0;
+		display: inline-block;
+		+ .radio-inline{
+			@include rtl-margin-left(15px);
+		}
+	}
+}
+.renew-password {
+	margin-left: 10px;
+	.email {
+		padding-bottom: 30px;
+	}
+	[type=submit] {
+		margin-left: 50px;
+	}
+}
+/*** Most of the customer accpunt pages ***/
+.page-customer-account {
+	#content {
+		margin: 0px auto;
+		.order-actions {
+			a {
+				margin: 0 5px;
+			}
+		}
+		.forgot-password {
+			margin-top: 15px;
+			text-align: center;
+			font-size: $font-size-sm;
+			a{
+				@include display(flex);
+				@include flex-wrap(wrap);
+				@include align-items(center);
+				@include justify-content(center);
+				&:before {
+					content: "\ea4c";
+					font-family: $font-icon-4;
+					@include rtl-margin-right(5px);
+				}
+			}
+		}
+		.no-account {
+			font-size: 13px;
+			margin-top: 15px;
+			font-weight: 400;
+			text-align: center;
+		}
+		#submit-login{
+			width: 100%;
+		}
+		.form-footer{
+			margin-top: 40px;
+			.form-control-submit{
+				width: 100%;
+				padding: 10px 20px;
+			}
+		}
+	}
+	table{
+		font-size: 13px;
+		background: $theme-bg-block;
+	}
+	h3{
+		font-weight: 600;
+		font-size: $base-font-size;
+		text-transform: uppercase;
+		margin-bottom: 16px;
+	}
+}
+/*** Login page ***/
+.page-authentication {
+	#content {
+		margin: 0 auto;
+		max-width: 500px;
+		border: $main-border;
+		@include customer-area-base-box();
+		@include box-shadow(none);
+	}
+}
+.page-identity{
+	.deo-my-account{
+		.deo-content{
+			margin: 0 auto;
+			max-width: 500px;
+			border: $main-border;
+			@include customer-area-base-box();
+			@include box-shadow(none);
+		}
+	}
+}
+/*** Addresses page ***/
+.page-addresses,.page-my-account {
+	.addresses{
+		margin-top: 10px;
+		@include display(flex);
+		@include flex-wrap(wrap);
+		.address {
+			margin-bottom: 30px;
+			border: $main-border;
+			background: $theme-bg-block;
+			font-size: $font-size-sm;
+			.address-body {
+				padding: 20px;
+				h4 {
+					font-size: 16px;
+					font-weight: 500;
+					text-align: center;
+					margin-bottom: 15px;
+					text-decoration: underline;
+				}
+				address {
+					margin-bottom: 0px;
+					line-height: 1.7;
+					min-height: 120px;
+				}
+			}
+			.address-footer {
+				padding: 8px 20px;
+				text-align: center;
+				border-top: $main-border;
+				a {
+					& + a{
+						@include rtl-margin-left(15px);
+					}
+					i{
+						&:before {
+							font-family: $font-icon-4;
+						}
+						&.delete:before {
+							content: "\ea54";
+						}
+						&.edit:before {
+							content: "\ea5b";
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.page-address{
+	.deo-my-account{
+		.deo-content{
+			margin: 0 auto;
+			max-width: 500px;
+			border: $main-border;
+			@include customer-area-base-box();
+			@include box-shadow(none);
+		}
+	}
+}
+/*** Order details page ***/
+.page-order-detail {
+	font-size: 14px;
+	.box {
+		margin-bottom: 50px;
+		&.box-border{
+			padding: 20px;
+			border: $main-border;
+			background: $theme-bg-block;
+		}
+	}
+	table{
+		font-size: 13px;
+		background: $theme-bg-block;
+	}
+	h3 {
+		font-weight: 600;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-bottom: 16px;
+	}
+	.reorder-reference{
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	.addresses{
+		margin-bottom: 10px;
+	}
+	.address{
+		margin-bottom: 30px;
+		border: $main-border;
+		background: $white;
+		font-size: $font-size-sm;
+		.address-body{
+			padding: 20px;
+			h4 {
+				font-size: 16px;
+				font-weight: 500;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			address {
+				margin-bottom: 0px;
+				line-height: 1.7;
+				min-height: 120px;
+			}
+		}
+	}
+	#order-infos {
+		ul {
+			margin: 0;
+		}
+	}
+	#order-history {
+		.history-lines {
+			.history-line {
+				padding: 8px 0;
+				border-bottom: 1px solid $gray-lighter;
+				&:last-child {
+					border-bottom: 0;
+				}
+				.label {
+					display: inline-block;
+					margin: 4px 0;
+					padding: 4px 6px;
+					color: white;
+					border-radius: 3px;
+				}
+			}
+		}
+	}
+	#order-products {
+		&.return {
+			margin-bottom: 16px;
+			th {
+				&.head-checkbox {
+					width: 30px;
+				}
+			}
+			td {
+				padding: 1.375rem 0.75rem;
+				&.qty {
+					min-width: 125px;
+					.current {
+						width: 30%;
+						float: left;
+						text-align: right;
+						padding-right: 0.5rem;
+					}
+					.select {
+						width: 70%;
+						float: left;
+						margin: -0.625rem 0;
+						padding-left: 0.25rem;
+						select {
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+	.order-items {
+		font-size: 13px;
+		line-height: 1.6;
+		border: 1px solid $border-color;
+		border-bottom: none;
+		.order-item {
+			padding: 15px;
+			& + .order-item{
+				border-top: 1px solid $border-color;
+			}
+			.checkbox {
+				width: 30px;
+				float: left;
+				padding: 0 15px;
+			}
+			.content {
+				width: calc(100% - 30px);
+				float: left;
+				padding: 0 15px;
+			}
+			.desc {
+				margin-bottom: 16px;
+				.name {
+					font-weight: 500;
+				}
+			}
+			.qty {
+				.q {
+					margin-bottom: 4px;
+				}
+				.s {
+					margin-bottom: 4px;
+				}
+			}
+		}
+	}
+	.order-totals{
+		padding: 20px;
+		font-size: 13px;
+		line-height: 1.6;
+		border: 1px solid $border-color;
+	}
+	.messages {
+		.message {
+			& + .message {
+				margin-top: 15px;
+				padding-top: 15px;
+				border-top: 1px dotted $border-color;
+			}
+			p:last-of-type{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.customization {
+		margin-top: 12px;
+	}
+	.order-message-form{
+		h3{
+			margin-bottom: 10px;
+		}
+		header{
+			margin-bottom: 25px;
+		}
+	}
+	.shipping-lines{
+		line-height: 1.6;
+		li{
+			@include display(flex);
+			@include align-items(flex-start);
+			@include justify-content(space-between);
+			& + li{
+				margin-top: 5px;
+			}
+		}
+	}
+}
+/*** Order return page ***/
+#order-return-infos {
+	.thead-default th {
+		color: $gray-darker;
+	}
+	.customization {
+		margin-top: 12px;
+	}
+}
+/*** Discount page ***/
+.page-discount{
+	.cart-rules{
+		padding: 20px;
+		border: $main-border;
+		background: $white;
+		.cart-rule{
+			& + .cart-rule{
+				border-top: $main-border;
+			}
+		}
+		li{
+			@include display(flex);
+			@include align-items(flex-start);
+			@include justify-content(space-between);
+			& + li{
+				margin-top: 5px;
+			}
+		}
+	}
+}
+/*** Credit slips page ***/
+.page-order-slip{
+	.credit-slips{
+		padding: 20px;
+		border: $main-border;
+		background: $white;
+		.credit-slip{
+			& + .credit-slip{
+				margin-top: 20px;
+				padding-top: 20px;
+				border-top: $main-border;
+			}
+		}
+		li{
+			@include display(flex);
+			@include align-items(flex-start);
+			@include justify-content(space-between);
+			& + li{
+				margin-top: 5px;
+			}
+			&.link{
+				margin-top: 30px;
+				@include justify-content(center);
+			}
+		}
+	}
+}
+/*** Return merchan page ***/
+.page-order-follow{
+	.order-returns{
+		padding: 20px;
+		border: $main-border;
+		background: $white;
+		.order-return{
+			& + .order-return{
+				margin-top: 20px;
+				padding-top: 20px;
+				border-top: $main-border;
+			}
+		}
+		li{
+			@include display(flex);
+			@include align-items(flex-start);
+			@include justify-content(space-between);
+			& + li{
+				margin-top: 5px;
+			}
+			&.link{
+				margin-top: 30px;
+				@include justify-content(center);
+			}
+		}
+	}
+}
+.page-order-return{
+	.order-return-infos{
+		table{
+			margin-top: 20px;
+		}
+	}
+	.reminder{
+		margin-top: 50px;
+		padding: 20px;
+		line-height: 1.6;
+		border: $main-border;
+		background: $white;
+		a{
+			font-weight: normal;
+			text-decoration: underline;
+		}
+	}
+}
+/*** My account landing page ***/
+.deo-my-account{
+	.deo-links {
+		background: $theme-bg-block;
+		padding: 20px 30px;
+		border: $main-border;
+		margin-bottom: 50px;
+		@media(max-width: 991px){
+			padding: 20px 15px;
+		}
+		ul{
+			margin-bottom: 0px;
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+			li{
+				width: 100%;
+				display: block;
+				padding: 20px 0px;
+				@media (max-width: 991px){
+					width: 50%;
+					padding: 15px;
+				}
+				@media (max-width: 479px){
+					width: 100%;
+				}
+				& + li{
+					@media (min-width: 992px){
+						border-top: 1px dotted $border-color;
+					}
+				}
+			}
+		}
+		a {
+			font-weight: 600;
+			font-size: $base-font-size;
+			text-transform: uppercase;
+			@include display(flex);
+			@include align-items(center);
+			i {
+				font-size: 25px;
+				font-style: normal;
+				@include rtl-padding-right(11px);
+				&:before{
+					font-family: $font-icon-4;
+				}
+				&.icon-user{
+					&:before {
+						content: "\e9b1";
+					}
+				}
+				&.icon-info{
+					&:before {
+						content: "\ea5f";
+					}
+				}
+				&.icon-localtion{
+					&:before {
+						content: "\ea94";
+					}
+				}
+				&.icon-history{
+					&:before {
+						content: "\ea86";
+					}
+				}
+				&.icon-credit{
+					&:before {
+						content: "\e9c6";
+					}
+				}
+				&.icon-discounts{
+					&:before {
+						content: "\eab9";
+					}
+				}
+				&.icon-recycle{
+					&:before {
+						content: "\eabc";
+					}
+				}
+				&.icon-wishlist{
+					&:before {
+						content: "\e9b5";
+					}
+				}
+				&.icon-sign-out{
+					&:before {
+						content: "\e9e4";
+					}
+				}
+			}
+			&:hover {
+				color: $theme-color-default;
+			}
+		}
+	}
+	.deo-content{
+		
+	}
+	.page-title{
+		font-size: 25px;
+		margin-bottom: 30px;
+		padding-bottom: 8px;
+		border-bottom: 3px double $border-color;
+		&.title-outside{
+			padding-bottom: 0px;
+			text-align: center;
+			border-bottom: none;
+		}
+	}
+	.infomations-customer{
+		.info-item{
+			& + .info-item{
+				margin-top: 20px;
+			}
+			label{
+				color: inherit;
+				margin-bottom: 0px;
+				vertical-align: middle;
+				text-transform: uppercase;
+				&:after{
+					content: ':';
+					@include rtl-padding-right(5px);
+				}
+			}
+			span{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+/*** History page ***/
+#history {
+	.orders {
+		border: $main-border;
+		.order {
+			padding: 12px 16px;
+			& + .order{
+				border-top: $main-border;
+			}
+			.label {
+				display: inline-block;
+				margin: 4px 0;
+				padding: 4px 6px;
+				color: white;
+				border-radius: 3px;
+			}
+			.box-button{
+				margin-top: 25px;
+				@media(min-width: 480px){
+					margin-top: -5px;
+				}
+				.btn{
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	i{
+		&:before {
+			font-family: $font-icon-4;
+			
+		}
+		&.icon-list:before{
+			content: "\ea85";
+		}
+		&.icon-refresh:before{
+			content: "\e97c";
+		}
+	}
+}
+
+/*** psgdpr ***/
+.psgdprinfo17{
+	@include customer-area-base-box();
+	@include box-shadow(none);
+}
+
+/*** FOOTER ***/
+.page-footer {
+	.account-link {
+		margin-right: 16px;
+		i {
+			font-size: $base-font-size;
+		}
+		span {
+			font-size: $font-size-sm;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+.form-group-input{
+	.input-group-addon{
+		@include border-radius(0px);
+		.icon{
+			display: block;
+			font-style: normal;
+			font-family: $font-icon-4;
+			&.icon:before{
+				content: "\ea85";
+			}
+			&.icon-name,&.icon-firstname,&.icon-lastname{
+				&:before{
+					content: "\e95d";
+				}
+			}
+			&.icon-password:before,&.icon-new_password:before{
+				content: "\e94f";
+			}
+			&.icon-email:before{
+				content: "\ea4d";
+			}
+			&.icon-birthday:before{
+				content: "\e9f6";
+			}
+			&.icon-company:before{
+				content: "\eab7";
+			}
+			&.icon-siret:before{
+				content: "\e939";
+			}
+		}
+	}
+	.form-control{
+		// @include rtl-border-width(1px,1px,1px,0px);
+	}
+	.js-visible-password{
+		@include rtl-padding(8px,35px,8px,16px);
+		& + .input-group-btn{
+			position: absolute;
+			top: 0;
+			font-size: 0px;
+			color: inherit;
+			position: relative;
+			text-align: center;
+			background: transparent;
+			position: absolute;
+			z-index: 9;
+			top: 50%;
+			width: 35px;
+			height: 35px;
+			@include rtl-right(0px);
+			@include transform(translateY(-50%));
+			.btn{
+				color: inherit;
+				width: 35px;
+				height: 35px;
+				padding: 0px;
+				font-size: 0px;
+				line-height: 35px;
+				background: transparent;
+				&:before {
+					content: '\e9f8';
+					z-index: 1;
+					font-size: 14px;
+					display: block !important;
+					font-family: $font-icon-4;
+				}
+				&:after{
+					content: '/';
+					font-size: 14px;
+					position: absolute;
+					top: 50%;
+					width: 35px;
+					height: 35px;
+					z-index: 2;
+					line-height: 35px;
+					display: block !important;
+					@include rtl-right(0px);
+					@include transform(translateY(-50%));
+
+				}
+			}
+		}
+		&[type="text"]{
+			& + .input-group-btn{
+				.btn{
+					&:after{
+						@include opacity(0);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,242 @@
+@import "theme_variables";
+
+// ************* Header 3 ***************
+
+.topnav{
+	background: #f5f5f5;
+}
+
+.header-top{
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.popup-over{
+	&:not(.search-widget){
+		@include rtl-margin-right(20px);
+		@media (max-width: 767px) {
+			@include rtl-margin-right(15px);
+		}
+		.popup-title{
+			@include rtl-padding(15px,0px,15px,0px);
+			.icon-arrow-down{
+				&:before{
+					// content: "\ea6d";
+				}
+			}
+		} 
+		&:last-child{
+			@include rtl-margin-right(0px);
+		}
+		.popup-content{
+			// @include border-radius(0px);
+			// &:before{
+			// 	display: none;
+			// }
+		}
+	}
+	&.language-selector-wrapper{
+		@include language-iso-code();
+		.popup-title{
+			@media (max-width: 575px){
+				.iso-code{
+					display: inline-block;
+				}
+				.icon{
+					display: none;
+				}
+			}
+		} 
+	}
+	&.currency-selector{
+		.popup-title{
+			@media (max-width: 575px){
+				.icon{
+					display: none;
+				}
+				.name-simple{
+					display: inline-block;
+				}
+			}
+		} 
+	}
+	&.userinfo-selector{
+		@include userinfor-hidden-title();
+		@include userinfor-popup-center();
+		.popup-title{
+			// @media (max-width: 575px){
+			// 	.icon{
+			// 		display: none;
+			// 	}
+			// 	.name-simple{
+			// 		display: inline-block;
+			// 	}
+			// }
+		} 
+	}
+}
+
+.deo-horizontal-menu{
+	.navbar-header{
+		@media (max-width: 991px){
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+	}
+} 
+
+.deo-count-feature{
+	& + .deo-count-feature{
+		@include rtl-margin-left(15px);
+	}
+	.icon-wishlist,.icon-compare{
+		font-size: 18px
+	}
+	.icon-wishlist:before{
+		content: '\e9d2'; 
+	}
+	.icon-compare:before{
+		content: '\e9aa';
+	}
+}
+
+#cart-block{
+	@include hidden-title-cart();
+	@include rtl-margin-left(0px);
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		width: 1px;
+		height: 15px;
+		background: #cccccc;
+		@include rtl-left(0px);
+		@include transform(translateY(-50%));
+	}
+	.cart-preview{
+		@include rtl-padding(15px,0px,15px,15px);
+	}
+}
+
+.deo-search-advanced{
+	@include popup-search();
+	@include popup-search-advance();
+	@include popup-search-bottom();
+	@include rtl-margin-right(20px);
+	@media (max-width: 767px) {
+		@include rtl-margin-right(15px);
+	}
+	@media (max-width: 575px){
+		@include popup-search-mobile();
+	}
+	.popup-title{
+		@include rtl-padding(15px,0px,15px,0px);
+		&:before,&:after{
+			// background: $white;
+		}
+		.search{
+			// color: $white;
+			&:before{
+				// content: '\e9cf';
+				// font-size: 30px;
+			}
+		}
+	}
+
+}
+
+
+.box-top-header{
+	position: relative;
+	@include display(flex);
+	@include align-items(center);
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+	}
+	.top-header {
+		@include justify-content(center);
+	}
+}
+
+.box-middle-header{
+	position: relative;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include align-items(center);
+	@media (max-width: 991px) {
+		padding-bottom: 10px;
+	}
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+	}
+	.middle-header {
+		@include justify-content(center);
+	}
+	.logo {
+		padding: 20px 0;
+	}
+}
+
+.box-bottom-header{
+	position: relative;
+	@include display(flex);
+	@include align-items(center);
+	@media (max-width: 991px) {
+		@include flex-wrap(wrap);
+		&:after {
+			display: none;
+		}
+	}
+	& > [class*="col-"]{
+		@include display(flex);
+		@include align-items(center);
+	}
+	.left-bottom-header {
+		@include justify-content(flex-start);
+		@media (max-width: 991px) {
+			@include order(2);
+		}
+		.popup-over{
+			.popup-content{
+				@include rtl-left-right(0px,auto);
+				&:before{
+					@include rtl-left-right(12px,auto);
+				}
+			}
+		} 
+	}
+	.center-bottom-header{
+		position: static;
+		@include justify-content(center);
+		@media (max-width: 991px) {
+			@include order(1);
+			@include justify-content(flex-start);
+		}
+	}
+	.right-bottom-header {
+		position: static;
+		@include justify-content(flex-end);
+		@media (max-width: 991px) {
+			@include order(3);
+		}
+		.popup-over{
+			&:first-child{
+				.popup-title {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.layout-boxed-lg{
+	
+}
+
+body.layout-boxed-md{
+	
+}

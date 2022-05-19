@@ -1,0 +1,81 @@
+@import "theme_variables";
+
+.contact-rich {
+	padding: 0px;
+	margin-bottom: 30px;
+	h4 {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	.block {
+		height: auto;
+		overflow: hidden;
+		padding: 20px 20px;
+		background: $theme-bg-block;
+		& + .block{
+			border-top: $main-border;
+		}
+		.icon {
+			width: 35px;
+			@include rtl-float-left();
+			i {
+				font-size: 20px;
+			}
+		}
+		.data {
+			width: auto;
+			overflow: hidden;
+			line-height: 1.5;
+		}
+		&.map{
+			.icon{
+				i::before {
+					content: '\ea94';
+				}
+			}
+		}
+		&.phone{
+			.icon{
+				i::before {
+					content: '\ea9a';
+				}
+			}
+		}
+		&.fax{
+			.icon{
+				i::before {
+					content: '\ea91';
+				}
+			}
+		}
+		&.email{
+			.icon{
+				i::before {
+					content: '\ea4c';
+				}
+			}
+		}
+	}
+	.block-content{
+		border: $main-border;
+	}
+}
+.contact-form {
+	padding: 16px;
+	width: 100%;
+	h3 {
+		text-transform: uppercase;
+	}
+	.form-control-label{
+		font-weight: inherit;
+		@include rtl-text-align-left();
+	}
+}
+
+#contact{
+	#content{
+		margin-bottom: 0px;
+		border: $main-border;
+		@include border-radius(0px);
+	}
+}

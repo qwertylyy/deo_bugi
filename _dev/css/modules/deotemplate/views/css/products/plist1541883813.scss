@@ -1,0 +1,238 @@
+@import "theme_variables";
+
+/* Product list thirteen */
+
+.product-list-thirteen{
+	.thumbnail-container{
+		overflow: hidden;
+		.product-image{
+			.box-button{
+				top: 50%;
+				z-index: 13;
+				bottom: auto;
+				position: absolute;
+				@include transition(all 0.4s ease);
+				@include transform(translate(-50%,-50%));
+				@media (min-width: 992px) {
+					top: 15px;
+					visibility: hidden;
+					background: transparent;
+					@include opacity(0);
+					@include transform(none);
+					@include box-shadow(none);
+					@include rtl-left-right(auto,15px);
+				}
+				.btn-product{
+					padding: 0px;
+					border: none;
+					min-width: 30px;
+					min-height: 30px;
+					font-weight: 500;
+					text-align: center;
+					background: transparent;
+					@media (min-width: 992px) {
+						color: $white;
+					}
+					.content-btn-product{
+						.icon-btn-product{
+							line-height: 30px;
+						}
+					}
+					&:hover{
+						@media(min-width: 992px){
+							color: $theme-color-default;
+						}
+					}
+				}
+				.deo-list-wishlist{
+					@media (min-width: 992px) {
+						@include deo-list-wishlist(auto,100%,0px,auto);
+					}
+				}
+
+				& > div{
+					padding: 0px;
+					@include transition(all 0.4s ease-out);
+					@media (min-width: 992px) {
+						display: block;
+					}
+				}
+			}
+			.deo-countdown{
+				border-top: none;
+				padding-top: 0px;
+				@media(min-width: 992px){
+					position: absolute;
+					bottom: 50px;
+					left: 50%;
+					z-index: 9;
+					width: 100%;
+					padding-left: 15px;
+					padding-right: 15px;
+					@include transition(all 0.3s ease);
+					@include transform(translateX(-50%));
+				}
+			}
+		}
+		.product-meta{
+			@media (min-width: 992px) {
+				top: 50%;
+				left: 0px;
+				right: 0px;
+				z-index: 12;
+				padding: 0px 40px 0px;
+				position: absolute;
+				visibility: hidden;
+				@include opacity(0);
+				@include transition(all 0.4s ease);
+				@include transform(translateY(-50%));
+			}
+			.btn-cart-product-list{
+				margin-top: 10px;
+				display: inline-block;
+				vertical-align: middle;
+				.btn-product{
+					font-size: 13px;
+					font-weight: 500;
+					padding: 8px 20px;
+					text-transform: uppercase;
+					@include border-radius(9999px);
+					@media (min-width: 992px) {
+						border: none;
+						color: $black;
+						background: $white;
+						white-space: nowrap;
+						@include transition(all 0.4s ease);
+						&:hover{
+							color: $white;
+							background: $theme-color-default;
+						}
+					}
+				}
+			}
+		}
+		.product-title{
+			@media (min-width: 992px) {
+				a{
+					color: $white;
+					&:hover{
+						color: $theme-color-default;
+					}
+				}
+			}
+		}
+		.product-price-and-shipping{
+			@media (min-width: 992px) {
+				color: $white;
+				.regular-price{
+					color: $white;
+				}
+				.discount-percentage,.discount-amount{
+					color: $white;
+				}
+				&.has_discount{
+					.price{
+						color: $white;
+					}
+				}
+			}
+		}
+		.deo-product-list-reviews{
+			overflow: hidden;
+			.deo-product-list-reviews-wraper{
+				padding: 0 15px;
+				position: relative;
+				&:before,&:after{
+					content: '';
+					top: 0px;
+					bottom: 0px;
+					height: 2px;
+					width: 50px;
+					margin: auto;
+					background: #e4e4e4;
+					position: absolute;
+				}
+				&:before{
+					@include rtl-left(100%);
+					@include rtl-border-radius(0px,100%,100%,0px);
+				}
+				&:after{
+					@include rtl-right(100%);
+					@include rtl-border-radius(100%,0px,0px,100%);
+				}
+			}
+		}
+		&:hover {
+			@media(min-width: 992px){
+				.product-image{
+					.box-button{
+						visibility: visible;
+						@include opacity(1);
+					}
+					.deo-countdown{
+						visibility: hidden;
+						@include opacity(0);
+					}
+				}
+				.product-meta{
+					visibility: visible;
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}
+
+.product_list{
+	&.list{ 
+		&.product-list-thirteen{
+			.thumbnail-container{
+				.product-meta{
+					@media (min-width: 992px) {
+						position: static;
+						visibility: visible;
+						@include opacity(1);
+						@include transform(none);
+						.btn-cart-product-list{
+							display: block;
+							.btn-product{
+								color: $theme-color-default;
+								border-color: $theme-color-default;
+								&:hover{
+									color: $white;
+									background: $theme-color-default;
+								}
+							}
+						} 
+					}
+				}
+				.product-title{
+					a{
+						@media (min-width: 992px) {
+							color: inherit;
+							&:hover{
+								color: $theme-color-default;
+							}
+						}
+					}
+				}
+				.product-price-and-shipping{
+					@media (min-width: 992px) {
+						color: inherit;
+						.regular-price{
+							color: #999999;
+						}
+						.discount-percentage,.discount-amount{
+							color: #f1404b;
+						}
+						&.has_discount{
+							.price{
+								color: $gray-darker;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

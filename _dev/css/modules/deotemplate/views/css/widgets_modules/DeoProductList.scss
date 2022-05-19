@@ -1,0 +1,39 @@
+@import "theme_variables";
+
+
+/* DeoProductList */
+.DeoProductList{
+	.product_list{
+		&.grid{
+			@include display(flex);
+			@include flex-wrap(wrap);
+		}
+	}
+	.box-show-more {
+		text-align: center;
+		margin-top: $grid-gutter-width-base/2;
+		margin-bottom: $grid-gutter-width-base/2;
+		a{
+			display: none;
+			min-width: 200px;
+			padding: 8px 15px;
+			font-weight: normal;
+			background: transparent;
+			text-transform: uppercase;
+			border: 1px double #cccccc;
+			@include border-radius(5px);
+			@include transition(all 0.5s ease);
+			&:hover{
+				color: $white;
+				border-color: $theme-color-button-hover;
+				background-color: $theme-color-default;
+			}
+		}
+		&.open {
+			a{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}

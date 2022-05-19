@@ -1,0 +1,115 @@
+@import "theme_variables";
+
+/* Product list three */
+
+.product-list-three{
+	.thumbnail-container{
+		.product-image{
+			overflow: visible;
+			.box-button{            
+				top: 50%;
+				bottom: auto;
+				margin: 0 -2px;
+				white-space: nowrap;
+				background: transparent;
+				@include box-shadow(none);
+				@include transform(translate(-50%,-50%));
+				@media (max-width: 991px) {
+					position: static;
+					margin-top: 15px;
+					margin-bottom: 5px;
+					@include transform(none);
+				}
+			}
+			.deo-countdown{
+				border-top: none;
+				padding-top: 0px;
+				@media(min-width: 992px){
+					position: absolute;
+					bottom: 50px;
+					left: 50%;
+					z-index: 9;
+					width: 100%;
+					padding-left: 15px;
+					padding-right: 15px;
+					@include transition(all 0.3s ease);
+					@include transform(translateX(-50%));
+				}
+			}
+		}
+		.box-button{
+			.btn-product{
+				padding: 0px;
+				color: $white;
+				white-space: nowrap;
+				background: #222222;
+				@include box-shadow(1px 2px 3px rgba($black,0.5));
+				@include border-radius(50%);
+				&:hover{
+					@media(min-width: 992px){
+						color: $white;
+						border-color: $theme-color-default;
+						background: $theme-color-default;
+					}
+				}
+			}
+			.deo-list-wishlist{
+				@include deo-list-wishlist(0px,auto,auto,100%);
+			}
+			& > div{
+				padding: 0 2px;
+				@include transition(all 0.4s ease-out);
+				@media (min-width: 992px) {
+					@include transform(translateY(-20px));
+				}
+				&:last-child{
+					@media (min-width: 992px) {
+						display: block;
+						margin-top: 10px;
+						@include transform(translateY(20px));
+						.btn-product{
+							margin: auto;
+							padding: 8px 20px;
+							min-width: inherit;
+							@include border-radius(9999px);
+							.content-btn-product{
+								.icon-btn-product{
+									display: none;
+								}
+								.name-btn-product{
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.product-flags{
+			@media (max-width: 991px){
+				bottom: 10px;
+			}
+		}
+		&:hover {
+			@media(min-width: 992px){
+				.product-image{
+					.box-button{
+						@include transform(translate(-50%,-50%));
+					}
+					.deo-countdown{
+						visibility: hidden;
+						@include opacity(0);
+					} 
+				}
+				.box-button{
+					& > div{
+						@include transform(translateY(0px));
+						&:last-child(1){
+							@include transform(translateY(0px));
+						}
+					}
+				}  
+			}
+		}
+	}
+}

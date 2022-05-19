@@ -1,0 +1,277 @@
+@import "theme_variables";
+
+
+
+/* DeoImageHotspot */
+@mixin hotspot-popup(){
+	.overlay-popup{
+		content: '';
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		z-index: 1000;
+		visibility: hidden;
+		background: rgba($black,0.6);
+		@include opacity(0);
+		@include transform(none);
+		@include rtl-left-right(0px,0px);
+	}
+	.hotspot-content{
+		z-index: 9999;
+		position: fixed;
+		top: 50%;
+		bottom: auto;
+		margin: auto;
+		max-height: 100%;
+		visibility: hidden;
+		overflow-y: auto;
+		overflow-x: hidden;
+		@include opacity(0);
+		@include rtl-left-right(0px,0px);
+		@include transform(translateY(-50%));
+		.arrow{
+			display: none;
+		}
+		.close{
+			visibility: visible;
+			@include opacity(1);
+		}
+	}
+	&.open{
+		.overlay-popup{
+			visibility: visible;
+			@include opacity(1);
+		}
+		.hotspot-content{
+			visibility: visible;
+			@include opacity(1);
+		}
+	}
+}
+.DeoImageHotspot{
+	margin-bottom: 30px;
+	&.no-margin{
+		margin-bottom: 0px;
+	}
+	.imagehotspot-container{
+		z-index: 100;
+		position: relative;
+	}
+	.hotspot{
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		.alert{
+			margin: 0px;
+		}
+		.hotspot-title{
+			width: 15px;
+			height: 15px;
+			line-height: 15px;
+			position: relative;
+			display: block;
+			@include border-radius(50%);
+			@include box-shadow(0px 0px 10px 3px rgba($black, 0.3));
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0;
+				bottom: 0px;
+				z-index: 1;
+				background: $theme-color-default;
+				@include border-radius(50%);
+				@include animation(dothotspot 0.8s infinite);
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0;
+				bottom: 0px;
+				z-index: 2;
+				display: block;
+				border: 3px solid $white;
+				background: $theme-color-default;
+				@include border-radius(50%);
+			}
+		}
+		.hotspot-content{
+			z-index: 101;
+			background: white;
+			position: absolute;
+			visibility: hidden;
+			@include opacity(0);
+			@include transition(all 0.3s ease);
+			.arrow{
+				width: 15px;
+				height: 15px;
+				margin: auto;
+				z-index: -100;
+				background: $white;
+				position: absolute;
+				background: inherit;
+				@include transform(rotate(45deg));
+			}
+			.close{
+				position: absolute;
+				z-index: 101;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				background: $white;
+				text-align: center;
+				top: -10px;
+				display: none;
+				visibility: hidden;
+				@include opacity(0);
+				@include border-radius(50%);
+				@include rtl-left-right(auto,-10px);
+				@include box-shadow(0px 0px 3px 1px rgba($black, 0.3));
+				&:before{
+					content: "\ea11";
+					font-size: 6px;
+					display: block;
+					font-family: $font-icon-4;
+				}
+			}
+			.template,.product-hotspot{
+				background: $white;
+			}
+			.template{
+				padding: 5px;
+				text-align: center;
+			}
+			.thumbnail-container{
+				margin-bottom: 0px;
+			}
+			.content{
+				padding: 5px 0px;
+			}
+		}
+		&.top{
+			.hotspot-content{
+				left: 50%;
+				bottom: 100%;
+				margin-bottom: 15px;
+				@include transform(translateX(-50%));
+				.arrow{
+					bottom: -5px;
+					left: 0px;
+					right: 0px;
+				}
+				.template,.product-hotspot{
+					@include box-shadow(0px -3px 3px 0px rgba($black, 0.3)); 
+				}
+			}
+		}
+		&.bottom{
+			.hotspot-content{
+				left: 50%;
+				top: 100%;
+				margin-top: 15px;
+				@include transform(translateX(-50%));
+				.arrow{
+					top: -5px;
+					left: 0px;
+					right: 0px;
+				}
+				.template,.product-hotspot{
+					@include box-shadow(0px 3px 3px 0px rgba($black, 0.3)); 
+				}
+			}
+		}
+		&.right{
+			.hotspot-content{
+				top: 50%;
+				@include rtl-margin-left(15px);
+				@include rtl-left-right(100%,auto);
+				@include transform(translateY(-50%));
+				.arrow{
+					top: 0px;
+					bottom: 0px;
+					@include rtl-left-right(-5px,auto);
+				}
+				.template,.product-hotspot{
+					@include box-shadow(3px 0px 3px 0px rgba($black, 0.3)); 
+					.rtl &{
+						@include box-shadow(-3px 0px 3px 0px rgba($black, 0.3)); 
+					}
+				}
+			}
+		}
+		&.left{
+			.hotspot-content{
+				top: 50%;
+				@include rtl-margin-right(15px);
+				@include rtl-left-right(auto,100%);
+				@include transform(translateY(-50%));
+				.arrow{
+					top: 0px;
+					bottom: 0px;
+					@include rtl-left-right(auto,-5px);
+				}
+				.template,.product-hotspot{
+					@include box-shadow(-3px 0px 3px 0px rgba($black, 0.3)); 
+					.rtl &{
+						@include box-shadow(3px 0px 3px 0px rgba($black, 0.3)); 
+					}
+				}
+			}
+		}
+		&.mouseover{
+			@media (max-width: 991px) {
+				@include hotspot-popup();
+			}
+			&:hover{
+				z-index: 100;
+				@media (min-width: 992px) {
+					.hotspot-content{
+						visibility: visible;
+						@include opacity(1);
+					}
+				}
+			}
+		}
+		&.click{
+			z-index: 100;
+			@media (max-width: 767px) {
+				@include hotspot-popup();
+			}
+			.hotspot-title{
+				&:after{
+					content: '\ea11';
+					font-size: 5px;
+					font-family: $font-icon-4;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					z-index: 2;
+					display: none;
+					color: $white;
+					text-align: center;
+					text-shadow: 0px 0px 3px rgba($black, 0.5);
+				}
+			}
+			&.open{
+				.hotspot-title{
+					&:after{
+						display: block;
+					}
+				}
+				.hotspot-content{
+					visibility: visible;
+					@include opacity(1);
+				}
+			}
+		}
+		&.popup{
+			@include hotspot-popup();
+		}
+	}
+}

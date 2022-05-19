@@ -1,0 +1,114 @@
+@import "theme_variables";
+
+/* Product list one */
+
+.product-list-one{
+	.thumbnail-container{
+		.product-image{
+			.box-button{   
+				bottom: 20px;
+				background: transparent;
+				@include box-shadow(none);
+				@include transform(none);
+				@include rtl-left-right(auto,20px);
+				@media (max-width: 991px) {
+					position: static;
+					margin-top: 15px;
+					margin-bottom: 5px;
+				}
+				.btn-product{
+					padding: 0px;
+					background: $white;
+					@include box-shadow(1px 2px 3px rgba($black,0.5));
+					@include border-radius(50%);
+					&:hover{
+						@media(min-width: 992px){
+							color: $theme-color-default;
+						}
+					}
+				}
+				.deo-list-wishlist{
+					@include deo-list-wishlist(auto,0px,auto,100%);
+				}
+				& > div{
+					@media (min-width: 992px) {
+						display: block;
+						@include transition(all 0.4s ease-out);
+						
+						&:nth-child(1){
+							@include transform(translateY(110px));
+						}
+						&:nth-child(2){
+							@include transform(translateY(90px));
+						}
+						&:nth-child(3){
+							@include transform(translateY(70px));
+						}   
+						&:nth-child(4){
+							@include transform(translateY(50px));
+						}
+					}
+					& + div{
+						@media (min-width: 992px) {
+							margin-top: 5px;
+						}
+						@media (max-width: 991px) {
+							@include rtl-margin-left(5px);
+						}
+					}
+				}
+			}
+			.deo-countdown{
+				border-top: none;
+				padding-top: 0px;
+				@media(min-width: 992px){
+					position: absolute;
+					bottom: 50px;
+					left: 50%;
+					z-index: 9;
+					width: 100%;
+					padding-left: 15px;
+					padding-right: 15px;
+					@include transition(all 0.3s ease);
+					@include transform(translateX(-50%));
+				}
+			}
+		}
+		&:hover {
+			@media(min-width: 992px){
+				.box-button{
+					& > div{
+						&:nth-child(1){
+							@include transform(translateY(0px));
+						}
+						&:nth-child(2){
+							@include transform(translateY(0px));
+						}
+						&:nth-child(3){
+							@include transform(translateY(0px));
+						}
+						&:nth-child(4){
+							@include transform(translateY(0px));
+						}   
+					}
+				}
+				.deo-countdown{
+					visibility: hidden;
+					@include opacity(0);
+				}   
+			}
+		}
+	}
+	&.reserved{
+		.thumbnail-container{
+			.product-image{
+				.box-button{
+					@include rtl-left-right(20px,auto);
+					.deo-list-wishlist{
+						@include deo-list-wishlist(0px,auto,auto,100%);
+					}
+				}
+			}
+		}
+	}
+}

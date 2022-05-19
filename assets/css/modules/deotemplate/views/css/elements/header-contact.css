@@ -1,0 +1,67 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* header-contact */
+.header-contact {
+  margin-top: 5px;
+  margin-bottom: 0px; }
+  .header-contact ul {
+    margin: 0px; }
+  .header-contact li {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle; }
+    .header-contact li:not(:last-child) {
+      margin-right: 15px; }
+      .rtl .header-contact li:not(:last-child) {
+        margin-left: 15px;
+        margin-right: inherit; }
+    .header-contact li i {
+      font-size: 15px;
+      font-style: normal;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; }
+      .rtl .header-contact li i {
+        margin-left: 5px;
+        margin-right: inherit; }
+    .header-contact li span, .header-contact li a {
+      color: inherit;
+      font-weight: normal;
+      font-style: italic;
+      display: inline-block;
+      vertical-align: middle; }
+    .header-contact li a:hover {
+      color: #1bbc9b; }
+    .header-contact li.email i:before {
+      content: '\e92f';
+      font-family: "deo-custom-icons"; }
+    .header-contact li.phone i:before {
+      content: '\e912';
+      font-family: "deo-custom-icons"; }
+  .header-contact.white-text {
+    color: #cccccc; }
+
+/*# sourceMappingURL=header-contact.css.map */

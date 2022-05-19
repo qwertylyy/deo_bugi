@@ -1,0 +1,43 @@
+@import "theme_variables";
+
+/* Product list seventeen */
+
+.product-list-seventeen{
+	.thumbnail-container{
+		overflow: hidden;
+		margin-bottom: 15px;
+		.product-image{
+			width: 90px;
+			@include rtl-float-left();
+		}
+		.product-meta{
+			overflow: hidden;
+			@include rtl-padding(0px,0px,0px,15px);
+			@include rtl-text-align-left();
+		}
+		.product-title{
+			a{
+				font-size: 16px;
+			}
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				
+			}
+		}
+	}
+}
+
+.product_list{
+	&.list{ 
+		&.product-list-seventeen{
+			.thumbnail-container {
+				.product-meta{
+					@media (min-width: 576px){
+						@include rtl-padding(0px,0px,0px,15px);
+					}
+				}
+			}
+		}
+	}
+}

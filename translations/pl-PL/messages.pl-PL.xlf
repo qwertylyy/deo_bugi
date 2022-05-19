@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\www\prestashop\dev\new\deo_bugi\admincontrolpanel" source-language="pl-PL" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca">
+        <source>Reference</source>
+        <target>Odniesienie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c0bd7654d5b278e65f21cf4e9153fdb4">
+        <source>Manufacturer</source>
+        <target>Producent</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="75aeb98e5241592ad6a6c2c4c78a16ef">
+        <source>years</source>
+        <target>lat</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae60f11ab51860bdb22794a943335a34">
+        <source>weeks</source>
+        <target>tygodnie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target>dni</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="73cdddd7730abfc13a55efb9f5685a3b">
+        <source>hours</source>
+        <target>godziny</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1442a7b6e2c20b27775175eecba84dac">
+        <source>mins</source>
+        <target>min</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="975a85a4ffa56e23c70e2bbeaf405ac7">
+        <source>secs</source>
+        <target>suche</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="24fe48030f7d3097d5882535b04c3fa8">
+        <source>Expired</source>
+        <target>Przedawniony</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

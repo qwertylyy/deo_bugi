@@ -1,0 +1,84 @@
+@import "theme_variables";
+
+// ************* Footer 4 ***************
+.footer-container{   
+	background-color: #333333;
+	color: $theme-color-background-black;
+}
+
+.footer-top{
+	background: #222222;
+}
+
+.footer-center{
+
+}
+
+.footer-bottom{
+
+}
+
+.box-top-footer{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	& > [class*="col-"]{
+		@media (min-width: 768px){
+			@include rtl-border-right($main-border);
+			&:last-child{
+				border: none;
+			}
+		}
+	}
+}
+
+.box-middle-footer{
+	padding-top: 50px;
+	padding-bottom: 40px;
+	@media(min-width: 768px){
+		padding-top: 60px;
+		padding-bottom: 50px;
+	}
+	.logo{
+		margin-bottom: 25px;
+	}
+	.open-time{
+		// margin-top: 30px;
+	}
+	.block-social{
+		.box-title{
+			@media (max-width: 991px) and (min-width: 576px){
+				margin-top: 0px;
+			}
+		}
+	}
+	.block-contact{
+		@media(min-width: 992px){
+			position: relative;
+			@include rtl-padding-right(60px);
+			&:after{
+				content: '';
+				top: 0px;
+				bottom: 0px;
+				width: 1px;
+				background: $border-color;
+				position: absolute;
+				@include rtl-right(60px);
+			}
+		}
+	}
+}
+
+.box-bottom-footer{
+	padding-bottom: 20px;
+	.group-text{
+		.block-link-inline{
+			padding-bottom: 20px;
+			@media(min-width: 576px){
+				padding-top: 20px;
+			}
+		}
+		.text-footer{
+			margin-bottom: 10px;
+		}
+	}
+}

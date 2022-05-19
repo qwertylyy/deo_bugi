@@ -1,0 +1,45 @@
+@import "theme_variables";
+
+// ************* Home 3 ***************
+
+
+#index #wrapper{
+	padding-bottom: 0px;
+}
+
+.box-start{
+	padding-top: $grid-gutter-width-base;
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+.box-space-before{
+	padding-top: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		padding-top: $grid-gutter-width-base*3;
+	}
+}
+
+.box-about-us,.box-fake-number-static,.box-text-shop-now,.box-banner-text,.box-blog,.box-manufacturers{
+	margin-bottom: $grid-gutter-width-base*4;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*3;
+	}
+}
+
+.box-banner,.box-categories,.box-service,.box-product-tabs,.box-products,.box-products-featured,.box-product{
+	margin-bottom: $grid-gutter-width-base*3;
+	@media (max-width: 991px) {
+		margin-bottom: $grid-gutter-width-base*2;
+	}
+}
+
+.layout-boxed-md{
+
+}
+
+.layout-boxed-lg{
+	
+}

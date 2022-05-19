@@ -1,0 +1,142 @@
+@import "theme_variables";
+
+#pagenotfound{
+	#wrapper{
+		padding-top: 120px;
+		padding-bottom: 120px;
+		@media (max-width: 991px){
+			padding-bottom: 60px;
+		}
+	}
+}
+#pagenotfound, #search{
+	.page-content {
+		#search_widget {
+			width: 100%;
+		}
+		.popup-content{
+			width: 100%;
+			display: block;
+			position: static;
+			min-width: initial;
+		}
+	}
+	// #products{
+	//   @media (min-width: 992px) {
+	//     padding: 230px 0;
+	//   }
+	// }
+	#main {
+		position: relative;
+		.page-header h1,.page-title {
+			font-size: 25px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+		.page-content {
+			margin-bottom: 0px;
+		}
+	}
+	.page-not-found {
+		margin-bottom: 0;
+		padding: 30px 0;
+		@media (min-width: 480px) {
+			padding: 60px 0;
+		}
+		@media (min-width: 768px) {
+			padding: 80px 0;
+		}
+		@media (min-width: 992px) {
+			padding: 100px 0;
+		}
+		&:before {
+			content: '404';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			font-size: 450px;
+			font-weight: 900;
+			color: #f5f5f5;
+			z-index: -1;
+			text-align: center;
+			text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+			@include display(flex);
+			@include align-items(center);
+			@include justify-content(center);
+			@media (max-width: 991px) {
+				font-size: 350px;
+			}
+			@media (max-width: 767px) {
+				font-size: 250px;
+			}
+			@media (max-width: 479px) {
+				font-size: 150px;
+			}
+		}
+	}
+}
+
+.page-not-found {
+	text-align: center;
+	max-width: inherit;
+	background: transparent;
+	@include box-shadow(none);
+	h4 {
+		font-size: 16px;
+		color: #222222;
+		font-weight: normal;
+		margin-bottom: 80px;
+		@media (max-width: 767px) {
+			margin-bottom: 50px;
+		}
+	}
+	p {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: normal;
+		margin-bottom: 20px;
+	}
+	.back-to-home {
+		font-size: 14px;
+		font-weight: bold;
+		display: inline-block;
+		padding: 48px 0 20px 0;
+		text-transform: uppercase;
+		@include transition(all 0.3s ease);
+		i {
+			@include rtl-margin-left(10px);
+			&:before {
+				content: '\ea2a';
+				font-family: $font-icon-4;
+			}
+		}
+	}
+	.search-widget {
+		float: none;
+		margin: auto;
+		max-width: 500px;
+		@include search-block();
+		.popup-content {
+			overflow: hidden;
+			@include animation(none);
+			@include box-shadow(none);
+			@include border-radius(20px);
+			input[type=text]{
+				height: 40px;
+				background: $white;
+				border: $main-border;
+				@include border-radius(9999px);
+				@include rtl-padding(5px,40px,5px,15px);
+			}
+			button[type=submit]{
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+	}
+}

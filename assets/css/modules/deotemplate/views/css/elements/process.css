@@ -1,0 +1,159 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* process */
+.process.process-style-one .block_content {
+  margin: -10px -15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (min-width: 576px) {
+    .process.process-style-one .block_content {
+      margin: -15px; } }
+  @media (min-width: 1200px) {
+    .process.process-style-one .block_content {
+      margin: -25px -15px; } }
+  @media (min-width: 1500px) {
+    .process.process-style-one .block_content {
+      margin: -30px -15px; } }
+.process.process-style-one .item {
+  padding: 10px 15px; }
+  @media (min-width: 576px) {
+    .process.process-style-one .item {
+      width: 50%;
+      padding: 15px; } }
+  @media (min-width: 1200px) {
+    .process.process-style-one .item {
+      padding: 25px 15px; } }
+  @media (min-width: 1500px) {
+    .process.process-style-one .item {
+      padding: 30px 15px; } }
+  .process.process-style-one .item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+    .process.process-style-one .item h3 b {
+      color: #1bbc9b; }
+  .process.process-style-one .item p {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 0px;
+    font-weight: normal; }
+.process.process-style-two .item {
+  overflow: hidden;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px; }
+  .rtl .process.process-style-two .item {
+    padding-right: 60px;
+    padding-left: inherit; }
+  @media (min-width: 1200px) {
+    .process.process-style-two .item {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
+  @media (min-width: 1500px) {
+    .process.process-style-two .item {
+      padding-top: 25px;
+      padding-bottom: 25px; } }
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .process.process-style-two .item {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  .process.process-style-two .item h3 {
+    font-weight: 500;
+    margin-bottom: 5px; }
+    .process.process-style-two .item h3 b {
+      z-index: 1;
+      top: 15px;
+      width: 45px;
+      height: 45px;
+      font-size: 16px;
+      line-height: 41px;
+      position: absolute;
+      text-align: center;
+      font-weight: 500;
+      display: inline-block;
+      border: 2px solid #dddddd;
+      left: 0px;
+      border-radius: 50%; }
+      .rtl .process.process-style-two .item h3 b {
+        right: 0px;
+        left: auto; }
+      @media (min-width: 1200px) {
+        .process.process-style-two .item h3 b {
+          top: 20px; } }
+      @media (min-width: 1500px) {
+        .process.process-style-two .item h3 b {
+          top: 25px; } }
+      @media (max-width: 1199px) and (min-width: 768px) {
+        .process.process-style-two .item h3 b {
+          top: 10px; } }
+      .process.process-style-two .item h3 b:before, .process.process-style-two .item h3 b:after {
+        content: '';
+        left: 50%;
+        width: 1px;
+        z-index: -2;
+        height: 9999px;
+        position: absolute;
+        background: #dddddd;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+      .process.process-style-two .item h3 b:before {
+        bottom: calc(100% + 8px); }
+      .process.process-style-two .item h3 b:after {
+        top: calc(100% + 8px); }
+  .process.process-style-two .item p {
+    font-size: 13px;
+    line-height: 1.6; }
+    .process.process-style-two .item p:last-child {
+      margin-bottom: 0px; }
+  .process.process-style-two .item:first-of-type {
+    padding-top: 0px; }
+    .process.process-style-two .item:first-of-type h3 b {
+      top: 0px; }
+      .process.process-style-two .item:first-of-type h3 b:before {
+        display: none; }
+  .process.process-style-two .item:last-of-type {
+    padding-bottom: 0px; }
+    .process.process-style-two .item:last-of-type h3 b:after {
+      display: none; }
+
+/*# sourceMappingURL=process.css.map */

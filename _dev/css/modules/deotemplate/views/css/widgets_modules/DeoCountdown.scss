@@ -1,0 +1,184 @@
+@import "theme_variables";
+
+.DeoCountdown{
+	&.countdown-inline{
+		.deo-countdown{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			padding-top: 0px;
+			border-top: none;
+		}
+	}
+	&.countdown-sidebar{
+		@include rtl-padding-right(55px);
+	}
+	&.countdown-black{
+		.deo-countdown{
+			color: #333333;
+		}
+	}
+	&.countdown-white{
+		.deo-countdown{
+			color: $white;
+		}
+	}
+	&.countdown-red{
+		.deo-countdown{
+			color: #f8705a;
+		}
+	}
+	&.countdown-style-one{
+		padding: 80px 15px;
+		text-align: center;;
+		.deo-countdown{
+			&.pro{
+				padding-top: 0px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				border-top: none;
+			}
+		}
+		&.white{
+			color: $white;
+			.title_block{
+				color: $white;
+			}
+		}
+		.title_block{
+			font-size: 18px;
+			font-weight: 400;
+			margin-bottom: 0px;
+			// font-family: $font-family-senary;
+		}
+		.sub-title-widget{
+			font-size: 30px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+		.description{
+			font-size: 13px;
+			line-height: 1.6;
+			margin-bottom: 25px;
+			// font-family: $font-family-senary;
+			p{
+				margin-bottom: 0px;
+			}
+		}
+		.deo-countdown-link{
+			margin-top: 30px;
+			margin-bottom: 0px;
+			a{
+				color: $white;
+				font-size: 12px;
+				font-weight: 400;
+				padding: 6px 12px;
+				display: inline-block;
+				vertical-align: middle;
+				text-transform: uppercase;
+				background: $theme-color-default;
+				@include transition(all 0.3s ease);
+				&:hover{
+					@media (min-width: 992px) {
+						background: $theme-color-button-hover;
+					}
+				}
+			}
+		}
+	}
+	&.countdown-style-two{
+		text-align: center;
+		.deo-countdown{
+			&.pro{
+				padding-top: 0px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				border-top: none;
+			}
+		}
+		.title_block{
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 0px;
+			// font-family: $font-family-senary;
+		}
+		.sub-title-widget{
+			font-size: 30px;
+			font-weight: 600;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		.description{
+			line-height: 1.5;
+			margin-bottom: 20px;
+			// font-family: $font-family-senary;
+		}
+
+		.deo-countdown-link{
+			margin-top: 20px;
+			margin-bottom: 0px;
+			a{
+				color: $white;
+				font-size: 10px;
+				font-weight: 500;
+				padding: 5px 10px;
+				display: inline-block;
+				vertical-align: middle;
+				background: $theme-color-default;
+				@include transition(all 0.3s ease);
+				&:hover{
+					@media (min-width: 992px) {
+						background: $theme-color-button-hover;
+					}
+				}
+			}
+		}
+	}
+	&.countdown-style-three{
+		text-align: center;
+		.deo-countdown{
+			&.pro{
+				padding-top: 0px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				border-top: none;
+			}
+		}
+		.title_block{
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 0px;
+			// font-family: $font-family-senary;
+		}
+		.sub-title-widget{
+			font-size: 30px;
+			font-weight: 600;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		.description{
+			line-height: 1.5;
+			margin-bottom: 20px;
+			// font-family: $font-family-senary;
+		}
+		.deo-countdown-link{
+			margin-top: 20px;
+			margin-bottom: 0px;
+			a{
+				color: $white;
+				font-size: 10px;
+				font-weight: 500;
+				padding: 5px 10px;
+				display: inline-block;
+				vertical-align: middle;
+				background: $theme-color-default;
+				@include transition(all 0.3s ease);
+				&:hover{
+					@media (min-width: 992px) {
+						background: $theme-color-button-hover;
+					}
+				}
+			}
+		}
+	}
+}

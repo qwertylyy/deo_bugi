@@ -1,0 +1,788 @@
+/** search ***/
+/** end search ***/
+/** newlestter ***/
+/** End newlestter ***/
+/***************************************************
+	Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+	Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* DeoPopup */
+.bg-overlay-popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1003; }
+  .bg-overlay-popup.hidden-overlay-popup {
+    display: none; }
+
+.DeoPopup.simple-popup {
+  position: fixed;
+  z-index: 1004; }
+  .DeoPopup.simple-popup.hidden-popup {
+    display: none; }
+  .DeoPopup.simple-popup .wrapper-popup {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+.DeoPopup .deo-close-popup {
+  top: -10px;
+  color: #FFFFFF;
+  z-index: 1004;
+  position: absolute;
+  right: -10px; }
+  .rtl .DeoPopup .deo-close-popup {
+    left: -10px;
+    right: auto; }
+  .DeoPopup .deo-close-popup span {
+    display: none; }
+  .DeoPopup .deo-close-popup i {
+    display: block;
+    background: #000000;
+    font-style: normal;
+    border-radius: 50%;
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); }
+    .DeoPopup .deo-close-popup i:before {
+      font-size: 23px;
+      content: '\e917';
+      display: block;
+      font-family: "deo-custom-icons"; }
+.DeoPopup .fancybox-skin {
+  background: transparent; }
+.DeoPopup .control-checkbox-popup {
+  margin: 10px 0px;
+  position: relative;
+  text-align: left; }
+  .rtl .DeoPopup .control-checkbox-popup {
+    text-align: right; }
+  .DeoPopup .control-checkbox-popup input {
+    top: 2px;
+    z-index: 1;
+    width: 13px;
+    height: 13px;
+    z-index: 99;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: 0px; }
+    .rtl .DeoPopup .control-checkbox-popup input {
+      right: 0px;
+      left: auto; }
+    .DeoPopup .control-checkbox-popup input:checked + .checkbox i {
+      display: block; }
+  .DeoPopup .control-checkbox-popup .checkbox {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #808080;
+    margin: 0px 3px 0px 0px; }
+    .rtl .DeoPopup .control-checkbox-popup .checkbox {
+      margin: 0px 0px 0px 3px; }
+    .DeoPopup .control-checkbox-popup .checkbox i {
+      display: none;
+      font-size: 12px;
+      margin-top: -1px; }
+  .DeoPopup .control-checkbox-popup .text-checkbox {
+    display: inline-block;
+    vertical-align: middle; }
+.DeoPopup.popup-newsletter-one {
+  text-align: center; }
+  .DeoPopup.popup-newsletter-one .fancybox-inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end; }
+  .DeoPopup.popup-newsletter-one .bg-popup {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: 95px 40px;
+    position: absolute;
+    background: #ffffff;
+    -moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-newsletter-one .bg-popup {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    .DeoPopup.popup-newsletter-one .bg-popup:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 4;
+      height: 20%;
+      background: repeating-linear-gradient(-45deg, #fafafa, #fafafa 10px, #e74c3c 10px, #e74c3c 20px, #fafafa 20px, #fafafa 30px, #1e90ff 30px, #1e90ff 40px) 0 0/100% 5px no-repeat, #fafafa;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-clip-path: polygon(5% 55%, 50% 100%, 95% 55%, 100% 0, 0 0);
+      -ms-clip-path: polygon(5% 55%, 50% 100%, 95% 55%, 100% 0, 0 0);
+      clip-path: polygon(5% 55%, 50% 100%, 95% 55%, 100% 0, 0 0); }
+    .DeoPopup.popup-newsletter-one .bg-popup .bg-popup-inner {
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 3;
+      position: absolute;
+      background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #e74c3c 10px, #e74c3c 20px, #ffffff 20px, #ffffff 30px, #1e90ff 30px, #1e90ff 40px) 0 100%/100% 5px no-repeat, repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #e74c3c 10px, #e74c3c 20px, #ffffff 20px, #ffffff 30px, #1e90ff 30px, #1e90ff 40px) 0 100%/5px 100% no-repeat, repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #e74c3c 10px, #e74c3c 20px, #ffffff 20px, #ffffff 30px, #1e90ff 30px, #1e90ff 40px) 100% 100%/5px 100% no-repeat, #ffffff;
+      -webkit-clip-path: polygon(80% 40%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 40%);
+      -ms-clip-path: polygon(80% 40%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 40%);
+      clip-path: polygon(80% 40%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 40%); }
+      .DeoPopup.popup-newsletter-one .bg-popup .bg-popup-inner:after {
+        content: '';
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        position: absolute;
+        background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #e74c3c 10px, #e74c3c 20px, #ffffff 20px, #ffffff 30px, #1e90ff 30px, #1e90ff 40px) 0 100%/100% 5px no-repeat, #ffffff;
+        -webkit-clip-path: polygon(70% 10%, 100% 100%, 0 100%, 30% 10%);
+        -ms-clip-path: polygon(70% 10%, 100% 100%, 0 100%, 30% 10%);
+        clip-path: polygon(70% 10%, 100% 100%, 0 100%, 30% 10%); }
+  .DeoPopup.popup-newsletter-one .content-popup {
+    z-index: 5;
+    position: relative;
+    padding: 50px 30px; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-newsletter-one .content-popup {
+        padding: 30px 30px; } }
+@media (max-width: 575px) {
+  .DeoPopup.popup-newsletter-two {
+    text-align: center;
+    background-image: none !important; } }
+.DeoPopup.popup-newsletter-two .fancybox-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+.DeoPopup.popup-newsletter-two .block_newsletter {
+  max-width: 500px;
+  margin-left: 0px;
+  margin-right: 0px; }
+.DeoPopup.popup-newsletter-two .wrapper-popup {
+  padding: 20px; }
+.DeoPopup.popup-newsletter-three {
+  text-align: center; }
+  .DeoPopup.popup-newsletter-three .block-title {
+    color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 40px;
+    background: #000000; }
+    @media (max-width: 767px) {
+      .DeoPopup.popup-newsletter-three .block-title {
+        margin-bottom: 30px; } }
+    .DeoPopup.popup-newsletter-three .block-title h3 {
+      color: #FFFFFF;
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 5px; }
+      @media (max-width: 767px) {
+        .DeoPopup.popup-newsletter-three .block-title h3 {
+          font-size: 25px; } }
+      .DeoPopup.popup-newsletter-three .block-title h3 b, .DeoPopup.popup-newsletter-three .block-title h3 strong {
+        font-size: 35px;
+        -webkit-animation: blinker 1s linear infinite;
+        -moz-animation: blinker 1s linear infinite;
+        animation: blinker 1s linear infinite; }
+        @media (max-width: 767px) {
+          .DeoPopup.popup-newsletter-three .block-title h3 b, .DeoPopup.popup-newsletter-three .block-title h3 strong {
+            font-size: 30px; } }
+    .DeoPopup.popup-newsletter-three .block-title p {
+      font-size: 16px; }
+      .DeoPopup.popup-newsletter-three .block-title p:last-child {
+        margin-bottom: 0px; }
+  .DeoPopup.popup-newsletter-three .block-desciption {
+    padding: 0px 15px;
+    margin-top: 25px; }
+    @media (max-width: 767px) {
+      .DeoPopup.popup-newsletter-three .block-desciption {
+        margin-top: 20px; } }
+    .DeoPopup.popup-newsletter-three .block-desciption p {
+      margin-bottom: 5px; }
+      .DeoPopup.popup-newsletter-three .block-desciption p:last-child {
+        margin-bottom: 0px; }
+  .DeoPopup.popup-newsletter-three .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-newsletter-three .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  .DeoPopup.popup-newsletter-three .block_newsletter {
+    max-width: 450px;
+    padding: 0px 20px; }
+.DeoPopup.popup-newsletter-four {
+  text-align: center; }
+  .DeoPopup.popup-newsletter-four .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-newsletter-four .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  .DeoPopup.popup-newsletter-four .logo {
+    margin: 30px 0px; }
+    .DeoPopup.popup-newsletter-four .logo img {
+      max-height: 50px; }
+  .DeoPopup.popup-newsletter-four .block-title {
+    padding: 0px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+    @media (max-width: 767px) {
+      .DeoPopup.popup-newsletter-four .block-title {
+        padding: 0px 20px; } }
+  .DeoPopup.popup-newsletter-four .block-social {
+    margin-top: 20px; }
+  .DeoPopup.popup-newsletter-four .block_newsletter {
+    max-width: 450px;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto; }
+    .DeoPopup.popup-newsletter-four .block_newsletter .form-group {
+      display: block; }
+    .DeoPopup.popup-newsletter-four .block_newsletter form .input-wrapper {
+      display: block; }
+    .DeoPopup.popup-newsletter-four .block_newsletter form input[type=email] {
+      border: none;
+      text-align: center;
+      background: #f1f1f1; }
+    .DeoPopup.popup-newsletter-four .block_newsletter form .btn {
+      height: auto;
+      margin-top: 15px;
+      padding: 10px 20px; }
+      .DeoPopup.popup-newsletter-four .block_newsletter form .btn i {
+        display: none; }
+      .DeoPopup.popup-newsletter-four .block_newsletter form .btn span {
+        display: block; }
+.DeoPopup.popup-newsletter-five {
+  text-align: center; }
+  .DeoPopup.popup-newsletter-five .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-newsletter-five .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  .DeoPopup.popup-newsletter-five .block-title {
+    padding: 0px 20px;
+    margin: 40px auto 20px; }
+    .DeoPopup.popup-newsletter-five .block-title .title_block {
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .DeoPopup.popup-newsletter-five .block-title .sub-title-widget {
+      font-size: 16px; }
+      .DeoPopup.popup-newsletter-five .block-title .sub-title-widget:last-child {
+        margin-bottom: 0px; }
+  .DeoPopup.popup-newsletter-five .block-social {
+    margin-top: 20px;
+    margin-bottom: 15px; }
+  .DeoPopup.popup-newsletter-five .block_newsletter {
+    max-width: 450px;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto; }
+    .DeoPopup.popup-newsletter-five .block_newsletter .form-group {
+      display: block; }
+    .DeoPopup.popup-newsletter-five .block_newsletter form .input-wrapper {
+      display: block; }
+    .DeoPopup.popup-newsletter-five .block_newsletter form input[type=email] {
+      border: none;
+      text-align: center;
+      background: #f1f1f1; }
+    .DeoPopup.popup-newsletter-five .block_newsletter form .btn {
+      width: 100%;
+      height: auto;
+      margin-top: 8px;
+      padding: 10px 20px; }
+      .DeoPopup.popup-newsletter-five .block_newsletter form .btn i {
+        display: none; }
+      .DeoPopup.popup-newsletter-five .block_newsletter form .btn span {
+        display: block; }
+.DeoPopup.popup-newsletter-six .fancybox-inner {
+  background: #FFFFFF; }
+  @media (max-width: 991px) {
+    .DeoPopup.popup-newsletter-six .fancybox-inner {
+      height: auto !important;
+      margin-bottom: 30px !important; } }
+.DeoPopup.popup-newsletter-six .content-popup {
+  overflow: hidden;
+  text-align: center; }
+  .DeoPopup.popup-newsletter-six .content-popup > *:not(.image-popup) {
+    width: auto;
+    padding: 0 20px;
+    overflow: hidden; }
+  .DeoPopup.popup-newsletter-six .content-popup .image-popup {
+    display: none; }
+    @media (min-width: 992px) {
+      .DeoPopup.popup-newsletter-six .content-popup .image-popup {
+        max-width: 50%;
+        display: block;
+        float: left; }
+        .rtl .DeoPopup.popup-newsletter-six .content-popup .image-popup {
+          float: right; } }
+  .DeoPopup.popup-newsletter-six .content-popup .block-social {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .DeoPopup.popup-newsletter-six .content-popup .text-popup {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    @media (min-width: 992px) {
+      .DeoPopup.popup-newsletter-six .content-popup .text-popup {
+        margin-top: 80px; } }
+    .DeoPopup.popup-newsletter-six .content-popup .text-popup .title_block {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 25px; }
+      @media (min-width: 992px) {
+        .DeoPopup.popup-newsletter-six .content-popup .text-popup .title_block {
+          font-size: 28px; } }
+      @media (min-width: 576px) {
+        .DeoPopup.popup-newsletter-six .content-popup .text-popup .title_block {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto; } }
+    .DeoPopup.popup-newsletter-six .content-popup .text-popup .sub-title-widget {
+      font-size: 16px;
+      color: #868686;
+      font-weight: normal; }
+      @media (min-width: 576px) {
+        .DeoPopup.popup-newsletter-six .content-popup .text-popup .sub-title-widget {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto; } }
+.DeoPopup.popup-newsletter-seven .fancybox-inner {
+  background: #FFFFFF; }
+  @media (max-width: 991px) {
+    .DeoPopup.popup-newsletter-seven .fancybox-inner {
+      height: auto !important;
+      margin-bottom: 30px !important; } }
+.DeoPopup.popup-newsletter-seven .content-popup {
+  overflow: hidden;
+  text-align: center; }
+  .DeoPopup.popup-newsletter-seven .content-popup > *:not(.left-text) {
+    width: auto;
+    padding: 0 20px;
+    overflow: hidden; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-newsletter-seven .content-popup > *:not(.left-text) {
+        padding: 0 30px; } }
+  .DeoPopup.popup-newsletter-seven .content-popup .left-text {
+    padding: 30px;
+    background: #282C38; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-newsletter-seven .content-popup .left-text {
+        max-width: 40%;
+        padding: 50px 30px;
+        float: left; }
+        .rtl .DeoPopup.popup-newsletter-seven .content-popup .left-text {
+          float: right; } }
+    .DeoPopup.popup-newsletter-seven .content-popup .left-text:before {
+      content: '';
+      background: inherit;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      height: 300px;
+      z-index: 999; }
+    .DeoPopup.popup-newsletter-seven .content-popup .left-text .summer {
+      font-size: 23px;
+      line-height: 1;
+      color: #f66966;
+      font-weight: normal;
+      text-transform: uppercase; }
+      @media (min-width: 768px) {
+        .DeoPopup.popup-newsletter-seven .content-popup .left-text .summer {
+          font-size: 35px; } }
+    .DeoPopup.popup-newsletter-seven .content-popup .left-text .sale {
+      font-size: 50px;
+      line-height: 1;
+      color: #f66966;
+      font-weight: 500;
+      margin-bottom: 35px;
+      text-transform: uppercase; }
+      @media (min-width: 768px) {
+        .DeoPopup.popup-newsletter-seven .content-popup .left-text .sale {
+          font-size: 60px; } }
+    .DeoPopup.popup-newsletter-seven .content-popup .left-text .save-up-to {
+      color: #2c8a6b;
+      font-size: 20px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .DeoPopup.popup-newsletter-seven .content-popup .left-text .sale-number {
+      color: #FFFFFF;
+      font-size: 70px;
+      font-weight: 500; }
+      @media (min-width: 768px) {
+        .DeoPopup.popup-newsletter-seven .content-popup .left-text .sale-number {
+          font-size: 80px; } }
+    .DeoPopup.popup-newsletter-seven .content-popup .left-text .text-bottom {
+      color: #5c5f6b;
+      line-height: 1.8;
+      font-weight: normal;
+      display: inline-block;
+      text-transform: uppercase;
+      border-top: 1px solid #3e3e3e;
+      border-bottom: 1px solid #3e3e3e; }
+  .DeoPopup.popup-newsletter-seven .content-popup .block-social {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .DeoPopup.popup-newsletter-seven .content-popup .top-text {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-newsletter-seven .content-popup .top-text {
+        margin-top: 80px; } }
+    .DeoPopup.popup-newsletter-seven .content-popup .top-text .title_block {
+      font-size: 12px;
+      line-height: 1.3;
+      margin-bottom: 25px;
+      font-weight: normal;
+      font-family: inherit;
+      text-transform: uppercase; }
+      @media (min-width: 576px) {
+        .DeoPopup.popup-newsletter-seven .content-popup .top-text .title_block {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto; } }
+    .DeoPopup.popup-newsletter-seven .content-popup .top-text .sub-title-widget {
+      font-size: 16px;
+      color: #60b5a4;
+      font-weight: normal; }
+      @media (min-width: 576px) {
+        .DeoPopup.popup-newsletter-seven .content-popup .top-text .sub-title-widget {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto; } }
+.DeoPopup.popup-style-one {
+  text-align: center; }
+  .DeoPopup.popup-style-one .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-style-one .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  @media (min-width: 576px) {
+    .DeoPopup.popup-style-one .media {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; } }
+  @media (min-width: 576px) {
+    .DeoPopup.popup-style-one .left-block {
+      width: 50%; } }
+  .DeoPopup.popup-style-one .right-block {
+    padding: 30px 20px; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-style-one .right-block {
+        width: 50%; } }
+  .DeoPopup.popup-style-one .control-checkbox-popup {
+    display: block;
+    margin-top: 0px;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-style-one .control-checkbox-popup {
+        width: 50%;
+        z-index: 1;
+        bottom: 0px;
+        position: absolute;
+        right: 0px;
+        left: 50%; }
+        .rtl .DeoPopup.popup-style-one .control-checkbox-popup {
+          right: 50%;
+          left: 0px; } }
+  .DeoPopup.popup-style-one p {
+    margin-bottom: 0px; }
+  .DeoPopup.popup-style-one h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    -webkit-animation: blinker 1s linear infinite;
+    -moz-animation: blinker 1s linear infinite;
+    animation: blinker 1s linear infinite; }
+  .DeoPopup.popup-style-one h3 {
+    color: #f8705a;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .DeoPopup.popup-style-one .btn {
+    font-size: 16px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: #1bbc9b;
+    border: 2px solid #1bbc9b;
+    border-radius: 0px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    @media (min-width: 992px) {
+      .DeoPopup.popup-style-one .btn:hover {
+        color: #FFFFFF;
+        background: #1bbc9b; } }
+.DeoPopup.popup-style-two {
+  text-align: center; }
+  .DeoPopup.popup-style-two .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-style-two .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  .DeoPopup.popup-style-two .logo {
+    margin: 30px 0px 45px; }
+    .DeoPopup.popup-style-two .logo img {
+      max-height: 50px; }
+  .DeoPopup.popup-style-two .block-title {
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; }
+    .DeoPopup.popup-style-two .block-title .title_block {
+      line-height: 1.2;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-family: inherit; }
+    .DeoPopup.popup-style-two .block-title .sub-title-widget {
+      font-size: 16px;
+      font-weight: 400; }
+  .DeoPopup.popup-style-two .block-button {
+    margin-top: 25px; }
+    .DeoPopup.popup-style-two .block-button .btn {
+      color: #000000;
+      padding: 8px 15px;
+      background: transparent;
+      text-transform: uppercase;
+      border: 1px solid #000000;
+      border-radius: 0px;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media (min-width: 992px) {
+        .DeoPopup.popup-style-two .block-button .btn:hover {
+          color: #FFFFFF;
+          background: #000000; } }
+    .DeoPopup.popup-style-two .block-button .close-popup {
+      color: #c5155d;
+      border-color: #c5155d; }
+      @media (min-width: 992px) {
+        .DeoPopup.popup-style-two .block-button .close-popup:hover {
+          background: #c5155d; } }
+  .DeoPopup.popup-style-two .block-social {
+    margin-top: 20px; }
+.DeoPopup.popup-style-three {
+  text-align: center; }
+  .DeoPopup.popup-style-three .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-style-three .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  .DeoPopup.popup-style-three .logo {
+    margin: 30px 0px; }
+    .DeoPopup.popup-style-three .logo img {
+      max-height: 50px; }
+  .DeoPopup.popup-style-three .countdown-widget {
+    margin-top: 40px; }
+    .DeoPopup.popup-style-three .countdown-widget .title_block {
+      line-height: 1.1;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: inherit;
+      margin-bottom: 20px !important; }
+    .DeoPopup.popup-style-three .countdown-widget .sub-title-widget {
+      font-size: 16px;
+      font-weight: 400; }
+  .DeoPopup.popup-style-three .block-code {
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+    .DeoPopup.popup-style-three .block-code .block_content {
+      color: #c5155d;
+      margin-top: 30px;
+      font-weight: 600;
+      padding: 10px 15px;
+      display: inline-block;
+      vertical-align: middle;
+      border: 2px dashed #c5155d;
+      border-radius: 5px; }
+  .DeoPopup.popup-style-three .block-social {
+    margin-top: 20px; }
+.DeoPopup.popup-style-four {
+  text-align: center; }
+  .DeoPopup.popup-style-four .fancybox-inner {
+    background: #FFFFFF; }
+    @media (max-width: 575px) {
+      .DeoPopup.popup-style-four .fancybox-inner {
+        height: auto !important;
+        margin-bottom: 30px !important; } }
+  @media (min-width: 576px) {
+    .DeoPopup.popup-style-four .media {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; } }
+  .DeoPopup.popup-style-four .left-block {
+    display: none; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-style-four .left-block {
+        display: block;
+        width: 50%; } }
+  .DeoPopup.popup-style-four .right-block {
+    padding: 30px 20px; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-style-four .right-block {
+        width: 50%; } }
+  .DeoPopup.popup-style-four .control-checkbox-popup {
+    display: block;
+    margin-top: 0px;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .DeoPopup.popup-style-four .control-checkbox-popup {
+        width: 50%;
+        z-index: 1;
+        bottom: 0px;
+        position: absolute;
+        right: 0px;
+        left: 50%; }
+        .rtl .DeoPopup.popup-style-four .control-checkbox-popup {
+          right: 50%;
+          left: 0px; } }
+  .DeoPopup.popup-style-four p {
+    margin-bottom: 0px;
+    font-weight: normal; }
+  .DeoPopup.popup-style-four h3 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #1974b5;
+    margin-bottom: 25px; }
+  .DeoPopup.popup-style-four h4 {
+    color: #d88679;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-family: inherit;
+    text-transform: uppercase; }
+  .DeoPopup.popup-style-four .btn {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    background: #1bbc9b;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    @media (min-width: 992px) {
+      .DeoPopup.popup-style-four .btn:hover {
+        color: #FFFFFF;
+        background: #169a7f; } }
+
+/*# sourceMappingURL=DeoPopup.css.map */

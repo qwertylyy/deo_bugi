@@ -1,0 +1,78 @@
+@import "theme_variables";
+
+
+/* text-header */
+.text-header{
+	font-size: $font-size-base;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	p{
+		margin-bottom: 0px
+	}
+	a{
+		color: inherit;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	&.text-transform-none{
+		text-transform: none;
+	}
+	&.white-text{
+		color: $theme-color-white;
+		a{
+			color: inherit;
+			&:hover{
+				color: $theme-color-white-hover;
+			}
+		}
+		&.light{
+			color: $theme-color-white-hover;
+			a{
+				color: inherit;
+				&:hover{
+					color: $theme-color-white;
+				}
+			}
+		}
+	}
+	&.text-header-one{
+		ul{
+			margin-left: -15px;
+			margin-right: -15px;
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include align-items(center);
+			li{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		i{
+			font-style: normal;
+			display: inline-block;
+			vertical-align: middle;
+			@include rtl-margin-right(5px);
+			&:before{
+				display: block;
+				font-family: $font-icon-4;
+			}
+			&.icon-location{
+				&:before{
+					content: '\ea2c';
+				}
+			}
+			&.icon-email{
+				&:before{
+					content: '\ea4d';
+				}
+			}
+		}
+		a,span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+@import "theme_variables";
+
+.search-widget {
+	position: relative;
+	@include clearfix();
+	@include search-box();
+	@include rtl-margin(0,0,0,0);
+	@include rtl-padding(0px,0px,0px,0px);
+	.popup-title{
+		font-size: 0px;
+		display: none;
+		@include rtl-margin(0,0,0,10px);
+		@include rtl-padding(5px,5px,5px,5px);
+		&:hover{
+			color: $theme_color_default;
+		}
+		.search{
+			&:before{
+				font-size: 18px;
+			}
+		}
+		.name{
+			display: none;
+			@include transition(all 0.3s ease);
+		}
+	}
+	.popup-content{
+		display: block;
+		position: static;
+		background: none;
+		padding: 0;
+		width: 100%;
+		min-width: inherit;
+		border: none;
+		min-width: 220px;
+		background: transparent;
+		@include box-shadow(none);
+		@include border-radius(0px);
+		@include rtl-padding(0px,0px,0px,0px);
+		@media (min-width: 992px) {
+			@include animation(none); 
+		}
+		&:before{
+			display: none;
+		}
+		button[type=submit] {
+			&:hover{
+				@media (min-width: 992px) {
+					color: $theme-color-default;
+				}
+			}
+			.search{
+				&:before{
+					font-size: 14px;
+				}
+			}
+		}
+	} 
+	.search{
+		&:before{
+			display: block;
+			font-size: 16px;
+			content: "\ea03";
+			font-family: $font-icon-4;
+		}
+	}
+}
+
+.search-white{
+	
+}
+
+.search-special{
+	
+}

@@ -1,0 +1,149 @@
+name: deo_bugi
+display_name: Deo Bugi
+version: 2.0.12
+theme_key: d331c4a12183f0831479d166ec87ae99
+author:
+  name: "Prestashop"
+  email: "prestashop@gmail.com"
+  url: "https://www.prestashop.com"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+dependencies:
+  modules:
+    - deotemplate
+
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+  modules:
+   to_disable:
+     - ps_mainmenu
+     - ps_imageslider
+     - ps_featuredproducts
+     - ps_banner
+     - ps_customtext
+     - blockwishlist
+     - productcomments
+  hooks:
+    modules_to_hook:
+      displayAfterBodyOpeningTag:
+        - blockreassurance
+      displayNavFullWidth:
+        - blockreassurance
+      displayNav1:
+        - deotemplate
+      displayNav2:
+        - deotemplate
+      displayTop: 
+        - deotemplate
+      displayHome: 
+        - deotemplate
+      displayFooterBefore:
+        - blockreassurance
+        - deotemplate
+      displayFooter:
+        - deotemplate
+      displayFooterAfter:
+        - blockreassurance
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+      displaySearch:
+        - ps_searchbar
+      displayProductAdditionalInfo:
+        - ps_sharebuttons
+      displayReassurance:
+        - blockreassurance
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+      displayFooterProduct:
+        - ps_categoryproducts
+        - ps_viewedproduct
+      actionAdminBefore:
+        - deotemplate
+
+  image_types:
+    cart_default:
+      width: 90
+      height: 128
+      scope: [products]
+    small_default:
+      width: 150
+      height: 213
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 600
+      height: 850
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 400
+      height: 567
+      scope: [products]
+    large_default:
+      width: 1000
+      height: 1417
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 1200
+      height: 312
+      scope: [categories]
+    stores_default:
+      width: 220
+      height: 146
+      scope: [stores]
+    manufacturers_default:
+      width: 220
+      height: 146
+      scope: [manufacturers]
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column
+    manufacturer: layout-left-column
+    supplier: layout-left-column
+    module-deotemplate-blog : layout-left-column

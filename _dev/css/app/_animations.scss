@@ -1,0 +1,529 @@
+/**/
+.no-padding { padding: 0 !important; }
+.no-margin { margin: 0 !important; }
+
+// Dropdown effect
+.e-scale{
+	.popup-content{
+		@include scale(0);
+		@include transition(all 0.3s ease 0s);
+	}
+	&.popup-over:hover{
+		.popup-content{
+			@include scale(1);
+			@include transition(all 0.3s ease 0s);
+		}
+	}   
+}
+
+.e-translate-left{ 
+	.popup-content{
+		@include opacity(0);
+		@include translate(-200px, 0px);
+		@include transition(all 0.3s ease 0s);
+	}
+	&.popup-over:hover{ 
+		.popup-content{ 
+			@include opacity(1);
+			@include translate(0, 0);
+			@include transition(all 0.3s ease 0s);
+		}
+	}
+}
+
+.e-translate-right{ 
+	.popup-content{
+		@include opacity(0);
+		@include translate(200px, 0px);
+		@include transition(all 0.3s ease 0s);
+	}
+	&.popup-over:hover{ 
+		.popup-content{ 
+			@include opacity(1);
+			@include translate(0, 0);
+			@include transition(all 0.3s ease 0s);
+		}
+	}
+}
+
+.e-translate-top{ 
+	.popup-content{
+		@include opacity(0);
+		@include translate(0, 200px);
+		@include transition(all 0.3s ease 0s);
+	}
+	&.popup-over:hover{ 
+		.popup-content{ 
+			@include opacity(1);
+			@include translate(0, 0);
+			@include transition(all 0.3s ease 0s);
+		}
+	}
+}
+
+.e-translate-down{
+	.popup-content{
+		@include opacity(0);
+		height: 0;
+		@include transition(all 0.3s ease 0s);
+	}
+	&.popup-over:hover{ 
+		.popup-content{ 
+			@include opacity(1);
+			height: auto;
+			@include transition(all 0.3s ease 0s);
+		}
+	}
+}
+
+// Image Effect
+.flash-effect {
+	overflow: hidden;
+	position: relative;
+	.image{
+		&:before{
+			content: "";
+			display: inline-block;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 200%;
+			background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+			@include rtl-right(200%);
+			@include transform(skew(-45deg));
+			@include transition(all 0.6s ease-in-out 0s);
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before{
+					@include rtl-right(-300%);
+				}
+			}
+		}
+	}
+}
+
+.effect-zoom{
+	.image{
+		overflow: hidden;
+		display: block;
+	}
+	img{
+		@include transition(all 2s ease);
+	}
+	&:hover{
+		@media (min-width: 992px) {
+			img{
+				@include transform(scale3d(1.05,1.05,1.05));
+			}
+		}
+	}
+}
+
+.effect-overlay{
+	.image{
+		display: block;
+		overflow: hidden;
+		position: relative;
+		&:before,&:after{
+			top: 0;
+			height: 100%;
+			width: 100%;
+			content: "";
+			display: block;
+			position: absolute;
+			background: rgba($black,0.05);
+			@include opacity(0);
+			@include transition(all 0.6s ease 0s);
+		}
+		&:before{
+			left: -100%;
+		}
+		&:after{
+			right: -100%;
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before,&:after{
+					left: 0%;
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}
+
+.effect-julia {
+	overflow: hidden;
+	position: relative;
+	.image{
+		position: relative;
+		overflow: hidden;
+		display: block;
+		&:after,&:before{
+			@include transform(skew(20deg, 0deg));
+			@include transition(all 0.5s ease 0s);
+			position: absolute;
+			content: "";
+			width: 70%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.3);
+			top: 0px;
+		}
+		&:after{
+			right: -100%;
+		}
+		&:before{
+			left: -100%;
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before{
+					left: -20%;
+				}
+				&:after{
+					right: -20%;
+				}
+			}
+		}
+	}
+}
+
+.effect-door-fullwidth{
+	.image{
+		display: block;
+		overflow: hidden;
+		position: relative;
+		vertical-align: middle;
+		&:before,&:after{
+			@include transform(skew(0deg, 0deg));
+			@include transition(all 0.5s ease 0s);
+			position: absolute;
+			content: "";
+			width: 70%;
+			height: 100%;
+			background: rgba(255,255,255,0.3);
+			top: 0;
+		}
+		&:before{
+			left: -100%;
+		}
+		&:after{
+			right: -100%;
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before{
+					left: -20%;
+				}
+				&:after{
+					right: -20%;
+				}
+			}
+		}
+	}
+}
+
+.effect-door{
+	.image{
+		display: block;
+		max-width: 100%;
+		overflow: hidden;
+		position: relative;
+		&:before,&:after{
+			@include transform(skew(0deg, 0deg));
+			@include transition(all 0.5s ease 0s);
+			position: absolute;
+			content: "";
+			width: 70%;
+			height: 100%;
+			background: rgba(255,255,255,0.3);
+			top: 0;
+		}
+		&:before{
+			left: -100%;
+		}
+		&:after{
+			right: -100%;
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before{
+					left: -20%;
+				}
+				&:after{
+					right: -20%;
+				}
+			}
+		}
+	}
+}
+
+.effect-border{
+	.image{
+		display: block;
+		position: relative;
+		&:before,&:after{
+			content: "";
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			bottom: 20px;
+			left: 20px;
+			@include transition(all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+			@include opacity(0);
+			@media (min-width: 768px) {
+				top: 30px;
+				right: 30px;
+				bottom: 30px;
+				left: 30px; 
+			}
+		}
+		&:before{
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			@include transform(scale(0,1));
+		}
+		&:after{
+			border-right: 1px solid #fff;
+			border-left: 1px solid #fff;
+			@include transform(scale(1,0));
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before,&:after{
+					@include transform(scale(1));
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}
+
+.effect-fade {
+	.image{
+		position: relative;
+		margin: 0px auto;
+		display: block;
+		&:before{
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #fff;
+			background-color: rgba(255,255,255,0.5);
+			zoom: 1;
+			@include transition(all ease 0.3s);
+			@include opacity(0);
+			@include transform(scale(0.95));
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before{
+					@include opacity(1);
+					@include transform(scale(1));
+				}
+			}
+		}
+	}
+}
+
+.effect-anim {
+	.image{
+		position: relative;
+		display: block;
+		&:before{
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			@include transition(all 300ms ease-in-out 0s);
+			width: 100%;
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before{
+					@include box-shadow(0 0 0 20px rgba(255,255,255,0.5) inset);
+				}
+			}
+		}
+	}
+}
+
+.effect-roxy{
+	position: relative;
+	overflow: hidden;
+	.image{
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "";
+			top: 20px;
+			right: 20px;
+			bottom: 20px;
+			left: 20px;
+			border: 1px solid #bbb;
+			@include opacity(0);
+			@include transition(opacity 0.35s, transform 0.35s);
+			@include transform(translate3d(-10px, 0, 0))
+		} 
+	}
+	&:hover{
+		@media (min-width: 992px) {
+			.image{
+				&:before{
+					@include opacity(1);
+					@include transform(translate3d(0, 0, 0));
+				}
+			}
+		}
+	}
+}
+
+.effect-square{
+	.image{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: "";
+			background-color: rgba(255,255,255,0.15);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+			margin: auto;
+			height: 0;
+			width: 0;
+			position: absolute;
+			@include opacity(0);
+			@include transform(scale(0));
+			@include transition(all 0.4s ease-in-out 0s);
+		}
+		&:hover {
+			@media (min-width: 992px) {
+				&:before{
+					width: 100%;
+					height: 100%;
+					@include transform(scale(1));
+					@include opacity(1);
+				}
+			}
+		}
+	}
+} 
+
+.effect-line-gradient-white{
+	.image{
+		&:before {
+			content: '';
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			position: absolute;
+			visibility: hidden;
+			@include opacity(0);
+			@include transition(all 0.4s ease-in-out 0s);
+			@include linear-gradient(180deg, transparent, 0%, rgba($white,0.5), 100%)
+		}
+	}
+	&:hover{
+		.image{
+			&:before {
+				visibility: visible;
+				@include opacity(1);
+			}
+		}
+	}
+}
+.effect-line-gradient-black{
+	.image{
+		&:before {
+			content: '';
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			position: absolute;
+			visibility: hidden;
+			@include opacity(0);
+			@include transition(all 0.4s ease-in-out 0s);
+			@include linear-gradient(180deg, transparent, 0%, rgba($black,0.4), 100%)
+		}
+	}
+	&:hover{
+		.image{
+			&:before {
+				visibility: visible;
+				@include opacity(1);
+			}
+		}
+	}
+}
+
+
+.effect {    
+	.image{
+		position: relative;
+		max-width: 100%;
+		overflow: hidden;
+		display: block;
+		&:before{
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			margin: auto;
+			background-color: rgba(255, 255, 255, 0.1);
+			@include transition (all 0.3s ease-out 0s);
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			background-color: rgba(255, 255, 255, 0.1);
+			@include transition (all 0.3s ease-out 0s);
+		}
+		&:hover{
+			@media (min-width: 992px) {
+				&:before,&:after{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+.effect-parallax-image{
+	img{
+		@include transform-style(preserve-3d)
+	}
+}
+
+/* effect *******************/
+@media (min-width: 992px) {
+	.dropdown-menu,
+	.popup-content{
+		@include animation(animationmenus ease 0.5s);
+		// @include animation(bounceInUp ease 0.5s);
+		@include animation-iteration-count(1);
+		@include transform-origin(50% 50%);
+		@include animation-fill-mode(forwards); /*IE 10+*/
+		@include backface-visibility(hidden);
+	}
+}
+

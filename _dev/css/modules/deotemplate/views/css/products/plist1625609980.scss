@@ -1,0 +1,205 @@
+@import "theme_variables";
+
+/* Product list bugi one */
+
+.product-list-bugi-one{
+	.thumbnail-container{
+		.product-image{
+			@include backface-visibility(hidden);
+			@include transition(all 0.3s ease);
+			.box-button{   
+				top: 15px;
+				bottom: auto;
+				background: transparent;
+				@include box-shadow(none);
+				@include transform(none);
+				@include rtl-left-right(auto,15px);
+				// @media (max-width: 991px) {
+				// 	position: static;
+				// 	margin-top: 15px;
+				// 	margin-bottom: 5px;
+				// }
+				.btn-product{
+					padding: 0px;
+					background: $white;
+					@include box-shadow(0px 2px 2px rgba($black,0.2));
+					@include border-radius(50%);
+					@media (max-width: 991px){
+						min-width: 30px;
+						min-height: 30px;
+						font-size: 12px;
+						.content-btn-product{
+							.icon-btn-product{
+								line-height: 30px;
+							}
+						} 
+					}
+					&:hover{
+						@media(min-width: 992px){
+							color: $white;
+							background: $theme-color-default;
+						}
+					}
+				}
+				.deo-list-wishlist{
+					@include deo-list-wishlist(auto,0px,auto,100%);
+				}
+				& > div{
+					display: block;
+					@media (min-width: 992px) {
+						@include transition(all 0.4s ease-out);
+						&:nth-child(4){
+							@include transform(translateY(-110px));
+						}
+						&:nth-child(3){
+							@include transform(translateY(-90px));
+						}
+						&:nth-child(2){
+							@include transform(translateY(-70px));
+						}   
+						&:nth-child(1){
+							@include transform(translateY(-50px));
+						}
+					}
+					& + div{
+						margin-top: 5px;
+					}
+				}
+			}
+			.deo-countdown{
+				border-top: none;
+				padding-top: 0px;
+				position: absolute;
+				bottom: 30px;
+				left: 50%;
+				z-index: 9;
+				width: 100%;
+				padding-left: $grid-gutter-width-base/2;
+				padding-right: $grid-gutter-width-base/2;
+				@include transition(all 0.3s ease);
+				@include transform(translateX(-50%));
+			}
+			.product-flags{
+				bottom: 10px;
+			}
+			// .btn-cart-product-list{
+			// 	@media (min-width: 992px){
+			// 		left: 0px;
+			// 		right: 0px;
+			// 		bottom: 0px;
+			// 		z-index: 11;
+			// 		position: absolute;
+			// 		visibility: hidden;
+			// 		@include opacity(0);
+			// 		@include transition(all 0.4s ease-out);
+			// 	}
+			// 	.btn-product{
+			// 		width: 100%;
+			// 		background: $white;
+			// 		text-transform: uppercase;
+			// 		@include transition(all 0.3s ease);
+			// 		&:hover{
+			// 			@media(min-width: 992px){
+			// 				color: $white;
+			// 				background: $theme-color-default;
+			// 			}
+			// 		}
+			// 	}
+			// }
+			.deo-more-product-img{
+				display: none;
+				@media(min-width: 992px){
+					position: absolute;
+					top: auto;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					z-index: 13;
+					display: block;
+					background: rgba($white,0.7);
+					visibility: hidden;
+					@include opacity(0);
+					@include transform(translateY(100%));
+					@include box-shadow(0px 2px 4px 0px rgba($black,0.15));
+				}
+			}
+		}
+		.product-meta{
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-bottom: -10px;
+			@media (min-width: 576px){
+				@include rtl-text-align-left();
+			}
+			.box-button{
+				@media (min-width: 576px){
+					@include display(flex);
+					@include flex-direction(row);
+					@include align-items(center);
+					@include justify-content(space-between);
+					&:after{
+						display: none;
+					}
+				}
+				.product-price-and-shipping{
+					display: block;
+				}
+				.deo-product-list-reviews{
+					display: block;
+					@media (min-width: 576px){
+						min-width: 70px;
+					}
+				}
+			}
+		}
+		.product-title{
+			font-weight: 600;
+			text-transform: uppercase;
+			a{
+
+			}
+		}
+		.product-price-and-shipping{
+			font-weight: 600;
+
+		}
+		&:hover {
+			@media(min-width: 992px){
+				.product-image{
+					.box-button{
+						& > div{
+							&:nth-child(1){
+								@include transform(translateY(0px));
+							}
+							&:nth-child(2){
+								@include transform(translateY(0px));
+							}
+							&:nth-child(3){
+								@include transform(translateY(0px));
+							}
+							&:nth-child(4){
+								@include transform(translateY(0px));
+							}   
+						}
+					}
+					.btn-quickview-product-list{    
+						@include transform(translateX(0px));
+					}
+					// .btn-cart-product-list{
+					// 	visibility: visible;
+					// 	@include opacity(1);
+					// }
+					.deo-more-product-img{
+						visibility: visible;
+						@include opacity(1);
+						@include transform(translateY(0%));
+					}
+					.deo-countdown{
+						visibility: hidden;
+						@include opacity(0);
+					}   
+				}
+			}
+		}
+	}
+}

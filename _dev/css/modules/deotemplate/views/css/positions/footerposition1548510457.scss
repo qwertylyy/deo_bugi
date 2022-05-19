@@ -1,0 +1,70 @@
+@import "theme_variables";
+
+// ************* Footer 5 ***************
+.footer-container{   
+	background-color: #333333;
+	color: $theme-color-background-black;
+}
+
+.footer-top{
+	
+}
+
+.footer-center{
+
+}
+
+.footer-bottom{
+
+}
+
+.box-top-footer{
+	padding-top: 50px;
+	@media(min-width: 768px){
+		padding-top: 60px;
+	}
+}
+
+.box-middle-footer{
+	padding-top: 40px;
+	padding-bottom: 50px;
+	@media(min-width: 768px){
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	.logo{
+		margin-bottom: 25px;
+	}
+	.open-time{
+		// margin-top: 30px;
+	}
+	.block-social{
+		.box-title{
+			@media (max-width: 991px) and (min-width: 576px){
+				margin-top: 0px;
+			}
+		}
+	}
+	.block-contact{
+		@media(min-width: 992px){
+			position: relative;
+			@include rtl-padding-right(60px);
+			&:after{
+				content: '';
+				top: 0px;
+				bottom: 0px;
+				width: 1px;
+				background: $border-color;
+				position: absolute;
+				@include rtl-right(60px);
+			}
+		}
+	}
+}
+
+.box-bottom-footer{
+	padding-bottom: 30px;
+	.block-social{
+		margin-bottom: 10px;
+	}
+}

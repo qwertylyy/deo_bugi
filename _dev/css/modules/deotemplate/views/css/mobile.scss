@@ -1,0 +1,215 @@
+@import "theme_variables";
+
+// menu mobile mode
+.deo-active-nav-mobile{
+	.deo-cart-solo{
+		display: none;
+	}
+	#back-top{
+		display: none !important;
+	}
+}
+
+.deo-header-mobile{
+	.deo-horizontal-menu{
+		.navbar-header{
+			padding-top: 0px;
+			padding-bottom: 0px;
+			.navbar-toggler{
+				display: block !important;
+			}
+		}
+		.megamenu-content{
+			display: none !important;
+		}
+	} 
+}
+
+.deo-footer-mobile{
+	.footer-container{
+		background: transparent;
+	}
+}
+
+$font-size-icon-nav-mobile: 20px;
+.deo-nav-mobile{
+	position: fixed;
+	bottom: 0px;
+	z-index: 9999;
+	left: 0px;
+	right: 0px;
+	background: $white;
+	@include box-shadow(0px 0px 5px 1px  rgba($black, 0.2));
+	.mobile{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 8px 10px;
+		text-align: center;
+		i{
+			font-size: $font-size-icon-nav-mobile;
+		}
+		.name-simple{
+			display: none;
+			margin-top: 5px;
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+	}
+	.home-nav-mobile{
+		i{
+			&:before {
+				content: "\e94c";
+			}
+		}
+	}
+	.deo-count-feature{
+		.icon-wishlist, .icon-compare{
+			margin-bottom: 0px;
+		}
+		.deo-total{
+			top: 3px;
+			color: $white;
+			font-size: 9px;
+			padding: 0px 3px;
+			position: absolute;
+			background: $theme-color-default;
+			@include border-radius(10px);
+			@include rtl-right(3px);
+			&:before,&:after {
+				display: none;
+			}
+		}
+	}
+	.popup-over{
+		.popup-title{
+			padding: 0px;
+			@include flex-direction(column);
+			.icon-arrow-down{
+				display: none;
+			}
+			.icon{
+				font-size: $font-size-icon-nav-mobile;
+				display: inline-block;
+			}
+			.flag,.iso-code{
+				display: none;
+			}
+		}
+		.popup-content{
+			top: auto;
+			bottom: 100%;
+			&:before{
+				top: auto;
+				bottom: -4px;
+				@include box-shadow(3px 3px 3px -3px rgba(102, 102, 102, 0.35));
+			}
+		}
+		&.language-selector-wrapper{
+			.popup-title{
+				.icon:before{
+					content: "\e9b3";
+				}
+			}
+		}
+		&.currency-selector{
+			.popup-title{
+				.icon:before{
+					content: "\e9b4";
+				}
+			}
+		}
+		&.userinfo-selector{
+			.popup-title{
+				.icon:before{
+					content: "\e9b1";
+				}
+			}
+		}
+		&.deo_customer_actions{
+			.popup-title{
+				.icon:before{
+					content: "\ea57";
+				}
+			}
+		}
+	} 
+	.DeoCartClone{
+		position: relative;
+		.deo-cart-solo{
+			display: block;
+			.icon-cart-sidebar-wrapper{
+				position: static;
+				background: transparent;
+				.icon-cart-sidebar{
+					width: auto;
+					height: auto;
+					color: inherit;
+					line-height: inherit;
+					background: transparent;
+					&:before{
+						content: "\e9e8";
+						font-size: $font-size-icon-nav-mobile;
+					}
+				}
+				.icon-cart-total{
+					top: 3px;
+					border: none;
+					color: $white;
+					font-size: 9px;
+					padding: 0px 3px;
+					position: absolute;
+					width: auto;
+					height: auto;
+					min-width: inherit;
+					min-height: inherit;
+					line-height: inherit;
+					background: $theme-color-default;
+					@include border-radius(10px);
+					@include rtl-right(3px);
+					&:before,&:after {
+						display: none;
+					}
+				}
+			} 
+		}
+	}
+	.back-top-nav-mobile{
+		i{
+			&:before {
+				content: "\eabf";
+			}
+		}
+	}
+	.mobile{
+		&.show-text{
+			.name-simple{
+				display: block;
+			}
+			&.popup-over{
+				.popup-title{
+					.name-simple{
+						display: block;
+					}
+				}
+			}
+		}
+		&.white-color{
+			a{
+				color: $white;
+			}
+			.deo-cart-solo{
+				.icon-cart-sidebar-wrapper{
+					color: $white;
+					.icon-cart-sidebar{
+						color: $white;
+					}
+				}
+			}
+			&.popup-over{
+				.popup-title{
+					color: $white;
+				}
+			}
+		}
+	}
+}

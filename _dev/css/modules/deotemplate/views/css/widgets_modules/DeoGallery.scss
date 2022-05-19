@@ -1,0 +1,126 @@
+@import "theme_variables";
+
+.DeoGallery{
+	.filter-tags{
+		margin-bottom: 40px;
+		text-align: center;
+		ul{
+			font-size: 0px;
+			margin-left: -15px;
+			margin-right: -15px;
+			li{
+				padding-left: 15px;
+				padding-right: 15px;
+				display: inline-block;
+				vertical-align: middle;
+				a{
+					display: block;
+					font-size: 16px;
+					font-weight: 600;
+					padding: 6px 0px;
+					position: relative;
+					@include transition(all 0.3s ease);
+					&.is-checked{
+						color: $theme-color-default;
+					}
+				}
+			}
+		}
+		.filter-count{
+			&.processed-filter-count{
+				@include rtl-margin-left(3px);
+				&:before{
+					content: '(';
+					display: inline-block;
+				}
+				&:after{
+					content: ')';
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.box-content{
+		margin-bottom: 30px;
+	}
+	.tags-gallery{
+		.tag-gallery{
+			color: $white;
+			margin: 2px 0px;
+			padding: 3px 10px;
+			display: inline-block;
+			vertical-align: middle;
+			background: $theme-color-default;
+			@include border-radius(3px);
+		}
+	}
+	.box-content{
+		overflow: hidden;
+		position: relative;
+	}
+	.image{
+		img{
+			@include transition(all 0.5s ease);
+		}
+	}
+	&.no-margin-bottom{
+		.box-content{
+			margin-bottom: 0px;
+		}
+	}
+	&.gallery-one{
+		.filter-tags{
+			ul{
+				margin-left: -25px;
+				margin-right: -25px;
+				li{
+					padding-left: 25px;
+					padding-right: 25px;
+					a{
+						padding: 15px 0px 10px;
+					}
+				}
+			}
+			.filter-count{
+				&.processed-filter-count{
+					color: $white;
+					font-size: 9px;
+					padding: 0px 5px;
+					background: $black;
+					min-width: 18px;
+					min-height: 18px;
+					line-height: 18px;
+					top: 0px;
+					position: absolute;
+					@include rtl-left(100%);
+					@include border-radius(50%);
+					&:before{
+						display: none;
+					}
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}
+		.content{
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			z-index: 9;
+			padding: 15px;
+			position: absolute;
+			@include transition(transform 0.5s ease);
+			@include linear-gradient(to bottom, rgba(216,216,216,0), 0%, #0d0d1f, 100%);
+		}
+		h3{
+			color: $white;
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 10px;
+			a{
+				color: inherit;
+			}
+		}
+	}
+}

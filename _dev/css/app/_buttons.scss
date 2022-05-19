@@ -1,0 +1,234 @@
+// .carousel{
+// 	.direction{
+// 		position: absolute;
+// 		top: $carousel-control-position-top;
+// 		width: $carousel-control-width-total;
+// 		z-index: 9; 
+// 		@include rtl-right($carousel-control-position-right);
+// 		@include clearfix();
+// 	}
+// }
+// .carousel-control{
+// 	position: relative;
+// 	background: none !important;
+// 	text-align: center;
+// 	display: inline-block;
+// 	width: $carousel-control-width-size;
+// 	height: $carousel-control-height-size;
+// 	@include transition(all 0.3s ease);
+// 	.sr-only{
+// 		display: none;
+// 	}
+// 	.icon-prev, .icon-next{
+// 		width: auto;
+// 		height: auto;    
+// 		text-indent: 0px;
+// 		font-size: $carousel-control-font-icon;
+// 		position: relative;
+// 		left: auto;
+// 		right: auto;
+// 		bottom: auto;
+// 		top: auto;
+// 		color: $carousel-control-color;
+// 		display: block;
+// 		background: $carousel-control-background;
+// 		border: $carousel-control-border;
+// 		@include border-radius($carousel-control-border-radius);
+// 		@include box-shadow($carousel-control-shadown-before-hover);
+// 		@include rtl-margin(0,0,0,0);
+// 		@include transition(all 0.3s ease);
+// 		@media (max-width: 991px){
+// 			color: $carousel-control-color-block;
+// 			border-color: $carousel-control-border-block;
+// 			background: $carousel-control-background-block;
+// 			@include box-shadow($carousel-control-shadown-block);
+// 		}
+// 		&:before{
+// 			z-index: 9;
+// 			display: block;
+// 			font-weight: $carousel-control-font-weight;
+// 			line-height: $carousel-control-line-height;
+// 			font-family: $carousel-control-font-family-icon;
+// 		}
+// 		&:hover{
+// 			@media (min-width: 992px) {
+// 				background: $carousel-control-background-hover;
+// 				color: $carousel-control-color-hover;
+// 				border-color: $carousel-control-border-hover;
+// 				&:before{
+					
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&.left{
+// 		@include dir-float-left();
+// 	}
+// 	&.right{
+// 		@include dir-float-right();
+// 	}
+	
+// 	.icon-prev{
+// 		&:before{
+// 			content: $carousel-control-icon-prev;
+// 		}
+// 	}
+// 	.icon-next{
+// 		&:before{
+// 			content: $carousel-control-icon-next;
+// 		}
+// 	}
+// }
+
+// .button-middle{
+// 	.direction {
+// 		position: static;
+// 		margin-top: 10px;
+// 		margin-bottom: 10px;
+// 		@media(min-width: 992px){
+// 			.carousel-control{
+// 				position: absolute;
+// 				top: 50%;
+// 				z-index: 9;
+// 				@include transform(translateY(-50%));
+// 				&.left{
+// 					@include dir-left-right(-$grid-gutter-width-base,auto);
+// 				}
+// 				&.right{
+// 					@include dir-left-right(auto,-$grid-gutter-width-base);
+// 				}
+// 			}
+// 		}
+// 		@media(max-width: 991px){
+// 			width: 55px;
+// 			margin: auto;
+// 			padding-top: 10px;
+// 			padding-bottom: 10px;
+// 			@include clearfix();
+// 			.carousel-control{
+// 				width: 25px;
+// 				height: 25px;
+// 				.icon-prev, .icon-next{
+// 					font-size: 8px;
+// 					&:before{
+// 						line-height: 23px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	} 
+// 	&.button-hover{
+// 		@media(min-width: 992px){
+// 			.direction {
+// 				.carousel-control{
+// 					@include opacity($carousel-control-opacity-before-hover);
+// 					&.left{
+// 						@include dir-left-right($carousel-control-position-before-hover,auto);
+// 					}
+// 					&.right{
+// 						@include dir-left-right(auto,$carousel-control-position-before-hover);
+// 					}
+// 				}
+// 			}
+// 			.carousel:hover{
+// 				.direction .carousel-control{
+// 					@include opacity($carousel-control-opacity-hover);
+// 					@include box-shadow($carousel-control-shadown-hover);
+// 					&.left{
+// 						@include dir-left-right($carousel-control-position-hover - $grid-gutter-width-base/2,auto);
+// 					}
+// 					&.right{
+// 						@include dir-left-right(auto,$carousel-control-position-hover - $grid-gutter-width-base/2);
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// .button-bottom{
+// 	.direction{
+// 		text-align: center;
+// 		position: static;
+// 		display: block;
+// 		width: auto;
+// 		margin-left: -3px;
+// 		margin-right: -3px;
+// 		.carousel-control{
+// 			margin: 0 3px;
+// 			.icon-prev, .icon-next{
+// 				@media (min-width: 992px){
+// 					color: $carousel-control-color-block;
+// 					border-color: $carousel-control-border-block;
+// 					background: $carousel-control-background-block;
+// 					@include box-shadow($carousel-control-shadown-block);
+// 				}
+// 			}
+// 			&.left{
+// 				float: none;
+// 			}
+// 			&.right{
+// 				float: none;
+// 			}
+// 		}
+// 	}
+// 	&.button-right{
+// 		.direction{
+// 			@include rtl-text-align-right();
+// 		}
+// 	}
+// 	&.button-left{
+// 		.direction{
+// 			@include rtl-text-align-left();
+// 		}
+// 	}
+// }
+
+// .button-top{
+// 	.direction{
+// 		margin: auto;
+// 		@include rtl-left-right(0,0);
+// 		.carousel-control{
+// 			.icon-prev, .icon-next{
+// 				@media (min-width: 992px){
+// 					color: $carousel-control-color-block;
+// 					border-color: $carousel-control-border-block;
+// 					background: $carousel-control-background-block;
+// 					@include box-shadow($carousel-control-shadown-block);
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
+// Override Input
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0; 
+}
+input[type=number] {
+	-moz-appearance:textfield;
+}
+input[type="file"]{
+	height: auto;
+}
+
+//@mixin button-variant-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+.btn-outline,.btn-primary,.btn-inverse{
+	@include button-variant-outline($white, $theme-color-default, $theme-color-default, $white, $theme-color-button-hover, $theme-color-button-hover);
+}
+.btn{
+	@include rounded-corners($btn-border-radius);
+	&:active, 
+	&:focus, 
+	&:visited,
+	&.active:focus,
+	&:active:focus {
+		outline: none !important;
+		@include box-shadow(none);
+	}
+}

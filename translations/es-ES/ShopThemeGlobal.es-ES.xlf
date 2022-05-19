@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\www\prestashop\dev\new\deo_bugi\admincontrolpanel" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="5a773a0f08c1102885861f1f8398a5b8">
+        <source>View zoom all</source>
+        <target>Ver zoom todo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="de6d513234d9fe1f15f01a8f653db90f">
+        <source>Hungry up</source>
+        <target>Hambriento</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="75aeb98e5241592ad6a6c2c4c78a16ef">
+        <source>years</source>
+        <target>años</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae60f11ab51860bdb22794a943335a34">
+        <source>weeks</source>
+        <target>semanas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target>dias</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="73cdddd7730abfc13a55efb9f5685a3b">
+        <source>hours</source>
+        <target>horas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1442a7b6e2c20b27775175eecba84dac">
+        <source>mins</source>
+        <target>minutos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="975a85a4ffa56e23c70e2bbeaf405ac7">
+        <source>secs</source>
+        <target>seco</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="24fe48030f7d3097d5882535b04c3fa8">
+        <source>Expired</source>
+        <target>Caducado</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3adbdb3ac060038aa0e6e6c138ef9873">
+        <source>Category</source>
+        <target>Categoría</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca">
+        <source>Reference</source>
+        <target>Referencia</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fcebe56087b9373f15514831184fa572">
+        <source>In stock</source>
+        <target>En stock</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3767d4f3efe17bd95a1bc7cf4194bb93">
+        <source>You might also like</source>
+        <target>También podría gustarte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3facd444af93f6f197bab699caf305c6">
+        <source>Sticky Menu</source>
+        <target>Menú pegajoso</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2faec1f9f8cc7f8f40d521c4dd574f49">
+        <source>Enable</source>
+        <target>Habilitar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bcfaccebf745acfd5e75351095a5394a">
+        <source>Disable</source>
+        <target>Inhabilitar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b26888beabd2171dd2f723a87ac13100">
+        <source>Skin Theme</source>
+        <target>Tema de la piel</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7a1920d61156abc05a60135aefe8bc67">
+        <source>Default</source>
+        <target>Defecto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="af9b7a3fc44801be520e0712ac48af29">
+        <source>Contact us to create your own color</source>
+        <target>Contáctenos para crear su propio color.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dc87238539600b358743ac4f762d4cba">
+        <source>Product Page Layout</source>
+        <target>Diseño de página del producto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="080735862a80a86d7a6f4b051f2668da">
+        <source>No slide at this time.</source>
+        <target>No hay diapositivas en este momento.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="55f015a0c5605702f913536afe70cfb0">
+        <source>Instagram</source>
+        <target>Instagram</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e928646f031c1da65ac1189b2fccc903">
+        <source>View all in instagram</source>
+        <target>Ver todo en instagram</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b24344b6a2c4a94c9b0d0ebd4602aeca">
+        <source>View more</source>
+        <target>Ver más</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="43340e6cc4e88197d57f8d6d5ea50a46">
+        <source>Read more</source>
+        <target>Lee mas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1a8c0228da8fb16885881e6c97b96f08">
+        <source>No products at this time.</source>
+        <target>No hay productos en este momento.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d7b2933ba512ada478c97fa43dd7ebe6">
+        <source>Best Sellers</source>
+        <target>Lo más vendido</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e18a22d145b38e4fff582663b5b4ec1e">
+        <source>All brands</source>
+        <target>Todas las marcas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="38070661d5ad384d9c7d21895dc4e784">
+        <source>Related products</source>
+        <target>Productos relacionados</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="efc4ef81fa855e8857de48436dd4fb65">
+        <source>There is %s other product in the same category</source>
+        <target>Hay %s otro producto en la misma categoría</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7f7f36f4a50aaf0589f3be394b5fefe1">
+        <source>There are %s other products in the same category</source>
+        <target>Hay %s otros productos de la misma categoría</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="02d4482d332e1aef3437cd61c9bcc624">
+        <source>Contact us</source>
+        <target>Contáctenos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c6359db4a43cb7267a84b389229fd073">
+        <source>Call us: [1]%phone%[/1]</source>
+        <target>Helista meile: [1]%phone%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3aea774cdcd8f2c45549f10758a71323">
+        <source>Store information</source>
+        <target>Almacenar información</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1300caaefd15b839f37952dc7cc75d82">
+        <source>Call us:</source>
+        <target>Llámenos:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0e2fb5b02182fd28b9b96e86ed27838f">
+        <source>Fax:</source>
+        <target>Fax:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a0bfe0853cf82bdf5dcb9b0bac76c357">
+        <source>Email us:</source>
+        <target>Envíanos un correo electrónico:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cf23ee279844016288ea1c076638f3be">
+        <source>About us</source>
+        <target>Sobre nosotros</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c7a7395519f0547b6676cf02431dcbd0">
+        <source>[1]%phone%[/1]</source>
+        <target>[1]%phone%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bcb2603bd53059cc5b6aaee6f625c77a">
+        <source>[1]%fax%[/1]</source>
+        <target>[1]%fax%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae0bae303e24e9b202cdc9c95baf980c">
+        <source>[1]%email%[/1]</source>
+        <target>[1]%email%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="386c339d37e737a436499d423a77df0c">
+        <source>Currency</source>
+        <target>Moneda</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="72d43a6525ac95e552ca4eaf1dc0ad1a">
+        <source>Currency dropdown</source>
+        <target>Desplegable de divisas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="77295c7d814e7397c55f64ec06313984">
+        <source>Currency:</source>
+        <target>Moneda:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f2fc7490cbdb0db5cd6f1a4e7edb0da1">
+        <source>Your account</source>
+        <target>Su cuenta</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="08bd40c7543007ad06e4fce31618f6ec">
+        <source>Account</source>
+        <target>Cuenta</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8b1a9953c4611296a827abf8c47804d7">
+        <source>Hello</source>
+        <target>Hola</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0ba7583639a274c434bbe6ef797115a4">
+        <source>Register</source>
+        <target>Registrarse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="641254d77e7a473aa5910574f3f9453c">
+        <source>Wishlist</source>
+        <target>Lista</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7eece51cf3938103677db7a5051ef8f5">
+        <source>Compare</source>
+        <target>Comparar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d95cf4ab2cbf1dfb63f066b50558b07d">
+        <source>My account</source>
+        <target>Mi cuenta</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c87aacf5673fada1108c9f809d354311">
+        <source>Sign out</source>
+        <target>desconectar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ffb7e666a70151215b4c55c6268d7d72">
+        <source>Newsletter</source>
+        <target>Hoja informativa</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3d236caa22b35b852d3d9f402ecd361d">
+        <source>Your email...</source>
+        <target>Tu correo electrónico...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b26917587d98330d93f87808fc9d7267">
+        <source>Subscribe</source>
+        <target>Suscribir</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f473acb18ebcd825235ca5624203f31a">
+        <source>Popular Products</source>
+        <target>productos populares</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="40dec546414c1ebdfde8d9858f0938c3">
+        <source>All products</source>
+        <target>Todos los productos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b">
+        <source>Previous</source>
+        <target>Anterior</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55">
+        <source>Next</source>
+        <target>Siguiente</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6dbac206aa2d7e374277ae9ff8ec1987">
+        <source>Carousel buttons</source>
+        <target>Botones de carrusel</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174">
+        <source>Language</source>
+        <target>Idioma</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="217148b9c333b63a3fb1883670f5bff2">
+        <source>Language dropdown</source>
+        <target>Menú desplegable de idiomas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0885f0c211f74834f0109c5abaf4cdc4">
+        <source>Language:</source>
+        <target>Idioma:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9ff0635f5737513b1a6f559ac2bff745">
+        <source>New products</source>
+        <target>Nuevos productos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9ff0635f5737513b1a6f559ac2bff746">
+        <source>New</source>
+        <target>Nuevos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a85eba4c6c699122b2bb1387ea4813ad">
+        <source>Cart</source>
+        <target>Carro</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b75443a19207ed3a3552edda86536857">
+        <source>Shopping Cart</source>
+        <target>Carrito de compras</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3812464e9c462762cb7f1b1f3a8f0e30">
+        <source>item(s)</source>
+        <target>artículos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="447b7147e84be512208dcc0995d67ebc">
+        <source>item</source>
+        <target>articulo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a2e4822a98337283e39f7b60acf85ec9">
+        <source>empty</source>
+        <target>vacío</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="38160901da7224d77a2c0a7948fea16c">
+        <source>Social network</source>
+        <target>Red social</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d8d7ad6abfd08c27baa8bedb78c72ddb">
+        <source>View All</source>
+        <target>Ver todo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="588907ab2d492aca0b07b5bf9c931eea">
+        <source>On sale</source>
+        <target>En venta</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="43560641f91e63dc83682bc598892fa1">
+        <source>Viewed products</source>
+        <target>Productos vistos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2143f8cb66482342b35208bdc3fd949c">
+        <source>Active filters</source>
+        <target>filtros activos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7a1c5301da6b1ce9e4345bd501397045">
+        <source>(no filter)</source>
+        <target>(sin filtro)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5174d1309f275ba6f275db3af9eb3e18">
+        <source>Grid</source>
+        <target>Cuadrícula</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4ee29ca12c7d126654bd0e5275de6135">
+        <source>List</source>
+        <target>Lista</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6f9d01a14011f05fffe48559583fc609">
+        <source>Sort by:</source>
+        <target>Ordenar por:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d0f369aab921195580d8319855bbb69f">
+        <source>%label%:</source>
+        <target>%label%:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target>Cerca</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6c5c05a5b907385c60c3baa4087ea1a1">
+        <source>List of sub categories in %name%:</source>
+        <target>Sub kategooriate loetelu %name%:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1d34e1ee316477a8f64a835307f5b84e">
+        <source>List of pages in %category_name%:</source>
+        <target>Lista de páginas en %category_name%:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5813ce0ec7196c492c97596718f71969">
+        <source>Sitemap</source>
+        <target>mapa del sitio</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="34c869c542dee932ef8cd96d2f91cae6">
+        <source>Our stores</source>
+        <target>Nuestras Tiendas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="adc4f9f9cccaa450c10977d50da58d8d">
+        <source>About and Contact</source>
+        <target>Acerca de Contactos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="44749712dbec183e983dcd78a7736c41">
+        <source>Date</source>
+        <target>Fecha</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be">
+        <source>Status</source>
+        <target>Estado</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="27b4383b976d6be981598d457cc7e62d">
+        <source>We'll be back soon.</source>
+        <target>Estaremos de vuelta pronto.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="45bf8a83bbb1449a086686a1f947e0d3">
+        <source>Sorry for the inconvenience, but the Web address you've entered is no longer available.</source>
+        <target>Disculpe las molestias, pero la dirección web que ingresó ya no está disponible.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="519ee4cd58a2b719f7113965cc949d24">
+        <source>Search again what you are looking for</source>
+        <target>Buscar de nuevo lo que busca</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6110e3692a789bcff0870b04b13a06bb">
+        <source>Back to home</source>
+        <target>De vuelta a casa</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6351030f724f6f42fd11ec9aa6ee8c76">
+        <source>403 Forbidden</source>
+        <target>403 prohibido</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cf8092a0be7b972d6cee3db90bfaf923">
+        <source>You cannot access this store from your country. We apologize for the inconvenience.</source>
+        <target>No se puede acceder a esta tienda de su país. Nos disculpamos por el inconveniente.</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

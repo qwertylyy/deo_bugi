@@ -1,0 +1,16 @@
+@import "theme_variables";
+
+
+$image-theme-base-path: "img/";
+
+$theme-color-button-hover:  #0686a9;
+$theme-color-default: 		#00b2e2;
+$link-hover-color: 			$theme-color-default;
+
+$megamenu-link-hover-color: $theme-color-default;
+
+$product-name-hover-color: $theme-color-default;
+$button-addtocart-bg-hover: $theme-color-default;
+$button-addtocart-border-hover: $theme-color-default;
+
+@import "../_skin";
