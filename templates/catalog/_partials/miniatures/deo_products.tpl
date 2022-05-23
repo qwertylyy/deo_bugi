@@ -72,8 +72,8 @@
 
 {*define numbers of product per line in other page for tablet*}
 {* {assign var='nbLi' value=$products|count}
-{math equation="nbLi/nbItemsPerLine" nbLi=$nbLi nbItemsPerLine=$nbItemsPerLine assign=nbLines}
-{math equation="nbLi/nbItemsPerLineTablet" nbLi=$nbLi nbItemsPerLineTablet=$nbItemsPerLineTablet assign=nbLinesTablet} *}
+{assign var='nbLines' value=$nbLi/$nbItemsPerLine}
+{assign var='nbLinesTablet' value=$nbLi/$nbItemsPerLineTablet} *}
 
 <!-- Products list -->
 {assign var="categoryLayout" value={hook h="pagebuilderConfig" configName="categoryLayout"}}
@@ -82,9 +82,9 @@
 <div {if isset($id) && $id} id="{$id}"{/if} class="product_list {if isset($deo_page) && $deo_page=='category'}{$GRID_MODE}{/if} {if isset($classCategoryLayout) && $classCategoryLayout != ""}{$classCategoryLayout}{elseif isset($productClassWidget) && !isset($sidebar)} {$productClassWidget}{/if} ">
     <div class="row">
         {foreach from=$products item=product name=products}
-            {* {math equation="(total%perLine)" total=$products|count perLine=$nbItemsPerLine assign=totModulo}
-            {math equation="(total%perLineT)" total=$products|count perLineT=$nbItemsPerLineTablet assign=totModuloTablet}
-            {math equation="(total%perLineT)" total=$products|count perLineT=$nbItemsPerLineMobile assign=totModuloMobile}
+            {* {assign var='totModulo' value=$products|count/$nbItemsPerLine}
+            {assign var='totModuloTablet' value=$products|count/$nbItemsPerLineTablet}
+            {assign var='totModuloMobile' value=$products|count/$nbItemsPerLineMobile}
             {if $totModulo == 0}{assign var='totModulo' value=$nbItemsPerLine}{/if}
             {if $totModuloTablet == 0}{assign var='totModuloTablet' value=$nbItemsPerLineTablet}{/if}
             {if $totModuloMobile == 0}{assign var='totModuloMobile' value=$nbItemsPerLineMobile}{/if} *}   

@@ -179,7 +179,7 @@
 <config><name><![CDATA[DEO_BUGI_LOAD_LIBRARY_PANR]]></name><value><![CDATA[1]]></value></config>
 <config><name><![CDATA[DEO_BUGI_LAZY_INTERSECTION_OBSERVER]]></name><value><![CDATA[1]]></value></config>
 <config><name><![CDATA[DEO_BUGI_QUALITY_IMAGE_COMPRESS]]></name><value><![CDATA[80]]></value></config>
-<config><name><![CDATA[DEO_BUGI_ENABLE_ONEPAGECHECKOUT]]></name><value><![CDATA[1]]></value></config>
+<config><name><![CDATA[DEO_BUGI_ENABLE_ONEPAGECHECKOUT]]></name><value><![CDATA[0]]></value></config>
 <config><name><![CDATA[DEO_BUGI_USE_ONEPAGECHECKOUT_MOBILE]]></name><value><![CDATA[1]]></value></config>
 <config><name><![CDATA[DEO_BUGI_BLOCKS_UPDATE_LOADER]]></name><value><![CDATA[1]]></value></config>
 <config><name><![CDATA[DEO_BUGI_SHOW_PRODUCT_STOCK_INFO]]></name><value><![CDATA[0]]></value></config>
