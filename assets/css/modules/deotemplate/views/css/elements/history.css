@@ -334,12 +334,13 @@
       content: "\ea6f";
       text-shadow: -5px 1px 9px rgba(0, 0, 0, 0.15); }
   .history h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 15px; }
   .history p {
     font-size: 13px;
-    line-height: 1.7; }
+    line-height: 1.6;
+    margin-bottom: 0px; }
   .history .btn {
     padding: 0px;
     color: #000000;

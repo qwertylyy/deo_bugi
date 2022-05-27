@@ -29,7 +29,7 @@
 					bottom: 0px;
 					width: 1px;
 					height: 25px;
-					background: $border-color;
+					border-left: 1px solid $border-color;
 					position: absolute;
 					@include rtl-left(0px);
 				}

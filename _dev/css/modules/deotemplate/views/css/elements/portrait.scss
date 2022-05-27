@@ -72,7 +72,7 @@
 				letter-spacing: 2px;
 				font-family: inherit;
 				text-transform: uppercase;
-				font-size: 16px;
+				font-size: 14px;
 				font-weight: 500;
 				margin-bottom: 5px;
 				color: $theme-color-background-black-hover;
@@ -166,15 +166,15 @@
 			padding: 15px 15px 0px;
 		}
 		h3{
-			font-size: 20px;
-			font-weight: 500;
-			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 5px;
 		}
 		h4{
 			color: #8b8b8b;
 			font-size: 13px;
 			font-weight: 300;
-			margin-bottom: 20px;
+			margin-bottom: 12px;
 			font-family: inherit;
 			&:before{
 				content: '(';
@@ -192,7 +192,7 @@
 			}
 		}
 		.social-link{
-			margin: 20px 0px 0px;
+			margin: 15px 0px 0px;
 			li{
 				margin: 3px 5px;
 				a{

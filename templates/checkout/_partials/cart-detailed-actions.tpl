@@ -41,5 +41,14 @@
         {hook h='displayExpressCheckout'}
       </div>
     {/if}
+    {if (defined('_DEO_MODE_DEV_') && _DEO_MODE_DEV_ === true)}
+      <div class="extend-btn-checkout text-sp-center">
+        <label class="custom-checkbox label-inherit">
+          <input name="use_onepagecheckout" type="checkbox" value="1">
+          <span><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+          <span>{l s='Checkout with One Page Checkout' mod='deotemplate'}</span>
+        </label>
+      </div>
+    {/if}
   </div>
 {/block}

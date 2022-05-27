@@ -154,6 +154,9 @@ small.label, small.value {
 		}
 	}
 }
+select.form-control:not([size]):not([multiple]){
+	height: auto;
+}
 .form-control-select { 
 	height: 42px;
 	-moz-appearance: none;

@@ -1071,12 +1071,20 @@
 			}
 		}
 		.custom-checkbox{
-			display: block;
 			cursor: pointer;
+			display: inline-block;
 			text-align: center;
 			margin-top: 5px;
 			padding-bottom: 0px;
 			font-size: 12px;
+			input[type="checkbox"] + span{
+				width: 14px;
+				height: 14px;
+				@include rtl-margin(0px,3px,0px,0px);
+				.checkbox-checked{
+					font-size: 13px;
+				}
+			}
 		}
 	}
 	.cart-total {

@@ -118,12 +118,12 @@
     .product-list-twenty-one .thumbnail-container .product-title {
       margin-bottom: 15px; }
       .product-list-twenty-one .thumbnail-container .product-title a {
-        font-size: 24px; } }
+        font-size: 22px; } }
   @media (max-width: 991px) and (min-width: 576px) {
     .product-list-twenty-one .thumbnail-container .product-title {
       margin-bottom: 15px; }
       .product-list-twenty-one .thumbnail-container .product-title a {
-        font-size: 24px; } }
+        font-size: 22px; } }
   @media (max-width: 1499px) and (min-width: 992px) {
     .product-list-twenty-one .thumbnail-container .basic-informations .information {
       padding: 5px 0px; } }

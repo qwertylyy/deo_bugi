@@ -488,9 +488,9 @@
 		display: table;
 		select {
 			border: $main-border;
-			height: 30px;
-			width: 60px;
-			padding: 2px;
+			// height: 30px;
+			min-width: 80px;
+			// padding: 2px;
 			outline: none;
 		}
 		ul li {

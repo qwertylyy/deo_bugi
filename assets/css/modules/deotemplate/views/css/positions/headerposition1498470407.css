@@ -356,4 +356,12 @@
   .box-bottom-header .logo {
     padding: 20px 0; }
 
+#wrapper .breadcrumb {
+  color: #FFFFFF;
+  background: #000000; }
+  @media (min-width: 992px) {
+    #wrapper .breadcrumb li a:hover {
+      color: #FFFFFF;
+      text-decoration: underline; } }
+
 /*# sourceMappingURL=headerposition1498470407.css.map */

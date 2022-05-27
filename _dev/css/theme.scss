@@ -208,6 +208,8 @@ body{
 		margin-bottom: 0;
 		padding: 15px 0px;
 		position: relative;
+		font-weight: normal;
+		text-transform: uppercase;
 		background: $category-bg-breadcrumb;
 		margin-bottom: $grid-gutter-width-base;
 		@media (min-width: 768px){
@@ -261,6 +263,17 @@ body{
 		li {
 			display: inline;
 			font-size: 14px;
+			// &:first-child{
+			// 	a{
+			// 		&:before{
+			// 			content: "\e94c";
+			// 			font-family: $font-icon-4;
+			// 		}
+			// 		span{
+			// 			display: none;
+			// 		}
+			// 	}
+			// }
 			&:after {
 				content: "\e9b9";
 				margin: 0 8px;

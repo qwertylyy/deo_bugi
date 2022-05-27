@@ -52,7 +52,7 @@
   {assign var="small_mobile" value=$NUMBER_PRODUCT_MOBILE_BOTH}
 {/if}
 
-<section class="category-products block title-normal title-center button-middle button-hover has-sub-title clearfix">
+<section class="category-products block title-normal title-center title-uppercase button-middle button-hover has-sub-title clearfix">
   <div class="box-title">
     <h3 class="title_block">{l s='Related products' d='Shop.Theme.Global'}</h3>
     <div class="sub-title-widget">

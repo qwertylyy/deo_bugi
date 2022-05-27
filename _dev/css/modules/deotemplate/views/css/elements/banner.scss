@@ -40,12 +40,11 @@
 		}
 		h3{
 			color: $white;
-			font-size: 22px;
-			font-weight: 500;
+			font-size: 18px;
+			font-weight: 400;
 			margin-bottom: 5px;
 			text-transform: uppercase;
-			// font-family: $font-family-senary;
-			@media (max-width: 1199px) and (min-width: 992px) {
+			@media (min-width: 992px){
 				font-size: 20px;
 			}
 		}
@@ -58,14 +57,14 @@
 		.btn{
 			color: $white;
 			font-size: 13px;
-			margin-top: 25px;
-			padding: 8px 20px;
+			margin-top: 20px;
+			padding: 6px 20px;
 			font-style: normal;
 			border: 1px solid $white;
 			background: transparent;
 			text-transform: uppercase;
 			@include border-radius(9999px);
-			@include transition(all 0.4s ease);
+			@include transition(all 0.5s ease);
 			&:hover{
 				background: $white;
 				color: $black;
@@ -120,6 +119,7 @@
 			right: 20px;
 			padding: 15px;
 			position: absolute;
+			pointer-events: none;
 			background: rgba($white,0.7);
 			@include transition(all 0.5s ease);
 			@include transform(translateY(-50%));
@@ -145,9 +145,10 @@
 			}
 		}
 		h3{
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: 500;
 			margin-bottom: 8px;
+			text-transform: uppercase;
 		}
 		p{
 			font-size: 13px;
@@ -157,15 +158,21 @@
 		.btn{
 			border: none;
 			padding: 0px;
-			font-size: 13px;
+			font-size: 12px;
 			margin-top: 15px;
 			margin-bottom: 0px;
 			font-style: normal;
+			font-weight: 400;
+			pointer-events: auto;
+    		text-transform: uppercase;
 			color: $theme-color-default;
 			@include border-radius(0px);
 			@include transition(all 0.4s ease);
 			&:hover{
-				color: $theme-color-button-hover;
+				@media (min-width: 992px) {
+					text-decoration: underline;
+					color: $theme-color-button-hover;
+				}
 			}
 		}
 		&:hover{
@@ -239,13 +246,14 @@
 				@include justify-content(center); 
 			}
 			h3{
-				@media (min-width: 480px) {
-					font-size: 30px;
+				@media (min-width: 992px) {
+					font-size: 25px;
 					margin-bottom: 15px;
 				}
 			}
 			.btn{
-				@media (min-width: 480px) {
+				@media (min-width: 992px) {
+					font-size: 14px;
 					margin-top: 20px;
 				}
 			}
@@ -260,36 +268,24 @@
 	}
 	&.banner-style-three{
 		.media{
-			padding: 20px 25px;
-			border: 3px double #eaeaea;
+			padding: 20px 20px;
+			border: $main-border;
 			@include display(flex);
 			@include align-items(center);
 			@include flex-direction(row);
-			@media (max-width: 1199px) and (min-width: 992px) {
-				padding: 10px 15px;
-			}
 		}
 		.left-block{
 			width: 100px;
-			@media (max-width: 1199px) and (min-width: 992px) {
-				width: 80px;
-			}
 		}
 		.right-block{
 			width: calc(100% - 100px);
-			@include rtl-padding-left(25px);
-			@media (max-width: 1199px) and (min-width: 992px) {
-				width: calc(100% - 80px);
-				@include rtl-padding-left(15px);
-			}
+			@include rtl-padding-left(20px);
 		}
 		h3{
-			font-size: 23px;
+			font-size: 16px;
 			font-weight: 500;
 			margin-bottom: 10px;
-			@media (max-width: 1199px) and (min-width: 992px) {
-				font-size: 20px;
-			}
+			text-transform: uppercase;
 		}
 		p{
 			font-size: 13px;
@@ -299,6 +295,7 @@
 		}
 		.btn{
 			padding: 0px;
+			border: none;
 			font-size: 13px;
 			margin-top: 10px;
 			margin-bottom: 0px;
@@ -359,16 +356,16 @@
 			}
 		}
 		h4{
-			font-size: 13px;
-			font-weight: 400;
-			margin-bottom: 5px;
+			font-size: 12px;
+			font-weight: 300;
+			margin-bottom: 3px;
 			font-family: inherit;
 			text-transform: uppercase;
 		}
 		h3{
-			font-size: 25px;
-			font-weight: 600;
-			margin-bottom: 15px;
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 10px;
 			font-family: inherit;
 			text-transform: uppercase;
 			@media (max-width: 991px) {
@@ -383,8 +380,9 @@
 		.btn{
 			color: $black;
 			font-size: 13px;
-			margin-top: 25px;
+			margin-top: 18px;
 			font-style: normal;
+			padding: 6px 20px;
 			border: 1px solid $black;
 			text-transform: uppercase;
 			background: transparent;
@@ -458,7 +456,7 @@
 			position: relative;
 		}
 		.right-block{
-			padding: 20px $grid-gutter-width-base/2 0px;
+			padding: 20px 0px 0px;
 		}
 		.image{
 			display: block;
@@ -475,12 +473,13 @@
 			}
 		}
 		h3{
-			font-size: 25px;
+			font-size: 16px;
 			font-weight: 500;
-			margin-bottom: 15px;
+			margin-bottom: 12px;
+			text-transform: uppercase;
 		}
 		p{
-			line-height: 1.8;
+			line-height: 1.6;
 			font-style: italic;
 			margin-bottom: 0px;
 			font-size: 13px;
@@ -489,12 +488,12 @@
 			border: none;
 			color: $white;
 			font-size: 13px;
-			margin-top: 25px;
-			padding: 10px 25px;
+			margin-top: 20px;
+			padding: 8px 20px;
 			font-style: normal;
 			background: $black;
 			text-transform: uppercase;
-			@include border-radius(0px);
+			@include border-radius(5px);
 			@include transition(all 0.4s ease);
 			&:hover{
 				@media (min-width: 992px) {
@@ -535,16 +534,16 @@
 			}
 		}
 		h5{
-			font-size: 14px;
+			font-size: 12px;
 			font-weight: 600;
 			letter-spacing: 2px;
-			margin-bottom: 15px;
+			margin-bottom: 5px;
 			font-family: inherit;
 			text-transform: uppercase;
 			color: $theme-color-default;
 		}
 		h3{
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 500;
 			margin-bottom: 15px;
 			font-family: inherit;
@@ -564,8 +563,8 @@
 		.btn{
 			font-size: 13px;
 			line-height: normal;
-			padding: 8px 20px;
-			margin-top: 30px;
+			padding: 6px 20px;
+			margin-top: 20px;
 			font-weight: 400;
 			font-style: normal;
 			text-transform: uppercase;
@@ -581,18 +580,6 @@
 				}
 			}
 		}
-		&.small-text{
-			h5{
-				font-size: 14px;
-			}
-			h3{
-				font-size: 25px;
-			}
-			.btn{
-				padding: 8px 15px;
-				margin-top: 20px;
-			}
-		}
 	}
 	&.banner-style-seven{
 		.media{
@@ -606,6 +593,7 @@
 			z-index: 3;
 			padding: 30px;
 			position: absolute;
+			pointer-events: none;
 			@include transform(translateY(-50%));
 		}
 		.image{
@@ -621,25 +609,22 @@
 			}
 		}
 		h4{
-			font-size: 14px;
-			font-weight: normal;
-			margin-bottom: 15px;
+			font-size: 13px;
+			font-weight: 300;
+			margin-bottom: 10px;
 			letter-spacing: 2px;
 			font-family: inherit;
 			text-transform: uppercase;
-			@media (max-width: 1199px) {
-				font-size: 13px;
-			}
 		}
 		h3{
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 500;
 			margin-bottom: 0px;
 			font-family: inherit;
 			text-transform: uppercase;
 			text-shadow: 1px 1px 2px $black;
-			@media (max-width: 1199px) {
-				font-size: 25px;
+			@media (min-width: 992px) {
+				font-size: 22px;
 			}
 		}
 		p{
@@ -650,13 +635,13 @@
 			padding: 0px;
 			border: none;
 			font-size: 13px;
-			margin-top: 20px;
-			font-weight: 600;
+			margin-top: 15px;
+			font-weight: 400;
 			font-style: normal;
-			padding-bottom: 2px;
+			pointer-events: auto;
 			text-transform: uppercase;
 			color: $theme-color-default;
-			border-bottom: 2px solid $theme-color-default;
+			border-bottom: 1px solid $theme-color-default;
 			@include border-radius(0px);
 			@include transition(all 0.4s ease);
 			&:hover{
@@ -724,12 +709,13 @@
 			background: rgba($white,0.7);
 		}
 		h3{
-			font-size: 23px;
+			font-size: 16px;
 			font-weight: 500;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
 			padding-bottom: 5px;
 			display: inline-block;
 			vertical-align: middle;
+			text-transform: capitalize;
 			border-bottom: 1px solid $black;
 			@media (max-width: 1199px) {
 				font-size: 20px;
@@ -811,13 +797,13 @@
 			@include transform(translateY(-50%));
 		}
 		h3{
-			font-size: 25px;
+			font-size: 18px;
 			font-weight: 600;
-			margin-bottom: 5px;
+			margin-bottom: 0px;
 			letter-spacing: 2px;
 			font-family: inherit;
 			text-transform: uppercase;
-			@media (max-width: 1199px) {
+			@media (min-width: 992px) {
 				font-size: 20px;
 			}
 		}
@@ -830,7 +816,7 @@
 			color: $black;
 			font-size: 13px;
 			margin-top: 30px;
-			padding: 8px 20px;
+			padding: 6px 20px;
 			margin-bottom: 0px;
 			font-style: normal;
 			position: relative;
@@ -975,20 +961,21 @@
 			}
 		}
 		h3{
-			font-size: 23px;
+			font-size: 18px;
 			font-weight: 500;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
+			text-transform: uppercase;
 		}
 		p{
 			font-size: 13px;
-			line-height: 1.6;
 			margin-bottom: 0px;
 			font-style: italic;
+			line-height: 1.5;
 		}
 		.btn{
 			border: none;
 			font-size: 14px;
-			margin-top: 25px;
+			margin-top: 20px;
 			padding: 8px 25px;
 			margin-bottom: 0px;
 			font-style: normal;
@@ -1041,21 +1028,21 @@
 			}
 		}
 		h3{
-			font-size: 22px;
+			font-size: 20px;
 			font-weight: 500;
 			margin-bottom: 20px;
 			// font-family: $font-family-senary;
 		}
 		p{
 			font-size: 13px;
-			line-height: 1.8;
+			line-height: 1.6;
 			margin-bottom: 0px;
 		}
 		.btn{
 			color: $white;
 			font-size: 13px;
 			margin-top: 25px;
-			padding: 10px 20px;
+			padding: 10px 25px;
 			margin-bottom: 0px;
 			font-style: normal;
 			position: relative;
@@ -1064,7 +1051,7 @@
 			background: $black;
 			border: 1px solid $black;
 			text-transform: uppercase;
-			@include border-radius(0px);
+			@include border-radius(5px);
 			@include transition(all 0.4s ease);
 			&:hover{
 				border-color: $theme-color-default;

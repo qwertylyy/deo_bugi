@@ -3065,7 +3065,9 @@ body#checkout {
 		.btn{
 			color: $theme-color-default;
 			&:hover{
-				color: $theme-color-button-hover;
+				@media (min-width: 992px) {
+					color: $theme-color-button-hover;
+				}
 			}
 		}
 	}
@@ -3178,6 +3180,15 @@ body#checkout {
 				&:hover{
 					border-color: $theme-color-default;
 					background: $theme-color-default;
+				}
+			}
+		}
+		&.white-text{
+			.btn{
+				@media (min-width: 992px){
+					&:hover{
+						border-color: $theme-color-default;
+					}
 				}
 			}
 		}

@@ -977,12 +977,20 @@
     .cart-total-wrapper .cart-buttons .btn + .btn {
       margin-top: 5px; }
   .cart-total-wrapper .cart-buttons .custom-checkbox {
-    display: block;
     cursor: pointer;
+    display: inline-block;
     text-align: center;
     margin-top: 5px;
     padding-bottom: 0px;
     font-size: 12px; }
+    .cart-total-wrapper .cart-buttons .custom-checkbox input[type="checkbox"] + span {
+      width: 14px;
+      height: 14px;
+      margin: 0px 3px 0px 0px; }
+      .rtl .cart-total-wrapper .cart-buttons .custom-checkbox input[type="checkbox"] + span {
+        margin: 0px 0px 0px 3px; }
+      .cart-total-wrapper .cart-buttons .custom-checkbox input[type="checkbox"] + span .checkbox-checked {
+        font-size: 13px; }
 .cart-total-wrapper .cart-total {
   padding: 5px 10px;
   border-top: 1px solid #eaeaea; }

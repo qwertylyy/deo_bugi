@@ -211,7 +211,7 @@
   margin-bottom: 0px; }
   @media (max-width: 575px) {
     .title-normal .title_block {
-      font-size: 22px; } }
+      font-size: 20px; } }
 .title-normal .box-title {
   margin-bottom: 30px; }
   @media (max-width: 575px) {
@@ -226,7 +226,7 @@
       margin-bottom: 20px; } }
 @media (min-width: 576px) {
   .title-normal.title-small .title_block {
-    font-size: 22px; } }
+    font-size: 20px; } }
 @media (min-width: 576px) {
   .title-normal.title-small .box-title {
     margin-bottom: 20px; } }
@@ -296,9 +296,9 @@
       transform: skew(-45deg); }
   .title-normal.title-special .box-title .title_block {
     color: #FFFFFF; }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .title-normal.title-large .title_block {
-    font-size: 40px; } }
+    font-size: 30px; } }
 @media (min-width: 992px) {
   .title-normal.title-hidden-lg-up .title_block {
     display: none; } }
@@ -364,7 +364,7 @@
   text-align: center; }
 
 .title-sidebar .title_block {
-  font-size: 22px; }
+  font-size: 20px; }
 .title-sidebar .box-title {
   margin-bottom: 15px;
   padding-right: 55px; }
@@ -416,7 +416,7 @@
     position: static; }
 
 .title-border .title_block {
-  font-size: 22px; }
+  font-size: 20px; }
 .title-border .box-title {
   margin-bottom: 30px;
   padding-bottom: 5px;
@@ -498,7 +498,7 @@
         padding: 5px 0 0 0; } }
 
 .title-tabs.title-inline .title_block {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 0px; }
 .title-tabs.title-inline .box-title {
   margin-bottom: 15px; }
@@ -2099,6 +2099,13 @@
       @media (min-width: 992px) {
         .service-carousel.service-carousel-one.text-white .link-btn:hover {
           color: #ffffff; } }
+    .service-carousel.service-carousel-one.text-white.light {
+      color: #ffffff; }
+      .service-carousel.service-carousel-one.text-white.light .link-btn {
+        color: #ffffff; }
+        @media (min-width: 992px) {
+          .service-carousel.service-carousel-one.text-white.light .link-btn:hover {
+            color: #cccccc; } }
 
 .deo-icon-loading-button {
   top: 50%;

@@ -41,12 +41,13 @@
   .text-shop-now.text-shop-now-one .btn {
     color: #FFFFFF;
     border: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     margin: 6px 15px;
-    padding: 10px 25px;
+    padding: 8px 25px;
     text-transform: uppercase;
     background: #1bbc9b;
+    border-radius: 5px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -112,8 +113,8 @@
   font-size: 20px;
   font-weight: normal; }
   .text-shop-now.text-shop-now-three .block_content {
-    padding: 30px 50px;
-    border: 3px double #eaeaea;
+    padding: 30px 40px;
+    border: 1px solid #eaeaea;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -148,11 +149,11 @@
     -ms-flex-pack: justify; }
     @media (max-width: 575px) {
       .text-shop-now.text-shop-now-three .block_content {
-        padding: 30px; } }
+        padding: 20px; } }
   .text-shop-now.text-shop-now-three strong, .text-shop-now.text-shop-now-three b {
     text-decoration: underline; }
   .text-shop-now.text-shop-now-three h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400; }
   .text-shop-now.text-shop-now-three p {
     font-weight: 300;
@@ -160,7 +161,7 @@
   .text-shop-now.text-shop-now-three .btn {
     color: #222222;
     border: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     margin: 10px 0px;
     padding: 10px 25px;
@@ -179,9 +180,7 @@
 .text-shop-now.color-white {
   color: #FFFFFF; }
 @media (min-width: 992px) {
-  .text-shop-now.large-font-size {
-    font-size: 25px; }
-    .text-shop-now.large-font-size .btn {
-      font-size: 18px; } }
+  .text-shop-now.large-font-size .btn {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=text-shop-now.css.map */

@@ -105,6 +105,9 @@
 					&:hover{
 						@media (min-width: 992px) {
 							color: $theme-color-white-hover;
+							.cart-products-count{
+								background: $theme-color-white-hover; 
+							}
 						}
 					}
 				}
@@ -140,6 +143,9 @@
 						&:hover{
 							@media (min-width: 992px) {
 								color: $theme-color-white;
+								.cart-products-count{
+									background: $theme-color-white;
+								}
 							}
 						}
 					}

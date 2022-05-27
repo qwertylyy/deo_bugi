@@ -1126,8 +1126,9 @@ body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-li
 
 .banner.banner-style-two .btn {
   color: #92a8ce; }
-  .banner.banner-style-two .btn:hover {
-    color: #758fbb; }
+  @media (min-width: 992px) {
+    .banner.banner-style-two .btn:hover {
+      color: #758fbb; } }
 .banner.banner-style-three .btn {
   color: #92a8ce; }
   .banner.banner-style-three .btn:hover {
@@ -1178,6 +1179,9 @@ body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-li
   .banner.banner-bugi-two .btn:hover {
     border-color: #92a8ce;
     background: #92a8ce; } }
+@media (min-width: 992px) {
+  .banner.banner-bugi-two.white-text .btn:hover {
+    border-color: #92a8ce; } }
 .banner.banner-bugi-three .btn:hover {
   background: #92a8ce;
   border-color: #92a8ce; }

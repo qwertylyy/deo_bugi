@@ -221,3 +221,19 @@
 		padding: 20px 0;
 	}
 }
+
+
+#wrapper{
+	.breadcrumb{
+		color: $white;
+		background: $black;
+		li a{
+			&:hover{
+				@media (min-width: 992px){
+					color: $white;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

@@ -378,6 +378,7 @@
   font-size: 18px;
   font-weight: 900;
   margin-bottom: 0px;
+  letter-spacing: 2px;
   text-transform: uppercase; }
 .deo-category-image.image-category-bugi-two .cover-img {
   overflow: hidden; }
@@ -726,7 +727,10 @@
         padding-left: 15px;
         padding-right: 15px; } }
     .DeoBlockLink.block-link-bugi-one ul li a {
-      font-size: 20px; }
+      font-size: 16px; }
+      @media (min-width: 768px) {
+        .DeoBlockLink.block-link-bugi-one ul li a {
+          font-size: 20px; } }
 
 @media (min-width: 576px) {
   .block_newsletter.newsletter-bugi-one {

@@ -104,6 +104,22 @@
   color: #089de3; }
 .block-social.social-one li.instagram a {
   color: #c4a74d; }
+.block-social.social-one.social-color li.facebook a:hover {
+  color: #4c86bc; }
+.block-social.social-one.social-color li.twitter a:hover {
+  color: #55c2e1; }
+.block-social.social-one.social-color li.rss a:hover {
+  color: #FF6600; }
+.block-social.social-one.social-color li.youtube a:hover {
+  color: #ff0000; }
+.block-social.social-one.social-color li.googleplus a:hover {
+  color: #de3737; }
+.block-social.social-one.social-color li.pinterest a:hover {
+  color: #f45151; }
+.block-social.social-one.social-color li.vimeo a:hover {
+  color: #089de3; }
+.block-social.social-one.social-color li.instagram a:hover {
+  color: #c4a74d; }
 .block-social.social-one.social-white li a {
   color: #cccccc; }
   .block-social.social-one.social-white li a:hover {

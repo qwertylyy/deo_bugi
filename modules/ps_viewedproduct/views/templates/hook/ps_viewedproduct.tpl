@@ -51,7 +51,7 @@
   {assign var="mobile" value=$NUMBER_PRODUCT_SMALL_TABLET_BOTH}
   {assign var="small_mobile" value=$NUMBER_PRODUCT_MOBILE_BOTH}
 {/if}
-<section class="viewed-products block title-normal title-center button-middle button-hover clearfix">
+<section class="viewed-products block title-normal title-center title-uppercase button-middle button-hover clearfix">
   <div class="box-title">
     <h2 class="title_block">{l s='Viewed products' d='Shop.Theme.Global'}</h2>
   </div>

@@ -539,4 +539,7 @@
     .box-bottom-header .right-bottom-header .popup-over:first-child .popup-title:before {
       display: none; }
 
+#wrapper .breadcrumb {
+  background: transparent; }
+
 /*# sourceMappingURL=headerposition1498474874.css.map */

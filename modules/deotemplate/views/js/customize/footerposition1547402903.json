@@ -1,48 +1,53 @@
 [
     {
         "id": "footer_1",
-        "type": "color",
-        "label": "Color Title Footer",
-        "selector": ".footer-container .block .title_block, .footer-container .footer-black .block .title_block"
+        "type": "background-color",
+        "label": "Background color Top Footer",
+        "selector": ".footer-top"
     },
     {
         "id": "footer_2",
-        "type": "color",
-        "label": "Color link Footer",
-        "selector": ".footer-container a,.footer-container .DeoBlockLink ul li a,.footer-container .footer-black .DeoBlockLink ul li a"
+        "type": "border-color",
+        "label": "Border color Top Footer",
+        "responsive": [
+            {
+                "media": "@media (min-width: 576px)",
+                "selector": ".box-top-footer > [class*='col-'] + [class*='col-']:after"
+            }
+        ],
+        "selector": ".footer-top"
     },
     {
         "id": "footer_3",
         "type": "color",
-        "label": "Color hover link Footer",
-        "media": "@media (min-width: 992px)",
-        "selector": ".footer-container a:hover,.footer-container .DeoBlockLink ul li a:hover,.footer-container .footer-black .DeoBlockLink ul li a:hover"
+        "label": "Color Title Middle Footer",
+        "selector": ".footer-center .block .title_block,.footer-center .footer-black .block .title_block"
     },
     {
         "id": "footer_4",
         "type": "color",
-        "label": "Color text Top Footer",
-        "selector": ".footer-center"
+        "label": "Color link Middle Footer",
+        "selector": ".footer-center a,.footer-center .DeoBlockLink ul li a,.footer-center .footer-black .DeoBlockLink ul li a"
     },
     {
         "id": "footer_5",
         "type": "color",
-        "label": "Color text Title Contact Top Footer",
-        "selector": ".footer-contact.footer-contact-media-one .contact-infor h4"
+        "label": "Color hover link Middle Footer",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-center a:hover,.footer-center .DeoBlockLink ul li a:hover,.footer-center .footer-black .DeoBlockLink ul li a:hover"
     },
     {
         "id": "footer_6",
         "type": "color",
-        "label": "Color text Icon Contact Top Footer",
-        "selector": ".footer-contact.footer-contact-media-one .contact-infor ul li i,.footer-contact.footer-contact-media-one .phone-contact:before"
+        "label": "Color text Middle Footer",
+        "selector": ".footer-center"
     },
     {
         "id": "footer_7",
         "type": "background-color",
-        "label": "Background color Top Footer",
+        "label": "Background color Middle Footer",
         "selector": ".footer-center"
     },
-   
     {
         "id": "footer_8",
         "type": "color",
@@ -51,40 +56,89 @@
     },
     {
         "id": "footer_9",
-        "type": "background-color",
-        "label": "Background color Bottom Footer",
-        "selector": ".footer-bottom"
+        "type": "color",
+        "label": "Color text Title Contact Bottom Footer",
+        "selector": ".footer-contact.footer-contact-bugi-two .contact-infor h4"
     },
-
     {
         "id": "footer_10",
-        "type": "border-color",
-        "label": "Border color Newsletter",
-        "selector": ".footer-container .block_newsletter.newsletter-style-four form input[type=email]"
+        "type": "color",
+        "label": "Color text Icon Contact Bottom Footer",
+        "selector": ".footer-contact.footer-contact-bugi-two .contact-infor ul li i,.footer-contact.footer-contact-bugi-two .phone-contact:before"
     },
     {
         "id": "footer_11",
         "type": "color",
-        "label": "Color Newsletter",
-        "selector": ".footer-container .block_newsletter.newsletter-style-four form input[type=email],.footer-container .block_newsletter.newsletter-style-four form input[type=email]::-webkit-input-placeholder"
+        "label": "Color link Bottom Footer",
+        "selector": ".footer-bottom a,.footer-bottom .DeoBlockLink ul li a,.footer-bottom .footer-black .DeoBlockLink ul li a"
     },
     {
         "id": "footer_12",
-        "type": "background-color",
-        "label": "Background color Newsletter",
-        "selector": ".footer-container .block_newsletter.newsletter-style-four form input[type=email]"
+        "type": "color",
+        "label": "Color hover link Bottom Footer",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-bottom a:hover,.footer-bottom .DeoBlockLink ul li a:hover,.footer-bottom .footer-black .DeoBlockLink ul li a:hover"
     },
     {
         "id": "footer_13",
-        "type": "color",
-        "label": "Color button Newsletter",
-        "selector": ".footer-container .block_newsletter.newsletter-style-four form .btn"
+        "type": "background-color",
+        "label": "Border color spacing link Bottom Footer",
+        "selector": ".footer-bottom .block-link-inline.border-spacing-style ul li:after"
     },
     {
         "id": "footer_14",
+        "type": "background-color",
+        "label": "Background color Bottom Footer",
+        "selector": ".footer-bottom"
+    },
+    {
+        "id": "footer_15",
+        "type": "color",
+        "label": "Color title Newsletter",
+        "selector": ".footer-container .block_newsletter.newsletter-style-four .title_block"
+    },
+    {
+        "id": "footer_16",
+        "type": "border-color",
+        "label": "Border color Newsletter",
+        "selector": ".footer-container .block_newsletter.newsletter-style-three .form-group"
+    },
+    {
+        "id": "footer_17",
+        "type": "background-color",
+        "label": "Background color Newsletter",
+        "selector": ".footer-container .block_newsletter.newsletter-style-three .form-group"
+    },
+    {
+        "id": "footer_18",
+        "type": "color",
+        "label": "Color Newsletter",
+        "selector": ".footer-container .block_newsletter form input[type=email],.footer-container .block_newsletter form input[type=email]::-webkit-input-placeholder,.footer-container .block_newsletter.newsletter-style-three .form-group .input-wrapper:before"
+    },
+    {
+        "id": "footer_19",
+        "type": "color",
+        "label": "Color button Newsletter",
+        "selector": ".footer-container .block_newsletter form .btn"
+    },
+    {
+        "id": "footer_20",
         "type": "color",
         "label": "Color hover button Newsletter",
         "media": "@media (min-width: 992px)",
-        "selector": ".footer-container .block_newsletter.newsletter-style-four form .btn:hover,.footer-container .block_newsletter.newsletter-style-four form .btn:active,.footer-container .block_newsletter.newsletter-style-four form .btn:focus"
+        "selector": ".footer-container .block_newsletter form .btn:hover"
+    },
+    {
+        "id": "footer_21",
+        "type": "background-color",
+        "label": "Background color button Newsletter",
+        "selector": ".footer-container .block_newsletter form .btn"
+    },
+    {
+        "id": "footer_22",
+        "type": "background-color",
+        "label": "Background color hover button Newsletter",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-container .block_newsletter form .btn:hover"
     }
 ]

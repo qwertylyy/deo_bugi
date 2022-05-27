@@ -92,6 +92,7 @@
     .deo-google-map .deo-item-store:hover {
       background: #f2f2f2; }
     .deo-google-map .deo-item-store .name-store {
+      font-size: 16px;
       font-weight: 500; }
       .deo-google-map .deo-item-store .name-store .number-store:after {
         content: '.'; }

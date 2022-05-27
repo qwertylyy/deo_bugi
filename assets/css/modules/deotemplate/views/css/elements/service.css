@@ -36,7 +36,7 @@
   .service p {
     font-size: 13px;
     margin-bottom: 0;
-    line-height: 1.5; }
+    line-height: 1.4; }
     .service p a {
       color: inherit; }
   .service i {
@@ -300,9 +300,9 @@
         align-items: center;
         -ms-flex-align: center; }
     .service.service-style-one h3 {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
     .service.service-style-one p {
       line-height: 1.6; }
     .service.service-style-one .left-block {
@@ -325,15 +325,25 @@
     padding-top: 20px;
     padding-bottom: 20px; }
     .service.service-style-two i {
-      font-size: 40px; }
+      font-size: 35px; }
+    .service.service-style-two h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+      text-transform: uppercase; }
   .service.service-style-three h3 {
-    margin-bottom: 10px; }
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+  .service.service-style-four h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
   .service.service-style-six {
     position: relative;
     background: #FFFFFF;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 20px 15px 0px;
+    padding: 20px 10px 0px;
     -webkit-transition: transform 0.5s ease;
     -o-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -375,10 +385,10 @@
         max-width: 50px;
         max-height: 50px; }
     .service.service-style-six .title {
-      font-size: 20px;
-      line-height: 1.2;
+      font-size: 15px;
       font-weight: 500;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      text-transform: uppercase; }
     .service.service-style-six .sub-title {
       font-size: 13px;
       font-weight: 300;
@@ -420,7 +430,7 @@
           transform-origin: 0 0%; } }
       @media (max-width: 991px) {
         .service.service-style-six .read-more {
-          margin-top: 30px; } }
+          margin-top: 20px; } }
     @media (min-width: 992px) {
       .service.service-style-six:hover {
         -webkit-transform: translateY(-15px);
@@ -591,7 +601,7 @@
   .service.service-style-nine {
     padding: 20px 10px;
     margin-bottom: 20px;
-    border: 3px double #eaeaea; }
+    border: 1px solid #eaeaea; }
     .service.service-style-nine h3 {
       font-size: 16px;
       font-weight: 500;
@@ -698,14 +708,18 @@
         max-height: 25px; }
     .service.service-style-twelve .title {
       font-weight: 500;
-      margin-bottom: 15px; }
+      font-size: 15px;
+      margin-bottom: 10px;
+      text-transform: uppercase; }
     .service.service-style-twelve .sub-title {
       font-size: 13px;
       font-weight: 300;
-      line-height: 1.8;
-      margin-bottom: 20px; }
+      line-height: 1.6;
+      margin-bottom: 15px; }
     .service.service-style-twelve .read-more {
-      font-weight: 300; }
+      font-size: 13px;
+      font-weight: 300;
+      text-transform: uppercase; }
       .service.service-style-twelve .read-more > a {
         color: #1bbc9b; }
         .service.service-style-twelve .read-more > a:hover {
@@ -781,9 +795,9 @@
       z-index: 3;
       margin: auto;
       display: inline-block;
-      width: 80px;
-      height: 80px;
-      line-height: 80px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
       text-align: center;
       overflow: hidden;
       background: #eaeaea;
@@ -799,20 +813,20 @@
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
       .service.service-style-thirteen .link-service img {
-        max-width: 35px;
-        max-height: 35px; }
+        max-width: 30px;
+        max-height: 30px; }
     .service.service-style-thirteen .title {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 500;
-      margin-bottom: 15px; }
+      margin-bottom: 10px;
+      text-transform: uppercase; }
     .service.service-style-thirteen .sub-title {
-      font-size: 13px;
-      line-height: 1.6; }
+      font-size: 13px; }
     .service.service-style-thirteen .read-more {
-      margin-top: 15px; }
+      margin-top: 10px; }
       .service.service-style-thirteen .read-more > a {
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: uppercase; }
     .service.service-style-thirteen.effect-left-to-right:hover .link-service img {
       -webkit-animation: toLeftFromRight 0.4s forwards;

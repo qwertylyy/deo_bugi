@@ -49,7 +49,7 @@
 	}
 	&.manufacturers-style-one{
 		.manufacturer-container{
-			border: 1px solid #dddddd;
+			border: $main-border;
 			@include transition(all 0.4s ease);
 			&:hover{
 				@media (min-width: 992px) {

@@ -60,7 +60,7 @@
         bottom: 0px;
         width: 1px;
         height: 25px;
-        background: #eaeaea;
+        border-left: 1px solid #eaeaea;
         position: absolute;
         left: 0px; }
         .rtl .box-top-footer > [class*="col-"] + [class*="col-"]:after {

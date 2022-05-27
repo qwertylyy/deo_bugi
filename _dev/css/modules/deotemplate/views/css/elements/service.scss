@@ -16,7 +16,7 @@
 	p{
 		font-size: 13px;
 		margin-bottom: 0;
-		line-height: 1.5;
+		line-height: 1.4;
 		a{
 			color: inherit;
 		}
@@ -237,9 +237,9 @@
 			@include service-horizontal();
 		}
 		h3{
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: 500;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 		p{
 			line-height: 1.6;
@@ -258,12 +258,26 @@
 		padding-top: $grid-gutter-width-base;
 		padding-bottom: $grid-gutter-width-base;
 		i{
-			font-size: 40px;
+			font-size: 35px;
+		}
+		h3{
+			font-size: 15px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
 		}
 	}
 	&.service-style-three{
 		h3{
+			font-size: 15px;
 			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+	}
+	&.service-style-four{
+		h3{
+			font-size: 15px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
 		}
 	}
 	&.service-style-six{
@@ -271,7 +285,7 @@
 		background: $white;
 		margin-top: $grid-gutter-width-base/2;
 		margin-bottom: $grid-gutter-width-base/2;
-		padding: 20px 15px 0px;
+		padding: 20px 10px 0px;
 		@include transition(transform 0.5s ease);
 		@include rtl-border-radius(4px,4px,4px,4px);
 		@media (min-width: 768px) {
@@ -301,10 +315,10 @@
 			}
 		}
 		.title{
-			font-size: 20px;
-			line-height: 1.2;
+			font-size: 15px;
 			font-weight: 500;
 			margin-bottom: 15px;
+			text-transform: uppercase;
 		}
 		.sub-title{
 			font-size: 13px;
@@ -330,7 +344,7 @@
 				@include transform-origin(0 0%);
 			}
 			@media (max-width: 991px) {
-				margin-top: 30px;
+				margin-top: 20px;
 			}
 		}
 		&:hover{
@@ -518,7 +532,7 @@
 	&.service-style-nine{
 		padding: 20px $grid-gutter-width-base/2;
 		margin-bottom: $grid-gutter-width-base;
-		border: 3px double #eaeaea;
+		border: $main-border;
 		h3{
 			font-size: 16px;
 			font-weight: 500;
@@ -610,16 +624,20 @@
 		}
 		.title{
 			font-weight: 500;
-			margin-bottom: 15px;
+			font-size: 15px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
 		}
 		.sub-title{
 			font-size: 13px;
 			font-weight: 300;
-			line-height: 1.8;
-			margin-bottom: 20px;
+			line-height: 1.6;
+			margin-bottom: 15px;
 		}
 		.read-more{
+			font-size: 13px;
 			font-weight: 300;
+			text-transform: uppercase;
 			& > a{
 				color: $theme-color-default;
 				&:hover{
@@ -709,9 +727,9 @@
 			z-index: 3;
 			margin: auto;
 			display: inline-block;
-			width: 80px;
-			height: 80px;
-			line-height: 80px;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
 			text-align: center;
 			overflow: hidden;
 			background: $border-color;
@@ -719,24 +737,24 @@
 			@include box-shadow(0px 0px 0px 10px $white);
 			@include transform(translateY(-50%));
 			img{
-				max-width: 35px;
-				max-height: 35px;
+				max-width: 30px;
+				max-height: 30px;
 			}
 		}
 		.title{
-			font-size: 18px;
+			font-size: 15px;
 			font-weight: 500;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
 		}
 		.sub-title{
 			font-size: 13px;
-			line-height: 1.6;
 		}
 		.read-more{
-			margin-top: 15px;
+			margin-top: 10px;
 			& > a{
 				font-size: 12px;
-				font-weight: 500;
+				font-weight: 400;
 				text-transform: uppercase;
 			}
 		}

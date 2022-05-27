@@ -136,6 +136,34 @@
 				color: #c4a74d;
 			}
 		}
+		&.social-color{
+			li {
+				&.facebook a:hover{
+					color: #4c86bc;
+				}
+				&.twitter a:hover{
+					color: #55c2e1;
+				}
+				&.rss a:hover{
+					color: #FF6600;
+				}
+				&.youtube a:hover{
+					color: #ff0000;
+				}
+				&.googleplus a:hover{
+					color: #de3737;
+				}
+				&.pinterest a:hover{
+					color: #f45151;
+				}
+				&.vimeo a:hover{
+					color: #089de3;
+				}
+				&.instagram a:hover{
+					color: #c4a74d;
+				}
+			}
+		}
 		&.social-white{
 			li {
 				a {

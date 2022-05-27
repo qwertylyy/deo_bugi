@@ -50,12 +50,10 @@
 	.view_all{
 		.btn{
 			font-size: 13px;
-			padding: 8px 15px;
-			color: #666666;
-			font-weight: normal;
+			padding: 6px 15px;
 			background: transparent;
 			text-transform: uppercase;
-			border: 1px solid #cccccc;
+			border: $main-border;
 			@include border-radius(5px);
 			@include transition(all 0.4s ease);
 			&:hover{
@@ -121,6 +119,7 @@
 					padding: 8px 10px;
 					background: $white;
 					text-align: center;
+					pointer-events: none;
 					border: 1px solid #e8e8e8;
 					@media (max-width: 991px) {
 						bottom: 15px;
@@ -196,8 +195,10 @@
 					overflow: hidden;
 					background: $white;
 					font-family: inherit;
+					font-size: 13px;
+					text-transform: uppercase;
 					border: 1px solid #e8e8e8;
-					@include border-radius(9999px);
+					@include border-radius(10px);
 					@include rtl-left-right(20px,auto);
 					@media (max-width: 991px) {
 						bottom: 15px;
@@ -206,7 +207,7 @@
 					a{
 						position: relative;
 						z-index: 3;
-						padding: 8px 20px;
+						padding: 6px 12px;
 						display: inline-block;
 						vertical-align: middle;
 					}
@@ -418,7 +419,7 @@
 	}
 	&.image-category-five{
 		padding: 20px 25px;
-		border: 3px double #eaeaea;
+		border: $main-border;
 		.block_content{
 			position: relative;
 		}
@@ -427,9 +428,10 @@
 			& > li > .cate_content{
 				position: static;
 				.cate-name{
-					font-size: 20px;
-					font-weight: 400;
-					margin-bottom: 15px;
+					font-size: 15px;
+					font-weight: 600;
+					margin-bottom: 10px;
+					letter-spacing: 2px;
 					font-family: inherit;
 					text-transform: uppercase;
 				}
@@ -439,6 +441,9 @@
 					min-width: 100px;
 					@include rtl-right(0px);
 					@include transform(translateY(-50%));
+				}
+				.deo-qty-category{
+				  display: none;
 				}
 			}
 		}
@@ -455,7 +460,8 @@
 						font-family: inherit;
 						display: inline-block;
 						vertical-align: middle;
-						text-transform: uppercase;
+						text-transform: none;
+						letter-spacing: normal;
 						a{
 							position: relative;
 							@include transition(padding-left 0.5s ease);
@@ -463,7 +469,7 @@
 								content: "\ea31";
 								display: inline-block;
 								font-family: $font-icon-4;
-								@include rtl-margin-right(7px);
+								@include rtl-margin-right(5px);
 								@include transition(all 0.4s ease);
 							}
 							&:hover{
@@ -471,19 +477,39 @@
 							}
 						}
 					}
+					.deo-qty-category{
+						font-weight: 300;
+						font-size: 13px;
+						display: inline-block;
+						vertical-align: middle;
+						&.processed-qty-category{
+							&:before{
+								content: '(';
+								display: inline-block;
+							}
+							&:after{
+								content: ')';
+								display: inline-block;
+							}
+						}
+						span{
+							display: none;
+						}
+					}
 				}
 			}
 		}
-		// .deo-qty-category{
-		//   display: none !important;
-		// }
+		
 		.view_all{
-			margin-top: 15px;
+			margin-top: 10px;
 			.btn{
 				padding: 0px;
 				border: none;
+				font-size: 10px;
 				text-transform: none;
 				background: transparent;
+				text-decoration: underline;
+				text-transform: uppercase;
 				color: $theme-color-default;
 				// font-family: $font-family-heading;
 				@include transition(all 0.5s ease);
@@ -748,6 +774,7 @@
 					left: 50%;
 					z-index: 3;
 					padding: 8px 10px;
+					pointer-events: none;
 					@include transform(translate(-50%,-50%));
 					a{
 						color: $white;
@@ -755,7 +782,8 @@
 				}
 				.deo-qty-category{
 					color: $white;
-					margin-top: 10px;
+					font-size: 13px;
+					margin-top: 5px;
 					font-weight: 300;
 					display: inline-block;
 					@include transition(all 0.4s ease);
@@ -765,9 +793,11 @@
 					}
 				}
 				.cate-name{
-					font-size: 23px;
+					font-size: 16px;
 					font-weight: 500;
 					margin-bottom: 0px;
+					letter-spacing: 2px;
+					text-transform: uppercase;
 					@include transition(all 0.4s ease);
 					@media (min-width: 992px) {
 						@include transform(translateY(15px));
@@ -810,11 +840,13 @@
 				& > .cate_content{
 					& > .cate-meta > .box-cate{
 						.cate-name{
-							font-size: 22px;
-							font-weight: 500;
+							font-size: 16px;
+							font-weight: 600;
+							letter-spacing: 2px;
+							text-transform: uppercase;
 						}
 						.description{
-							margin: 25px 0px 30px; 
+							margin: 20px 0px 20px; 
 						}
 					}
 				}
@@ -824,13 +856,10 @@
 			.cate-name{
 				margin-bottom: 0px;
 				font-family: inherit;
-				font-weight: inherit;
-				a{
-					// color: #777777;
-				}
+				font-weight: normal;
 			}
 			.box-cate{
-				margin-bottom: 15px;
+				margin-bottom: 10px;
 			}
 			.description{
 				display: none;
@@ -845,7 +874,7 @@
 		.view_all{
 			margin-top: 30px;
 			padding-top: 30px;
-			border-top: 1px solid #dddddd;
+			border-top: $main-border;
 		}
 	}
 	&.image-category-thirdteen{

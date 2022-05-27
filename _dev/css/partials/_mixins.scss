@@ -2474,7 +2474,7 @@
 	font-size: $font_size;
 }
 
-@mixin big-title-product($margin-bottom: 15px, $font_size: 24px){
+@mixin big-title-product($margin-bottom: 15px, $font_size: 22px){
 	margin-bottom: $margin-bottom;
 	a{
 		font-size: $font_size;

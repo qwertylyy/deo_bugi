@@ -50,7 +50,7 @@
   {assign var="mobile" value=$NUMBER_PRODUCT_SMALL_TABLET_BOTH}
   {assign var="small_mobile" value=$NUMBER_PRODUCT_MOBILE_BOTH}
 {/if}
-<section class="featured-products clearfix block title-normal title-center button-middle button-hover">
+<section class="featured-products clearfix block title-normal title-center title-uppercase button-middle button-hover">
   <div class="box-title">
     <h2 class="title_block">{l s='Popular Products' d='Shop.Theme.Global'}</h2>
   </div>

@@ -35,10 +35,10 @@
     .box-space-before {
       padding-top: 60px; } }
 
-.box-about-us, .box-fake-number-static, .box-text-shop-now, .box-banner-text, .box-blog, .box-service, .box-newsletter, .box-product, .box-manufacturers {
+.box-about-us, .box-fake-number-static, .box-text-shop-now, .box-banner-text, .box-blog, .box-service, .box-newsletter, .box-product, .box-manufacturers, .box-countdown {
   margin-bottom: 80px; }
   @media (max-width: 991px) {
-    .box-about-us, .box-fake-number-static, .box-text-shop-now, .box-banner-text, .box-blog, .box-service, .box-newsletter, .box-product, .box-manufacturers {
+    .box-about-us, .box-fake-number-static, .box-text-shop-now, .box-banner-text, .box-blog, .box-service, .box-newsletter, .box-product, .box-manufacturers, .box-countdown {
       margin-bottom: 60px; } }
 
 .box-service {

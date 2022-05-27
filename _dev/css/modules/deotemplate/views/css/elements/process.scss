@@ -31,10 +31,9 @@
 				padding: 30px 15px;
 			}
 			h3{
-				font-size: 18px;
+				font-size: 16px;
 				font-weight: 500;
 				margin-bottom: 10px;
-				text-transform: uppercase;
 				b{
 					color: $theme-color-default;
 				}
@@ -54,19 +53,12 @@
 			padding-top: 15px;
 			padding-bottom: 15px;
 			@include rtl-padding-left(60px);
-			@media (min-width: 1200px) {
+			@media (min-width: 992px) {
 				padding-top: 20px;
 				padding-bottom: 20px; 
 			}
-			@media (min-width: 1500px) {
-				padding-top: 25px;
-				padding-bottom: 25px; 
-			}
-			@media (max-width: 1199px) and (min-width: 768px){
-				padding-top: 10px;
-				padding-bottom: 10px
-			}
 			h3{
+				font-size: 16px;
 				font-weight: 500;
 				margin-bottom: 5px;
 				b{
@@ -129,7 +121,7 @@
 				}
 			}
 			&:last-of-type{
-				padding-bottom: 0px;
+				padding-bottom: 4px;
 				h3{
 					b{
 						&:after{

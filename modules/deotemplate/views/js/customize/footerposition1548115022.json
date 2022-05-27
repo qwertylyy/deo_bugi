@@ -2,123 +2,76 @@
     {
         "id": "footer_1",
         "type": "color",
-        "label": "Color Title Footer",
-        "selector": ".footer-container .block .title_block, .footer-container .footer-black .block .title_block"
+        "label": "Color Title Top Footer",
+        "selector": ".footer-top .block .title_block,.footer-top .footer-black .block .title_block,.footer-top .footer-black.light .block .title_block"
     },
     {
         "id": "footer_2",
-        "type": "color",
-        "label": "Color link Footer",
-        "selector": ".footer-container a,.footer-container .DeoBlockLink ul li a,.footer-container .footer-black .DeoBlockLink ul li a"
+        "type": "background-color",
+        "label": "Background color Top Footer",
+        "selector": ".footer-top"
     },
     {
         "id": "footer_3",
-        "type": "color",
-        "label": "Color hover link Footer",
-        "media": "@media (min-width: 992px)",
-        "selector": ".footer-container a:hover,.footer-container .DeoBlockLink ul li a:hover,.footer-container .footer-black .DeoBlockLink ul li a:hover"
+        "type": "border-color",
+        "label": "Border color Top Footer",
+        "media": "@media (min-width: 768px)",
+        "selector": ".box-top-footer > [class*='col-']"
     },
     {
         "id": "footer_4",
         "type": "color",
-        "label": "Color text Top Footer",
-        "selector": ".footer-center"
+        "label": "Color Title Middle Footer",
+        "selector": ".footer-center .block .title_block,.footer-center .footer-black .block .title_block"
     },
     {
         "id": "footer_5",
         "type": "color",
-        "label": "Color text Title Contact Top Footer",
-        "selector": ".footer-contact.footer-contact-media-one .contact-infor h4"
+        "label": "Color link Middle Footer",
+        "selector": ".footer-center a,.footer-center .DeoBlockLink ul li a,.footer-center .footer-black .DeoBlockLink ul li a"
     },
     {
         "id": "footer_6",
         "type": "color",
-        "label": "Color text Icon Contact Top Footer",
-        "selector": ".footer-contact.footer-contact-media-one .contact-infor ul li i,.footer-contact.footer-contact-media-one .phone-contact:before"
-    },
-    {
-        "id": "footer_7",
-        "type": "background-color",
-        "label": "Border color Top Footer",
+        "label": "Color hover link Middle Footer",
         "media": "@media (min-width: 992px)",
-        "selector": ".box-top-footer .block-contact:after"
+        "selector": ".footer-center a:hover,.footer-center .DeoBlockLink ul li a:hover,.footer-center .footer-black .DeoBlockLink ul li a:hover"
     },
     {
         "id": "footer_7",
-        "type": "background-color",
-        "label": "Background color Top Footer",
+        "type": "color",
+        "label": "Color text Middle Footer",
         "selector": ".footer-center"
     },
-   
     {
         "id": "footer_8",
+        "type": "background-color",
+        "label": "Background color Middle Footer",
+        "selector": ".footer-center"
+    },
+    {
+        "id": "footer_9",
+        "type": "color",
+        "label": "Color link Bottom Footer",
+        "selector": ".footer-bottom a,.footer-bottom .DeoBlockLink ul li a,.footer-bottom .footer-black .DeoBlockLink ul li a,.footer-bottom .footer-black.light .DeoBlockLink ul li a"
+    },
+    {
+        "id": "footer_10",
+        "type": "color",
+        "label": "Color hover link Bottom Footer",
+        "media": "@media (min-width: 992px)",
+        "selector": ".footer-bottom a:hover,.footer-bottom .DeoBlockLink ul li a:hover,.footer-bottom .footer-black .DeoBlockLink ul li a:hover,.footer-bottom .footer-black.light .DeoBlockLink ul li a:hover"
+    },
+    {
+        "id": "footer_11",
         "type": "color",
         "label": "Color text Bottom Footer",
         "selector": ".footer-bottom"
     },
     {
-        "id": "footer_9",
+        "id": "footer_12",
         "type": "background-color",
         "label": "Background color Bottom Footer",
         "selector": ".footer-bottom"
-    },
-
-    {
-        "id": "footer_7",
-        "type": "border-color",
-        "label": "Border color Box Newsletter",
-        "media": "@media (min-width: 992px)",
-        "selector": ".block_newsletter.newsletter-media-one, .block_newsletter.newsletter-media-one .popup-content-newsletter .box-title .title:after"
-    },
-
-    {
-        "id": "footer_10",
-        "type": "color",
-        "label": "Color title Newsletter",
-        "selector": ".footer-container .block_newsletter.block .title_block"
-    },
-    {
-        "id": "footer_11",
-        "type": "border-color",
-        "label": "Border color Newsletter",
-        "selector": ".footer-container .block_newsletter.newsletter-style-three .form-group"
-    },
-    {
-        "id": "footer_12",
-        "type": "background-color",
-        "label": "Background color Newsletter",
-        "selector": ".footer-container .block_newsletter.newsletter-style-three .form-group"
-    },
-    {
-        "id": "footer_13",
-        "type": "color",
-        "label": "Color Newsletter",
-        "selector": ".footer-container .block_newsletter form input[type=email],.footer-container .block_newsletter form input[type=email]::-webkit-input-placeholder,.footer-container .block_newsletter.newsletter-style-three .form-group .input-wrapper:before"
-    },
-    {
-        "id": "footer_14",
-        "type": "color",
-        "label": "Color button Newsletter",
-        "selector": ".footer-container .block_newsletter form .btn"
-    },
-    {
-        "id": "footer_15",
-        "type": "color",
-        "label": "Color hover button Newsletter",
-        "media": "@media (min-width: 992px)",
-        "selector": ".footer-container .block_newsletter form .btn:hover"
-    },
-    {
-        "id": "footer_16",
-        "type": "background-color",
-        "label": "Background color button Newsletter",
-        "selector": ".footer-container .block_newsletter form .btn"
-    },
-    {
-        "id": "footer_17",
-        "type": "background-color",
-        "label": "Background color hover button Newsletter",
-        "media": "@media (min-width: 992px)",
-        "selector": ".footer-container .block_newsletter form .btn:hover"
     }
 ]

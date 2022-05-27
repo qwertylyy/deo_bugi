@@ -56,7 +56,7 @@
     font-weight: 400;
     margin-bottom: 0px; }
   .DeoCountdown.countdown-style-one .sub-title-widget {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
     text-transform: uppercase; }
@@ -73,11 +73,12 @@
       color: #FFFFFF;
       font-size: 12px;
       font-weight: 400;
-      padding: 6px 12px;
+      padding: 6px 20px;
       display: inline-block;
       vertical-align: middle;
       text-transform: uppercase;
       background: #1bbc9b;
+      border-radius: 9999px;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }

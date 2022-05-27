@@ -107,7 +107,9 @@
     color: #cccccc; }
     @media (min-width: 992px) {
       #cart-block.cart-white .cart-preview.active a:hover {
-        color: #ffffff; } }
+        color: #ffffff; }
+        #cart-block.cart-white .cart-preview.active a:hover .cart-products-count {
+          background: #ffffff; } }
 #cart-block.cart-white .cart-products-count {
   color: #000000;
   background: #cccccc; }
@@ -117,7 +119,9 @@
     color: #ffffff; }
     @media (min-width: 992px) {
       #cart-block.cart-white.light .cart-preview.active a:hover {
-        color: #cccccc; } }
+        color: #cccccc; }
+        #cart-block.cart-white.light .cart-preview.active a:hover .cart-products-count {
+          background: #cccccc; } }
 #cart-block.cart-white.light .cart-products-count {
   background: #ffffff; }
 #cart-block.cart-cricle {

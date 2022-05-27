@@ -35,47 +35,42 @@
     font-size: 12px;
     color: #b1b1b1; }
   .fake-product.fake-product-one h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
     color: #1bbc9b; }
-    @media (max-width: 1199px) {
-      .fake-product.fake-product-one h3 {
-        font-size: 32px; } }
     @media (max-width: 991px) {
       .fake-product.fake-product-one h3 {
-        font-size: 30px; } }
+        font-size: 25px; } }
     @media (max-width: 767px) {
       .fake-product.fake-product-one h3 {
-        font-size: 28px; } }
+        font-size: 22px; } }
     .fake-product.fake-product-one h3:last-of-type {
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
   .fake-product.fake-product-one h2 {
     line-height: 1;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 5px;
     text-transform: uppercase; }
-    @media (max-width: 1199px) {
-      .fake-product.fake-product-one h2 {
-        font-size: 35px; } }
     @media (max-width: 991px) {
       .fake-product.fake-product-one h2 {
-        font-size: 30px; } }
+        font-size: 25px; } }
     @media (max-width: 767px) {
       .fake-product.fake-product-one h2 {
         font-size: 22px; } }
     .fake-product.fake-product-one h2:last-of-type {
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
   .fake-product.fake-product-one p {
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 0px; }
   .fake-product.fake-product-one .btn {
     border: none;
     color: #FFFFFF;
     font-size: 13px;
-    margin-top: 25px;
-    padding: 8px 20px;
+    margin-top: 20px;
+    min-width: 120px;
+    padding: 8px 16px;
     background: #000000;
     text-transform: uppercase;
     border-radius: 0px;
@@ -110,7 +105,7 @@
     .fake-product.fake-product-two {
       padding: 20px 10px; } }
   .fake-product.fake-product-two .title_block {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase; }
   .fake-product.fake-product-two .sub-title-widget {
@@ -128,6 +123,8 @@
     border: none;
     font-size: 13px;
     margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
     background: transparent;
     text-decoration: underline;
     color: #1bbc9b;
@@ -139,10 +136,11 @@
   .fake-product.fake-product-two p {
     font-size: 13px;
     margin-bottom: 0px;
-    font-weight: normal; }
+    font-weight: normal;
+    font-style: italic; }
     .fake-product.fake-product-two p b, .fake-product.fake-product-two p strong {
       color: #000000;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400; }
 
 .box-fake-product {

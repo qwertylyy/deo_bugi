@@ -66,7 +66,7 @@
       color: #000000;
       display: block;
       line-height: 1;
-      font-weight: 500; }
+      font-weight: 400; }
     .fake-number-static.fake-number-static-one i {
       font-size: 45px;
       margin-bottom: 15px;
@@ -82,7 +82,7 @@
     .fake-number-static.fake-number-static-two .numscroller {
       display: block;
       line-height: 1;
-      font-weight: 500; }
+      font-weight: 400; }
     .fake-number-static.fake-number-static-two p {
       font-size: 13px;
       margin-top: 10px;
@@ -111,7 +111,7 @@
     text-align: center; }
     .fake-number-static.fake-number-static-four .numscroller {
       line-height: 1;
-      font-weight: 500; }
+      font-weight: 400; }
     .fake-number-static.fake-number-static-four p {
       font-size: 13px;
       margin-top: 5px;
@@ -121,7 +121,7 @@
       margin-bottom: 20px; }
   .fake-number-static.fake-number-static-five .numscroller {
     line-height: 1;
-    font-weight: 500; }
+    font-weight: 400; }
   .fake-number-static.fake-number-static-five p {
     font-size: 13px;
     margin-top: 5px;
@@ -239,7 +239,7 @@
       color: #FFFFFF;
       line-height: 1;
       font-size: 26px;
-      font-weight: 500; }
+      font-weight: 400; }
     .fake-number-static.fake-number-static-six p {
       color: #FFFFFF;
       font-size: 11px;

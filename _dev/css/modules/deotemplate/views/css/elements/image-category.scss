@@ -6,8 +6,7 @@
 	&.image-category-seven{
 		margin-bottom: $grid-gutter-width-base;
 		.media{
-			padding: 3px;
-			border: 1px solid #eaeaea;
+			border: $main-border;
 			@include display(flex);
 			@include flex-wrap(wrap);
 		}
@@ -20,38 +19,35 @@
 			}
 		}
 		.right-block{
-			padding: 20px 25px;
+			padding: 20px 20px;
 			@media (min-width: 480px) {
 				width: 50%;
-			}
-			@media (max-width: 1499px) and (min-width: 1200px){
-				padding: 15px 20px;
+				@include display(flex);
+	    		@include align-items(center);
 			}
 			@media (max-width: 1199px) and (min-width: 576px){
 				width: 100%;
 			}
 
 		}
+		.image_description{
+			width: 100%;
+		}
 		h3{
-			font-size: 20px;
-			font-weight: 500;
+			font-size: 16px;
+			font-weight: 600;
 			margin-bottom: 15px;
+			letter-spacing: 2px;
 			text-transform: uppercase;
-			@media (max-width: 1499px) and (min-width: 1200px){
-				font-size: 18px;
-				margin-bottom: 10px;
-			}
 		}
 		.view_all{
-			margin-top: 20px;
+			margin-top: 15px;
 			margin-bottom: 0px;
-			@media (max-width: 1499px) and (min-width: 1200px){
-				margin-top: 10px;
-			}
 			a{
-				font-weight: 500;
+				font-size: 12px;
+				font-weight: 400;
+				text-transform: uppercase;
 				color: $theme-color-default;
-				font-family: $font-family-heading;
 				@include transition(all 0.5s ease);
 				&:hover{
 					text-decoration: underline;
@@ -61,8 +57,8 @@
 		}
 		ul{
 			li{
-				margin-bottom: 12px;
-				@media (max-width: 1499px) and (min-width: 1200px){
+				margin-bottom: 8px;
+				@media (max-width: 1399px) and (min-width: 992px){
 					margin-bottom: 5px;
 				}
 				a{

@@ -22,10 +22,11 @@
 }
 #content-wrapper{
 	.category-name{
-		font-size: 26px;
+		font-size: 24px;
 		line-height: 1;
 		position: relative;
 		margin: 0px 0px 30px;
+		text-transform: uppercase;
 		@include rtl-padding-left(15px);
 		&:before {
 			content: '';
@@ -59,7 +60,9 @@
 		@include flex-wrap(wrap);
 	}
 	.subcategory-heading{
+		font-size: 16px;
 		margin-bottom: 15px;
+		text-transform: uppercase;
 	}
 	.subcategory-block{
 		margin-bottom: $grid-gutter-width-base;
@@ -71,10 +74,11 @@
 			}
 		}
 		.subcategory-name{
+			font-size: 14px;
 			margin-bottom: 10px;
+			text-transform: uppercase;
 			a{
 				color: inherit;
-				font-size: 16px;
 				font-weight: 500;
 				&:hover{
 					color: $theme-color-default;

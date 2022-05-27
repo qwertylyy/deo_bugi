@@ -22,12 +22,13 @@
 		.btn{
 			color: $white;
 			border: none;
-			font-size: 15px;
+			font-size: 14px;
 			font-weight: 600;
 			margin: 6px 15px;
-			padding: 10px 25px;
+			padding: 8px 25px;
 			text-transform: uppercase;
 			background: $theme-color-default; 
+			@include border-radius(5px);
 			@include transition(all 0.5s ease);
 			&:hover{
 				@media (min-width: 992px) {
@@ -71,21 +72,21 @@
 		font-size: 20px;
 		font-weight: normal;
 		.block_content{
-			padding: 30px 50px;
-			border: 3px double #eaeaea;
+			padding: 30px 40px;
+			border: $main-border;
 			@include display(flex);
 			@include flex-wrap(wrap);
 			@include align-items(center);
 			@include justify-content(space-between);
 			@media (max-width: 575px) {
-				padding: 30px;
+				padding: 20px;
 			}
 		}
 		strong,b{
 			text-decoration: underline;
 		}
 		h3{
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 400;
 		}
 		p{
@@ -96,7 +97,7 @@
 		.btn{
 			color: #222222;
 			border: none;
-			font-size: 15px;
+			font-size: 14px;
 			font-weight: 500;
 			margin: 10px 0px;
 			padding: 10px 25px;
@@ -120,9 +121,8 @@
 	}
 	&.large-font-size{
 		@media (min-width: 992px) {
-			font-size: 25px;
 			.btn{
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}

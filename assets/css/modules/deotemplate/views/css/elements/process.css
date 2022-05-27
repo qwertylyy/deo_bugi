@@ -62,10 +62,9 @@
     .process.process-style-one .item {
       padding: 30px 15px; } }
   .process.process-style-one .item h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: uppercase; }
+    margin-bottom: 10px; }
     .process.process-style-one .item h3 b {
       color: #1bbc9b; }
   .process.process-style-one .item p {
@@ -82,19 +81,12 @@
   .rtl .process.process-style-two .item {
     padding-right: 60px;
     padding-left: inherit; }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .process.process-style-two .item {
       padding-top: 20px;
       padding-bottom: 20px; } }
-  @media (min-width: 1500px) {
-    .process.process-style-two .item {
-      padding-top: 25px;
-      padding-bottom: 25px; } }
-  @media (max-width: 1199px) and (min-width: 768px) {
-    .process.process-style-two .item {
-      padding-top: 10px;
-      padding-bottom: 10px; } }
   .process.process-style-two .item h3 {
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 5px; }
     .process.process-style-two .item h3 b {
@@ -152,7 +144,7 @@
       .process.process-style-two .item:first-of-type h3 b:before {
         display: none; }
   .process.process-style-two .item:last-of-type {
-    padding-bottom: 0px; }
+    padding-bottom: 4px; }
     .process.process-style-two .item:last-of-type h3 b:after {
       display: none; }
 
