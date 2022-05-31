@@ -68,6 +68,12 @@ global_settings:
         - blockreassurance
       displayNavFullWidth:
         - blockreassurance
+      displayAdminCustomers:
+        - blockwishlist
+      displayCustomerAccount:
+        - blockwishlist
+      displayMyAccountBlock:
+        - blockwishlist
       displayNav1:
         - deotemplate
       displayNav2:
@@ -81,6 +87,7 @@ global_settings:
         - deotemplate
       displayFooter:
         - deotemplate
+        - blockwishlist
       displayFooterAfter:
         - blockreassurance
       displayLeftColumn:
@@ -99,6 +106,8 @@ global_settings:
       displayFooterProduct:
         - ps_categoryproducts
         - ps_viewedproduct
+      displayProductActions:
+        - blockwishlist
       actionAdminBefore:
         - deotemplate
 

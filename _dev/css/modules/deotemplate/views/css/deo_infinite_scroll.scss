@@ -1,0 +1,59 @@
+@import "theme_variables";
+
+.deo-infinite-load-more{
+	text-align: center;
+	a{
+		color: $white;
+		display: block;
+		padding: 8px 15px;
+		text-transform: uppercase;
+		background: $theme-color-default;
+		// i{
+		// 	font-style: normal;
+		// 	&:before{
+		// 		content: '\ea48';
+		// 		font-family: $font-icon-4;
+		// 	}
+		// }
+		&:hover{
+			color: $white;
+			@media (min-width: 992px){
+				background: $theme-color-button-hover;
+			}
+		}
+	}
+}
+
+.deo-message-when-end-page{
+	font-weight: 600;
+	text-align: center;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	// i{
+	// 	font-style: normal;
+	// 	&:before{
+	// 		content: '\ea4b';
+	// 		text-decoration: none;
+	// 		font-family: $font-icon-4;
+	// 	}
+	// }
+	a{
+		text-decoration: underline;
+		// border-bottom: 1px solid $body_color;
+	}
+}
+
+.deo-infinitescroll-loading{
+	display: none;
+	text-align: center;
+	i{
+		font-style: normal;
+		&:before {
+			content: "\ea42";
+			font-size: 25px;
+			display: inline-block;
+			font-family: $font-icon-4;
+			@include animation(cssload-spin 1s infinite steps(8));
+		}
+	}
+}

@@ -2452,6 +2452,18 @@ body#checkout {
 	}
 }
 
+// deo_infinite_scroll.scss
+.deo-infinite-load-more{
+	a{
+		background: $theme-color-default;
+		&:hover{
+			@media (min-width: 992px){
+				background: $theme-color-button-hover;
+			}
+		}
+	}
+}
+
 /* Multi Image Product List */
 .deo-more-product-img {
 	.slick-slider{

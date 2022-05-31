@@ -888,6 +888,12 @@ body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-li
   border-color: #c43710;
   background-color: #ed5931; }
 
+.deo-infinite-load-more a {
+  background: #ed5931; }
+  @media (min-width: 992px) {
+    .deo-infinite-load-more a:hover {
+      background: #c43710; } }
+
 /* Multi Image Product List */
 @media (min-width: 992px) {
   .deo-more-product-img .slick-slider .slick-arrows .slick-arrow:hover:before {
