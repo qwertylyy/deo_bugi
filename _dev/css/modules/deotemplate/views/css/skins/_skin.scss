@@ -1885,6 +1885,49 @@ body#checkout {
 	}
 }
 
+// onepagecheckout.scss
+.account-inner{
+	&.use_tab{
+		.nav-tabs{
+			.nav-item{
+				.nav-link{
+					&.active {
+						border-color: $theme-color-default;
+						background: $theme-color-default;
+						&:hover{
+							border-color: $theme-color-default;
+							background: $theme-color-default;
+						}
+					}
+					&:hover{
+						border-color: $theme-color-default;
+						background: $theme-color-default;
+					}
+				}
+			}
+		}
+	}
+	.offer-account{
+		.change-register,.change-login{
+			border-bottom-color: $theme-color-default;
+		}
+	}
+}
+.product-line-grid {
+	.product-line-grid-right {
+		.cart-line-product-actions{
+			.remove-from-cart{
+				&:hover{
+					@media (min-width: 992px){
+						color: $theme-color-default;
+					}
+				}
+			} 
+		}
+	}
+}
+
+
 // feature.scss
 .deo-select-attr{
 	&.selected{

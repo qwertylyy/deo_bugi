@@ -681,6 +681,22 @@ body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-li
   .deo-blog-builder.blog-style-nine .btn-more:hover {
     color: #13366b; }
 
+.account-inner.use_tab .nav-tabs .nav-item .nav-link.active {
+  border-color: #1b427d;
+  background: #1b427d; }
+  .account-inner.use_tab .nav-tabs .nav-item .nav-link.active:hover {
+    border-color: #1b427d;
+    background: #1b427d; }
+.account-inner.use_tab .nav-tabs .nav-item .nav-link:hover {
+  border-color: #1b427d;
+  background: #1b427d; }
+.account-inner .offer-account .change-register, .account-inner .offer-account .change-login {
+  border-bottom-color: #1b427d; }
+
+@media (min-width: 992px) {
+  .product-line-grid .product-line-grid-right .cart-line-product-actions .remove-from-cart:hover {
+    color: #1b427d; } }
+
 .deo-select-attr.selected {
   color: #1b427d; }
 .deo-select-attr:hover {
