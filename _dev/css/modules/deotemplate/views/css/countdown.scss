@@ -245,6 +245,19 @@ $digit_line_height: $digit_height;
 
 .simple-countdown{
 	@include simple-countdown();
+	// .deo_countdown_ {
+	// 	&interval {
+	// 		&_cont {
+	// 			color: $theme-color-default;
+	// 			border-color: $theme-color-default;
+	// 		}
+	// 		&_basic_cont {
+	// 			&_description {
+	// 				background: $theme-color-default;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 .title-countdown{
 	color: #ff4a56;
@@ -322,6 +335,8 @@ $digit_line_height: $digit_height;
 				display: block;
 				font-size: 13px;
 				font-weight: 500;
+				// color: $theme-color-default;
+				// border: 2px solid $theme-color-default;
 				border: 2px solid #222222;
 				border-bottom: none;
 			}
@@ -331,6 +346,7 @@ $digit_line_height: $digit_height;
 				display: block;
 				font-size: 9px;
 				background: #222222;
+				// background: $theme-color-default;
 				text-transform: uppercase;
 			}
 		}

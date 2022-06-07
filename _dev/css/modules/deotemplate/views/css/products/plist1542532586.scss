@@ -27,7 +27,8 @@
 					display: block;
 					font-size: 10px;
 					padding: 3px 5px;
-					background: #222222;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					@include transition(all 0.5s ease);
 					.content-btn-product{
 						.icon-btn-product{
@@ -46,8 +47,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}

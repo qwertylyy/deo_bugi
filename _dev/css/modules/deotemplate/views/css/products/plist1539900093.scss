@@ -42,14 +42,15 @@
 				padding: 0px;
 				color: $white;
 				white-space: nowrap;
-				background: #222222;
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				@include box-shadow(1px 2px 3px rgba($black,0.5));
 				@include border-radius(50%);
 				&:hover{
 					@media(min-width: 992px){
 						color: $white;
-						border-color: $theme-color-default;
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}

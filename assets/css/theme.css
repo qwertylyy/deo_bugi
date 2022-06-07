@@ -10233,7 +10233,7 @@ input[type="file"] {
   .thumbnail-container .box-button {
     font-size: 0px; }
     .thumbnail-container .box-button .btn-product {
-      color: #000000;
+      color: #333333;
       border: none;
       display: block;
       min-width: 35px;

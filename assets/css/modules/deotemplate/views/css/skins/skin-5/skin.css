@@ -232,65 +232,108 @@ a:hover, a:focus {
   .product-list-one .thumbnail-container .product-image .box-button .btn-product:hover {
     color: #1f1b20; } }
 
-@media (min-width: 992px) {
-  .product-list-two .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
-@media (min-width: 992px) {
-  .product-list-two .thumbnail-container .box-button .btn-product:hover {
-    background: #1f1b20; } }
+.product-list-two .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-two .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
+.product-list-two .thumbnail-container .box-button .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-two .thumbnail-container .box-button .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
-@media (min-width: 992px) {
-  .product-list-three .thumbnail-container .box-button .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-three .thumbnail-container .box-button .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-three .thumbnail-container .box-button .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
-@media (min-width: 992px) {
-  .product-list-four .thumbnail-container .box-button .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
-@media (min-width: 992px) {
-  .product-list-four .thumbnail-container .box-button > div:nth-child(1) .btn-product:hover {
-    background: #1f1b20;
-    border-color: #1f1b20; } }
+.product-list-four .thumbnail-container .box-button .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-four .thumbnail-container .box-button .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
+.product-list-four .thumbnail-container .box-button > div:nth-child(1) .btn-product {
+  background: #1f1b20;
+  border-color: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-four .thumbnail-container .box-button > div:nth-child(1) .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
-@media (min-width: 992px) {
-  .product-list-five .thumbnail-container .product-image .btn-product:hover {
+.product-list-five .thumbnail-container .product-image .box-button {
+  background: #1f1b20; }
+  .product-list-five .thumbnail-container .product-image .box-button .btn-product {
     border-color: #1f1b20;
-    background: #1f1b20; } }
-@media (min-width: 992px) {
-  .product-list-five .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+    background: #1f1b20; }
+    @media (min-width: 992px) {
+      .product-list-five .thumbnail-container .product-image .box-button .btn-product:hover {
+        border-color: #444444;
+        background: #444444; } }
+.product-list-five .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-five .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
-@media (min-width: 992px) {
-  .product-list-six .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
-@media (min-width: 992px) {
-  .product-list-six .thumbnail-container .box-button .btn-product:hover {
-    background: #1f1b20; } }
+.product-list-six .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-six .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
+.product-list-six .thumbnail-container .box-button .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-six .thumbnail-container .box-button .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
 @media (min-width: 992px) {
   .product-list-seven .thumbnail-container .product-image .box-button .btn-product:hover {
     color: #1f1b20; } }
 
-@media (min-width: 992px) {
-  .product-list-eight .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    background: #1f1b20; } }
-@media (min-width: 992px) {
-  .product-list-eight .thumbnail-container .box-button .btn-product:hover {
-    background: #1f1b20; } }
+.product-list-eight .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-eight .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
+.product-list-eight .thumbnail-container .box-button .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-eight .thumbnail-container .box-button .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
-@media (min-width: 992px) {
-  .product-list-nine .thumbnail-container .product-image .box-button .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-nine .thumbnail-container .product-image .box-button .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-nine .thumbnail-container .product-image .box-button .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 @media (min-width: 992px) {
   .product-list-nine .thumbnail-container:hover {
     border-color: #1f1b20; } }
   @media (min-width: 992px) and (min-width: 992px) {
     .product-list-nine .thumbnail-container:hover .product-meta .btn-cart-product-list .btn-product {
+      border-color: #1f1b20;
       background: #1f1b20; } }
 
 @media (min-width: 992px) {
@@ -333,10 +376,13 @@ a:hover, a:focus {
 @media (min-width: 992px) {
   .product-list-fifteen .thumbnail-container .product-image .box-button .btn-product:hover {
     color: #1f1b20; } }
-@media (min-width: 992px) {
-  .product-list-fifteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-fifteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-fifteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 @media (min-width: 992px) {
   .product-list-fifteen .thumbnail-container .product-meta .btn-cart-product-list .btn-product:hover {
     background: #1f1b20; } }
@@ -347,41 +393,54 @@ a:hover, a:focus {
       background: #1f1b20;
       border-color: #1f1b20; } }
 
-@media (min-width: 992px) {
-  .product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 @media (min-width: 992px) {
   .product-list-sixteen .thumbnail-container .box-button .btn-product:hover {
     border-color: #1f1b20;
     background: #1f1b20; } }
 
-@media (min-width: 992px) {
-  .product-list-eighteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-eighteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-eighteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 
-@media (min-width: 992px) {
-  .product-list-nineteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-nineteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-nineteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 @media (min-width: 992px) {
   .product-list-nineteen .thumbnail-container .box-button > div .btn-product:hover {
-    border-color: #444444;
+    border-color: #1f1b20;
     background: #1f1b20; } }
 @media (min-width: 480px) {
   .product-list-nineteen .thumbnail-container .box-button > div.btn-compare-product-list .btn-product:hover, .product-list-nineteen .thumbnail-container .box-button > div.btn-wishlist-product-list .btn-product:hover {
-    color: #444444; } }
+    color: #1f1b20;
+    background: transparent; } }
 
 @media (min-width: 992px) {
   .product-thumbnails .small-block .slick-arrows .slick-arrow:hover {
     border-color: #1f1b20;
     background: #1f1b20; } }
 
-@media (min-width: 992px) {
-  .product-list-twenty-one .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
-    border-color: #1f1b20;
-    background: #1f1b20; } }
+.product-list-twenty-one .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+  border-color: #1f1b20;
+  background: #1f1b20; }
+  @media (min-width: 992px) {
+    .product-list-twenty-one .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
+      border-color: #444444;
+      background: #444444; } }
 @media (min-width: 992px) {
   .product-list-twenty-one .thumbnail-container .box-button .btn-product:hover {
     border-color: #1f1b20;

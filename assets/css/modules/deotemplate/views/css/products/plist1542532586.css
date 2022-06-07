@@ -56,7 +56,8 @@
         display: block;
         font-size: 10px;
         padding: 3px 5px;
-        background: #222222;
+        border-color: #1bbc9b;
+        background: #1bbc9b;
         -webkit-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease; }
@@ -72,8 +73,8 @@
         @media (min-width: 992px) {
           .product-list-eighteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
             color: #FFFFFF;
-            border-color: #1bbc9b;
-            background: #1bbc9b; } }
+            border-color: #169a7f;
+            background: #169a7f; } }
   .product-list-eighteen .thumbnail-container .product-meta {
     overflow: hidden;
     padding: 10px 0px 0px 15px;

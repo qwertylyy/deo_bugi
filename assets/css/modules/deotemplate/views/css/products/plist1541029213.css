@@ -50,8 +50,9 @@
       display: block;
       font-size: 14px;
       padding: 8px 10px;
-      background: #222222;
       text-transform: uppercase;
+      border-color: #1bbc9b;
+      background: #1bbc9b;
       -webkit-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
@@ -62,7 +63,8 @@
       @media (min-width: 992px) {
         .product-list-eight .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
           color: #FFFFFF;
-          background: #1bbc9b; } }
+          border-color: #169a7f;
+          background: #169a7f; } }
   .product-list-eight .thumbnail-container .product-image .deo-countdown {
     border-top: none;
     padding-top: 0px; }
@@ -97,13 +99,15 @@
       color: #FFFFFF;
       min-width: 35px;
       min-height: 35px;
-      background: #222222; }
+      border-color: #1bbc9b;
+      background: #1bbc9b; }
       .product-list-eight .thumbnail-container .box-button .btn-product .content-btn-product .icon-btn-product {
         line-height: 35px; }
       @media (min-width: 992px) {
         .product-list-eight .thumbnail-container .box-button .btn-product:hover {
           color: #FFFFFF;
-          background: #1bbc9b; } }
+          border-color: #169a7f;
+          background: #169a7f; } }
     .product-list-eight .thumbnail-container .box-button .deo-list-wishlist {
       top: auto;
       bottom: 100%;

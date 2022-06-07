@@ -20,8 +20,9 @@
 					color: $white;
 					display: block;
 					font-size: 14px;
-					padding: 8px 15px;
-					background: #222222;
+					padding: 7px 15px;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					text-transform: uppercase;
 					@include transition(all 0.5s ease);
 					.content-btn-product{
@@ -35,8 +36,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -72,7 +73,8 @@
 				min-height: 35px;
 				border: none;
 				color: $white;
-				background: #222222;
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				@include border-radius(0px);
 				.content-btn-product{
 					.icon-btn-product{
@@ -82,7 +84,8 @@
 				&:hover{
 					@media(min-width: 992px){
 						color: $white;
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}

@@ -26,7 +26,8 @@
 					display: block;
 					font-size: 10px;
 					padding: 3px 5px;
-					background: #222222;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					@include transition(all 0.5s ease);
 					.content-btn-product{
 						.icon-btn-product{
@@ -45,8 +46,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -76,11 +77,12 @@
 					text-align: center;
 					background: transparent;
 					text-transform: uppercase;
+					@include transition(all 0.5s ease);
 					@media (min-width: 480px) {
 						color: #666666;
 						min-height: 35px;
 						min-width: inherit;
-						border: 3px double #cccccc;
+						border: $main-border;
 					}
 					.content-btn-product{
 						.icon-btn-product{
@@ -99,7 +101,7 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-button-hover;
+							border-color: $theme-color-default;
 							background: $theme-color-default;
 						}
 					}
@@ -151,7 +153,8 @@
 								}
 							}
 							&:hover{
-								color: $theme-color-button-hover;
+								background: transparent;
+								color: $theme-color-default;
 							}
 						}
 					}

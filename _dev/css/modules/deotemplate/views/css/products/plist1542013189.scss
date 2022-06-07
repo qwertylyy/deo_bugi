@@ -76,8 +76,9 @@
 					min-width: 45px;
 					min-height: 45px;
 					font-size: 14px;
-					background: #222222;
 					text-transform: uppercase;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					@include box-shadow(1px 2px 3px rgba($black,0.5));
 					@include border-radius(50%);
 					@include transition(all 0.5s ease);
@@ -99,8 +100,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -129,7 +130,7 @@
 				vertical-align: middle;
 				.btn-product{
 					color: #464646;
-					padding: 10px 20px;
+					padding: 8px 20px;
 					min-width: inherit;
 					font-size: 13px;
 					background: transparent;

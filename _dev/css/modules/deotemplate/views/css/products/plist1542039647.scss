@@ -33,20 +33,23 @@
 				}
 				.btn-product{
 					padding: 0px;
+					border: none;
 					color: $white;
+					border: none;
 					display: block;
 					font-size: 14px;
-					min-width: 50px;
-					min-height: 50px;
-					background: #222222;
+					min-width: 40px;
+					min-height: 40px;
 					text-transform: uppercase;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					@include box-shadow(1px 2px 3px rgba($black,0.5));
 					@include border-radius(50%);
 					@include transition(all 0.5s ease);
 					.content-btn-product{
 						.icon-btn-product{
 							display: block;
-							line-height: 50px;
+							line-height: 40px;
 							&:before{
 								content: "\e9a2";
 								display: block;
@@ -61,8 +64,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -105,8 +108,9 @@
 				min-width: 35px;
 				min-height: 35px;
 				background: $white;
-				border: 1px solid #cccccc;
+				border: $main-border;
 				@include border-radius(3px);
+				@include transition(all 0.5s ease);
 				.content-btn-product{
 					.icon-btn-product{
 						line-height: 33px;

@@ -43,7 +43,7 @@
         <li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
           <a href="{url entity='language' id=$language.id_lang}" class="dropdown-item" data-iso-code="{$language.iso_code}">
             <img src="{$urls.img_lang_url|escape:'html':'UTF-8'}{$language.id_lang|escape:'html':'UTF-8'}.jpg" alt="{$language.iso_code|escape:'html':'UTF-8'}"/>
-            <span class="name-simple">{$language.name_simple}</span>
+            <span class="lang-name">{$language.name_simple}</span>
             <span class="iso-code">{$language.iso_code|escape:'html':'UTF-8'}</span>
           </a>
         </li>

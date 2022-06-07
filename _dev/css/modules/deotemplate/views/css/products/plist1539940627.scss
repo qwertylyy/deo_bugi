@@ -45,14 +45,17 @@
 		.box-button{ 
 			.btn-product{
 				padding: 0px;
-				background: $white;
+				color: $white;
+				font-size: 12px;
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				@include box-shadow(1px 2px 3px rgba($black,0.5));
 				@include border-radius(50%);
 				&:hover{
 					@media(min-width: 992px){
 						color: $white;
-						border-color: $theme-color-default;
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}
@@ -78,10 +81,11 @@
 					.btn-product{
 						@media (min-width: 992px){
 							color: $white;
+							font-size: 16px;
 							min-width: 50px;
 							min-height: 50px;
-							background: #222222;
-							border-color: #222222;
+							background: $theme-color-default;
+							border-color: $theme-color-default;
 							@include box-shadow(0px 3px 6px 3px rgba($black,0.3));
 							.content-btn-product{
 								.icon-btn-product{
@@ -89,8 +93,8 @@
 								}
 							}
 							&:hover{
-								background: $theme-color-default;
-								border-color: $theme-color-default;
+								border-color: $theme-color-button-hover;
+								background: $theme-color-button-hover;
 							}
 						}
 					}

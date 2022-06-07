@@ -446,10 +446,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -457,9 +459,12 @@ a{
 		}
 		.box-button{
 			.btn-product{
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				&:hover{
 					@media(min-width: 992px){
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}
@@ -471,10 +476,12 @@ a{
 	.thumbnail-container{
 		.box-button{
 			.btn-product{
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				&:hover{
 					@media(min-width: 992px){
-						border-color: $theme-color-default;
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}
@@ -486,20 +493,24 @@ a{
 	.thumbnail-container{
 		.box-button{ 
 			.btn-product{
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				&:hover{
 					@media(min-width: 992px){
-						border-color: $theme-color-default;
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}
 			& > div{
 				&:nth-child(1){
 					.btn-product{
+						background: $theme-color-default;
+						border-color: $theme-color-default;
 						@media (min-width: 992px){
 							&:hover{
-								background: $theme-color-default;
-								border-color: $theme-color-default;
+								border-color: $theme-color-button-hover;
+								background: $theme-color-button-hover;
 							}
 						}
 					}
@@ -512,20 +523,27 @@ a{
 .product-list-five{
 	.thumbnail-container{
 		.product-image{
-			.btn-product{
-				&:hover{
-					@media(min-width: 992px){
-						border-color: $theme-color-default;
-						background: $theme-color-default;
+			.box-button{
+				background: $theme-color-default;
+				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
+					&:hover{
+						@media(min-width: 992px){
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
+						}
 					}
 				}
 			}
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-								border-color: $theme-color-default;
-								background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -539,10 +557,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -550,9 +570,12 @@ a{
 		}
 		.box-button{  
 			.btn-product{
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				&:hover{
 					@media(min-width: 992px){
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}
@@ -581,9 +604,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -591,9 +617,12 @@ a{
 		}
 		.box-button{  
 			.btn-product{
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				&:hover{
 					@media(min-width: 992px){
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}
@@ -606,10 +635,12 @@ a{
 		.product-image{
 			.box-button{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -622,6 +653,7 @@ a{
 					.btn-cart-product-list{
 						.btn-product{
 							@media(min-width: 992px){
+								border-color: $theme-color-default;
 								background: $theme-color-default;
 							}
 						}
@@ -764,10 +796,12 @@ a{
 			}
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -805,10 +839,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -832,10 +868,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -849,10 +887,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -863,7 +903,7 @@ a{
 				.btn-product{
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-button-hover;
+							border-color: $theme-color-default;
 							background: $theme-color-default;
 						}
 					}
@@ -872,7 +912,8 @@ a{
 					@media (min-width: 480px) {
 						.btn-product{
 							&:hover{
-								color: $theme-color-button-hover;
+								color: $theme-color-default;
+								background: transparent;
 							}
 						}
 					}
@@ -902,10 +943,12 @@ a{
 		.product-image{
 			.btn-quickview-product-list{
 				.btn-product{
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					&:hover{
 						@media(min-width: 992px){
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -913,6 +956,7 @@ a{
 		}
 		.box-button{  
 			.btn-product{
+				
 				&:hover{
 					@media(min-width: 992px){
 						border-color: $theme-color-default;
@@ -923,6 +967,8 @@ a{
 		}
 	}
 }
+
+
 
 .product-list-bugi-one{
 	.thumbnail-container{
@@ -2656,6 +2702,36 @@ body#checkout {
 		} 
 	}
 }
+
+// .simple-countdown{
+// 	.deo_countdown_ {
+// 		&interval {
+// 			&_cont {
+// 				color: $theme-color-default;
+// 				border-color: $theme-color-default;
+// 			}
+// 			&_basic_cont {
+// 				&_description {
+// 					background: $theme-color-default;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// .deo-countdown{
+// 	ul{
+// 		li{
+// 			b{
+// 				color: $theme-color-default;
+// 				border-color: $theme-color-default;
+// 			}
+// 			span{
+// 				background: $theme-color-default;
+// 			}
+// 		}
+// 	}
+// }
 
 .DeoCountdown{
 	&.countdown-style-one{

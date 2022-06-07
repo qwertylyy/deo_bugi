@@ -77,7 +77,7 @@
   width: 100%;
   display: table;
   position: static;
-  background: #222222;
+  background: #1bbc9b;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
@@ -108,14 +108,15 @@
     padding: 0px;
     width: 100%;
     color: #FFFFFF;
-    background: #222222; }
+    border-color: #1bbc9b;
+    background: #1bbc9b; }
     .product-list-five .thumbnail-container .product-image .box-button .btn-product .content-btn-product .icon-btn-product {
-      line-height: 40px; }
+      line-height: 35px; }
     @media (min-width: 992px) {
       .product-list-five .thumbnail-container .product-image .box-button .btn-product:hover {
         color: #FFFFFF;
-        border-color: #1bbc9b;
-        background: #1bbc9b; } }
+        border-color: #169a7f;
+        background: #169a7f; } }
   .product-list-five .thumbnail-container .product-image .box-button .deo-list-wishlist {
     top: auto;
     bottom: 100%;
@@ -159,8 +160,8 @@
         width: 100%; }
         .product-list-five .thumbnail-container .product-image .box-button > div:first-child .btn-product {
           width: 100%;
-          min-height: 40px;
-          padding: 9px 15px;
+          min-height: 35px;
+          padding: 8px 15px;
           min-width: inherit; }
           .product-list-five .thumbnail-container .product-image .box-button > div:first-child .btn-product .content-btn-product .icon-btn-product {
             line-height: normal;
@@ -199,13 +200,15 @@
       transform: translate(-50%, -50%) scale(0); } }
   .product-list-five .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
     padding: 0px;
+    border: none;
     color: #FFFFFF;
     display: block;
     min-width: 40px;
     min-height: 40px;
     font-size: 14px;
-    background: #222222;
     text-transform: uppercase;
+    border-color: #1bbc9b;
+    background: #1bbc9b;
     -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
@@ -228,8 +231,8 @@
     @media (min-width: 992px) {
       .product-list-five .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
         color: #FFFFFF;
-        border-color: #1bbc9b;
-        background: #1bbc9b; } }
+        border-color: #169a7f;
+        background: #169a7f; } }
 .product-list-five .thumbnail-container .product-image .deo-countdown {
   border-top: none;
   padding-top: 0px; }

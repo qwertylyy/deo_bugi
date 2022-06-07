@@ -24,8 +24,9 @@
 					display: block;
 					font-size: 14px;
 					padding: 8px 10px;
-					background: #222222;
 					text-transform: uppercase;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					@include transition(all 0.5s ease);
 					.content-btn-product{
 						.icon-btn-product{
@@ -38,7 +39,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -74,7 +76,8 @@
 				color: $white;
 				min-width: 35px;
 				min-height: 35px;
-				background: #222222;
+				border-color: $theme-color-default;
+				background: $theme-color-default;
 				.content-btn-product{
 					.icon-btn-product{
 						line-height: 35px;
@@ -83,7 +86,8 @@
 				&:hover{
 					@media(min-width: 992px){
 						color: $white;
-						background: $theme-color-default;
+						border-color: $theme-color-button-hover;
+						background: $theme-color-button-hover;
 					}
 				}
 			}

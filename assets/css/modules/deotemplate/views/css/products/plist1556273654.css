@@ -90,14 +90,17 @@
         -o-transform: translate(-50%, -50%) scale(0);
         transform: translate(-50%, -50%) scale(0); } }
     .product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product {
+      border: none;
       padding: 0px;
       color: #FFFFFF;
       display: block;
       font-size: 14px;
-      min-width: 50px;
-      min-height: 50px;
+      min-width: 40px;
+      min-height: 40px;
       background: #222222;
       text-transform: uppercase;
+      border-color: #1bbc9b;
+      background: #1bbc9b;
       -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
       -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
@@ -109,7 +112,7 @@
       transition: all 0.5s ease; }
       .product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product .content-btn-product .icon-btn-product {
         display: block;
-        line-height: 50px; }
+        line-height: 40px; }
         .product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product .content-btn-product .icon-btn-product:before {
           content: "\e9a2";
           display: block;
@@ -120,8 +123,8 @@
       @media (min-width: 992px) {
         .product-list-sixteen .thumbnail-container .product-image .btn-quickview-product-list .btn-product:hover {
           color: #FFFFFF;
-          border-color: #1bbc9b;
-          background: #1bbc9b; } }
+          border-color: #169a7f;
+          background: #169a7f; } }
   .product-list-sixteen .thumbnail-container .product-meta {
     padding: 15px; }
     @media (min-width: 768px) {
@@ -157,8 +160,11 @@
       min-width: 35px;
       min-height: 35px;
       background: #FFFFFF;
-      border: 1px solid #cccccc;
-      border-radius: 3px; }
+      border: 1px solid #eaeaea;
+      border-radius: 3px;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
       .product-list-sixteen .thumbnail-container .box-button .btn-product .content-btn-product .icon-btn-product {
         line-height: 33px; }
       @media (min-width: 992px) {

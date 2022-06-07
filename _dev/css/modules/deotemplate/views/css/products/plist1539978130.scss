@@ -30,7 +30,7 @@
 				width: 100%;
 				display: table;
 				position: static;
-				background: #222222;
+				background: $theme-color-default;
 				@include box-shadow(none);
 				@include transform(none);
 				@media (min-width: 992px) {
@@ -46,17 +46,18 @@
 					width: 100%;
 					color: $white;
 					// white-space: nowrap;
-					background: #222222;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					.content-btn-product{
 						.icon-btn-product{
-							line-height: 40px;
+							line-height: 35px;
 						}
 					}
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
@@ -75,8 +76,8 @@
 							width: 100%;
 							.btn-product{
 								width: 100%;
-								min-height: 40px;
-								padding: 9px 15px;
+								min-height: 35px;
+								padding: 8px 15px;
 								min-width: inherit;
 								.content-btn-product{
 									.icon-btn-product{
@@ -110,13 +111,15 @@
 				}
 				.btn-product{
 					padding: 0px;
+					border: none;
 					color: $white;
 					display: block;
 					min-width: 40px;
 					min-height: 40px;
 					font-size: 14px;
-					background: #222222;
 					text-transform: uppercase;
+					border-color: $theme-color-default;
+					background: $theme-color-default;
 					@include box-shadow(1px 2px 3px rgba($black,0.5));
 					@include border-radius(50%);
 					@include transition(all 0.5s ease);
@@ -138,8 +141,8 @@
 					&:hover{
 						@media(min-width: 992px){
 							color: $white;
-							border-color: $theme-color-default;
-							background: $theme-color-default;
+							border-color: $theme-color-button-hover;
+							background: $theme-color-button-hover;
 						}
 					}
 				}
