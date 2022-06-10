@@ -973,6 +973,7 @@
     font-size: 12px;
     display: block;
     padding: 6px 10px;
+    overflow: hidden;
     text-transform: uppercase;
     border-radius: 9999px; }
     .cart-total-wrapper .cart-buttons .btn + .btn {
