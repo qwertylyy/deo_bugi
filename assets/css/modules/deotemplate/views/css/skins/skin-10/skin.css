@@ -756,6 +756,42 @@ body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-li
   .product-line-grid .product-line-grid-right .cart-line-product-actions .remove-from-cart:hover {
     color: #ed5931; } }
 
+.deo-content-cart {
+  border-top-color: #ed5931; }
+
+.icon-cart-sidebar-wrapper {
+  background: #ed5931; }
+  .icon-cart-sidebar-wrapper .icon-cart-sidebar {
+    background: #ed5931; }
+  .icon-cart-sidebar-wrapper .icon-cart-total {
+    color: #ed5931;
+    border-color: #ed5931; }
+
+.deo-sidebar-cart .cart-sidebar-heading {
+  background: #ed5931; }
+.deo-sidebar-cart.slidebar_left .cart-sidebar-header {
+  border-color: #ed5931; }
+.deo-sidebar-cart.slidebar_right .cart-sidebar-header {
+  border-color: #ed5931; }
+.deo-sidebar-cart.slidebar_top .cart-sidebar-header {
+  border-color: #ed5931; }
+.deo-sidebar-cart.slidebar_bottom .cart-sidebar-header {
+  border-color: #ed5931; }
+
+.deo-icon-cart-loading:before {
+  border-color: #ed5931;
+  -moz-box-shadow: inset 0 0 10px #ed5931;
+  -webkit-box-shadow: inset 0 0 10px #ed5931;
+  -o-box-shadow: inset 0 0 10px #ed5931;
+  -ms-box-shadow: inset 0 0 10px #ed5931;
+  box-shadow: inset 0 0 10px #ed5931; }
+.deo-icon-cart-loading:after {
+  -moz-box-shadow: inset 0 0 10px #ed5931;
+  -webkit-box-shadow: inset 0 0 10px #ed5931;
+  -o-box-shadow: inset 0 0 10px #ed5931;
+  -ms-box-shadow: inset 0 0 10px #ed5931;
+  box-shadow: inset 0 0 10px #ed5931; }
+
 .deo-select-attr.selected {
   color: #ed5931; }
 .deo-select-attr:hover {

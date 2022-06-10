@@ -460,10 +460,12 @@ button#confirm_order:disabled {
 		display: none;
 		text-align: left;
 		font-style: italic;
+		font-weight: normal;
+		text-transform: none;
 		color: #e50000;
 		font-size: 12px;
 		margin-top: 5px;
-		margin-bottom: 5px;
+		// margin-bottom: 5px;
 		&.visible {
 			display: block;
 		}
@@ -553,6 +555,8 @@ button#confirm_order:disabled {
 	&.use_tab{
 		.nav-tabs{
     		padding-bottom: 0px;
+			@include display(flex);
+			@include justify-content(flex-end);
 			.nav-item{
 				width: 50%;
 				margin-bottom: 0px;

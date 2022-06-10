@@ -2,6 +2,9 @@
 
 .deo-infinite-load-more{
 	text-align: center;
+	&.deo-load-more-top{
+		margin-bottom: $grid-gutter-width-base/2;
+	}
 	a{
 		color: $white;
 		display: block;

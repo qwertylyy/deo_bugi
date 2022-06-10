@@ -431,10 +431,11 @@ button#confirm_order:disabled {
     display: none;
     text-align: left;
     font-style: italic;
+    font-weight: normal;
+    text-transform: none;
     color: #e50000;
     font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px; }
+    margin-top: 5px; }
     .opc-checkout-element .error-msg.visible {
       display: block; }
     .opc-checkout-element .error-msg #sign-in-link {
@@ -531,7 +532,23 @@ button#confirm_order:disabled {
 .account-inner {
   position: relative; }
   .account-inner.use_tab .nav-tabs {
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: end; }
     .account-inner.use_tab .nav-tabs .nav-item {
       width: 50%;
       margin-bottom: 0px; }

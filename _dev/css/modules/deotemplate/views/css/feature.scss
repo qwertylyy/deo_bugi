@@ -1049,7 +1049,7 @@
 	min-width: 270px;
 	background: $white;
 	border: 1px solid #ddd;
-	border-top: 3px solid $black;
+	border-top: 3px solid $theme-color-default;
 	.list-items{
 		&.active-scrollbar {
 			overflow: auto;
@@ -1066,8 +1066,12 @@
 			display: block;
 			padding: 6px 10px;
 			text-transform: uppercase;
+			@include border-radius(9999px);
 			& + .btn{
 				margin-top: 5px;
+			}
+			&.view-cart{
+				display: none;
 			}
 		}
 		.custom-checkbox{
@@ -1590,14 +1594,14 @@
 	position: relative;
 	white-space: nowrap;
 	text-align: center;
-	background: $black;
+	background: $theme-color-default;
 	.icon-cart-sidebar{
 		width: 30px;
 		height: 30px;
 		color: $white;
 		line-height: 30px;
 		text-align: center;
-		background: $black;
+		background: $theme-color-default;
 		display: inline-block;
 		vertical-align: middle;
 		&:before{
@@ -1612,7 +1616,7 @@
 	}
 	.icon-cart-total{
 		padding: 0px 8px;
-		color: $black;
+		color: $theme-color-default;
 		font-size: 14px;
 		min-width: 30px;
 		min-height: 30px;
@@ -1620,7 +1624,7 @@
 		text-align: center;
 		background: $white;
 		border-style: solid;
-		border-color: $black;
+		border-color: $theme-color-default;
 		display: inline-block;
 		vertical-align: middle;
 		@include rtl-border-width(2px,2px,2px,0px);
@@ -1648,10 +1652,10 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		border: 1px solid $black;
+		border: 1px solid $theme-color-default;
 		@include border-radius(42px);
 		@include box-sizing(border-box);
-		@include box-shadow(inset 0 0 10px $black);
+		@include box-shadow(inset 0 0 10px $theme-color-default);
 	}
 	&:after {
 		content: "\0020";
@@ -1662,10 +1666,10 @@
 		width: 100%;
 		height: 100%;
 		border-radius: 42px;
-		border: 1px solid $black;
+		border: 1px solid $theme-color-default;
 		@include opacity(0);
 		@include box-sizing(border-box);
-		@include box-shadow(inset 0 0 10px $black);
+		@include box-shadow(inset 0 0 10px $theme-color-default);
 		@include animation(cssload-gogoloader 2.3s infinite 1.15s);
 	}
 	&:before {
@@ -1830,7 +1834,7 @@ body {
 	.cart-sidebar-heading{
 		color: $white;
 		padding: 10px 10px;
-		background: $black;
+		background: $theme-color-default;
 		@include display(flex);
 		@include align-items(center);
 		@include justify-content(space-between);
@@ -1880,12 +1884,11 @@ body {
 	}
 	&.slidebar_left {
 		left: 0px;
-		// border-right: 3px solid $black;
 		@include transform(translateX(-100%));
 		.cart-sidebar-header {
 			top: 50%;
 			left: 50%;
-			border: 1px solid $black;
+			border: 1px solid $theme-color-default;
 			@include transform(translateY(-50%));
 		}
 		&.active{
@@ -1902,12 +1905,11 @@ body {
 	}
 	&.slidebar_right {
 		right: 0px;
-		// border-left: 3px solid $black;
 		@include transform(translateX(100%));
 		.cart-sidebar-header {
 			top: 50%;
 			right: 50%;
-			border: 1px solid $black;
+			border: 1px solid $theme-color-default;
 			@include transform(translateY(-50%));
 		}
 		&.active{
@@ -2015,12 +2017,11 @@ body {
 	}
 	&.slidebar_top {
 		top: 0px;
-		// border-bottom: 3px solid $black;
 		@include transform(translateY(-100%));
 		.cart-sidebar-header {
 			top: 50%;
 			left: 50%;
-			border: 1px solid $black;
+			border: 1px solid $theme-color-default;
 			@include transform(translateX(-50%))
 		}
 		&.active{
@@ -2031,12 +2032,11 @@ body {
 	}
 	&.slidebar_bottom {
 		bottom: 0px;
-		// border-top: 3px solid $black;
 		@include transform(translateY(100%));
 		.cart-sidebar-header {
 			bottom: 50%;
 			left: 50%;
-			border: 1px solid $black;
+			border: 1px solid $theme-color-default;
 			@include transform(translateX(-50%));
 		}
 		&.active{

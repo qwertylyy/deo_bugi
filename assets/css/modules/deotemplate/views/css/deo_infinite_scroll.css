@@ -25,6 +25,8 @@
 /***********************************************************************/
 .deo-infinite-load-more {
   text-align: center; }
+  .deo-infinite-load-more.deo-load-more-top {
+    margin-bottom: 10px; }
   .deo-infinite-load-more a {
     color: #FFFFFF;
     display: block;
