@@ -2536,7 +2536,12 @@
         position: static;
         -webkit-animation: none;
         -moz-animation: none;
-        animation: none; }
+        animation: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none; }
       .menu-toogle .group-nav .deo-horizontal-menu .megamenu .dropdown-mega-menu .dropdown-menu-inner {
         padding-left: 15px; }
         .rtl .menu-toogle .group-nav .deo-horizontal-menu .megamenu .dropdown-mega-menu .dropdown-menu-inner {

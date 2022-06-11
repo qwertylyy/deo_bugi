@@ -2339,6 +2339,7 @@
 						border: none;
 						position: static;
 						@include animation(none);
+						@include box-shadow(none);
 					}
 					.dropdown-mega-menu{
 						.dropdown-menu-inner{
