@@ -6,10 +6,10 @@
 <section id="main" class="product-detail" itemscope itemtype="https://schema.org/Product">
   <meta itemprop="url" content="{$product.url}"><div class="row"><div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-sp-12">
 {block name='page_content_container'}
-  <section class="page-content" id="content" data-col-loading="loading-xl-6 loading-lg-6 loading-md-5 loading-sm-4 loading-xs-4" data-type="thumbnail" data-lazyload="1" data-thumb="bottom" data-breakpoints="[[1500, 6],[1200, 6],[992, 5],[768, 4], [576, 4]]" data-modal="1" data-column_xxl="2" data-column_xl="2" data-column_lg="1" data-column_md="1" data-column_sm="1" data-column_xs="1" data-column_sp="1" data-size="small_default" data-zoom="out_scrooll" data-active="1">
+  <section class="page-content" id="content" data-col-loading="loading-xl-6 loading-lg-5 loading-md-4 loading-sm-5 loading-xs-4" data-type="thumbnail" data-lazyload="1" data-thumb="bottom" data-breakpoints="[[1500, 6],[1200, 5],[992, 4],[768, 5], [576, 4]]" data-modal="1" data-column_xxl="2" data-column_xl="2" data-column_lg="1" data-column_md="1" data-column_sm="1" data-column_xs="1" data-column_sp="1" data-size="small_default" data-zoom="out_scrooll" data-active="1">
     {block name='page_content'}
       {block name='product_cover_thumbnails'}
-        {include file='catalog/_partials/product-cover-thumbnails.tpl' col_thumbnail="loading-xl-6 loading-lg-6 loading-md-5 loading-sm-4 loading-xs-4" size="small_default" lazyload=true gallery=false}
+        {include file='catalog/_partials/product-cover-thumbnails.tpl' col_thumbnail="loading-xl-6 loading-lg-5 loading-md-4 loading-sm-5 loading-xs-4" size="small_default" lazyload=true gallery=false}
       {/block}
     {/block}
   </section>
@@ -43,9 +43,9 @@
     <label>{l s='Category' d='Shop.Theme.Global'}:</label> <a href="{$link_deo->getCategoryLink($product.id_category_default)|escape:'html':'UTF-8'}" title="{$product.category_name}">{$product.category_name}</a>
   </div>
 {/if}
-{if isset($product.reference)}
+{if (isset($product.reference) && $product.reference neq '') || (isset($product.reference_to_display) && $product.reference_to_display neq '')}
   <div class="more-infor-product reference">
-    <label>{l s='Reference' d='Shop.Theme.Global'}:</label> <span>{$product.reference}</span>
+    <label>{l s='Reference' d='Shop.Theme.Global'}:</label> <span>{if isset($product.reference_to_display) && $product.reference_to_display neq ''}{$product.reference_to_display}{else}ddd{$product.reference}{/if}</span>
   </div>
 {/if}
 {if $product.show_quantities}
