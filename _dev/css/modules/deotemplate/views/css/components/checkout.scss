@@ -838,6 +838,13 @@ body#checkout {
 		}
 	}
 }
+
+.js-checkout-modal{
+	.modal-content{
+		color: $black;
+	}
+}
+
 #js-checkout-summary{
 	padding: 0px 20px;
 	background: $checkout-bg-block;

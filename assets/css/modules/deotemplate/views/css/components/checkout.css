@@ -780,6 +780,9 @@ body#checkout #payment-confirmation .ps-shown-by-js .btn {
     .js-payment-binary.disabled .accept-cgv {
       display: block; }
 
+.js-checkout-modal .modal-content {
+  color: #000000; }
+
 #js-checkout-summary {
   padding: 0px 20px;
   background: #f8f8f8;

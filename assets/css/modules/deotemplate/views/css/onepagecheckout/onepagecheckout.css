@@ -452,7 +452,7 @@ button#confirm_order:disabled {
     text-align: center; }
     .opc-checkout-element #deo-payment-confirmation .error-msg {
       text-align: center; }
-  .opc-checkout-element .checkbox .error-msg, .opc-checkout-element .radio-buttons .error-msg {
+  .opc-checkout-element .checkbox .error-msg, .opc-checkout-element .radio-buttons .error-msg, .opc-checkout-element .password .error-msg {
     display: block; }
   .opc-checkout-element .radio-inline {
     padding: 0;
@@ -540,15 +540,15 @@ button#confirm_order:disabled {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -moz-box-pack: end;
-    box-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    -o-justify-content: flex-end;
-    justify-content: flex-end;
-    -ms-flex-pack: end; }
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end; }
     .account-inner.use_tab .nav-tabs .nav-item {
       width: 50%;
       margin-bottom: 0px; }
@@ -930,10 +930,6 @@ form#braintree-form {
   display: none; }
 .show_i_am_business.hideBusinessFields .form-group.business-field:not(.need-dni) {
   display: none; }
-
-#deo-modal-terms .modal-content {
-  padding: 1.25rem;
-  background-color: #f1f1f1; }
 
 .module-account-fields label, .module-account-fields .form-group {
   margin-bottom: 0; }

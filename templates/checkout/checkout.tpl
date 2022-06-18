@@ -44,6 +44,23 @@
       </div>
     </div>
   </section>
+  <div class="modal fade js-checkout-modal" id="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="{l s='Close' d='Shop.Theme.Global'}">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="js-modal-content"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" data-dismiss="modal">{l s='Close' d='Shop.Theme.Global'}</button>
+        </div>
+      </div>
+    </div>
+  </div>
 {/block}
 
 {block name='footer'}
