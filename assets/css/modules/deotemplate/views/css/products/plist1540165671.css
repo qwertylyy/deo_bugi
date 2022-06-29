@@ -45,6 +45,7 @@
     left: 0px; }
   @media (min-width: 992px) {
     .product-list-seven .thumbnail-container .product-image .box-button {
+      pointer-events: none;
       -webkit-transform: translate(100%, -50%);
       -moz-transform: translate(100%, -50%);
       -ms-transform: translate(100%, -50%);
@@ -160,6 +161,7 @@
   @media (min-width: 992px) {
     .product-list-seven .thumbnail-container .product-image .box-button > div {
       display: block;
+      pointer-events: auto;
       -webkit-transition: all 0.4s ease-out;
       -o-transition: all 0.4s ease-out;
       transition: all 0.4s ease-out;

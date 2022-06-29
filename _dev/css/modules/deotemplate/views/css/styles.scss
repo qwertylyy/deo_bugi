@@ -939,16 +939,17 @@
 			left: 0px;
 			right: 0px;
 			top: 0px;
-			border: 1px solid $black;
+			border: $main-border;
 			position: absolute;
-			visibility: hidden;
-			@include opacity(0);
+			// visibility: hidden;
+			// @include opacity(0);
 			@include transition(all 0.4s ease 0s);
 		}
 		&.shown{
 			&:before {
-				visibility: visible;
-				@include opacity(1);
+				border-color: $theme-color-default;
+				// visibility: visible;
+				// @include opacity(1);
 			}
 		}
 	}

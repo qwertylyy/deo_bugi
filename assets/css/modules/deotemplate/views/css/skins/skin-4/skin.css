@@ -1006,6 +1006,8 @@ body#checkout #checkout-personal-information-step .tab-account .nav-item .nav-li
       background: #7D3C98; } }
 
 /* Multi Image Product List */
+.deo-more-product-img .link-img.shown:before {
+  border-color: #974cb7; }
 @media (min-width: 992px) {
   .deo-more-product-img .slick-slider .slick-arrows .slick-arrow:hover:before {
     color: #974cb7; } }

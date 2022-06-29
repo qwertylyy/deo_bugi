@@ -2603,6 +2603,13 @@ body#checkout {
 
 /* Multi Image Product List */
 .deo-more-product-img {
+	.link-img{
+		&.shown{
+			&:before {
+				border-color: $theme-color-default;
+			}
+		}
+	}
 	.slick-slider{
 		.slick-arrows{
 			.slick-arrow{
